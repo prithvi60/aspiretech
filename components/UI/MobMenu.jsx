@@ -42,7 +42,7 @@ export default function MobMenu({ Menus }) {
       </button>
 
       <motion.div
-        className="fixed !z-50 left-0 right-0 top-0 no_scrollbar overflow-y-auto bg-linear-to-tl h-screen from-green-light via-white to-white backdrop-blur text-primary p-6"
+        className="fixed !z-50 left-0 right-0 top-0 no_scrollbar overflow-y-auto bg-linear-120 h-screen from-primary/80 to-[var(--gradient-top)] backdrop-blur-md text-foreground p-6"
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >
@@ -55,7 +55,7 @@ export default function MobMenu({ Menus }) {
                 <div className="p-4">
                   {hasSubMenu ? (
                     <div
-                      className="flex justify-between capitalize items-center text-lg rounded-md cursor-pointer relative"
+                      className="flex justify-between font-semibold capitalize items-center text-lg rounded-md cursor-pointer relative"
                       onClick={() => {
                         setOpenMenuIndex(isMenuOpen ? null : i);
                       }}
@@ -71,7 +71,7 @@ export default function MobMenu({ Menus }) {
                         toggleDrawer();
                       }}
                       href={menu.link ? menu.link : "#"}
-                      className="capitalize text-lg rounded-md relative"
+                      className="capitalize text-lg font-semibold rounded-md relative"
                     >
                       {menu.menu}
                     </Link>

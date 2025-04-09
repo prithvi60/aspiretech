@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 
 export default function DesktopMenu({ menu }) {
   const [isHover, setIsHover] = useState(false);
@@ -15,7 +14,7 @@ export default function DesktopMenu({ menu }) {
 
   return (
     <motion.li
-      className={`group/link ${(menu.menu === "services" || menu.menu === "resources") && "relative"} font-medium tracking-wide`}
+      className={`group/link ${menu.menu === "Programs" && "relative"} font-medium tracking-wide`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       key={menu.menu}
@@ -27,13 +26,14 @@ export default function DesktopMenu({ menu }) {
           <>
             <h4 className="capitalize">{menu.menu}</h4>
             <IoIosArrowDown
-              className={`mt-[0.6px] group-hover/link:rotate-180 group-hover/link:text-text duration-200 text-black`}
+              className={`mt-[0.6px] group-hover/link:rotate-180 group-hover/link:text-primary duration-200 text-foreground`}
             />
           </>
         ) : (
-          <Link title={menu.menu}
+          <Link
+            title={menu.menu}
             href={menu.link || "#"}
-            className="flex capitalize items-center gap-1 hover:underline underline-offset-4 decoration-text"
+            className="flex capitalize items-center hover:text-primary transition-all duration-500 ease-in-out gap-1 hover:underline underline-offset-4 decoration-primary"
           >
             <span>{menu.menu}</span>
           </Link>
@@ -47,20 +47,21 @@ export default function DesktopMenu({ menu }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className={`absolute z-50 mt-2 top-10 bg-white text-black shadow-xl rounded-lg overflow-hidden w-max -left-0 xl:-left-0 border border-text backdrop-blur-md`}
+            className={`absolute z-50 mt-2 top-10 bg-primary/90 text-foreground shadow-xl rounded-lg overflow-hidden w-max -left-0 xl:left-0 border border-[#949492] backdrop-blur-md`}
           >
-            {menu.menu === "services" || menu.menu === "resources" ? (
-              // Card-based layout for Expert & Financial Consultation
+            {menu.menu === "programs" ? (
+              // Card-based layout
               <div className="px-3.5 py-4 w-full">
-                <div className="relative">
+                <div className="relative space-y-2">
                   {menu.subMenus?.map((submenu, i) => (
                     <div key={i} className="py-2 rounded-lg transition">
-                      <Link title={submenu.menu}
+                      <Link
+                        title={submenu.menu}
                         href={submenu.link || "#"}
-                        className="flex items-center gap-2 rounded-md p-3 hover:underline hover:scale-105 transition-all duration-300 underline-offset-4 decoration-text"
+                        className="flex items-center gap-2 rounded-md p-3 hover:underline hover:scale-105 transition-all duration-300 underline-offset-4 decoration-primary"
                       >
                         {/* <span className="mr-2">{submenu.icon}</span> */}
-                        <span className="font-semibold text-base text-primary">
+                        <span className="font-semibold text-base text-foreground">
                           {submenu.menu}
                         </span>
                       </Link>
@@ -70,13 +71,13 @@ export default function DesktopMenu({ menu }) {
               </div>
             ) : (
               // Grid-based layout for all other submenus
-              // <div className="">
-              <div className={`px-6 py-10 w-full`}>
+              <div className={`px-6 py-6 w-full space-y-3`}>
                 {menu.subMenus?.map((item, idx) => (
                   <div key={idx}>
-                    <Link title={item.menu}
+                    <Link
+                      title={item.menu}
                       href={item.link}
-                      className="text-lg font-semibold pb-2.5"
+                      className="text-lg font-semibold pb-2.5 hover:underline hover:underline-offset-4 decoration-black transition-all duration-300 ease-in-out"
                     >
                       {item.menu}
                     </Link>

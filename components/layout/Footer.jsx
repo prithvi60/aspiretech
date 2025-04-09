@@ -1,43 +1,56 @@
 import Link from "next/link";
-import { footerLinks1, footerLinks2, socialLinks } from "@/utils/Data";
+import { footerLinks1, footerLinks2, footerLinks3, socialLinks } from "@/utils/Data";
 import Image from "next/image";
 
 const Footer = () => {
 
     return (
-        <footer className={`padding relative space-y-6 md:space-y-10 w-full`}>
-            <div
-                className={`absolute -z-10 h-full inset-0 bg-radial from-gradient-1 to-gradient-2 sm:h-64 blur-3xl opacity-20 rounded-full rotate-[4deg] w-[90%] sm:m-auto`}
-            />
-            <div className="flex flex-col justify-center items-center lg:items-start lg:flex-row lg:justify-between gap-6 lg:gap-8 w-full">
-                <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-y-6">
+        <footer className={`padding relative space-y-6 md:space-y-10 overflow-hidden w-full text-footerText font-inter bg-footerBg`}>
+            <div className="size-64 md:size-[450px] z-0 absolute top-0 -left-24 block">
+                <Link href="/" title="logo" >
+                    <Image
+                        title={"logo"}
+                        src={"/aspire-vector.svg"}
+                        alt="aspire tech logo"
+                        fill
+                        className="object-contain object-center"
+                    />
+                </Link>
+            </div>
+            <div className="flex flex-col md:justify-center md:items-center lg:items-start lg:flex-row lg:justify-between gap-6 lg:gap-8 w-full relative z-10">
+                <div className="flex flex-col gap-y-6">
                     <Link
                         title="logo"
                         href={"/"}
                         className="flex items-center gap-2"
                     >
                         <Image title={"logo"}
-                            src={"https://ik.imagekit.io/webibee/Webibee/webibeepurplelogo.png?updatedAt=1735897013322"}
-                            alt="webibee logo" width={150} height={150} className="object-contain object-center" />
+                            src={"/aspire-logo-1.svg"}
+                            alt="aspire tech logo" width={250} height={180} className="object-contain object-center" />
                     </Link>
-                    <ul className="flex md:hidden items-center gap-2.5">
+                    <p className="text-lg md:text-xl tracking-wide font-bold text-foreground w-11/12">Empowering Minds & Transforming Futures</p>
+                    <ul className="flex items-center gap-5">
                         {socialLinks.map((list, idx) => (
                             <li key={idx} className="flex-shrink-0">
                                 <Link title="footer social icons" href={list.href}>{list.icon}</Link>
                             </li>
                         ))}
                     </ul>
+                    <div className="flex gap-3 md:gap-8 text-base font-semibold md:text-lg text-footerText">
+                        <p className="w-max">Contact: support@airtribe.live</p>
+                        <p className="w-max">+917204287636</p>
+                    </div>
                 </div>
-                <div className="grid grid-cols-2 md:flex md:items-start md:justify-between md:flex-row gap-x-0 gap-y-10 md:gap-12">
+                <div className="flex flex-col md:items-start md:justify-between md:flex-row gap-x-0 gap-y-10 md:gap-12">
                     <div className="block space-y-3">
-                        {/* <h4 className="text-lg font-medium capitalize tracking-wider md:text-xl">
-                            Helpful Links
-                        </h4> */}
+                        <h4 className="uppercase font-extrabold text-primary tracking-wider text-sm md:text-base">
+                            PRODUCT COURSES
+                        </h4>
                         <ul className="block space-y-2.5 md:space-y-4">
                             {footerLinks1.map((list, idx) => (
                                 <li
                                     key={idx}
-                                    className={`text-sm capitalize md:text-base tracking-wide font-medium`}
+                                    className={`text-base capitalize hover:underline hover:underline-offset-4 decoration-primary md:text-lg tracking-wide font-bold`}
                                 >
                                     <Link title={list.menu} href={list.href}>{list.menu}</Link>
                                 </li>
@@ -45,14 +58,29 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="block space-y-3">
-                        {/* <h4 className="text-lg font-medium capitalize tracking-wider md:text-xl">
-                            Topics & Types
-                        </h4> */}
+                        <h4 className="uppercase font-extrabold text-primary tracking-wider text-sm md:text-base">
+                            EXPLORE
+                        </h4>
                         <ul className="block space-y-2.5 md:space-y-4">
                             {footerLinks2.map((list, idx) => (
                                 <li
                                     key={idx}
-                                    className={`text-sm capitalize md:text-base tracking-wide font-medium`}
+                                    className={`text-base capitalize hover:underline hover:underline-offset-4 decoration-primary md:text-lg tracking-wide font-bold`}
+                                >
+                                    <Link title={list.menu} href={list.href}>{list.menu}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="block space-y-3">
+                        <h4 className="uppercase font-extrabold text-primary tracking-wider text-sm md:text-base">
+                            ASPIRE
+                        </h4>
+                        <ul className="block space-y-2.5 md:space-y-4">
+                            {footerLinks3.map((list, idx) => (
+                                <li
+                                    key={idx}
+                                    className={`text-base capitalize hover:underline hover:underline-offset-4 decoration-primary md:text-lg tracking-wide font-bold`}
                                 >
                                     <Link title={list.menu} href={list.href}>{list.menu}</Link>
                                 </li>
@@ -61,7 +89,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className={`flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-8 font-medium`}>
+            {/* <div className={`flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-8 font-medium`}>
                 <ul className="hidden md:flex items-center gap-2.5">
                     {socialLinks.map((list, idx) => (
                         <li key={idx} className="flex-shrink-0">
@@ -72,7 +100,7 @@ const Footer = () => {
                 <p className="text-sm text-center capitalize font-medium lg:text-start md:text-base">
                     © {new Date().getFullYear()} <span className="text-text font-semibold">business portfolio</span>{" "}. All rights reserved
                 </p>
-            </div>
+            </div> */}
         </footer>
     );
 };
