@@ -15,8 +15,8 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Business Portfolio Template",
-  description: "Business Portfolio Template",
+  title: "Aspire Tech Academy",
+  description: "Aspire Tech Academy",
 };
 
 export default function RootLayout({ children }) {
