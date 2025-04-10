@@ -4,13 +4,13 @@ import DesktopMenu from "../UI/DesktopMenu";
 import MobMenu from "../UI/MobMenu";
 import { navLinks } from "@/utils/Data";
 import Image from "next/image";
-import { Button1 } from "../UI/Button";
+import { Button1, CTAButton } from "../UI/Button";
 
 const NavBar = () => {
   return (
-    <header className="px-5 md:px-10 py-6 md:py-4 text-lg z-50 sticky inset-0 flex items-center backdrop-blur-md text-foreground">
+    <header className="px-5 md:px-14 lg:px-20 pt-6 md:pt-4 text-lg z-50 sticky inset-0 flex items-center backdrop-blur-md text-foreground bg-background/80">
       <nav className="flex justify-between items-center w-full">
-        <div className="w-64 relative h-20 hidden md:block">
+        <div className="w-64 relative h-16 hidden md:block">
           <Link href="/" title="logo" >
             <Image
               title={"logo"}
@@ -34,23 +34,23 @@ const NavBar = () => {
         </div>
         {/* navbar menu lists */}
         <div className="flex items-center gap-0.5 sm:gap-x-3.5 xl:gap-x-5">
-          <ul className="gap-x-1 lg:!flex items-center hidden ">
+          {/* <ul className="gap-x-1 lg:!flex items-center hidden ">
             {navLinks.map((menu, idx) => (
               <DesktopMenu key={idx} menu={menu} />
             ))}
-          </ul>
-          {/* <div className="block lg:hidden">
-            <Button1 text={"contact us"} href={"/contact"} />
-          </div> */}
-          <div className="md:ml-4 flex items-center">
+          </ul> */}
+          <div className="block lg:hidden">
+            <CTAButton text={"contact us"} href={"/contact"} />
+          </div>
+          {/* <div className="md:ml-4 flex items-center">
             <div className="lg:!hidden ml-2">
               <MobMenu Menus={navLinks} />
             </div>
-          </div>
+          </div> */}
         </div>
-        {/* <div className="hidden lg:!block">
-          <Button1 text={"contact us"} href={"/contact"} />
-        </div> */}
+        <div className="hidden lg:!block">
+          <CTAButton text={"contact us"} href={"/contact"} />
+        </div>
       </nav>
     </header>
   );

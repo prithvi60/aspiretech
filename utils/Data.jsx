@@ -1,8 +1,4 @@
-import {
-    FaFacebook,
-    FaInstagram,
-    FaLinkedinIn,
-} from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 
 export const navLinks = [
     // { menu: "About us", link: "/about" },
@@ -21,10 +17,19 @@ export const navLinks = [
 ];
 
 export const footerLinks1 = [
-    { menu: "Data Science Architecture Program", href: "/product-course/data-science-architecture-program" },
-    { menu: "Data Analytics Launchpad", href: "/product-course/data-analytics-launchpad" },
+    {
+        menu: "Data Science Architecture Program",
+        href: "/product-course/data-science-architecture-program",
+    },
+    {
+        menu: "Data Analytics Launchpad",
+        href: "/product-course/data-analytics-launchpad",
+    },
     { menu: "UI/UX Design Course", href: "/product-course/UI-UX-design-course" },
-    { menu: "Digital Marketing Program ", href: "/product-course/digital-marketing-program " },
+    {
+        menu: "Digital Marketing Program ",
+        href: "/product-course/digital-marketing-program ",
+    },
 ];
 
 export const footerLinks2 = [
@@ -36,11 +41,11 @@ export const footerLinks2 = [
 ];
 
 export const footerLinks3 = [
-    { menu: "About us", href: "/about" },
-    { menu: "Terms", href: "/terms" },
-    { menu: "Privacy", href: "/privacy" },
-    { menu: "Legal", href: "/legal" },
-    { menu: "Press", href: "/press" },
+    // { menu: "About us", href: "/about" },
+    // { menu: "Terms", href: "/terms" },
+    // { menu: "Privacy", href: "/privacy" },
+    // { menu: "Legal", href: "/legal" },
+    // { menu: "Press", href: "/press" },
     { menu: "Contact us", href: "/contact" },
 ];
 
@@ -64,3 +69,152 @@ export const socialLinks = [
         href: "#",
     },
 ];
+
+export const IndustrialCoursesCardData = [
+    {
+        img: "/card-1.png",
+        alt: "course image",
+        enrol: "Enrolment opening soon ",
+        title: "IBM certified Data Science Architecture Program",
+        desc: "Achieve data science excellence with our IBM-backed program! Enjoy live sessions, earn while you learn, and get 100% career support with guaranteed interviews. (6 Months | Online)",
+    },
+    {
+        img: "/card-1.png",
+        alt: "course image",
+        enrol: "Enrolment opening soon ",
+        title: "Fast Track Data Analytics Launchpad Course",
+        desc: "Kick-start your Data Analytics career with IBM! Get live sessions, career support, and guaranteed internships. (3 Months | Online)",
+    },
+    {
+        img: "/card-1.png",
+        alt: "course image",
+        enrol: "Enrolment opening soon ",
+        title: "Digital Strategic Marketing Course",
+        desc: "Trust us—go beyond traditional digital marketing and learn more! Enjoy live sessions, pay after placement, and secure a guaranteed internship. (3 Months | Online)",
+    },
+    {
+        img: "/card-1.png",
+        alt: "course image",
+        enrol: "Enrolment opening soon ",
+        title: "User-Centricity Unleashed: UI/UX Mastery Course",
+        desc: "Now is the best time to start your design career with rising demand for Design Thinking! Enjoy live sessions, pay after placement, and get a guaranteed internship. (5 Months | Online)",
+    },
+];
+
+export const StoriesByCustomer = [
+    {
+        img: "/avatar.jpg",
+        alt: "customer image",
+        customerName: "Shashi Kiran",
+        about:
+            "The instructors here are highly skilled and patient; I could sense it in how they conducted the sessions. It was not only about the lectures they gave, but they also provided great career guidance which is not that easily found. Aspire Tech Academy helped me bag a job that pays well and also prepared me in a way that I enjoy what I do for a living.",
+        offers: "Offer 14LPA",
+        position: "Data Scientist at Tata Consultancy Services",
+    },
+    {
+        img: "/avatar.jpg",
+        alt: "customer image",
+        customerName: "Jay Prakash",
+        about:
+            "The mentorship and guidance provided by Aspire Tech Academy is something that, I feel, stands out from the rest on a personal level. I don't think I could have found this type of direction and guidance elsewhere. The instructions that were provided or the feedback I received were so elaborate that it motivated me to face all the interviews and placement processes with a new sense of dedication and confidence.",
+        offers: "Offer 30% Hike",
+        position: "Assistant Manager at Flipkart",
+    },
+    {
+        img: "/avatar.jpg",
+        alt: "customer image",
+        customerName: "Shameer Khan",
+        about:
+            "I never thought career guidance could be so eased out until I found Aspire Tech Academy. There have been instances I clearly remember that have helped me ace the interviews and secure a great job. They not only provided a thorough knowledge of data science concepts but also helped with their real-life applications.",
+        offers: "Offer 9 LPA",
+        position: "Professional 1 Product Delivery at DXC Technology",
+    },
+    {
+        img: "/avatar.jpg",
+        alt: "customer image",
+        customerName: "Sindhu",
+        about:
+            "Thanks to Aspire Tech Academy for giving me a great kickstart for my career. Joined the course in my final year MBA and now I am placed with Flipkart",
+        offers: "Offer 5.5 LPA",
+        position: "Digital Marketer at Flipkart",
+    },
+    {
+        img: "/avatar.jpg",
+        alt: "customer image",
+        customerName: "Suba",
+        about:
+            "This is a huge leap in my career. It was a very difficult decision for me to take this course working in BPO for 25k PM but now I realise this is the best decision I have ever taken.",
+        offers: "Offer 6 LPA",
+        position: "Content Marketer at Big Basket",
+    },
+    {
+        img: "/avatar.jpg",
+        alt: "customer image",
+        customerName: "Priya",
+        about:
+            "After completing my graduation I wanted to move into a domain that has no coding so I chose Digital Marketing and I was placed in Lenskart with a 8 LPA package.",
+        offers: "Offer 8 LPA",
+        position: "Brand Manager at Lenskart",
+    },
+];
+
+export const expertProgramStatus = [
+    {
+        count: "2000+",
+        statusName: "Students trained",
+    },
+    {
+        count: "7 LPA",
+        statusName: "Average Salary",
+    },
+    {
+        count: "100%",
+        statusName: "Live Classes",
+    },
+    {
+        count: "4/5",
+        statusName: "Land dream job",
+    },
+];
+
+export const techCompanyData1 = [
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+]
+
+export const techCompanyData2 = [
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+    {
+        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+    },
+]
