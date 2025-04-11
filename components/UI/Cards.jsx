@@ -66,18 +66,18 @@ export const StoriesCard = ({ data }) => {
     );
 };
 
-export const StatusCard = ({ data, icon }) => {
+export const StatusCard = ({ data, icon, type }) => {
     return (
-        <div className="min-w-[220px] rounded-xl space-y-8 box-shadow-gradient2 border border-primary/80 px-8">
-            <div className="flex flex-col items-center justify-center gap-3 px-8 py-6 text-foreground">
+        <div className={`${type ? "w-full mx-auto" : "min-w-[220px] px-8"} rounded-xl space-y-8 box-shadow-gradient2 border border-primary/80 first:col-span-2`}>
+            <div className={`${type ? "px-4 py-6" : "px-8 py-6"} flex flex-col items-center justify-center gap-2 lg:gap-3 text-foreground`}>
                 <h4 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold">
                     {data.count}
                 </h4>
-                <div className="flex items-center gap-2">
+                <div className="flex gap-2">
                     {icon && (
-                        <RiMiniProgramFill className="text-background text-lg md:text-xl" />
+                        <RiMiniProgramFill className="shrink-0 text-primary text-base lg:text-xl" />
                     )}
-                    <p className="text-[clamp(0.8rem,1.15vw,1.5rem)]">
+                    <p className={`${type ? "text-[clamp(0.7rem,1.15vw,1rem)]" : "text-[clamp(0.8rem,1.15vw,1.5rem)]"}`}>
                         {data.statusName}
                     </p>
                 </div>

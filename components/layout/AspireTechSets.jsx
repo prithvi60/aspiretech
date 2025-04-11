@@ -71,17 +71,17 @@ const AspireTechSets = () => {
         }
     }, [isInView]);
     return (
-        <section className="w-full h-full padding space-y-10 md:space-y-20">
+        <section ref={containerRef} className="w-full h-full padding space-y-10 md:space-y-20">
             <SectionHeading text={"What sets Aspire Tech Academy apart from the rest?"} />
 
-            <div ref={containerRef} className="w-full min-h-[420px] md:min-h-[550px] py-8">
+            <div className="w-full min-h-[420px] md:min-h-[550px] py-8">
                 <Slider ref={sliderRef} {...settings} className="aspire-set">
                     {aspireSets.map((list, idx) => (
                         <div key={idx} className="py-2 my-1.5 md:my-3">
                             <h2
-                                className={`rounded-lg border transition-colors transform border-text px-10 py-5 text-[clamp(0.8rem,2vw,1.5rem)] max-w-64 sm:max-w-lg lg:max-w-4xl mx-auto text-center duration-700 ease-in-out shadow-[0px_0px_50px_-22px_var(--primary)] slick-center:scale-110 bg-radial-[at_50%_55%] from-[#1a1918] text-foreground via-[#1a1918] to-[#9494924b]  ${isActive === idx
+                                className={`rounded-lg transition-colors transform px-10 py-5 text-[clamp(0.8rem,2vw,1.5rem)] max-w-64 sm:max-w-lg lg:max-w-4xl mx-auto text-center duration-700 ease-in-out shadow-[0px_0px_50px_-22px_var(--primary)] slick-center:scale-110 bg-radial-[at_50%_55%] from-[#1a1918] text-foreground via-[#1a1918] to-[#9494924b]  ${isActive === idx
                                     ? "scale-110 border-2 border-primary"
-                                    : "bg-background text-foreground "
+                                    : "bg-background text-foreground"
                                     }`}
                             >
                                 {list}

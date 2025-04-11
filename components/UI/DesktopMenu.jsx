@@ -47,7 +47,7 @@ export default function DesktopMenu({ menu }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className={`absolute z-50 mt-2 top-10 bg-primary/90 text-foreground shadow-xl rounded-lg overflow-hidden w-max -left-0 xl:left-0 border border-[#949492] backdrop-blur-md`}
+            className={`absolute z-50 mt-2 top-10 bg-primary/40 text-foreground shadow-xl rounded-lg overflow-hidden w-max -left-0 xl:left-0 border-2 border-[var(--gradient-top)] backdrop-blur-md`}
           >
             {menu.menu === "programs" ? (
               // Card-based layout
@@ -58,7 +58,7 @@ export default function DesktopMenu({ menu }) {
                       <Link
                         title={submenu.menu}
                         href={submenu.link || "#"}
-                        className="flex items-center gap-2 rounded-md p-3 hover:underline hover:scale-105 transition-all duration-300 underline-offset-4 decoration-primary"
+                        className="flex items-center gap-2 rounded-md p-3 hover:underline hover:scale-105 transition-all duration-300 underline-offset-4 decoration-primary capitalize"
                       >
                         {/* <span className="mr-2">{submenu.icon}</span> */}
                         <span className="font-semibold text-base text-foreground">
@@ -77,7 +77,7 @@ export default function DesktopMenu({ menu }) {
                     <Link
                       title={item.menu}
                       href={item.link}
-                      className="text-lg font-semibold pb-2.5 hover:underline hover:underline-offset-4 decoration-black transition-all duration-300 ease-in-out"
+                      className="text-lg font-semibold pb-2.5 hover:underline hover:underline-offset-4 decoration-black transition-all duration-300 ease-in-out capitalize"
                     >
                       {item.menu}
                     </Link>

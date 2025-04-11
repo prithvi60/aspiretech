@@ -1,34 +1,50 @@
-import { FaFacebook, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
+import {
+    FaFacebook,
+    FaInstagram,
+    FaLinkedinIn,
+    FaXTwitter,
+} from "react-icons/fa6";
 
 export const navLinks = [
     // { menu: "About us", link: "/about" },
-    // {
-    //     menu: "Programs",
-    //     subMenus: [
-    //         { menu: "Programs 1", link: "/programs/programs-1" },
-    //         { menu: "Programs 2", link: "/programs/programs-2" },
-    //     ],
-    // },
+    {
+        menu: "Programs",
+        subMenus: [
+            {
+                menu: "data science architecture program",
+                link: "/programs/data-science-architecture-program",
+            },
+            {
+                menu: "data analytics launchpad",
+                link: "/programs/data-analytics-launchpad",
+            },
+            { menu: "UI/UX design course", link: "/programs/UI-UX-design-course" },
+            {
+                menu: "digital marketing program ",
+                link: "/programs/digital-marketing-program ",
+            },
+        ],
+    },
     // { menu: "News", link: "/news" },
     // { menu: "Impact", link: "/impact" },
     // { menu: "Corporate training", link: "/corporate-training" },
     // { menu: "Job board", link: "/job-board" },
-    { menu: "Contact us", link: "/contact" },
+    // { menu: "Contact us", link: "/contact" },
 ];
 
 export const footerLinks1 = [
     {
         menu: "Data Science Architecture Program",
-        href: "/product-course/data-science-architecture-program",
+        href: "/programs/data-science-architecture-program",
     },
     {
         menu: "Data Analytics Launchpad",
-        href: "/product-course/data-analytics-launchpad",
+        href: "/programs/data-analytics-launchpad",
     },
-    { menu: "UI/UX Design Course", href: "/product-course/UI-UX-design-course" },
+    { menu: "UI/UX Design Course", href: "/programs/UI-UX-design-course" },
     {
         menu: "Digital Marketing Program ",
-        href: "/product-course/digital-marketing-program ",
+        href: "/programs/digital-marketing-program ",
     },
 ];
 
@@ -72,28 +88,28 @@ export const socialLinks = [
 
 export const IndustrialCoursesCardData = [
     {
-        img: "/card-1.png",
+        img: "/Data-Science.png",
         alt: "course image",
         enrol: "Enrolment opening soon ",
         title: "IBM certified Data Science Architecture Program",
         desc: "Achieve data science excellence with our IBM-backed program! Enjoy live sessions, earn while you learn, and get 100% career support with guaranteed interviews. (6 Months | Online)",
     },
     {
-        img: "/card-1.png",
+        img: "/Data-Analytics.png",
         alt: "course image",
         enrol: "Enrolment opening soon ",
         title: "Fast Track Data Analytics Launchpad Course",
         desc: "Kick-start your Data Analytics career with IBM! Get live sessions, career support, and guaranteed internships. (3 Months | Online)",
     },
     {
-        img: "/card-1.png",
+        img: "/Digital-Marketing.png",
         alt: "course image",
         enrol: "Enrolment opening soon ",
         title: "Digital Strategic Marketing Course",
         desc: "Trust us—go beyond traditional digital marketing and learn more! Enjoy live sessions, pay after placement, and secure a guaranteed internship. (3 Months | Online)",
     },
     {
-        img: "/card-1.png",
+        img: "/UI-UX.png",
         alt: "course image",
         enrol: "Enrolment opening soon ",
         title: "User-Centricity Unleashed: UI/UX Mastery Course",
@@ -253,3 +269,85 @@ export const aspireSets = [
     "Domain Specific Learning - We teach things in a core domain specific way for you to land in a job soon",
     "Expert Trainers - All our trainers are working professionals with minimum 5+ years of experience.",
 ];
+
+// programs
+
+export const dataScienceStatus = [
+    {
+        count: "31 March",
+        statusName: "ENROLMENT ENDS",
+    },
+    {
+        count: "7LPA+",
+        statusName: "Avg Salary Package",
+    },
+    {
+        count: "200+",
+        statusName: "Hiring Partners",
+    },
+];
+
+export const dataScienceSkillSets = [
+    "Data Science",
+    "Data Analytics",
+    "Data Visualization",
+    "Machine Learning",
+    "Deep Learning",
+    "AI",
+    "Python",
+    "Data wrangling",
+    "NLP",
+];
+
+export const dSAddonSyllabus = [
+    "Bigdata, Sparck & Kafka, MongoDB",
+    "Chat GPT",
+    "Business Analytics",
+    "Data WareHousing & ETL",
+    "Data Analytics",
+    "Cloud Computing (AWS, AZURE, CGP)",
+    "Deployment of Machine Learning Models to Cloud",
+    "Data Science Project Management",
+];
+
+export const DSSoftwareLogo = [
+    {
+        img: "/aspire-vector.svg",
+        alt: "logo",
+    },
+    {
+        img: "/aspire-vector.svg",
+        alt: "logo",
+    },
+    {
+        img: "/aspire-vector.svg",
+        alt: "logo",
+    },
+    {
+        img: "/aspire-vector.svg",
+        alt: "logo",
+    },
+];
+
+export const DSFaq = [
+    {
+        ques: "What are the key learning outcomes of this Data Science course?",
+        ans: "We are in an age where data-driven decisions are crucial. While the volume of data is rapidly increasing, experts are needed to transform it into actionable insights. This Data Science and Artificial Intelligence program, in collaboration with IBM, equips you with the job-specific skills essential for advancing in the field.The course curriculum includes key concepts such as Python, Machine Learning, Deep Learning, and Natural Language Processing (NLP). With hands-on training using capstone projects and real-world datasets, you’ll be prepared for roles like Data Analyst, Data Engineer, and more."
+    },
+    {
+        ques: "What key skills will you develop through this Data Science Architecture course?",
+        ans: "In this Data Science Architecture course, you'll gain expertise in Data Science, Data Analysis, Data Visualization, Machine Learning, Deep Learning, Artificial Intelligence, Python, Statistics, NLP models, SQL, and Data Wrangling."
+    },
+    {
+        ques: "What projects are included in this Data Science Architecture course?",
+        ans: "Get an opportunity to work on Real-World Datasets of various industries like healthcare, e-commerce, social media, entrepreneurship, supply chain, and more. Learn from basics like cleaning a large amount of data, organizing it, and much more."
+    },
+    {
+        ques: "Who should take this Data Science Architecture course?",
+        ans: "Anyone with a graduate degree in any field can apply and enrol in a Data Science Architecture course. Freshers and working professionals with any educational background are eligible for the course."
+    },
+    {
+        ques: "Are there any prerequisites for this Data Science Architecture course?",
+        ans: "No, There are no prerequisites for taking this course "
+    }
+]

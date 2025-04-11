@@ -1,7 +1,7 @@
 import React from 'react'
-import { SectionHeading } from './UI/SectionHeading'
+import { SectionHeading } from '../UI/SectionHeading'
 import { techCompanyData1 } from '@/utils/Data'
-import { TechCompaniesCard } from './UI/Cards'
+import { TechCompaniesCard } from '../UI/Cards'
 import Marquee from 'react-fast-marquee'
 
 const TrustByCompanies = () => {
