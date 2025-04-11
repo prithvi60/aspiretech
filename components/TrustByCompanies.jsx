@@ -6,7 +6,7 @@ import Marquee from 'react-fast-marquee'
 
 const TrustByCompanies = () => {
     return (
-        <section className="w-full h-full space-y-10 md:space-y-20 relative py-[40px] md:py-[70px]">
+        <section className="w-full h-full space-y-10 md:space-y-20 relative py-[40px] md:py-[70px] overflow-hidden">
             <SectionHeading text={"Trusted by Leading Tech Companies"} />
             <div className='size-[750px] bg-primary/90 opacity-20 blur-3xl rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0'></div>
             <div className='w-full h-full space-y-7 md:space-y-14'>
