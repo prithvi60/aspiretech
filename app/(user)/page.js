@@ -1,3 +1,4 @@
+import AspireTechSets from "@/components/layout/AspireTechSets";
 import EnquireTechExpert from "@/components/layout/EnquireTechExpert";
 import Hero from "@/components/layout/Hero";
 import IndustrialCoursesCard from "@/components/layout/IndustrialCoursesCard";
@@ -12,6 +13,7 @@ export default function Home() {
       <EnquireTechExpert />
       <Stories />
       <TrustByCompanies />
+      <AspireTechSets />
     </div>
   );
 }

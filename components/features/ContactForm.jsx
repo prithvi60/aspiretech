@@ -61,12 +61,12 @@ export const ContactForm = () => {
         <>
             <form
                 onSubmit={handleSubmit}
-                className="w-full md:w-[85%] lg:w-3/5 space-y-5"
+                className="w-full space-y-6 md:space-y-10 border-2 border-primary p-6 rounded-lg max-w-6xl mx-auto"
             >
                 <div className="gap-2 flex flex-col">
-                    <label htmlFor="name" className="capitalize font-bold tracking-wider">
+                    {/* <label htmlFor="name" className="capitalize font-bold tracking-wider">
                         name
-                    </label>
+                    </label> */}
                     <input
                         type="text"
                         id="name"
@@ -74,13 +74,14 @@ export const ContactForm = () => {
                         required
                         value={formData.name || ""}
                         onChange={handleChange}
-                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none"
+                        placeholder="Your Name"
+                        className="focus-within:rounded-lg p-4 border-b-2  border-[#CACACA] placeholder:text-foreground focus-within:border-2 focus-within:border-[#CACACA] focus-within:outline-none"
                     />
                 </div>
                 <div className="gap-2 flex flex-col">
-                    <label htmlFor="email" className="capitalize font-bold tracking-wider">
+                    {/* <label htmlFor="email" className="capitalize font-bold tracking-wider">
                         email
-                    </label>
+                    </label> */}
                     <input
                         type="email"
                         id="email"
@@ -88,13 +89,28 @@ export const ContactForm = () => {
                         value={formData.email || ""}
                         onChange={handleChange}
                         required
-                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none"
+                        placeholder="Email Address"
+                        className="focus-within:rounded-lg p-4 border-b-2  border-[#CACACA] placeholder:text-foreground focus-within:border-2 focus-within:border-[#CACACA] focus-within:outline-none"
                     />
                 </div>
                 <div className="gap-2 flex flex-col">
-                    <label htmlFor="message" className="capitalize font-bold tracking-wider">
+                    {/* <label htmlFor="email" className="capitalize font-bold tracking-wider">
+                        Phone Number (optional)
+                    </label> */}
+                    <input
+                        type="text"
+                        id="phone"
+                        name="phoneNo"
+                        value={formData.phoneNo || ""}
+                        onChange={handleChange}
+                        placeholder="Phone Number (optional)"
+                        className="focus-within:rounded-lg p-4 border-b-2  border-[#CACACA] placeholder:text-foreground focus-within:border-2 focus-within:border-[#CACACA] focus-within:outline-none"
+                    />
+                </div>
+                <div className="gap-2 flex flex-col">
+                    {/* <label htmlFor="message" className="capitalize font-bold tracking-wider">
                         message
-                    </label>
+                    </label> */}
                     <textarea
                         type="text"
                         id="message"
@@ -102,16 +118,17 @@ export const ContactForm = () => {
                         value={formData.message || ""}
                         onChange={handleChange}
                         rows={3}
-                        className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none"
+                        placeholder="Message"
+                        className="focus-within:rounded-lg p-4 border-b-2  border-[#CACACA] placeholder:text-foreground focus-within:border-2 focus-within:border-[#CACACA] focus-within:outline-none"
                     />
                 </div>
                 <button
                     role="button"
                     aria-label="Submit Form"
                     type="submit"
-                    className="rounded-lg border-2 border-solid border-white bg-black px-3.5 cursor-pointer py-2 md:py-3 md:px-5 font-semibold capitalize text-white text-sm transition-all duration-300 hover:scale-110"
+                    className="rounded-lg w-max border-2 border-solid border-white flex justify-center items-center gap-3 bg-white px-2 py-2 md:py-3 md:px-4 font-semibold capitalize text-black text-sm md:text-base transition-all duration-300 hover:scale-110 hover:bg-primary cursor-pointer"
                 >
-                    {status ? <Loader /> : "Submit"}
+                    {status ? <Loader /> : "Let's Shape the  Future!"}
                 </button>
             </form>
         </>

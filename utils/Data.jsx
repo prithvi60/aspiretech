@@ -1,4 +1,4 @@
-import { FaFacebook, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 export const navLinks = [
     // { menu: "About us", link: "/about" },
@@ -52,19 +52,19 @@ export const footerLinks3 = [
 export const socialLinks = [
     {
         icon: (
-            <FaInstagram className="text-xl md:text-3xl text-primary hover:text-primary/70 hover:animate-pulse" />
+            <FaInstagram className="text-2xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
         ),
         href: "#",
     },
     {
         icon: (
-            <FaLinkedinIn className="text-xl md:text-3xl text-primary hover:text-primary/70 hover:animate-pulse" />
+            <FaXTwitter className="text-2xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
         ),
         href: "#",
     },
     {
         icon: (
-            <FaFacebook className="text-xl md:text-3xl text-primary hover:text-primary/70 hover:animate-pulse" />
+            <FaFacebook className="text-2xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
         ),
         href: "#",
     },
@@ -179,42 +179,77 @@ export const expertProgramStatus = [
 
 export const techCompanyData1 = [
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
-]
+];
 
 export const techCompanyData2 = [
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
     {
-        logo: "/aspire-logo-2.svg", alt: "logo", company: "grow"
+        logo: "/aspire-logo-2.svg",
+        alt: "logo",
+        company: "grow",
     },
-]
+];
+
+export const aspireSets = [
+    "IBM Certified Courses - We provide you a certification from IBM",
+    "Pay After Placement - You will be paying major chunk of the fee after landing in job",
+    "ISO & IAF Certified Firm - Aspire Tech Academy is ISO & IAF certified",
+    "Partner with 150+ hiring partners - Get hired after completing the course",
+    "Guaranteed Interview Opportunities - We train you in such a way that you clear the interviews",
+    "Affordable Fees - Quality education at affordable pricing",
+    "Domain Specific Learning - We teach things in a core domain specific way for you to land in a job soon",
+    "Expert Trainers - All our trainers are working professionals with minimum 5+ years of experience.",
+];
