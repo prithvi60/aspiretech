@@ -92,4 +92,16 @@
   .aspire-set .slick-list {
     height: 380px !important;
   }
+
+  .spotlight .slick-list {
+    height: 300px !important;
+  }
+}
+
+.spotlight .slick-slide > div {
+  margin: 8px !important;
+}
+
+.spotlight .slick-list {
+  height: 500px !important;
 }

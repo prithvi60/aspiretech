@@ -51,9 +51,9 @@ const NavBar = () => {
               <MobMenu Menus={navLinks} />
             </div>
           </div>
-        </div>
-        <div className="hidden lg:!block">
-          <CTAButton text={"contact us"} href={"/contact"} />
+          <div className="hidden lg:!block">
+            <CTAButton text={"contact us"} href={"/contact"} />
+          </div>
         </div>
       </nav>
     </header>

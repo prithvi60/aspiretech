@@ -47,7 +47,7 @@ export default function DesktopMenu({ menu }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
-            className={`absolute z-50 mt-2 top-10 bg-primary/40 text-foreground shadow-xl rounded-lg overflow-hidden w-max -left-0 xl:left-0 border-2 border-[var(--gradient-top)] backdrop-blur-md`}
+            className={`absolute z-50 mt-2 top-12 bg-primary/80 text-foreground shadow-xl rounded-lg overflow-hidden w-max -left-0 xl:left-0 border-2 border-[var(--gradient-top)] backdrop-blur-xs`}
           >
             {menu.menu === "programs" ? (
               // Card-based layout
