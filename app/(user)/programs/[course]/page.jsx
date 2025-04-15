@@ -1,5 +1,7 @@
+import ExitModalCard from '@/components/features/ExitModalCard';
 import Addons from '@/components/layout/programs/Addons';
 import Certifications from '@/components/layout/programs/Certifications';
+import GuidedBy from '@/components/layout/programs/GuidedBy';
 import IndustrialProject from '@/components/layout/programs/IndustrialProject';
 import ProgramBreakdown from '@/components/layout/programs/ProgramBreakdown';
 import ProgramCurriculum from '@/components/layout/programs/ProgramCurriculum';
@@ -13,9 +15,10 @@ import React from 'react'
 const Page = async ({ params }) => {
     const { course } = await params
     const val = course.replace(/-/g, (match, offset) => offset === 2 ? "/" : " ");
-    // const result = 
+
     return (
         <div>
+            <ExitModalCard />
             <ProgramsHero />
             <SummaryAboutCourse />
             <SpotLight />
@@ -23,6 +26,7 @@ const Page = async ({ params }) => {
             <Addons />
             <SkillsSection />
             <TechSoftware />
+            <GuidedBy />
             <IndustrialProject />
             <Certifications />
             <ProgramBreakdown />

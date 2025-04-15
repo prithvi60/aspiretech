@@ -89,7 +89,7 @@ export const StatusCard = ({ data, icon, type }) => {
 export const MainCoursesCard = ({ data }) => {
     return (
         <div className="max-w-lg mx-auto rounded-xl overflow-hidden custom-shadow text-foreground hover:scale-110 transition-all duration-300 ease-in-out">
-            <div className="w-full h-52 relative overflow-hidden">
+            <div className="w-full h-[145px] sm:h-52 relative overflow-hidden">
                 <Image
                     fill
                     src={data.img}

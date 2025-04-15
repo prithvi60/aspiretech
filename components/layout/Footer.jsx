@@ -37,9 +37,19 @@ const Footer = () => {
                                 </li>
                             ))}
                         </ul>
-                        <div className="flex gap-3 md:gap-8 text-base font-semibold md:text-lg text-footerText">
-                            <p className="w-max">Contact: support@airtribe.live</p>
-                            <p className="w-max">+917204287636</p>
+                        <div className="flex gap-5 md:gap-6">
+                            <p className="text-sm font-semibold md:text-lg text-footerText">Contact:</p>
+                            <div className="text-sm font-semibold md:text-lg text-footerText">
+                                <p className="w-full">connect@aspiretechacademy.com</p>
+                                <p className="w-full">+91-9036879156</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-5 md:gap-0">
+                            <p className="text-sm font-semibold md:text-lg text-footerText">Office Address:</p>
+                            <div className="text-sm font-semibold md:text-lg text-footerText">
+                                <p className="w-full md:w-3/5">504, Tribe Co-working Space,  1st floor, Sector 3, HSR Layout, Bengaluru, Karnataka 560102</p>
+                                {/* <p className="w-max">+91-9036879156</p> */}
+                            </div>
                         </div>
                     </div>
                     <div className="flex flex-col md:items-start md:justify-between md:flex-row gap-x-0 gap-y-10 md:gap-12">

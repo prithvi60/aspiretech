@@ -1,3 +1,4 @@
+import ExitModalCard from "@/components/features/ExitModalCard";
 import AspireTechSets from "@/components/layout/AspireTechSets";
 import EnquireTechExpert from "@/components/layout/EnquireTechExpert";
 import Hero from "@/components/layout/Hero";
@@ -8,6 +9,7 @@ import TrustByCompanies from "@/components/layout/TrustByCompanies";
 export default function Home() {
   return (
     <div>
+      <ExitModalCard />
       <Hero />
       <IndustrialCoursesCard />
       <EnquireTechExpert />

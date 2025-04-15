@@ -68,19 +68,19 @@ export const footerLinks3 = [
 export const socialLinks = [
     {
         icon: (
-            <FaInstagram className="text-2xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
+            <FaInstagram className="text-3xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
         ),
         href: "#",
     },
     {
         icon: (
-            <FaXTwitter className="text-2xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
+            <FaXTwitter className="text-3xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
         ),
         href: "#",
     },
     {
         icon: (
-            <FaFacebook className="text-2xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
+            <FaFacebook className="text-3xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
         ),
         href: "#",
     },
@@ -486,5 +486,41 @@ export const DSSpotlight = [
         note: "Only 15 Students per Batch with 24/7 LMS Access for focused and flexible learning",
         img: "/aspire-vector.svg",
         alt: "image",
+    },
+];
+
+export const DSGuidedBySection = [
+    {
+        img: "/aspire-vector.svg",
+        alt: "image",
+        customer: "Advaith R P",
+        positionDetail: "Data Scientist at ExcelR",
+        aboutCourse:
+            "He is our ace trainer working in one of the leading market research companies based out of London and has extensive experience in the field of Analytics. He has been with us for over 2 years.",
+    },
+    {
+        img: "/aspire-vector.svg",
+        alt: "image",
+        customer: "Thejasvi T V",
+        positionDetail: "Data Science Manager",
+        aboutCourse:
+            "Data Scientist and a Certified Six Sigma Black Belt (ASQ) with 15+ years of experience in applying statistical techniques for solving business problems across industry verticals. Read more",
+    },
+    {
+        img: "/aspire-vector.svg",
+        alt: "image",
+        customer: "Udayan Goswami",
+        positionDetail:
+            "Statistics-Masters in Data Science & FinTech at the University of London",
+        aboutCourse:
+            "Experience in building predictive and statistical models with a demonstrated history of working in the information technology and services industry. Skilled in python, pyspark,",
+    },
+    {
+        img: "/aspire-vector.svg",
+        alt: "image",
+        customer: "Chandra Shekar Gogula",
+        positionDetail: "Consultant at TCS (Data Scientist)",
+        aboutCourse:
+            "Chandra Sekhar is a Data Scientist professional with close to 9+ years of experience in Machine Learning, Statistical Modelling, Data Science, Predictive Analytics & Business Consulting.",
     },
 ];

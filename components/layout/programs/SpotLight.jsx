@@ -26,7 +26,7 @@ const SpotLight = () => {
         vertical: true,
         verticalSwiping: true,
         centerMode: true,
-        centerPadding: "20px",
+        centerPadding: "0px",
         autoplay: 2000,
         autoplaySpeed: 3000,
         pauseOnHover: false,
