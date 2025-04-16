@@ -6,51 +6,46 @@ import { FiArrowRight } from "react-icons/fi";
 import Loader from "@/components/UI/Loader";
 import Link from "next/link";
 
-export const ProgramsModal = ({ title, data }) => {
+export const ProgramsModal = ({ title, pdf }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [thank, setThank] = useState(false);
-    // const [pdf, setPdf] = useState("");
-    // const [field, setField] = useState("");
 
     return (
-        <div>
+        <>
             <button
                 title={`Download Brochure page`}
                 role="button"
-                className="w-max transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+                className="w-full transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
                 onClick={() => {
                     setIsOpen(true);
                     setThank(false);
                 }}
             >
                 <div
-                    className={`bg-white flex justify-between items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-black font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg`}
+                    className={`bg-white flex justify-center items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-black font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg`}
                 >
                     Download Brochure
-                    <span>
-                        <FiArrowRight className="shrink-0 text-base md:text-lg text-background" />
-                    </span>
                 </div>
             </button>
             <SpringModal
                 isOpen={isOpen}
                 setIsOpen={setIsOpen}
-                // title={field}
+                title={title}
                 thank={thank}
                 setThank={setThank}
-            // pdf={pdf}
+                pdf={pdf}
             />
-        </div>
+        </>
     );
 };
 
 export const SpringModal = ({
     isOpen,
     setIsOpen,
-    // title,
+    title,
     thank,
     setThank,
-    // pdf,
+    pdf,
 }) => {
     const initialFormData = {
         name: "",
@@ -81,9 +76,8 @@ export const SpringModal = ({
                 body: JSON.stringify({
                     name: formData.name,
                     email: formData.email,
-                    message: "",
-                    // title: title,
-                    // pdf: pdf,
+                    title: title,
+                    pdf: pdf,
                 }),
             });
 
@@ -130,18 +124,19 @@ export const SpringModal = ({
                         className="relative w-full max-w-xl overflow-scroll no_scrollbar bg-linear-to-b from-primary/90 via-secondary/70 to-stone-950 rounded-lg cursor-default md:p-8 md:max-w-xl no-scrollbar border border-primary/60 shadow-2xl"
                     >
                         {thank ? (
-                            <div className="w-full mt-5 space-y-2 p-4 md:p-8">
+                            <div className="w-full mt-5 space-y-2 p-4 md:p-8  text-foreground flex flex-col justify-center items-center">
                                 <Image
                                     title="thumbs up icon"
                                     src={"/thumbs-up.gif"}
                                     alt="thumbs up icon"
                                     width={65}
                                     height={65}
+                                    className=""
                                 />
-                                <h3 className="text-base font-bold text-foreground md:text-lg">
+                                <h3 className="text-base font-bold md:text-lg">
                                     You're All Set!
                                 </h3>
-                                <p className="text-base md:text-lg">
+                                <p className="text-base md:text-lg font-inter">
                                     Check your inbox for access to our curated brochure.
                                 </p>
                             </div>

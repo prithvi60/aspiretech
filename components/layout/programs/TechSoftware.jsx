@@ -1,4 +1,4 @@
-import { DSSoftwareLogo } from '@/utils/Data'
+import { DSSoftwareLogo, DSTechSoftwares } from '@/utils/Data'
 import Image from 'next/image'
 import React from 'react'
 import Marquee from 'react-fast-marquee'
@@ -19,9 +19,9 @@ const TechSoftware = () => {
                 </div>
                 <div className="w-full py-4 space-y-6 md:space-y-10">
                     <Marquee autoFill direction='left' pauseOnHover speed={30}>
-                        {DSSoftwareLogo.map((list, id) => (
-                            <div className="max-w-xs rounded-xl space-y-8 bg-zinc-300/90 p-5 mx-4" key={id}>
-                                <div className="size-14 md:size-20 relative overflow-hidden">
+                        {DSTechSoftwares.slice(0, 10).map((list, id) => (
+                            <div className="max-w-xs rounded-xl space-y-8 bg-zinc-300/90 p-2.5 mx-4" key={id}>
+                                <div className="size-16 md:size-28 relative overflow-hidden">
                                     <Image
                                         fill
                                         className="object-contain object-center"
@@ -33,9 +33,9 @@ const TechSoftware = () => {
                         ))}
                     </Marquee>
                     <Marquee autoFill direction='right' pauseOnHover speed={30}>
-                        {DSSoftwareLogo.map((list, id) => (
-                            <div className="max-w-xs rounded-xl space-y-8 bg-zinc-300/90 p-5 mx-4" key={id}>
-                                <div className="size-14 md:size-20 relative overflow-hidden">
+                        {DSTechSoftwares.slice(10, DSTechSoftwares.length).map((list, id) => (
+                            <div className="max-w-sm rounded-xl space-y-8 bg-zinc-300/90 p-2.5 mx-4" key={id}>
+                                <div className="size-16 md:size-28 relative overflow-hidden">
                                     <Image
                                         fill
                                         className="object-contain object-center"

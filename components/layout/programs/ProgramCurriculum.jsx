@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { TbHexagonPlusFilled } from "react-icons/tb";
+import { ProgramsModal } from "./Modal";
 
 const ProgramCurriculum = () => {
     const [isActive, setIsActive] = useState(0);
@@ -48,10 +49,10 @@ const ProgramCurriculum = () => {
                                 <div className="space-y-5 text-foreground">
                                     <div className="shrink-0">
                                         <Image
-                                            width={20}
-                                            height={20}
-                                            className="w-8 h-8 rounded-full bg-[#D9D9D9] p-1"
-                                            src={"/aspire-vector.svg"}
+                                            width={30}
+                                            height={30}
+                                            className="w-8 h-8 md:w-12 md:h-12"
+                                            src={"/roadmap.svg"}
                                             alt={"avatar"}
                                         />
                                     </div>
@@ -69,7 +70,11 @@ const ProgramCurriculum = () => {
                                 </div>
                             </div>
                             <div className="w-full">
-                                <button
+                                <ProgramsModal pdf={
+                                    "/files/Pay-After-Placement-IBM-Certified-Data-Science-Course-Brochure.pdf"
+                                }
+                                    title={"IBM Certified Course Data Science Architecture Program"} />
+                                {/* <button
                                     title={`download brochure`}
                                     role="button"
                                     className="transition-all w-full duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
@@ -82,7 +87,7 @@ const ProgramCurriculum = () => {
                                     >
                                         download brochure
                                     </Link>
-                                </button>
+                                </button> */}
                             </div>
                         </div>
                     </div>

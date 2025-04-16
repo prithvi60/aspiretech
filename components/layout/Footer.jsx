@@ -19,7 +19,7 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className="flex flex-col md:justify-center md:items-center lg:items-start lg:flex-row lg:justify-between gap-6 lg:gap-8 w-full relative z-10">
-                    <div className="flex flex-col gap-y-6">
+                    <div className="flex flex-col gap-y-6 w-full md:w-2/5">
                         <Link
                             title="logo"
                             href={"/"}
@@ -44,15 +44,15 @@ const Footer = () => {
                                 <p className="w-full">+91-9036879156</p>
                             </div>
                         </div>
-                        <div className="flex gap-5 md:gap-0">
+                        <div className="flex gap-5 md:gap-6">
                             <p className="text-sm font-semibold md:text-lg text-footerText">Office Address:</p>
                             <div className="text-sm font-semibold md:text-lg text-footerText">
-                                <p className="w-full md:w-3/5">504, Tribe Co-working Space,  1st floor, Sector 3, HSR Layout, Bengaluru, Karnataka 560102</p>
+                                <p className="w-full md:w-4/5">504, Tribe Co-working Space,  1st floor, Sector 3, HSR Layout, Bengaluru, Karnataka 560102</p>
                                 {/* <p className="w-max">+91-9036879156</p> */}
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col md:items-start md:justify-between md:flex-row gap-x-0 gap-y-10 md:gap-12">
+                    <div className="flex flex-col md:items-start md:justify-between md:flex-row gap-x-0 gap-y-10 md:gap-12 w-full md:w-3/5">
                         <div className="block space-y-3">
                             <h4 className="uppercase font-extrabold text-primary tracking-wider text-sm md:text-base">
                                 PRODUCT COURSES
@@ -68,7 +68,7 @@ const Footer = () => {
                                 ))}
                             </ul>
                         </div>
-                        {/* <div className="block space-y-3">
+                        <div className="block space-y-3">
                             <h4 className="uppercase font-extrabold text-primary tracking-wider text-sm md:text-base">
                                 EXPLORE
                             </h4>
@@ -82,7 +82,7 @@ const Footer = () => {
                                     </li>
                                 ))}
                             </ul>
-                        </div> */}
+                        </div>
                         <div className="block space-y-3">
                             <h4 className="uppercase font-extrabold text-primary tracking-wider text-sm md:text-base">
                                 ASPIRE
@@ -100,18 +100,6 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                {/* <div className={`flex flex-col justify-center items-center lg:flex-row lg:justify-between gap-8 font-medium`}>
-                <ul className="hidden md:flex items-center gap-2.5">
-                    {socialLinks.map((list, idx) => (
-                        <li key={idx} className="flex-shrink-0">
-                            <Link title="icons" href={list.href}>{list.icon}</Link>
-                        </li>
-                    ))}
-                </ul>
-                <p className="text-sm text-center capitalize font-medium lg:text-start md:text-base">
-                    © {new Date().getFullYear()} <span className="text-text font-semibold">business portfolio</span>{" "}. All rights reserved
-                </p>
-            </div> */}
             </div>
         </footer>
     );

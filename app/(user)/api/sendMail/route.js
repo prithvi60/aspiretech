@@ -4,6 +4,8 @@ import {
   generateEmailTemplateForClient,
   generateEmailTemplateForUser,
 } from "@/utils/EmailTemplate";
+import fs from "fs";
+import path from "path";
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
@@ -15,7 +17,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function POST(req) {
-  const { name, email, message, title } = await req.json();
+  const { name, email, message, title, pdf, phoneNo } = await req.json();
 
   const capitalized = title.charAt(0).toUpperCase() + title.slice(1);
 
@@ -24,19 +26,68 @@ export async function POST(req) {
             <p style="font-size: 16px; color: #555;"><strong>Name:</strong> ${name}</p>
             <p style="font-size: 16px; color: #555;"><strong>Email:</strong> ${email}</p>
             ${
-              message !== ""
+              title !== "contact"
+                ? `
+              <p style="font-size: 16px; color: #555;">
+                <strong>Phone Number:</strong> ${"No Phone Number"}
+              </p>
+              `
+                : `<p style="font-size: 16px; color: #555;">
+                  <strong>Phone Number:</strong> ${phoneNo}
+                </p>`
+            }
+            ${
+              title === "contact"
                 ? `
               <p style="font-size: 16px; color: #555;">
                 <strong>Message:</strong> ${message}
               </p>
                 `
-                : ""
+                : `<p style="font-size: 16px; color: #555;">
+                <strong>Message:</strong> ${"No Message"}
+              </p>`
             }
   `;
 
   const messageForUser = `
   <p style="font-size: 16px; color: #555;">Dear <strong>${name}</strong>,</p>
   `;
+
+  // Function to fetch the PDF file from the public/files directory and convert it to Base64
+  const getPdfAttachment = async () => {
+    if (pdf && title !== "contact") {
+      try {
+        // Clean the pdf path
+        const cleanPdfPath = pdf.replace(/^\/?files\//, "");
+
+        // Construct absolute path to the file
+        const pdfPath = path.join(
+          process.cwd(),
+          "public",
+          "files",
+          cleanPdfPath
+        );
+
+        // Read the file directly
+        const pdfBuffer = await fs.promises.readFile(pdfPath);
+        const pdfBase64 = pdfBuffer.toString("base64");
+
+        const fileName = `${title}.pdf`;
+        return [
+          {
+            filename: fileName,
+            content: pdfBase64,
+            encoding: "base64",
+            contentType: "application/pdf",
+          },
+        ];
+      } catch (error) {
+        console.error("Error reading PDF file:", error);
+        return [];
+      }
+    }
+    return [];
+  };
 
   // !clientEmail
   if (!email && !process.env.EMAIL_ID) {
@@ -51,14 +102,15 @@ export async function POST(req) {
     to: process.env.EMAIL_ID,
     subject: `New Customer Form Submitted - ${capitalized} Page`,
     html: generateEmailTemplateForClient(messageForClient),
-    // bcc: ["reachout@penthusiasts.com"],
+    // bcc: [""],
   };
 
   const userMailOptions = {
-    from: `Business Portfolio - "${process.env.EMAIL_ID}" <support@webibee.com>`,
+    from: `Aspire Tech Academy - "${process.env.EMAIL_ID}" <support@webibee.com>`,
     to: email,
     subject: "Acknowledgment: We received your Submission",
     html: generateEmailTemplateForUser(messageForUser, title),
+    attachments: await getPdfAttachment(),
   };
 
   try {

@@ -14,7 +14,7 @@ const Hero = () => {
             <div className='absolute -top-5 md:top-0 left-0 w-full h-full flex flex-col items-center justify-center'>
                 <h1 className='text-center py-2 md:py-12 font-extrabold text-3xl md:text-6xl xl:text-[92px] leading-6 text-gradient '>Stay ahead with</h1>
                 <h1 className='text-center pb-4 md:pb-12 font-bold text-3xl md:text-6xl xl:text-[92px] text-gradient w-1/2'>Skills that matter</h1>
-                <AnimateButton text={"Get Started"} />
+                <AnimateButton text={"Get Started"} href={"/contact"} />
             </div>
         </section>
         // <section className='w-full min-h-screen relative overflow-hidden'>

@@ -6,7 +6,7 @@ import {
 } from "react-icons/fa6";
 
 export const navLinks = [
-    // { menu: "About us", link: "/about" },
+    { menu: "About us", link: "/about" },
     {
         menu: "Programs",
         subMenus: [
@@ -25,11 +25,10 @@ export const navLinks = [
             },
         ],
     },
-    // { menu: "News", link: "/news" },
-    // { menu: "Impact", link: "/impact" },
+    { menu: "News", link: "/news" },
+    { menu: "Impact", link: "/impact" },
     // { menu: "Corporate training", link: "/corporate-training" },
-    // { menu: "Job board", link: "/job-board" },
-    // { menu: "Contact us", link: "/contact" },
+    { menu: "Job board", link: "/job-board" },
 ];
 
 export const footerLinks1 = [
@@ -44,7 +43,7 @@ export const footerLinks1 = [
     { menu: "UI/UX Design Course", href: "/programs/UI-UX-design-course" },
     {
         menu: "Digital Marketing Program ",
-        href: "/programs/digital-marketing-program ",
+        href: "/programs/digital-marketing-program",
     },
 ];
 
@@ -57,10 +56,10 @@ export const footerLinks2 = [
 ];
 
 export const footerLinks3 = [
-    // { menu: "About us", href: "/about" },
-    // { menu: "Terms", href: "/terms" },
-    // { menu: "Privacy", href: "/privacy" },
-    // { menu: "Legal", href: "/legal" },
+    { menu: "About us", href: "/about" },
+    { menu: "Terms", href: "/terms" },
+    { menu: "Privacy", href: "/privacy" },
+    { menu: "Legal", href: "/legal" },
     // { menu: "Press", href: "/press" },
     { menu: "Contact us", href: "/contact" },
 ];
@@ -93,6 +92,7 @@ export const IndustrialCoursesCardData = [
         enrol: "Enrolment opening soon ",
         title: "IBM certified Data Science Architecture Program",
         desc: "Achieve data science excellence with our IBM-backed program! Enjoy live sessions, earn while you learn, and get 100% career support with guaranteed interviews. (6 Months | Online)",
+        href: "/programs/data-science-architecture-program",
     },
     {
         img: "/Data-Analytics.png",
@@ -100,6 +100,7 @@ export const IndustrialCoursesCardData = [
         enrol: "Enrolment opening soon ",
         title: "Fast Track Data Analytics Launchpad Course",
         desc: "Kick-start your Data Analytics career with IBM! Get live sessions, career support, and guaranteed internships. (3 Months | Online)",
+        href: "/programs/data-analytics-launchpad",
     },
     {
         img: "/Digital-Marketing.png",
@@ -107,6 +108,7 @@ export const IndustrialCoursesCardData = [
         enrol: "Enrolment opening soon ",
         title: "Digital Strategic Marketing Course",
         desc: "Trust us—go beyond traditional digital marketing and learn more! Enjoy live sessions, pay after placement, and secure a guaranteed internship. (3 Months | Online)",
+        href: "/programs/digital-marketing-program",
     },
     {
         img: "/UI-UX.png",
@@ -114,6 +116,7 @@ export const IndustrialCoursesCardData = [
         enrol: "Enrolment opening soon ",
         title: "User-Centricity Unleashed: UI/UX Mastery Course",
         desc: "Now is the best time to start your design career with rising demand for Design Thinking! Enjoy live sessions, pay after placement, and get a guaranteed internship. (5 Months | Online)",
+        href: "/programs/UI-UX-design-course",
     },
 ];
 
@@ -146,7 +149,7 @@ export const StoriesByCustomer = [
         position: "Professional 1 Product Delivery at DXC Technology",
     },
     {
-        img: "/avatar.jpg",
+        img: "/avatar-2.png",
         alt: "customer image",
         customerName: "Sindhu",
         about:
@@ -155,7 +158,7 @@ export const StoriesByCustomer = [
         position: "Digital Marketer at Flipkart",
     },
     {
-        img: "/avatar.jpg",
+        img: "/avatar-2.png",
         alt: "customer image",
         customerName: "Suba",
         about:
@@ -164,7 +167,7 @@ export const StoriesByCustomer = [
         position: "Content Marketer at Big Basket",
     },
     {
-        img: "/avatar.jpg",
+        img: "/avatar-2.png",
         alt: "customer image",
         customerName: "Priya",
         about:
@@ -193,7 +196,7 @@ export const expertProgramStatus = [
     },
 ];
 
-export const techCompanyData1 = [
+export const trustedCompany = [
     {
         logo: "/aspire-logo-2.svg",
         alt: "logo",
@@ -276,14 +279,17 @@ export const dataScienceStatus = [
     {
         count: "31 March",
         statusName: "ENROLMENT ENDS",
+        img: "/enrollment.svg",
     },
     {
         count: "7LPA+",
         statusName: "Avg Salary Package",
+        img: "/salary.svg",
     },
     {
         count: "200+",
         statusName: "Hiring Partners",
+        img: "/hiring-partner.svg",
     },
 ];
 
@@ -310,22 +316,105 @@ export const dSAddonSyllabus = [
     "Data Science Project Management",
 ];
 
+export const DSTechSoftwares = [
+    {
+        img: "/tools/aws.webp",
+        alt: "Aws logo",
+    },
+    {
+        img: "/tools/chatgpt.webp",
+        alt: "chatGPT logo",
+    },
+    {
+        img: "/tools/excel.webp",
+        alt: "excel logo",
+    },
+    {
+        img: "/tools/google-cloud.webp",
+        alt: "google cloud logo",
+    },
+    {
+        img: "/tools/heroku.webp",
+        alt: "heroku logo",
+    },
+    {
+        img: "/tools/keras.webp",
+        alt: "keras logo",
+    },
+    {
+        img: "/tools/matplotlib.jpg",
+        alt: "matplotlib logo",
+    },
+    {
+        img: "/tools/mysql.webp",
+        alt: "mysql logo",
+    },
+    {
+        img: "/tools/nlp.webp",
+        alt: "nlp logo",
+    },
+    {
+        img: "/tools/numpy.webp",
+        alt: "numpy logo",
+    },
+    {
+        img: "/tools/pandas.jpg",
+        alt: "panda logo",
+    },
+    {
+        img: "/tools/postgresql.webp",
+        alt: "postgresql logo",
+    },
+    {
+        img: "/tools/powerbi.jpg",
+        alt: "powerbi logo",
+    },
+    {
+        img: "/tools/python.webp",
+        alt: "python logo",
+    },
+    {
+        img: "/tools/scipy.webp",
+        alt: "scipy logo",
+    },
+    {
+        img: "/tools/tableau.webp",
+        alt: "tableau logo",
+    },
+    {
+        img: "/tools/tensorflow.webp",
+        alt: "tensorflow logo",
+    },
+    {
+        img: "/tools/scikit.webp",
+        alt: "scikit logo",
+    },
+    {
+        img: "/tools/timeseries.jpg",
+        alt: "time series logo",
+    },
+]
+
 export const DSSoftwareLogo = [
     {
-        img: "/aspire-vector.svg",
-        alt: "logo",
+        img: "/netflix.png",
+        alt: "netflix logo",
     },
     {
-        img: "/aspire-vector.svg",
-        alt: "logo",
+        img: "/amazon.png",
+        alt: "amazon logo",
     },
     {
-        img: "/aspire-vector.svg",
-        alt: "logo",
+        img: "/walmart.png",
+        alt: "walmart logo",
     },
     {
-        img: "/aspire-vector.svg",
-        alt: "logo",
+        img: "/zomato.png",
+        alt: "zomato logo",
+    },
+    {
+        img: "/twitter.png",
+        alt: "twitter logo",
     },
 ];
 
@@ -359,14 +448,14 @@ export const DSCertificationDetails = [
             "Post completing the IBM Certified Data Science Algorithm Course, you'll be eligible for official certification from IBM which will help you in boosting your credentials and career in Data Science.",
         note3: "Internship Certificate",
         note4: "Experience Certificate upto 1 year",
-        img: "/aspire-vector.svg",
+        img: "/ibm-certificate.png",
         alt: "image",
     },
     {
         note1: "Certificate from Aspire Tech Academy",
         note2:
             "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
-        img: "/aspire-vector.svg",
+        img: "/aspire.png",
         alt: "image",
     },
 ];

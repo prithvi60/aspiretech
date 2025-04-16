@@ -14,7 +14,7 @@ const Stories = () => {
                 ))}
             </div>
             <div className='text-center'>
-                <AnimateButton href={"#"} text={"Read more stories"} />
+                <AnimateButton href={"/impact"} text={"Read more stories"} />
             </div>
         </section>
     )

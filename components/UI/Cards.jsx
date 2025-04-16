@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
-import { CTAButton } from "./Button";
+import { AnimateButton, Button1, CTAButton } from "./Button";
 import { RiMiniProgramFill } from "react-icons/ri";
+import Link from "next/link";
 
 export const StoriesCard = ({ data }) => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -75,7 +76,14 @@ export const StatusCard = ({ data, icon, type }) => {
                 </h4>
                 <div className="flex gap-2">
                     {icon && (
-                        <RiMiniProgramFill className="shrink-0 text-primary text-base lg:text-xl" />
+                        <Image
+                            width={20}
+                            height={20}
+                            src={data.img}
+                            alt={"icon"}
+                            className="object-contain object-center shrink-0"
+                        />
+                        // <RiMiniProgramFill className="shrink-0 text-primary text-base lg:text-xl" />
                     )}
                     <p className={`${type ? "text-[clamp(0.7rem,1.15vw,1rem)]" : "text-[clamp(0.8rem,1.15vw,1.5rem)]"}`}>
                         {data.statusName}
@@ -109,8 +117,9 @@ export const MainCoursesCard = ({ data }) => {
                         {data.desc}
                     </p>
                 </div>
-                <div className="px-5 mt-5 md:mt-2">
-                    <CTAButton text={"Download Brochure"} href={"#"} />
+                <div className="px-5 mt-5 md:mt-2 relative z-10">
+                    <AnimateButton href={data.href} text={"Know More"} />
+                    {/* <CTAButton text={"Download Brochure"} href={"#"} /> */}
                 </div>
             </div>
         </div>
@@ -131,7 +140,7 @@ export const TechCompaniesCard = ({ data }) => {
                     />
                 </div>
                 <div className="flex items-center gap-2">
-                    <RiMiniProgramFill className="text-primary text-lg md:text-xl " />
+                    {/* <RiMiniProgramFill className="text-primary text-lg md:text-xl " /> */}
                     <p className="text-[clamp(0.8rem,1.15vw,1.8rem)] capitalize">
                         {data.company}
                     </p>

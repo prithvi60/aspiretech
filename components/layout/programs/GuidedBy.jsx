@@ -36,8 +36,8 @@ const GuidedBy = () => {
           <Image
             width={20}
             height={20}
-            className="w-14 h-14 rounded-full bg-zinc-400 p-1.5"
-            src={"/aspire-vector.svg"}
+            className="w-10 h-10 md:w-14 md:h-14"
+            src={"/trained.svg"}
             alt={"logo"}
           />
           <h2 className="font-extrabold text-foreground leading-7 md:leading-10  text-[clamp(1.4rem,2.50vw,2.6rem)] w-full md:w-3/5 lg:w-1/2">

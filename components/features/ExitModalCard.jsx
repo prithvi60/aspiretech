@@ -20,6 +20,7 @@ const ExitModalCard = () => {
                 setIsOpen={setIsOpen}
                 thank={thank}
                 setThank={setThank}
+                title={"exclusively from a pop-up"}
             />
         </section>
     );

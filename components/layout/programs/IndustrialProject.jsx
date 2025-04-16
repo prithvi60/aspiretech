@@ -23,8 +23,8 @@ const IndustrialProject = () => {
                     <div className="w-full md:w-4/5 mx-auto py-4 space-y-6 md:space-y-10">
                         <Marquee autoFill direction='left' pauseOnHover speed={30}>
                             {DSSoftwareLogo.map((list, id) => (
-                                <div className="max-w-xs rounded-xl space-y-8 bg-zinc-300/90 p-5 mx-4" key={id}>
-                                    <div className="size-14 md:size-20 relative overflow-hidden">
+                                <div className="max-w-sm space-y-8 rounded-xl bg-zinc-300/90 p-2.5 mx-4" key={id}>
+                                    <div className="size-20 md:size-28 relative overflow-hidden">
                                         <Image
                                             fill
                                             className="object-contain object-center"

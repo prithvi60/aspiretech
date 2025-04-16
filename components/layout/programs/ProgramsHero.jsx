@@ -21,11 +21,16 @@ const ProgramsHero = () => {
                 </p>
                 <div className="flex flex-row gap-5 justify-center items-center">
                     <div className="w-1/2 md:w-max">
-                        <ProgramsModal />
+                        <ProgramsModal
+                            pdf={
+                                "/files/Pay-After-Placement-IBM-Certified-Data-Science-Course-Brochure.pdf"
+                            }
+                            title={"IBM Certified Course Data Science Architecture Program"}
+                        />
                     </div>
                     <button role="button" aria-label="apply now button">
                         <Link
-                            href="#"
+                            href="/contact"
                             className="py-2.5 md:py-3 px-5 sm:ms-4 text-[clamp(0.7rem,1.15vw,1.2rem)] font-bold text-primary/50 focus:outline-none rounded-lg border-2 hover:text-foreground transition-all duration-500 ease-in-out border-primary/50 hover:bg-primary/90 hover:opacity-80 focus:z-10 focus:ring-4 focus:ring-primary/50"
                         >
                             Apply now

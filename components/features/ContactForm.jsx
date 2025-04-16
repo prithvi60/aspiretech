@@ -6,6 +6,7 @@ const initialFormData = {
     name: "",
     email: "",
     message: "",
+    phoneNo: ""
 };
 export const ContactForm = () => {
     const [formData, setFormData] = useState(initialFormData);
@@ -33,6 +34,7 @@ export const ContactForm = () => {
                     name: formData.name,
                     email: formData.email,
                     message: formData.message,
+                    phoneNo: formData.phoneNo,
                     title: "contact"
                 }),
             });

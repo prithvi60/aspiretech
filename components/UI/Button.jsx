@@ -42,9 +42,11 @@ export const AnimateButton = ({ text, href, icon }) => {
                 className={`bg-white flex justify-between items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-black font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg`}
             >
                 {text}
-                <span>
-                    <FiArrowRight className="shrink-0 text-base md:text-lg text-background" />
-                </span>
+                {icon && (
+                    <span>
+                        <FiArrowRight className="shrink-0 text-base md:text-lg text-background" />
+                    </span>
+                )}
             </Link>
         </button>
     );

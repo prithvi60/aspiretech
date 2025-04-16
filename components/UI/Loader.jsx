@@ -38,23 +38,23 @@ const BarLoader = ({ styles, type }) => {
         >
             <motion.div
                 variants={variants}
-                className={`w-2 h-6 ${type === "main" ? styles : "bg-white"}`}
+                className={`w-2 h-6 ${type === "main" ? styles : "bg-primary hover:bg-foreground"}`}
             />
             <motion.div
                 variants={variants}
-                className={`w-2 h-6 ${type === "main" ? styles : "bg-white"}`}
+                className={`w-2 h-6 ${type === "main" ? styles : "bg-primary hover:bg-foreground"}`}
             />
             <motion.div
                 variants={variants}
-                className={`w-2 h-6 ${type === "main" ? styles : "bg-white"}`}
+                className={`w-2 h-6 ${type === "main" ? styles : "bg-primary hover:bg-foreground"}`}
             />
             <motion.div
                 variants={variants}
-                className={`w-2 h-6 ${type === "main" ? styles : "bg-white"}`}
+                className={`w-2 h-6 ${type === "main" ? styles : "bg-primary hover:bg-foreground"}`}
             />
             <motion.div
                 variants={variants}
-                className={`w-2 h-6 ${type === "main" ? styles : "bg-white"}`}
+                className={`w-2 h-6 ${type === "main" ? styles : "bg-primary hover:bg-foreground"}`}
             />
         </motion.div>
     );

@@ -38,8 +38,9 @@ const Certifications = () => {
                             )}
                         </>
                     </div>
+                    {/* border border-zinc-600 bg-[#D9D9D9] */}
                     <div className="w-full md:w-3/5 space-y-6 md:space-y-10">
-                        <div className="relative overflow-hidden rounded-xl w-full h-60 md:h-[490px] border border-zinc-600 bg-[#D9D9D9]">
+                        <div className="relative overflow-hidden rounded-xl size-72 md:size-[450px] mx-auto">
                             <Image
                                 src={list.img}
                                 fill

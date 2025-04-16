@@ -1,5 +1,4 @@
-import { StatusCard } from "@/components/UI/Cards";
-import { dataScienceSkillSets, dataScienceStatus } from "@/utils/Data";
+import { dataScienceSkillSets} from "@/utils/Data";
 import React from "react";
 import { RiMiniProgramFill } from "react-icons/ri";
 
