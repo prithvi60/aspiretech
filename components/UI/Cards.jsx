@@ -130,8 +130,8 @@ export const MainCoursesCard = ({ data }) => {
 export const TechCompaniesCard = ({ data }) => {
     return (
         <div className="max-w-xs rounded-xl space-y-8 bg-[#D9D9D9]/40 border border-primary/80 px-8 mx-4">
-            <div className="flex flex-col items-center justify-center gap-3 px-8 py-6 text-foreground bg-[D9D9D9]">
-                <div className="size-24 md:size-32 relative overflow-hidden border-4 border-primary p-2 rounded-full">
+            <div className="flex flex-col items-center justify-center gap-3 px-8 py-6 text-foreground ">
+                <div className="size-24 md:size-32 relative overflow-hidden border-4 border-primary p-2 rounded-full bg-[#D9D9D9]/50">
                     <Image
                         fill
                         className="object-contain object-center"

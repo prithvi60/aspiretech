@@ -54,10 +54,10 @@ const SpotLight = () => {
         <section className="w-full h-full padding space-y-10 md:space-y-20 relative">
             <SectionHeading text={"The Reasons you will be under spotlight"} />
             <div
-                className="flex flex-col-reverse md:flex-row justify-between gap-8 md:gap-4 font-inter h-full"
+                className="flex flex-col-reverse lg:flex-row justify-between gap-8 md:gap-4 font-inter h-full max-w-[1660px] mx-auto"
             // key={idx}
             >
-                <div className="w-full md:w-2/5 space-y-6 md:space-y-10">
+                <div className="w-full lg:w-2/5 space-y-6 md:space-y-10">
                     <div className="space-y-1.5 md:space-y-3 slider-container">
                         <Slider
                             arrows={false}
@@ -77,7 +77,7 @@ const SpotLight = () => {
                         </Slider>
                     </div>
                 </div>
-                <div className="hidden md:block w-full md:w-3/5 space-y-6 md:space-y-10 slider-container">
+                <div className="hidden md:block w-full lg:w-3/5 space-y-6 md:space-y-10 slider-container">
                     <Slider
                         arrows={false}
                         asNavFor={nav2}
@@ -89,12 +89,12 @@ const SpotLight = () => {
                         ref={(slider) => (sliderRef1 = slider)}
                     >
                         {DSSpotlight.map((item, id) => (
-                            <div className="relative overflow-hidden rounded-xl w-full h-60 md:h-[490px] border border-zinc-600 bg-[#D9D9D9]">
+                            <div className="relative overflow-hidden rounded-xl w-full h-72 lg:w-full lg:h-[490px]" key={id}>
                                 <Image
                                     src={item.img}
                                     fill
                                     alt={item.alt}
-                                    className="object-contain object-center"
+                                    className="object-contain lg:object-contain object-center"
                                 />
                             </div>
                         ))}

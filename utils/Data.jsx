@@ -198,35 +198,150 @@ export const expertProgramStatus = [
 
 export const trustedCompany = [
     {
-        logo: "/aspire-logo-2.svg",
-        alt: "logo",
-        company: "grow",
+        logo: "/Company/accenture.webp",
+        alt: "accenture logo",
+        company: "accenture",
     },
     {
-        logo: "/aspire-logo-2.svg",
-        alt: "logo",
-        company: "grow",
+        logo: "/Company/adobe.webp",
+        alt: "adobe logo",
+        company: "adobe",
     },
     {
-        logo: "/aspire-logo-2.svg",
-        alt: "logo",
-        company: "grow",
+        logo: "/Company/amazon.webp",
+        alt: "amazon logo",
+        company: "amazon",
     },
     {
-        logo: "/aspire-logo-2.svg",
-        alt: "logo",
-        company: "grow",
+        logo: "/Company/American_Express.webp",
+        alt: "American Express logo",
+        company: "american express",
     },
     {
-        logo: "/aspire-logo-2.svg",
-        alt: "logo",
-        company: "grow",
+        logo: "/Company/aon-logo.webp",
+        alt: "aon logo",
+        company: "aon",
     },
     {
-        logo: "/aspire-logo-2.svg",
-        alt: "logo",
-        company: "grow",
+        logo: "/Company/axis-bank.webp",
+        alt: " logo",
+        company: "",
     },
+    {
+        logo: "/Company/capegmini.webp",
+        alt: "capegmini logo",
+        company: "capegmini",
+    },
+    {
+        logo: "/Company/dalberg-logo.webp",
+        alt: "dalberg logo",
+        company: "dalberg",
+    },
+    {
+        logo: "/Company/dell.webp",
+        alt: "dell logo",
+        company: "dell",
+    },
+    {
+        logo: "/Company/ey.webp",
+        alt: "ey logo",
+        company: "ey",
+    },
+    {
+        logo: "/Company/flipkart.webp",
+        alt: "flipkart logo",
+        company: "flipkart",
+    },
+    {
+        logo: "/Company/glenmark.webp",
+        alt: "glenmark logo",
+        company: "glenmark",
+    },
+    {
+        logo: "/Company/Goldman_Sachs.webp",
+        alt: "Goldman Sachs logo",
+        company: "goldman sachs",
+    },
+    {
+        logo: "/Company/google.webp",
+        alt: "google logo",
+        company: "google",
+    },
+    {
+        logo: "/Company/hcl.webp",
+        alt: "hcl logo",
+        company: "HCL",
+    },
+    {
+        logo: "/Company/ibm.webp",
+        alt: "IBM logo",
+        company: "IBM",
+    },
+    {
+        logo: "/Company/infosys.webp",
+        alt: "infosys logo",
+        company: "infosys",
+    },
+    {
+        logo: "/Company/kpmg.webp",
+        alt: "kpmg logo",
+        company: "KPMG",
+    },
+    {
+        logo: "/Company/nielsen.webp",
+        alt: "nielsen logo",
+        company: "nielsen",
+    },
+    {
+        logo: "/Company/nykaa.webp",
+        alt: "nykaa logo",
+        company: "nykaa",
+    },
+    {
+        logo: "/Company/ola.webp",
+        alt: "ola logo",
+        company: "ola",
+    },
+    {
+        logo: "/Company/oppo.webp",
+        alt: "oppo logo",
+        company: "oppo",
+    },
+    {
+        logo: "/Company/paypal.webp",
+        alt: "paypal logo",
+        company: "paypal",
+    },
+    {
+        logo: "/Company/samsung.webp",
+        alt: "samsung logo",
+        company: "samsung",
+    },
+    {
+        logo: "/Company/tata-steel.webp",
+        alt: "tata steel logo",
+        company: "tata steel",
+    },
+    {
+        logo: "/Company/tcs.webp",
+        alt: "tcs logo",
+        company: "tcs",
+    },
+    {
+        logo: "/Company/walmart.webp",
+        alt: "walmart logo",
+        company: "walmart",
+    },
+    {
+        logo: "/Company/wipro.webp",
+        alt: "wipro logo",
+        company: "wipro",
+    },
+    {
+        logo: "/Company/Zoho.webp",
+        alt: "Zoho logo",
+        company: "Zoho",
+    }
 ];
 
 export const techCompanyData2 = [
@@ -318,7 +433,7 @@ export const dSAddonSyllabus = [
 
 export const DSTechSoftwares = [
     {
-        img: "/tools/aws.webp",
+        img: "/tools/aws.png",
         alt: "Aws logo",
     },
     {
@@ -342,15 +457,15 @@ export const DSTechSoftwares = [
         alt: "keras logo",
     },
     {
-        img: "/tools/matplotlib.jpg",
+        img: "/tools/matplotlib.png",
         alt: "matplotlib logo",
     },
     {
-        img: "/tools/mysql.webp",
+        img: "/tools/mysql.png",
         alt: "mysql logo",
     },
     {
-        img: "/tools/nlp.webp",
+        img: "/tools/nlp.png",
         alt: "nlp logo",
     },
     {
@@ -358,15 +473,15 @@ export const DSTechSoftwares = [
         alt: "numpy logo",
     },
     {
-        img: "/tools/pandas.jpg",
+        img: "/tools/pandas.png",
         alt: "panda logo",
     },
     {
-        img: "/tools/postgresql.webp",
+        img: "/tools/postgresql.png",
         alt: "postgresql logo",
     },
     {
-        img: "/tools/powerbi.jpg",
+        img: "/tools/powerbi.png",
         alt: "powerbi logo",
     },
     {
@@ -378,11 +493,11 @@ export const DSTechSoftwares = [
         alt: "scipy logo",
     },
     {
-        img: "/tools/tableau.webp",
+        img: "/tools/tableau.png",
         alt: "tableau logo",
     },
     {
-        img: "/tools/tensorflow.webp",
+        img: "/tools/tensorflow.png",
         alt: "tensorflow logo",
     },
     {
@@ -390,7 +505,7 @@ export const DSTechSoftwares = [
         alt: "scikit logo",
     },
     {
-        img: "/tools/timeseries.jpg",
+        img: "/tools/timeseries.png",
         alt: "time series logo",
     },
 ]
@@ -538,49 +653,49 @@ export const DSProgramCurriculum = [
 export const DSSpotlight = [
     {
         note: "Learn from Industry Experts who have achieved the success you aim for",
-        img: "/aspire-vector.svg",
+        img: "/reasons/image-1.png",
         alt: "image",
     },
     {
         note: "Placement-Oriented Training with Guaranteed Interviews & Job Support",
-        img: "/aspire-vector.svg",
+        img: "/reasons/image-2.png",
         alt: "image",
     },
     {
         note: "IBM Certification from an ISO & IAF Certified Company",
-        img: "/aspire-vector.svg",
+        img: "/reasons/image-3.png",
         alt: "image",
     },
     {
         note: "Money-Back Guarantee if promises aren't delivered",
-        img: "/aspire-vector.svg",
+        img: "/reasons/image-7.jpg",
         alt: "image",
     },
     {
         note: "Domain-Specific Curriculum tailored for real-world applications",
-        img: "/aspire-vector.svg",
+        img: "/reasons/image-8.jpg",
         alt: "image",
     },
     {
         note: "1:1 Mentoring & Doubt Clearance with expert guidance",
-        img: "/aspire-vector.svg",
+        img: "/reasons/image-4.png",
         alt: "image",
     },
     {
         note: "Mock Interviews & Dedicated Program Manager for personalized career support",
-        img: "/aspire-vector.svg",
+        img: "/reasons/image-5.jpg",
         alt: "image",
     },
     {
         note: "Only 15 Students per Batch with 24/7 LMS Access for focused and flexible learning",
-        img: "/aspire-vector.svg",
+        img: "/reasons/image-6.png",
         alt: "image",
     },
 ];
 
 export const DSGuidedBySection = [
     {
-        img: "/aspire-vector.svg",
+        img: "/stock-1.jpg",
         alt: "image",
         customer: "Advaith R P",
         positionDetail: "Data Scientist at ExcelR",
@@ -588,7 +703,7 @@ export const DSGuidedBySection = [
             "He is our ace trainer working in one of the leading market research companies based out of London and has extensive experience in the field of Analytics. He has been with us for over 2 years.",
     },
     {
-        img: "/aspire-vector.svg",
+        img: "/stock-2.jpg",
         alt: "image",
         customer: "Thejasvi T V",
         positionDetail: "Data Science Manager",
@@ -596,7 +711,7 @@ export const DSGuidedBySection = [
             "Data Scientist and a Certified Six Sigma Black Belt (ASQ) with 15+ years of experience in applying statistical techniques for solving business problems across industry verticals. Read more",
     },
     {
-        img: "/aspire-vector.svg",
+        img: "/stock-1.jpg",
         alt: "image",
         customer: "Udayan Goswami",
         positionDetail:
@@ -605,7 +720,7 @@ export const DSGuidedBySection = [
             "Experience in building predictive and statistical models with a demonstrated history of working in the information technology and services industry. Skilled in python, pyspark,",
     },
     {
-        img: "/aspire-vector.svg",
+        img: "/stock-1.jpg",
         alt: "image",
         customer: "Chandra Shekar Gogula",
         positionDetail: "Consultant at TCS (Data Scientist)",
