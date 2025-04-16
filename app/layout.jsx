@@ -24,7 +24,7 @@ export const metadata = {
     title: "Aspire Tech Academy",
     description:
       "Aspire Tech Academy - Transform your career with industry-relevant tech courses. Learn data science, AI, web development & more through hands-on projects, expert mentorship, and pay-after-placement programs. Start your journey today!",
-    url: "https://aspiretech.vercel.app/",
+    url: "https://aspiretech.vercel.app",
     images: [
       {
         url: "https://ik.imagekit.io/webibee/aspiire%20logo.png?updatedAt=1744800414967",
