@@ -18,11 +18,11 @@ const transporter = nodemailer.createTransport({
 
 export async function POST(req) {
   const { name, email, message, title, pdf, phoneNo } = await req.json();
-
-  const capitalized = title.charAt(0).toUpperCase() + title.slice(1);
+  const titleArray = Array.isArray(title) ? title[1] : [title][0];
+  const capitalized = titleArray.charAt(0).toUpperCase() + titleArray.slice(1);
 
   const messageForClient = `
-  <p style="font-size: 16px; color: #555;"><strong>Valuable customer insights derived from ${title}:</strong></p>
+  <p style="font-size: 16px; color: #555;"><strong>Valuable customer insights derived from ${capitalized}:</strong></p>
             <p style="font-size: 16px; color: #555;"><strong>Name:</strong> ${name}</p>
             <p style="font-size: 16px; color: #555;"><strong>Email:</strong> ${email}</p>
             ${
@@ -55,39 +55,84 @@ export async function POST(req) {
 
   // Function to fetch the PDF file from the public/files directory and convert it to Base64
   const getPdfAttachment = async () => {
-    if (pdf && title !== "contact") {
-      try {
-        // Clean the pdf path
-        const cleanPdfPath = pdf.replace(/^\/?files\//, "");
+    const pdfArray = Array.isArray(pdf) ? pdf : [pdf];
+    const titleArray = Array.isArray(title) ? title : [title];
 
-        // Construct absolute path to the file
-        const pdfPath = path.join(
-          process.cwd(),
-          "public",
-          "files",
-          cleanPdfPath
-        );
+    if (
+      !pdfArray.length ||
+      (titleArray.length && titleArray[0] === "contact")
+    ) {
+      return [];
+    }
 
-        // Read the file directly
-        const pdfBuffer = await fs.promises.readFile(pdfPath);
-        const pdfBase64 = pdfBuffer.toString("base64");
+    try {
+      const attachments = await Promise.all(
+        pdfArray.map(async (pdf, index) => {
+          if (!pdf) return null;
 
-        const fileName = `${title}.pdf`;
-        return [
-          {
-            filename: fileName,
+          const titleArr =
+            titleArray[index] || `Aspire Tech Brochure_${index + 1}`;
+          const cleanPdfPath = pdf.replace(/^\/?files\//, "");
+          const pdfPath = path.join(
+            process.cwd(),
+            "public",
+            "files",
+            cleanPdfPath
+          );
+
+          const pdfBuffer = await fs.promises.readFile(pdfPath);
+          const pdfBase64 = pdfBuffer.toString("base64");
+
+          return {
+            filename: `${titleArr}.pdf`,
             content: pdfBase64,
             encoding: "base64",
             contentType: "application/pdf",
-          },
-        ];
-      } catch (error) {
-        console.error("Error reading PDF file:", error);
-        return [];
-      }
+          };
+        })
+      );
+
+      // Filter out any null entries (if a PDF was skipped)
+      return attachments.filter(Boolean);
+    } catch (error) {
+      console.error("Error reading PDF file(s):", error);
+      return [];
     }
-    return [];
   };
+  // const getPdfAttachment = async () => {
+  //   if (pdf && title !== "contact") {
+  //     try {
+  //       // Clean the pdf path
+  //       const cleanPdfPath = pdf.replace(/^\/?files\//, "");
+
+  //       // Construct absolute path to the file
+  //       const pdfPath = path.join(
+  //         process.cwd(),
+  //         "public",
+  //         "files",
+  //         cleanPdfPath
+  //       );
+
+  //       // Read the file directly
+  //       const pdfBuffer = await fs.promises.readFile(pdfPath);
+  //       const pdfBase64 = pdfBuffer.toString("base64");
+
+  //       const fileName = `${title}.pdf`;
+  //       return [
+  //         {
+  //           filename: fileName,
+  //           content: pdfBase64,
+  //           encoding: "base64",
+  //           contentType: "application/pdf",
+  //         },
+  //       ];
+  //     } catch (error) {
+  //       console.error("Error reading PDF file:", error);
+  //       return [];
+  //     }
+  //   }
+  //   return [];
+  // };
 
   // !clientEmail
   if (!email && !process.env.EMAIL_ID) {

@@ -35,14 +35,14 @@ export default function MobMenu({ Menus }) {
         onClick={() => toggleDrawer()}
       >
         {isOpen ? (
-          <IoClose className="text-black text-2xl rounded-full border border-black p-1" />
+          <IoClose className="text-primary text-3xl rounded-full border border-primary p-1" />
         ) : (
-          <GiHamburgerMenu className="text-lg" />
+          <GiHamburgerMenu className="text-2xl" />
         )}
       </button>
 
       <motion.div
-        className="fixed !z-50 left-0 right-0 top-0 no_scrollbar overflow-y-auto bg-linear-120 h-screen from-primary to-[var(--gradient-top)] backdrop-blur-xs text-foreground p-6"
+        className="fixed !z-50 left-0 right-0 top-0 no_scrollbar h-screen overflow-y-auto bg-black/95 backdrop-blur-xl text-foreground p-6"
         initial={{ x: "-100%" }}
         animate={{ x: isOpen ? "0%" : "-100%" }}
       >
@@ -62,7 +62,7 @@ export default function MobMenu({ Menus }) {
                     >
                       <h4>{menu.menu}</h4>
                       <IoIosArrowDown
-                        className={`ml-auto ${isMenuOpen && "rotate-180"} `}
+                        className={`ml-auto text-primary ${isMenuOpen && "rotate-180"} `}
                       />
                     </div>
                   ) : (

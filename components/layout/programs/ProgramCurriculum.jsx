@@ -11,7 +11,7 @@ const ProgramCurriculum = () => {
     const [isActive, setIsActive] = useState(0);
     const modules = DSProgramCurriculum.map((val) => val.module);
     const filteredContent = DSProgramCurriculum.filter(
-        (val, index) => (index === isActive)
+        (val, index) => index === isActive
     );
 
     return (
@@ -35,7 +35,10 @@ const ProgramCurriculum = () => {
                 <div className="w-full md:3/5 lg:w-4/5 gap-10 flex flex-col lg:flex-row justify-between">
                     <ul className="w-full lg:w-1/2 space-y-5">
                         {filteredContent[0].content.map((item, id) => (
-                            <li key={id} className="font-semibold flex gap-2 text-foreground text-[clamp(1.1rem,1.15vw,1.5rem)] w-4/5">
+                            <li
+                                key={id}
+                                className="font-semibold flex gap-2 text-foreground text-[clamp(1.1rem,1.15vw,1.5rem)] w-4/5"
+                            >
                                 <span className="shrink-0">
                                     <TbHexagonPlusFilled className="text-lg md:text-xl text-primary" />
                                 </span>{" "}
@@ -70,10 +73,16 @@ const ProgramCurriculum = () => {
                                 </div>
                             </div>
                             <div className="w-full">
-                                <ProgramsModal pdf={
-                                    "/files/Pay-After-Placement-IBM-Certified-Data-Science-Course-Brochure.pdf"
-                                }
-                                    title={"IBM Certified Course Data Science Architecture Program"} />
+                                <ProgramsModal
+                                    pdf={[
+                                        "/files/Pay-After-Placement-IBM-Certified-Data-Science-Course-Brochure.pdf",
+                                        "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf",
+                                    ]}
+                                    title={[
+                                        "Pay After Placement IBM Certified Data Science Course Brochure",
+                                        "IBM Certified Course Data Science Architecture Program",
+                                    ]}
+                                />
                                 {/* <button
                                     title={`download brochure`}
                                     role="button"

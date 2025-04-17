@@ -22,10 +22,14 @@ const ProgramsHero = () => {
                 <div className="flex flex-row gap-5 justify-center items-center">
                     <div className="w-1/2 md:w-max">
                         <ProgramsModal
-                            pdf={
-                                "/files/Pay-After-Placement-IBM-Certified-Data-Science-Course-Brochure.pdf"
-                            }
-                            title={"IBM Certified Course Data Science Architecture Program"}
+                            pdf={[
+                                "/files/Pay-After-Placement-IBM-Certified-Data-Science-Course-Brochure.pdf",
+                                "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf",
+                            ]}
+                            title={[
+                                "Pay After Placement IBM Certified Data Science Course Brochure",
+                                "IBM Certified Course Data Science Architecture Program",
+                            ]}
                         />
                     </div>
                     <button role="button" aria-label="apply now button">

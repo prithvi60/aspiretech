@@ -5,10 +5,10 @@ import { SectionHeading } from "../UI/SectionHeading";
 import { aspireSets } from "@/utils/Data";
 
 const AspireTechSets = () => {
-    const [isInView, setIsInView] = useState(false);
+    // const [isInView, setIsInView] = useState(false);
     const [isActive, setIsActive] = useState(false);
-    const containerRef = useRef(null);
-    const sliderRef = useRef(null);
+    // const containerRef = useRef(null);
+    // const sliderRef = useRef(null);
 
     // Slick slider settings
     const settings = {
@@ -22,7 +22,7 @@ const AspireTechSets = () => {
         centerMode: true,
         className: "center",
         centerPadding: "60px",
-        autoplay: isInView,
+        autoplay: 1000,
         autoplaySpeed: 2000,
         pauseOnHover: false,
         arrows: false,
@@ -39,44 +39,44 @@ const AspireTechSets = () => {
         ],
     };
 
-    // Detect if component is in viewport
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsInView(entry.isIntersecting);
-            },
-            { threshold: 0.5 } // Adjust threshold as needed
-        );
+    // // Detect if component is in viewport
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver(
+    //         ([entry]) => {
+    //             setIsInView(entry.isIntersecting);
+    //         },
+    //         { threshold: 0.5 } // Adjust threshold as needed
+    //     );
 
-        const currentRef = containerRef.current;
-        if (currentRef) {
-            observer.observe(currentRef);
-        }
+    //     const currentRef = containerRef.current;
+    //     if (currentRef) {
+    //         observer.observe(currentRef);
+    //     }
 
-        return () => {
-            if (currentRef) {
-                observer.unobserve(currentRef);
-            }
-            observer.disconnect();
-        };
-    }, []);
+    //     return () => {
+    //         if (currentRef) {
+    //             observer.unobserve(currentRef);
+    //         }
+    //         observer.disconnect();
+    //     };
+    // }, []);
 
-    // Control slider autoplay based on visibility
-    useEffect(() => {
-        if (sliderRef.current) {
-            if (isInView) {
-                sliderRef.current.slickPlay();
-            } else {
-                sliderRef.current.slickPause();
-            }
-        }
-    }, [isInView]);
+    // // Control slider autoplay based on visibility
+    // useEffect(() => {
+    //     if (sliderRef.current) {
+    //         if (isInView) {
+    //             sliderRef.current.slickPlay();
+    //         } else {
+    //             sliderRef.current.slickPause();
+    //         }
+    //     }
+    // }, [isInView]);
     return (
-        <section ref={containerRef} className="w-full h-full padding space-y-10 md:space-y-20">
+        <section className="w-full h-full padding space-y-10 md:space-y-20">
             <SectionHeading text={"What sets Aspire Tech Academy apart from the rest?"} />
 
             <div className="w-full min-h-[420px] md:min-h-[550px] py-8 slider-container">
-                <Slider ref={sliderRef} {...settings} className="aspire-set">
+                <Slider {...settings} className="aspire-set">
                     {aspireSets.map((list, idx) => (
                         <div key={idx} className="py-2 my-1.5 md:my-3">
                             <h2
