@@ -14,7 +14,7 @@ const AspireTechSets = () => {
     const settings = {
         dots: false,
         infinite: true,
-        speed: 1000,
+        speed: 800,
         slidesToShow: 5,
         slidesToScroll: 1,
         vertical: true,
@@ -22,7 +22,7 @@ const AspireTechSets = () => {
         centerMode: true,
         centerPadding: "0px",
         autoplay: isInView,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 2000,
         pauseOnHover: false,
         arrows: false,
         beforeChange: (current, next) => {
@@ -74,7 +74,7 @@ const AspireTechSets = () => {
         <section ref={containerRef} className="w-full h-full padding space-y-10 md:space-y-20">
             <SectionHeading text={"What sets Aspire Tech Academy apart from the rest?"} />
 
-            <div className="w-full min-h-[420px] md:min-h-[550px] py-8">
+            <div className="w-full min-h-[420px] md:min-h-[550px] py-8 slider-container">
                 <Slider ref={sliderRef} {...settings} className="aspire-set">
                     {aspireSets.map((list, idx) => (
                         <div key={idx} className="py-2 my-1.5 md:my-3">

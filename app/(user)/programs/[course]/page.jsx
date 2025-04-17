@@ -1,4 +1,5 @@
 import ExitModalCard from "@/components/features/ExitModalCard";
+import AchievementsSlider from "@/components/layout/programs/AchievementsSlider";
 import Addons from "@/components/layout/programs/Addons";
 import Certifications from "@/components/layout/programs/Certifications";
 import GuidedBy from "@/components/layout/programs/GuidedBy";
@@ -24,6 +25,7 @@ const Page = async ({ params }) => {
                 <div>
                     <ExitModalCard />
                     <ProgramsHero />
+                    <AchievementsSlider />
                     <SummaryAboutCourse />
                     <SpotLight />
                     <ProgramCurriculum />

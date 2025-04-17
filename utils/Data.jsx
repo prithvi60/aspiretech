@@ -341,7 +341,7 @@ export const trustedCompany = [
         logo: "/Company/Zoho.webp",
         alt: "Zoho logo",
         company: "Zoho",
-    }
+    },
 ];
 
 export const techCompanyData2 = [
@@ -389,6 +389,19 @@ export const aspireSets = [
 ];
 
 // programs
+
+export const DSAchievements = [
+    "15 seats Batch size ",
+    "200+ Hiring Partners",
+    "60% Average Hike",
+    "200+ Career Transition",
+    "8 months",
+    "Average 7 LPA",
+    "24/7 LMS access",
+    "1:1 Mentoring",
+    "IBM Certification",
+    "ISO & IAF Certified",
+];
 
 export const dataScienceStatus = [
     {
@@ -508,7 +521,7 @@ export const DSTechSoftwares = [
         img: "/tools/timeseries.png",
         alt: "time series logo",
     },
-]
+];
 
 export const DSSoftwareLogo = [
     {
