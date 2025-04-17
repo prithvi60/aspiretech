@@ -79,7 +79,7 @@ export const CTAButton = ({ type, text, href }) => {
                 style={{
                     transform,
                 }}
-                className={`group gap-5 font-extrabold capitalize bg-foreground text-background flex h-full w-full items-center justify-between transition-all duration-300 rounded-lg border-2 border-solid border-white cursor-pointer text-[clamp(0.7rem,1.15vw,1.1rem)] hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_var(--primary)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-xl px-3 py-1.5 md:py-2.5 md:px-5`}
+                className={`group gap-5 font-extrabold capitalize bg-foreground text-background flex h-full w-full items-center justify-between transition-all duration-300 rounded-lg border-2 border-solid border-white cursor-pointer text-[clamp(0.6rem,1.15vw,1.1rem)] hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_var(--primary)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-xl px-3 py-1.5 md:py-2.5 md:px-5`}
             >
                 <Copy>{text}</Copy>
                 <Arrow />

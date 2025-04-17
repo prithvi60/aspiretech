@@ -20,7 +20,8 @@ const AspireTechSets = () => {
         vertical: true,
         verticalSwiping: true,
         centerMode: true,
-        centerPadding: "0px",
+        className: "center",
+        centerPadding: "60px",
         autoplay: isInView,
         autoplaySpeed: 2000,
         pauseOnHover: false,
@@ -32,7 +33,7 @@ const AspireTechSets = () => {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 3
+                    slidesToShow: 3,
                 }
             }
         ],

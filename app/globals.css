@@ -84,14 +84,14 @@
   margin: 0 10px !important;
 }
 
-.aspire-set .slick-list {
+/* .aspire-set .slick-list {
   height: 620px !important;
-}
+} */
 
 @media screen and (max-width: 768px) {
-  .aspire-set .slick-list {
+  /* .aspire-set .slick-list {
     height: 380px !important;
-  }
+  } */
 
   .spotlight .slick-list {
     height: 300px !important;

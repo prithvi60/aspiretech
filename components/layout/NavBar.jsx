@@ -12,7 +12,7 @@ const NavBar = () => {
   const path = usePathname()
 
   return (
-    <header className={`px-5 md:px-14 lg:px-20 pt-6 md:pt-4 text-lg ${path.startsWith("/programs") ? "static" : "z-50 sticky inset-0"} flex items-center backdrop-blur-md text-foreground bg-background/80`}>
+    <header className={`px-5 md:px-14 lg:px-20 py-6 md:pt-4 text-lg ${path.startsWith("/programs") ? "static" : "z-50 sticky inset-0"} flex items-center backdrop-blur-md text-foreground bg-background/80`}>
       <nav className="flex justify-between items-center w-full">
         <div className="w-64 relative h-16 hidden md:block">
           <Link href="/" title="logo" >
@@ -37,7 +37,7 @@ const NavBar = () => {
           </Link>
         </div>
         {/* navbar menu lists */}
-        <div className="flex items-center gap-0.5 sm:gap-x-3.5 xl:gap-x-5">
+        <div className="flex items-center gap-0.5 sm:gap-x-0 xl:gap-x-5">
           <ul className="gap-x-1 lg:!flex items-center hidden ">
             {navLinks.map((menu, idx) => (
               <DesktopMenu key={idx} menu={menu} />
