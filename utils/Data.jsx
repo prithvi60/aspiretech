@@ -390,6 +390,40 @@ export const aspireSets = [
 
 ];
 
+// About Us
+
+export const aboutStatus = [
+    {
+        count: "65%",
+        statusName: "Average Salary",
+    },
+    {
+        count: "7 LPA",
+        statusName: "Average Salary",
+    },
+    {
+        count: "100%",
+        statusName: "Live Classes",
+    },
+    {
+        count: "Earn",
+        statusName: "While learning",
+    },
+];
+
+export const powerProgress = [
+    "IBM Certified Data Science Architecture Program",
+    "IBM Certified Fast Track Data Analyst Launch Pad Course",
+    "Digital Marketing",
+    "User Interface & User Experience",
+    "Cyber Security",
+    "Sales Force",
+    "Devops",
+    "Full Stack Python Developer",
+    "Full Stack Java Developer",
+    "Full Stack Php Developer"
+];
+
 // programs
 
 export const DSAchievements = [

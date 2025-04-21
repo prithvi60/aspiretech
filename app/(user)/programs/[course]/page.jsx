@@ -24,7 +24,7 @@ const Page = async ({ params }) => {
             {val === "data science architecture program" ? (
                 <div>
                     <ExitModalCard />
-                    <ProgramsHero />
+                    <ProgramsHero title={"Money Back Guarantee Data Science Architecture Program"} para={"Gain a competitive edge in emerging technologies with our Data Science & Architecture Program and Master in-demand skills to build scalable solutions and land in you dream job else get the refund of the fees paid ! Through hands-on practice, gain proficiency in Python, SQL, Excel, Machine Learning, Tableau, Generative AI, prompt engineering, and ChatGPT. Interact live with industry leaders, enhancing your skills and staying ahead in the fast-evolving world of data science. Join us and empower your career today."} />
                     <AchievementsSlider />
                     <SummaryAboutCourse />
                     <SpotLight />
