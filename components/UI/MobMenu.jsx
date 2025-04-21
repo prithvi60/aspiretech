@@ -31,7 +31,7 @@ export default function MobMenu({ Menus }) {
   return (
     <div className="relative">
       <button role="button" aria-label="open or close"
-        className="lg:hidden z-[999] relative"
+        className="xl:hidden z-[999] relative"
         onClick={() => toggleDrawer()}
       >
         {isOpen ? (

@@ -17,7 +17,8 @@ const transporter = nodemailer.createTransport({
 });
 
 export async function POST(req) {
-  const { name, email, message, title, pdf, phoneNo } = await req.json();
+  const { name, email, message, title, pdf, phoneNo, course } =
+    await req.json();
   const titleArray = Array.isArray(title) ? title[1] : [title][0];
   const capitalized = titleArray.charAt(0).toUpperCase() + titleArray.slice(1);
 
@@ -25,28 +26,26 @@ export async function POST(req) {
   <p style="font-size: 16px; color: #555;"><strong>Valuable customer insights derived from ${capitalized}:</strong></p>
             <p style="font-size: 16px; color: #555;"><strong>Name:</strong> ${name}</p>
             <p style="font-size: 16px; color: #555;"><strong>Email:</strong> ${email}</p>
-            ${
-              title !== "contact"
-                ? `
+
+            <p style="font-size: 16px; color: #555;">
+                  <strong>Phone Number:</strong> ${phoneNo}
+            </p>
+
+                ${
+                  title === "contact"
+                    ? `
               <p style="font-size: 16px; color: #555;">
-                <strong>Phone Number:</strong> ${"No Phone Number"}
+                <strong>Course:</strong> ${"No Course"}
               </p>
               `
-                : `<p style="font-size: 16px; color: #555;">
-                  <strong>Phone Number:</strong> ${phoneNo}
+                    : `<p style="font-size: 16px; color: #555;">
+                  <strong>Course:</strong> ${course}
                 </p>`
-            }
-            ${
-              title === "contact"
-                ? `
+                }
+
               <p style="font-size: 16px; color: #555;">
                 <strong>Message:</strong> ${message}
               </p>
-                `
-                : `<p style="font-size: 16px; color: #555;">
-                <strong>Message:</strong> ${"No Message"}
-              </p>`
-            }
   `;
 
   const messageForUser = `

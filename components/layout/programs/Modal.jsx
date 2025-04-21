@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FiArrowRight } from "react-icons/fi";
 import Loader from "@/components/UI/Loader";
 import Link from "next/link";
+import { CustomSelect } from "@/components/UI/CustomSelect";
 
 export const ProgramsModal = ({ title, pdf }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -50,6 +51,9 @@ export const SpringModal = ({
     const initialFormData = {
         name: "",
         email: "",
+        phoneNo: "",
+        course: "",
+        message: "",
     };
 
     const [formData, setFormData] = useState(initialFormData);
@@ -76,6 +80,9 @@ export const SpringModal = ({
                 body: JSON.stringify({
                     name: formData.name,
                     email: formData.email,
+                    phoneNo: formData.phoneNo,
+                    course: formData.course,
+                    message: formData.message,
                     title: title,
                     pdf: pdf,
                 }),
@@ -121,7 +128,7 @@ export const SpringModal = ({
                         animate={{ scale: 1, rotate: "0deg" }}
                         exit={{ scale: 0, rotate: "0deg" }}
                         onClick={(e) => e.stopPropagation()}
-                        className="relative w-full max-w-xl overflow-scroll no_scrollbar bg-linear-to-b from-primary/90 via-secondary/70 to-stone-950 rounded-lg cursor-default md:p-8 md:max-w-xl no-scrollbar border border-primary/60 shadow-2xl"
+                        className="relative w-full max-w-xl overflow-scroll no_scrollbar bg-linear-to-b from-primary/90 via-secondary/70 to-stone-950 rounded-lg cursor-default p-4 md:p-8 md:max-w-xl no-scrollbar border border-primary/60 shadow-2xl"
                     >
                         {thank ? (
                             <div className="w-full mt-5 space-y-2 p-4 md:p-8  text-foreground flex flex-col justify-center items-center">
@@ -141,10 +148,10 @@ export const SpringModal = ({
                                 </p>
                             </div>
                         ) : (
-                            <div className="relative z-10 p-5 md:p-3">
+                            <div className="relative z-10">
                                 <div className="w-full md:mt-5 space-y-4">
-                                    <h3 className="font-extrabold text-[clamp(1.1rem,2.5vw,3rem)] leading-6 md:leading-10 text-center text-foreground">
-                                        Instant Access to Course Details - Just One Click Away
+                                    <h3 className="font-extrabold text-[clamp(1.02rem,1.75vw,1.5rem)] leading-6 md:leading-10 text-center text-foreground">
+                                        Enquire Now
                                     </h3>
                                 </div>
                                 <div className="relative w-full max-w-md mx-auto">
@@ -153,12 +160,6 @@ export const SpringModal = ({
                                         className="relative z-10 space-y-6 text-foreground md:space-y-8 py-4 md:py-7"
                                     >
                                         <div className="gap-2 flex flex-col items-start">
-                                            <label
-                                                htmlFor="name"
-                                                className="capitalize tracking-wider"
-                                            >
-                                                name
-                                            </label>
                                             <input
                                                 type="text"
                                                 id="name"
@@ -166,16 +167,11 @@ export const SpringModal = ({
                                                 required
                                                 value={formData.name || ""}
                                                 onChange={handleChange}
+                                                placeholder="Name"
                                                 className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full"
                                             />
                                         </div>
                                         <div className="gap-2 flex flex-col  items-start">
-                                            <label
-                                                htmlFor="email"
-                                                className="capitalize tracking-wider"
-                                            >
-                                                email
-                                            </label>
                                             <input
                                                 type="email"
                                                 id="email"
@@ -183,6 +179,36 @@ export const SpringModal = ({
                                                 required
                                                 value={formData.email || ""}
                                                 onChange={handleChange}
+                                                placeholder="Email ID"
+                                                className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full"
+                                            />
+                                        </div>
+                                        <div className="gap-2 flex flex-col items-start">
+                                            <input
+                                                type="text"
+                                                id="phoneNo"
+                                                name="phoneNo"
+                                                required
+                                                value={formData.phoneNo || ""}
+                                                onChange={handleChange}
+                                                placeholder="Phone No."
+                                                className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full"
+                                            />
+                                        </div>
+                                        <CustomSelect
+                                            name={"course"}
+                                            val={formData.course}
+                                            handleChange={handleChange}
+                                        />
+                                        <div className="gap-2 flex flex-col items-start">
+                                            <textarea
+                                                type="text"
+                                                id="message"
+                                                name="message"
+                                                required
+                                                value={formData.message || ""}
+                                                onChange={handleChange}
+                                                placeholder="Comment or Message"
                                                 className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full"
                                             />
                                         </div>
@@ -196,6 +222,10 @@ export const SpringModal = ({
                                         </button>
                                     </form>
                                 </div>
+                                <p className="font-semibold text-[clamp(0.8rem,1.25vw,1rem)] leading-4 md:leading-8 text-center text-foreground">
+                                    Have questions? Send us your details, and we'll be in touch
+                                    soon!
+                                </p>
                             </div>
                         )}
                     </motion.div>

@@ -27,7 +27,7 @@ export const navLinks = [
     },
     { menu: "News", link: "/news" },
     { menu: "Impact", link: "/impact" },
-    // { menu: "Corporate training", link: "/corporate-training" },
+    { menu: "Corporate training", link: "/corporate-training" },
     { menu: "Job board", link: "/job-board" },
 ];
 
@@ -89,33 +89,33 @@ export const IndustrialCoursesCardData = [
     {
         img: "/Data-Science.png",
         alt: "course image",
-        enrol: "Enrolment opening soon ",
+        enrol: "6 Months | Online",
         title: "IBM certified Data Science Architecture Program",
-        desc: "Achieve data science excellence with our IBM-backed program! Enjoy live sessions, earn while you learn, and get 100% career support with guaranteed interviews. (6 Months | Online)",
+        desc: "Achieve data science excellence with our IBM-backed program! Enjoy live sessions, earn while you learn, and get 100% career support with guaranteed interviews.",
         href: "/programs/data-science-architecture-program",
     },
     {
         img: "/Data-Analytics.png",
         alt: "course image",
-        enrol: "Enrolment opening soon ",
+        enrol: "3 Months | Online",
         title: "Fast Track Data Analytics Launchpad Course",
-        desc: "Kick-start your Data Analytics career with IBM! Get live sessions, career support, and guaranteed internships. (3 Months | Online)",
+        desc: "Kick-start your Data Analytics career with IBM! Get live sessions, career support, and guaranteed internships.",
         href: "/programs/data-analytics-launchpad",
     },
     {
         img: "/Digital-Marketing.png",
         alt: "course image",
-        enrol: "Enrolment opening soon ",
+        enrol: "3 Months | Online",
         title: "Digital Strategic Marketing Course",
-        desc: "Trust us—go beyond traditional digital marketing and learn more! Enjoy live sessions, pay after placement, and secure a guaranteed internship. (3 Months | Online)",
+        desc: "Trust us—go beyond traditional digital marketing and learn more! Enjoy live sessions, pay after placement, and secure a guaranteed internship.",
         href: "/programs/digital-marketing-program",
     },
     {
         img: "/UI-UX.png",
         alt: "course image",
-        enrol: "Enrolment opening soon ",
+        enrol: "5 Months | Online",
         title: "User-Centricity Unleashed: UI/UX Mastery Course",
-        desc: "Now is the best time to start your design career with rising demand for Design Thinking! Enjoy live sessions, pay after placement, and get a guaranteed internship. (5 Months | Online)",
+        desc: "Now is the best time to start your design career with rising demand for Design Thinking! Enjoy live sessions, pay after placement, and get a guaranteed internship.",
         href: "/programs/UI-UX-design-course",
     },
 ];
@@ -386,6 +386,8 @@ export const aspireSets = [
     "Affordable Fees - Quality education at affordable pricing",
     "Domain Specific Learning - We teach things in a core domain specific way for you to land in a job soon",
     "Expert Trainers - All our trainers are working professionals with minimum 5+ years of experience.",
+    "Money Back Guarantee Program - Get placed or get the refund of the fees"
+
 ];
 
 // programs
@@ -436,9 +438,9 @@ export const dataScienceSkillSets = [
 export const dSAddonSyllabus = [
     "Bigdata, Sparck & Kafka, MongoDB",
     "Chat GPT",
-    "Business Analytics",
+    "Deep Learning and NPL",
     "Data WareHousing & ETL",
-    "Data Analytics",
+    "Gen AI",
     "Cloud Computing (AWS, AZURE, CGP)",
     "Deployment of Machine Learning Models to Cloud",
     "Data Science Project Management",
@@ -697,6 +699,11 @@ export const DSSpotlight = [
     {
         note: "Mock Interviews & Dedicated Program Manager for personalized career support",
         img: "/reasons/image-5.jpg",
+        alt: "image",
+    },
+    {
+        note: "AI Enabled Job Board - Once being eligible for placements you will get access to the job board where it will act as a one point contact for all your placement needs",
+        img: "/reasons/image-9.jpg",
         alt: "image",
     },
     {
