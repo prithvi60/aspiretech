@@ -1,32 +1,21 @@
 import { groq } from "next-sanity";
 
 // post queries
-export const POSTS_QUERY = groq`
-*[_type == "post"]|order(publishedAt desc)[0...12] {
+export const NA_QUERIES = groq`
+*[_type == "news"]|order(publishedAt desc) {
   title,
-  slug,
-  blogShortRead,
   publishedAt,
-  body,
   "imageUrl": image.asset->url,
   "imageAlt": image.alt,
-  "plainBody": body[].children[].text
+  url
 }`;
 
-export const POST_QUERY = groq`
-*[_type == "post" && slug.current == $slug][0] {
-  title,
-  blogShortRead,
-  publishedAt,
+export const NA_QUERY = groq`
+*[_type == "news"]|order(publishedAt desc) {
+  field,
+  type,
   "imageUrl": image.asset->url,
-  "imageAlt": image.alt,
-  "plainBody": body[].children[].text,
-  body[]{
-    ...,
-    _type == "image" => {
-      "imageUrl": asset->url,
-      alt
-    }
-  }
-}
-`
+  "altText": image.alt,
+  "pdfUrl": pdfFile.asset->url,
+  publishedAt
+}`;

@@ -149,7 +149,7 @@ export const SpringModal = ({
                             </div>
                         ) : (
                             <div className="relative z-10">
-                                <div className="w-full md:mt-5 space-y-4">
+                                <div className="w-full">
                                     <h3 className="font-extrabold text-[clamp(1.02rem,1.75vw,1.5rem)] leading-6 md:leading-10 text-center text-foreground">
                                         Enquire Now
                                     </h3>
@@ -157,7 +157,7 @@ export const SpringModal = ({
                                 <div className="relative w-full max-w-md mx-auto">
                                     <form
                                         onSubmit={handleSubmit}
-                                        className="relative z-10 space-y-6 text-foreground md:space-y-8 py-4 md:py-7"
+                                        className="relative z-10 text-foreground space-y-2 md:space-y-4 py-4 md:py-7"
                                     >
                                         <div className="gap-2 flex flex-col items-start">
                                             <input
@@ -168,7 +168,7 @@ export const SpringModal = ({
                                                 value={formData.name || ""}
                                                 onChange={handleChange}
                                                 placeholder="Name"
-                                                className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full"
+                                                className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full placeholder:text-sm placeholder:md:text-base"
                                             />
                                         </div>
                                         <div className="gap-2 flex flex-col  items-start">
@@ -180,7 +180,7 @@ export const SpringModal = ({
                                                 value={formData.email || ""}
                                                 onChange={handleChange}
                                                 placeholder="Email ID"
-                                                className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full"
+                                                className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full placeholder:text-sm placeholder:md:text-base"
                                             />
                                         </div>
                                         <div className="gap-2 flex flex-col items-start">
@@ -192,7 +192,7 @@ export const SpringModal = ({
                                                 value={formData.phoneNo || ""}
                                                 onChange={handleChange}
                                                 placeholder="Phone No."
-                                                className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full"
+                                                className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full placeholder:text-sm placeholder:md:text-base"
                                             />
                                         </div>
                                         <CustomSelect
@@ -209,7 +209,7 @@ export const SpringModal = ({
                                                 value={formData.message || ""}
                                                 onChange={handleChange}
                                                 placeholder="Comment or Message"
-                                                className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full"
+                                                className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full placeholder:text-sm placeholder:md:text-base"
                                             />
                                         </div>
                                         <button

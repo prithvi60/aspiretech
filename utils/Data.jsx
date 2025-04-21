@@ -60,7 +60,7 @@ export const footerLinks3 = [
     { menu: "Terms", href: "/terms" },
     { menu: "Privacy", href: "/privacy" },
     { menu: "Legal", href: "/legal" },
-    // { menu: "Press", href: "/press" },
+    { menu: "Press", href: "/press" },
     { menu: "Contact us", href: "/contact" },
 ];
 
@@ -386,8 +386,7 @@ export const aspireSets = [
     "Affordable Fees - Quality education at affordable pricing",
     "Domain Specific Learning - We teach things in a core domain specific way for you to land in a job soon",
     "Expert Trainers - All our trainers are working professionals with minimum 5+ years of experience.",
-    "Money Back Guarantee Program - Get placed or get the refund of the fees"
-
+    "Money Back Guarantee Program - Get placed or get the refund of the fees",
 ];
 
 // About Us
@@ -411,6 +410,22 @@ export const aboutStatus = [
     },
 ];
 
+// terms
+
+export const terms = [
+    "Welcome to our website. We kindly request that you carefully review the following terms and conditions, as they establish a legally binding agreement ('Terms') between you and our company concerning your utilization of the website and/or the services we provide. These services encompass but are not confined to, website access, video content, educational materials, presentations, case studies, quizzes, assignments, data sets, and the availability of various content types through the website or any internet-connected device ('Services'). It's important to note that you affirm your status as an individual rather than a corporation. By accessing or using the website or services, you indicate that you have read, comprehended, and consented to abide by these Terms.",
+    "Moreover, you assert that you possess the legal authority, as mandated by applicable laws (including age requirements), to accept these Terms on your behalf and potentially on behalf of others you represent about your usage of the website or services. If you do not concur with these Terms, you are not permitted to use the website or services. Our company reserves the discretion to modify, amend, append, or remove sections of these Terms at its discretion. Such changes will be made public by posting the updated Terms. We encourage you to periodically review these Terms for any modifications. Your continued usage of the site or services post-change implementation signifies your binding acceptance of the revised Terms.",
+    "Furthermore, when employing specific services, you may be subject to additional guidelines, regulations, product prerequisites, or supplementary terms that are relevant to those services. These guidelines, regulations, product prerequisites, or supplementary terms are hereby incorporated by reference into these Terms.",
+    "Aspire Tech Academy Educational Pvt. Ltd. is dedicated to enhancing the lives of students and nurturing their intellectual growth through the acquisition of new skills. We believe that our marketplace model is the most effective way to deliver valuable educational content to our users. To maintain a safe and secure platform and services for you, our students, and our instructor community, we have established certain rules and guidelines. These terms and conditions apply to all your interactions with the Aspire Tech Academy Educational OPC Pvt. Ltd. website, WWW.ASPIRETECHACADEMY.COM, and mobile apps. The information, services, and materials available on these platforms are provided and operated by 'Aspire Tech Academy', which is referred to as 'we', 'us', or 'Aspire Tech Academy'.",
+    "'Aspire Tech Academy' offers specialized higher education and industry-relevant postgraduate diploma and certification courses through various platforms, including classroom sessions, online learning, and live sessions.",
+    "We kindly request you to review our Terms of Use, Privacy Policy, and other policies available on the platform (collectively referred to as the 'Terms') that govern the use of our platform and programs. Each program may have its own set of terms and conditions regarding refunds, deferrals, payments, and other aspects that govern those specific programs. For our corporate clients, separate written agreements supersede these Terms in case of any conflicts.",
+    "These Terms also apply to all 'Aspire Tech Academy' hosted mobile apps, WhatsApp groups, Facebook groups, Instagram pages, Facebook pages, email/SMS/phone communications, and other social media forums associated with 'Aspire Tech Academy.' Updated versions of the Platform Terms may be made available periodically for your reference.",
+    "Please be aware that certain parts of the 'Aspire Tech Academy' platform may be provided by third-party service providers, and by using these services, you agree to adhere to their terms and conditions. 'Aspire Tech Academy' is not responsible for any disruptions in services caused by these third-party service providers. Your use of the programs signifies your unconditional agreement to abide by these Terms.",
+    "It is your responsibility to safeguard your password and keep it secure at all times. You are solely accountable for all activities conducted under your Account, and you must promptly notify us of any security breaches or unauthorised use of your Account. You are prohibited from using another person's Account without permission, and misrepresentation of your identity is not permitted. You acknowledge that you will be responsible for any losses, damages, or expenses resulting from unauthorised use of your Account, and you may also be liable for losses incurred by us or other parties due to such unauthorised use.",
+    "We reserve the right, at our discretion, to modify or amend portions of these Terms of Service. If changes are made, we will post them on this page and specify the date of the last revision at the top of the page. We may also notify you through the Services' user interface, email notifications, or other reasonable means, as applicable law requires. Changes will take effect no earlier than fourteen (14) days after they are posted unless they pertain to new functions of the Services or are made for legal reasons, in which case they will be effective immediately. Your continued use of the Service after the effective date of any changes constitutes your acceptance of the updated Terms of Service. Additionally, when using certain Services, you may be subject to additional terms applicable to those Services, which will be posted on the Service from time to time.",
+    "Please note that 'Aspire Tech Academy' does not guarantee its operation in all geographic areas or its legal authorization to operate. Furthermore, the suitability and availability of 'Aspire Tech Academy', as well as the information, services, and products offered through the platform, may vary in different locations. Accessing 'Aspire Tech Academy' from regions where it is illegal or restricted is expressly prohibited. If you choose to access 'Aspire Tech Academy', you do so voluntarily and at your own risk, and you are solely responsible for complying with all applicable laws and regulations.",
+];
+
 export const powerProgress = [
     "IBM Certified Data Science Architecture Program",
     "IBM Certified Fast Track Data Analyst Launch Pad Course",
@@ -421,7 +436,7 @@ export const powerProgress = [
     "Devops",
     "Full Stack Python Developer",
     "Full Stack Java Developer",
-    "Full Stack Php Developer"
+    "Full Stack Php Developer",
 ];
 
 // programs

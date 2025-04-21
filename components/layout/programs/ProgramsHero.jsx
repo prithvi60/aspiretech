@@ -11,14 +11,7 @@ const ProgramsHero = ({ title, para, btn }) => {
                     {title}
                 </h1>
                 <p className="mb-8 text-[clamp(1rem,1.15vw,1.5rem)] leading-7 font-normal text-foreground sm:px-16 lg:px-48">
-                    Gain a competitive edge in emerging technologies with our Data Science
-                    & Architecture Program and Master in-demand skills to build scalable
-                    solutions and land in you dream job else get the refund of the fees
-                    paid ! Through hands-on practice, gain proficiency in Python, SQL,
-                    Excel, Machine Learning, Tableau, Generative AI, prompt engineering,
-                    and ChatGPT. Interact live with industry leaders, enhancing your
-                    skills and staying ahead in the fast-evolving world of data science.
-                    Join us and empower your career today.
+                    {para}
                 </p>
                 <div className="flex flex-row gap-5 justify-center items-center">
                     {btn !== "about" ? (

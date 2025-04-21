@@ -2,9 +2,16 @@ import React from 'react'
 
 const Page = () => {
     return (
-        <div className="padding min-h-screen w-full flex justify-between items-center font-extrabold leading-6 tracking-wide text-[clamp(1.8rem,3vw,3rem)] text-center animate-pulse text-gradient">
-            <h4 className='w-full'>Arriving shortly !</h4>
-        </div>
+        <section className="w-full h-full padding space-y-10 md:space-y-20">
+            <h1 className="font-extrabold tracking-tight leading-none text-gradient text-[clamp(1.8rem,3.5vw,3.8rem)] py-2 mx-auto text-center">
+                Legal
+            </h1>
+            <p
+                className="text-[clamp(1rem,1.15vw,1.5rem)] leading-7 font-normal text-foreground"
+            >
+                The Aspire Tech Academy logotype and logomark have been meticulously designed and are the exclusive property of Aspire Tech Educational OPC Private Limited. Their usage is restricted to official and authorised purposes only. Without explicit written consent from Aspire Tech Educational OPC Private Limited, it is strictly prohibited to employ this logotype and logomark in any commercial or marketing context.
+            </p>
+        </section>
     )
 }
 
