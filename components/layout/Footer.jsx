@@ -11,7 +11,7 @@ const Footer = () => {
                     <Link href="/" title="logo" >
                         <Image
                             title={"logo"}
-                            src={"/aspire-vector.svg"}
+                            src={"/aspire-footer.svg"}
                             alt="aspire tech logo"
                             fill
                             className="object-contain object-center"
