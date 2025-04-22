@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import Marquee from 'react-fast-marquee'
 
-const TechSoftware = () => {
+const TechSoftware = ({ data, data2 }) => {
     return (
         <div className="padding max-w-7xl mx-auto w-full font-inter text-foreground">
             <div className='rounded-lg px-14 py-20 border-2 border-[var(--gradient-top)] box-shadow-gradient'>
@@ -19,7 +19,7 @@ const TechSoftware = () => {
                 </div>
                 <div className="w-full py-4 space-y-6 md:space-y-10">
                     <Marquee autoFill direction='left' pauseOnHover speed={30}>
-                        {DSTechSoftwares.slice(0, 10).map((list, id) => (
+                        {data.map((list, id) => (
                             <div className="max-w-xs rounded-xl space-y-8 bg-[#D9D9D9]/80 p-2.5 mx-4" key={id}>
                                 <div className="size-16 md:size-28 relative overflow-hidden">
                                     <Image
@@ -32,20 +32,22 @@ const TechSoftware = () => {
                             </div>
                         ))}
                     </Marquee>
-                    <Marquee autoFill direction='right' pauseOnHover speed={30}>
-                        {DSTechSoftwares.slice(10, DSTechSoftwares.length).map((list, id) => (
-                            <div className="max-w-sm rounded-xl space-y-8 bg-[#D9D9D9]/80 p-2.5 mx-4" key={id}>
-                                <div className="size-16 md:size-28 relative overflow-hidden">
-                                    <Image
-                                        fill
-                                        className="object-contain object-center"
-                                        src={list.img}
-                                        alt={list.alt}
-                                    />
+                    {data2 && (
+                        <Marquee autoFill direction='right' pauseOnHover speed={30}>
+                            {data2.map((list, id) => (
+                                <div className="max-w-sm rounded-xl space-y-8 bg-[#D9D9D9]/80 p-2.5 mx-4" key={id}>
+                                    <div className="size-16 md:size-28 relative overflow-hidden">
+                                        <Image
+                                            fill
+                                            className="object-contain object-center"
+                                            src={list.img}
+                                            alt={list.alt}
+                                        />
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
-                    </Marquee>
+                            ))}
+                        </Marquee>
+                    )}
                 </div>
             </div>
         </div>

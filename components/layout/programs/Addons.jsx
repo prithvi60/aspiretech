@@ -1,13 +1,12 @@
 import { SectionHeading } from "@/components/UI/SectionHeading";
-import { dSAddonSyllabus } from "@/utils/Data";
 import React from "react";
 
-const Addons = () => {
+const Addons = ({ title, data }) => {
     return (
         <section className="w-full h-full padding space-y-10 md:space-y-20">
-            <SectionHeading text={"Addon Syllabus : Skyrocketing Skills"} />
+            <SectionHeading text={title} />
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                {dSAddonSyllabus.map((list, idx) => (
+                {data.map((list, idx) => (
                     <div
                         key={idx}
                         className="bg-linear-to-b from-[var(--text-gradient-left)]/20 to-[#fffefe9e] p-[1px] rounded-md min-h-16 sm:min-h-[110px]"

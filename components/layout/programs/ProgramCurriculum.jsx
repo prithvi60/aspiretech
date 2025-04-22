@@ -1,16 +1,15 @@
 "use client";
 import { SectionHeading } from "@/components/UI/SectionHeading";
-import { DSProgramCurriculum } from "@/utils/Data";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { TbHexagonPlusFilled } from "react-icons/tb";
 import { ProgramsModal } from "./Modal";
 
-const ProgramCurriculum = () => {
+const ProgramCurriculum = ({ data, pdf, title }) => {
     const [isActive, setIsActive] = useState(0);
-    const modules = DSProgramCurriculum.map((val) => val.module);
-    const filteredContent = DSProgramCurriculum.filter(
+    const modules = data.map((val) => val.module);
+    const filteredContent = data.filter(
         (val, index) => index === isActive
     );
 
@@ -74,29 +73,9 @@ const ProgramCurriculum = () => {
                             </div>
                             <div className="w-full">
                                 <ProgramsModal
-                                    pdf={[
-                                        "/files/Pay-After-Placement-IBM-Certified-Data-Science-Course-Brochure.pdf",
-                                        "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf",
-                                    ]}
-                                    title={[
-                                        "Pay After Placement IBM Certified Data Science Course Brochure",
-                                        "IBM Certified Course Data Science Architecture Program",
-                                    ]}
+                                    pdf={pdf}
+                                    title={title}
                                 />
-                                {/* <button
-                                    title={`download brochure`}
-                                    role="button"
-                                    className="transition-all w-full duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
-                                >
-                                    <Link
-                                        title={`download brochure`}
-                                        href={"#"}
-                                        download={""}
-                                        className={`bg-white flex justify-center items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-black font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg`}
-                                    >
-                                        download brochure
-                                    </Link>
-                                </button> */}
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import Marquee from 'react-fast-marquee'
 
-const IndustrialProject = () => {
+const IndustrialProject = ({ data }) => {
     return (
         <div className="padding max-w-7xl mx-auto w-full font-inter text-foreground ">
             <div
@@ -12,15 +12,15 @@ const IndustrialProject = () => {
                 <div className='rounded-lg px-8 py-10 md:px-14 md:py-20 bg-linear-333 from-[#141414] via-[#181818] to-[#2f2f2f]'>
                     <div className="w-full space-y-3 lg:space-y-5">
                         <h4 className="text-[clamp(1.3rem,2.5vw,2.35rem)] leading-6 md:leading-10 tracking-wide font-bold w-full text-center">
-                            Industry Projects
+                            {data.title}
                         </h4>
                         <p
                             className={`mb-3 font-semibold text-foreground text-[clamp(0.7rem,1.15vw,1.15rem)]  leading-6 w-full md:w-4/5 mx-auto font-inter text-justify md:text-left`}
                         >
-                            In this certificate program, you'll gain hands-on experience through industry projects, guided by seasoned professionals. These projects will be integrated into your Certification in Data Science Architecture Program to deepen your expertise. You'll work with real-world datasets, receiving mentorship from world-class industry experts throughout the process.
+                            {data.desc}
                         </p>
                     </div>
-                    <div className="w-full md:w-4/5 mx-auto py-4 space-y-6 md:space-y-10">
+                    {/* <div className="w-full md:w-4/5 mx-auto py-4 space-y-6 md:space-y-10">
                         <Marquee autoFill direction='left' pauseOnHover speed={30}>
                             {DSSoftwareLogo.map((list, id) => (
                                 <div className="max-w-sm space-y-8 rounded-xl bg-zinc-300/90 p-2.5 mx-4" key={id}>
@@ -35,7 +35,7 @@ const IndustrialProject = () => {
                                 </div>
                             ))}
                         </Marquee>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

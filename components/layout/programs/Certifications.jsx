@@ -1,13 +1,12 @@
 import { SectionHeading } from "@/components/UI/SectionHeading";
-import { DSCertificationDetails, DSCertificationImages } from "@/utils/Data";
 import Image from "next/image";
 import React from "react";
 
-const Certifications = () => {
+const Certifications = ({data}) => {
     return (
         <section className="w-full h-full padding space-y-10 md:space-y-20 max-w-7xl mx-auto relative">
             <SectionHeading text={"Certifications"} />
-            {DSCertificationDetails.map((list, idx) => (
+            {data.map((list, idx) => (
                 <div
                     className="flex flex-col-reverse md:flex-row justify-between gap-8 md:gap-4 font-inter h-full"
                     key={idx}

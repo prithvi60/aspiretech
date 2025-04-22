@@ -20,7 +20,7 @@ export const navLinks = [
             },
             { menu: "UI/UX design course", link: "/programs/UI-UX-design-course" },
             {
-                menu: "digital marketing program ",
+                menu: "digital marketing program",
                 link: "/programs/digital-marketing-program ",
             },
         ],
@@ -389,6 +389,11 @@ export const aspireSets = [
     "Money Back Guarantee Program - Get placed or get the refund of the fees",
 ];
 
+
+
+
+
+
 // About Us
 
 export const aboutStatus = [
@@ -409,6 +414,9 @@ export const aboutStatus = [
         statusName: "While learning",
     },
 ];
+
+
+
 
 // job board
 
@@ -475,6 +483,9 @@ export const jobBoard = [
     },
 ];
 
+
+
+
 // terms
 
 export const terms = [
@@ -504,7 +515,25 @@ export const powerProgress = [
     "Full Stack Php Developer",
 ];
 
+
+
+
 // programs
+
+export const DSHero = {
+    title: "Money Back Guarantee Data Science Architecture Program",
+    desc: "Gain a competitive edge in emerging technologies with our Data Science & Architecture Program and Master in-demand skills to build scalable solutions and land in you dream job else get the refund of the fees paid ! Through hands-on practice, gain proficiency in Python, SQL, Excel, Machine Learning, Tableau, Generative AI, prompt engineering, and ChatGPT. Interact live with industry leaders, enhancing your skills and staying ahead in the fast-evolving world of data science. Join us and empower your career today."
+}
+export const DAHero = {
+    title: "IBM Certified Fast Track Data Analytics Launchpad", desc: "Enroll in our Data Analyst course, developed in collaboration with IBM, to become a proficient expert in Data Analytics. This comprehensive program will equip you with the skills to utilise Upon completion effectively, you will receive a valuable Data Analyst certification, validating your expertise in this dynamic field. This internship-guaranteed course is specifically designed for freshers and recent grads and people who are looking for a career shift into this domain."
+}
+export const DMHero = {
+    title: "Pay After Placement Digital Marketing Program", desc: "As of January 2023, 5.16 billion people — 64.4% of the global population — were internet users. This number continues to grow, highlighting how the digital landscape shapes business success, scalability, and sustainability. Digital marketing leverages online platforms and technologies to promote products and services effectively."
+}
+export const UIHero = {
+    title: "Turning Dreams into Reality UI/UX Design Course", desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design."
+}
+
 
 export const DSAchievements = [
     "15 seats Batch size ",
@@ -518,8 +547,58 @@ export const DSAchievements = [
     "IBM Certification",
     "ISO & IAF Certified",
 ];
+export const DAAchievements = [
+    "10 seats Batch size",
+    "200+ Hiring Partners",
+    "40% Average Hike",
+    "3 months",
+    "Average 6 LPA",
+    "ISO & IAF Certified Company",
+    "1:1 Mentoring",
+    "Paid internship for 2 months",
+    "24/7 LMS access",
+];
+export const DMAchievements = [
+    "25 seats Batch size",
+    "ISO & IAF certification",
+    "200+ Hiring Partners",
+    "40% Average Hike",
+    "ISO & IAF Certified Company",
+    "1:1 Mentoring",
+    "24/7 LMS access",
+]
+export const UIAchievements = [
+    "25 seats Batch size",
+    "ISO & IAF certification",
+    "200+ Hiring Partners",
+    "40% Average Hike",
+    "1-on-1 Mentorship",
+    "ISO & IAF certification",
+    "Lifetime Support",
+]
 
-export const dataScienceStatus = [
+export const DSSummaryDetails = {
+    title: 'Fee is refunded if not placed',
+    desc: 'Gain a competitive edge in emerging technologies with our Data Science & Architecture Program.Master in-demand skills to build scalable solutions and lead in a tech-driven world.',
+    month: "IN 8 Months"
+}
+export const DASummaryDetails = {
+    title: 'Just 20% Upfront fee',
+    desc: 'Achieve a Competitive Advantage in Emerging Technologies with Our Pay After Placement Data Analytics Course',
+    month: "IN 3 Months"
+}
+export const DMSummaryDetails = {
+    title: 'Gear up with Futuristic career',
+    desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design.",
+    month: "IN 18 Weeks"
+}
+// export const UISummaryDetails = {
+//     title: '',
+//     desc: '',
+//     month: ""
+// }
+
+export const DSStats = [
     {
         count: "31 March",
         statusName: "ENROLMENT ENDS",
@@ -536,8 +615,470 @@ export const dataScienceStatus = [
         img: "/hiring-partner.svg",
     },
 ];
+export const DAStats = [
+    {
+        count: "31 March",
+        statusName: "ENROLMENT ENDS",
+        img: "/enrollment.svg",
+    },
+    {
+        count: "6LPA+",
+        statusName: "Avg Salary Package",
+        img: "/salary.svg",
+    },
+    {
+        count: "200+",
+        statusName: "Hiring Partners",
+        img: "/hiring-partner.svg",
+    },
+];
+export const DMStats = [
+    {
+        count: "31 March",
+        statusName: "ENROLMENT ENDS",
+        img: "/enrollment.svg",
+    },
+    {
+        count: "Modules",
+        statusName: "15",
+        img: "/modules.svg",
+    },
+    {
+        count: "200+",
+        statusName: "Hiring Partners",
+        img: "/hiring-partner.svg",
+    },
+];
+export const UIStats = [
+    {
+        count: "31 March",
+        statusName: "ENROLMENT ENDS",
+        img: "/enrollment.svg",
+    },
+    {
+        count: "Modules",
+        statusName: "15",
+        img: "/modules.svg",
+    },
+    {
+        count: "200+",
+        statusName: "Hiring Partners",
+        img: "/hiring-partner.svg",
+    },
+];
 
-export const dataScienceSkillSets = [
+
+export const DSSpotlight = [
+    {
+        note: "Learn from Industry Experts who have achieved the success you aim for",
+        img: "/reasons/image-1.png",
+        alt: "image",
+    },
+    {
+        note: "Placement-Oriented Training with Guaranteed Interviews & Job Support",
+        img: "/reasons/image-2.png",
+        alt: "image",
+    },
+    {
+        note: "IBM Certification from an ISO & IAF Certified Company",
+        img: "/reasons/image-3.png",
+        alt: "image",
+    },
+    {
+        note: "Money-Back Guarantee if promises aren't delivered",
+        img: "/reasons/image-7.jpg",
+        alt: "image",
+    },
+    {
+        note: "Domain-Specific Curriculum tailored for real-world applications",
+        img: "/reasons/image-8.jpg",
+        alt: "image",
+    },
+    {
+        note: "1:1 Mentoring & Doubt Clearance with expert guidance",
+        img: "/reasons/image-4.png",
+        alt: "image",
+    },
+    {
+        note: "Mock Interviews & Dedicated Program Manager for personalized career support",
+        img: "/reasons/image-5.jpg",
+        alt: "image",
+    },
+    {
+        note: "AI Enabled Job Board - Once being eligible for placements you will get access to the job board where it will act as a one point contact for all your placement needs",
+        img: "/reasons/image-9.jpg",
+        alt: "image",
+    },
+    {
+        note: "Only 15 Students per Batch with 24/7 LMS Access for focused and flexible learning",
+        img: "/reasons/image-6.png",
+        alt: "image",
+    },
+];
+export const DASpotlight = [
+    {
+        note: "Lifetime Support with the LMS content",
+        img: "/reasons/image-1.png",
+        alt: "image",
+    },
+    {
+        note: "Develop practical skills through hands-on projects and real-world applications",
+        img: "/reasons/image-2.png",
+        alt: "image",
+    },
+    {
+        note: "Paid internship for 2 months",
+        img: "/reasons/image-9.png",
+        alt: "image",
+    },
+    {
+        note: "Build a strong foundation for a successful career in data analytics",
+        img: "/reasons/image-7.jpg",
+        alt: "image",
+    },
+    {
+        note: "Access to exclusive features and resources to enhance your learning experience",
+        img: "/reasons/image-8.jpg",
+        alt: "image",
+    },
+    {
+        note: "1:1 mentoring session",
+        img: "/reasons/image-4.png",
+        alt: "image",
+    },
+    {
+        note: "Gain a comprehensive understanding of data analytics concepts, techniques, and tools",
+        img: "/reasons/image-5.jpg",
+        alt: "image",
+    },
+    {
+        note: "100% Placement Assistance",
+        img: "/reasons/image-9.jpg",
+        alt: "image",
+    }
+];
+export const DMSpotlight = [
+    {
+        note: "Lifetime Support with the LMS content",
+        img: "/reasons/image-1.png",
+        alt: "image",
+    },
+    {
+        note: "Develop practical skills through hands-on projects and real-world applications",
+        img: "/reasons/image-2.png",
+        alt: "image",
+    },
+    {
+        note: "Pay 15,000 initially and the rest after you land in the job",
+        img: "/reasons/image-3.png",
+        alt: "image",
+    },
+    {
+        note: "Internship Guarantee",
+        img: "/reasons/image-7.jpg",
+        alt: "image",
+    },
+    {
+        note: "Access to exclusive features and resources to enhance your learning experience",
+        img: "/reasons/image-8.jpg",
+        alt: "image",
+    },
+    {
+        note: "1:1 mentoring session",
+        img: "/reasons/image-4.png",
+        alt: "image",
+    },
+    {
+        note: "Pay After Placement",
+        img: "/reasons/image-5.jpg",
+        alt: "image",
+    },
+    {
+        note: "100% Placement Assistance",
+        img: "/reasons/image-9.jpg",
+        alt: "image",
+    }
+];
+export const UISpotlight = [
+    {
+        note: "Hands-on UX/UI Design Experience from Scratch",
+        img: "/reasons/image-1.png",
+        alt: "image",
+    },
+    {
+        note: "Earn a Globally Recognized Design Certification",
+        img: "/reasons/image-2.png",
+        alt: "image",
+    },
+    {
+        note: "Personalized 1-on-1 Mentorship from Experts",
+        img: "/reasons/image-3.png",
+        alt: "image",
+    },
+    {
+        note: "Step-by-Step Guidance to Launch Your Career",
+        img: "/reasons/image-7.jpg",
+        alt: "image",
+    },
+    {
+        note: "Lifetime Support from Industry Professionals",
+        img: "/reasons/image-8.jpg",
+        alt: "image",
+    },
+    {
+        note: "Join a Thriving, Passionate Design Community",
+        img: "/reasons/image-4.png",
+        alt: "image",
+    },
+    {
+        note: "Master Design Skills in 18 Weeks",
+        img: "/reasons/image-5.jpg",
+        alt: "image",
+    },
+    {
+        note: "Learn Directly from Industry-Leading Designers",
+        img: "/reasons/image-9.jpg",
+        alt: "image",
+    }
+];
+
+
+export const DSProgramCurriculum = [
+    {
+        module: "Module 1-5",
+        content: [
+            "Statistics topics",
+            "Probability topics",
+            "Introduction to Mathematics for Data Science",
+            "Linear Algebra topics",
+            "Calculus topics",
+        ],
+    },
+    {
+        module: "Module 6-10",
+        content: [
+            "Introduction to Python",
+            "Deep Dive - Functions, OOPS, Modules, Errors and Exceptions",
+            "Data Manipulation",
+            "Introduction to Machine Learning with Python",
+            "Supervised Learning - I",
+        ],
+    },
+    {
+        module: "Module 11-15",
+        content: [
+            "Dimensionality Reduction",
+            "Supervised Learning - II",
+            "Unsupervised Learning",
+            "Association Rules Mining and Recommendation Systems",
+            "Reinforcement Learning",
+        ],
+    },
+    {
+        module: "Module 16-20",
+        content: [
+            "Data Clustering",
+            "Time Series Analysis",
+            "Model Selection and Boosting",
+            "Sequences and File Operations",
+            "Introduction to NumPy, Pandas, and Matplotlib",
+        ],
+    },
+    {
+        module: "Module 21-25",
+        content: [
+            "Natural Language Processing with Deep Learning in Python N",
+            "Natural Language Processing in TensorFlow",
+            "Introduction to Natural Language Processing",
+            "A Refresher to Python",
+            "Learn to use Regular Expressions",
+        ],
+    },
+    {
+        module: "Module 26-30",
+        content: [
+            "First Step of NLP - Text Processing",
+            "Extracting Named Entities from Text",
+            "Feature Engineering for Text",
+            "Mastering the Art of Text Cleaning",
+            "Interpreting Patterns from Text - Topic Modelling",
+            "Machine Learning Algorithms",
+        ],
+    },
+    {
+        module: "Module 31-36",
+        content: [
+            "Understanding Text Classification",
+            "Introduction to Deep Learning (Optional)",
+            "Deep Learning for NLP",
+            "Recurrent Neural Networks",
+            "Introduction to Language Modelling in NLP",
+            "Sequence-to-Sequence Modelling",
+        ],
+    },
+];
+export const DAProgramCurriculum = [
+    {
+        module: "Module 1-2",
+        content: [
+            "Introduction to Data Analytics",
+            "Introduction to Python programming",
+        ],
+    },
+    {
+        module: "Module 3-4",
+        content: [
+            "Python - Basics",
+            "Python Data Types & Utilities",
+        ],
+    },
+    {
+        module: "Module 5-6",
+        content: [
+            "Python Essential Packages",
+            "SQL and Database",
+        ],
+    },
+    {
+        module: "Module 7-8",
+        content: [
+            "Visualisation using Power BI",
+            "Visualisation using Tableau",
+        ],
+    },
+    {
+        module: "Module 9-10",
+        content: [
+            "Excel Basic",
+            "Excel Advanced",
+        ],
+    },
+]
+export const DMProgramCurriculum = [
+    {
+        module: "Module 1-5",
+        content: [
+            "Introduction to Digital Marketing Topics",
+            "Search Engine Optimization",
+            "Keyword Research",
+            "On-Page SEO",
+            "Content Writing & Marketing",
+        ],
+    },
+    {
+        module: "Module 6-10",
+        content: [
+            "Technical SEO",
+            "Off-Page SEO",
+            "Analytics - Google Search Console",
+            "Search Engine Marketing",
+            "Social Media Marketing",
+        ],
+    },
+    {
+        module: "Module 11-15",
+        content: [
+            "Facebook Marketing",
+            "Facebook Paid Advertisement",
+            "Facebook Campaign Creation",
+            "Instagram Marketing",
+            "YouTube Marketing",
+        ],
+    },
+    {
+        module: "Module 16-20",
+        content: [
+            "Website Structure",
+            "YouTube Studio",
+            "Excel Essentials",
+            "Formulae",
+            "Logical and Lookup Functions",
+        ],
+    },
+    {
+        module: "Module 21-24",
+        content: [
+            "Email & Affiliate Marketing",
+            "Affiliate Marketing",
+            "Blogging",
+            "Email Marketing",
+        ],
+    }
+];
+export const UIProgramCurriculum = [
+    {
+        module: "Week 1-3",
+        content: [
+            "Embracing the Design Philosophy",
+            "Embarking on the Design Quest",
+            "Equipping with Tools and Building Teams",
+        ],
+    },
+    {
+        module: "Week 4-6",
+        content: [
+            "Unearthing the 'Why' Behind Design",
+            "Charting the Course",
+            "Getting Hands-On with Wireframing",
+        ],
+    },
+    {
+        module: "Week 7-9",
+        content: [
+            "Mastering the Rules of Interface Design",
+            "The Art of Captivating Design",
+            "Bringing Designs to Life",
+        ],
+    },
+    {
+        module: "Week 10-12",
+        content: [
+            "Exploring the World of Android",
+            "Web Design and Review",
+            "Delivering Professional Designs",
+        ],
+    },
+    {
+        module: "Week 13-14",
+        content: [
+            "Elevating the Game",
+            "Preparing for Battle",
+        ],
+    },
+    {
+        module: "Week 15-18",
+        content: [
+            "Ready for the Spotlight",
+        ],
+    }
+];
+
+
+export const DSAddonSyllabus = [
+    "Bigdata, Sparck & Kafka, MongoDB",
+    "Chat GPT",
+    "Deep Learning and NPL",
+    "Data WareHousing & ETL",
+    "Gen AI",
+    "Cloud Computing (AWS, AZURE, CGP)",
+    "Deployment of Machine Learning Models to Cloud",
+    "Data Science Project Management",
+];
+export const DAAddonSyllabus = [
+    "Aspiring data analysts, business analysts",
+    "Professionals seeking to enhance their analytical skills and advance their careers",
+    "Anyone interested in exploring the dynamic field of data analytics and its applications",
+    "College students who are looking for internships and projects",
+];
+export const DMAddonSyllabus = [
+    "Students who are in the final year of graduation or post-graduation",
+    "Recent Graduates who want to pursue a career in the field of Digital Marketing",
+    "Professionals Who are looking at building a career in Digital Marketing",
+];
+
+
+
+export const DSScienceSkillSets = [
     "Data Science",
     "Data Analytics",
     "Data Visualization",
@@ -548,17 +1089,16 @@ export const dataScienceSkillSets = [
     "Data wrangling",
     "NLP",
 ];
-
-export const dSAddonSyllabus = [
-    "Bigdata, Sparck & Kafka, MongoDB",
-    "Chat GPT",
-    "Deep Learning and NPL",
-    "Data WareHousing & ETL",
-    "Gen AI",
-    "Cloud Computing (AWS, AZURE, CGP)",
-    "Deployment of Machine Learning Models to Cloud",
-    "Data Science Project Management",
+export const DAScienceSkillSets = [
+    "Data Analytics",
+    "Data Cleaning & Preparation",
+    "Creation of Data Visuals",
+    "Creating Dashboards",
+    "Statistical Knowledge",
+    "Data Visualisation",
 ];
+
+
 
 export const DSTechSoftwares = [
     {
@@ -638,6 +1178,39 @@ export const DSTechSoftwares = [
         alt: "time series logo",
     },
 ];
+export const DATechSoftwares = [
+    {
+        img: "/tools/excel.webp",
+        alt: "excel logo",
+    },
+    {
+        img: "/tools/tableau.png",
+        alt: "tableau logo",
+    },
+    {
+        img: "/tools/powerbi.png",
+        alt: "powerbi logo",
+    },
+    {
+        img: "/tools/mysql.png",
+        alt: "mysql logo",
+    },
+    {
+        img: "/tools/python.webp",
+        alt: "python logo",
+    },
+
+];
+
+
+export const DSPlacement = {
+    title: 'Industry Projects',
+    desc: "In this certificate program, you'll gain hands-on experience through industry projects, guided by seasoned professionals. These projects will be integrated into your Certification in Data Science Architecture Program to deepen your expertise. You'll work with real-world datasets, receiving mentorship from world-class industry experts throughout the process.",
+}
+export const DAPlacement = {
+    title: 'Placements',
+    desc: 'Interview preparations will begin in the 4th month, with a strong focus on training and equipping candidates for success. Since our program follows a Pay After Placement model, candidates will only pay 30% of the fees upfront.',
+}
 
 export const DSSoftwareLogo = [
     {
@@ -704,127 +1277,16 @@ export const DSCertificationDetails = [
     },
 ];
 
-export const DSProgramCurriculum = [
+export const CertificationDetails = [
     {
-        module: "Module 1-5",
-        content: [
-            "Statistics topics",
-            "Probability topics",
-            "Introduction to Mathematics for Data Science",
-            "Linear Algebra topics",
-            "Calculus topics",
-        ],
-    },
-    {
-        module: "Module 6-10",
-        content: [
-            "Introduction to Python",
-            "Deep Dive - Functions, OOPS, Modules, Errors and Exceptions",
-            "Data Manipulation",
-            "Introduction to Machine Learning with Python",
-            "Supervised Learning - I",
-        ],
-    },
-    {
-        module: "Module 11-15",
-        content: [
-            "Dimensionality Reduction",
-            "Supervised Learning - II",
-            "Unsupervised Learning",
-            "Association Rules Mining and Recommendation Systems",
-            "Reinforcement Learning",
-        ],
-    },
-    {
-        module: "Module 16-20",
-        content: [
-            "Data Clustering",
-            "Time Series Analysis",
-            "Model Selection and Boosting",
-            "Sequences and File Operations",
-            "Introduction to NumPy, Pandas, and Matplotlib",
-        ],
-    },
-    {
-        module: "Module 21-25",
-        content: [
-            "Natural Language Processing with Deep Learning in Python N",
-            "Natural Language Processing in TensorFlow",
-            "Introduction to Natural Language Processing",
-            "A Refresher to Python",
-            "Learn to use Regular Expressions",
-        ],
-    },
-    {
-        module: "Module 26-30",
-        content: [
-            "First Step of NLP - Text Processing",
-            "Extracting Named Entities from Text",
-            "Feature Engineering for Text",
-            "Mastering the Art of Text Cleaning",
-            "Interpreting Patterns from Text - Topic Modelling",
-            "Machine Learning Algorithms",
-        ],
-    },
-    {
-        module: "Module 31-36",
-        content: [
-            "Understanding Text Classification",
-            "Introduction to Deep Learning (Optional)",
-            "Deep Learning for NLP",
-            "Recurrent Neural Networks",
-            "Introduction to Language Modelling in NLP",
-            "Sequence-to-Sequence Modelling",
-        ],
-    },
-];
-
-export const DSSpotlight = [
-    {
-        note: "Learn from Industry Experts who have achieved the success you aim for",
-        img: "/reasons/image-1.png",
+        note1: "Certificate from Aspire Tech Academy",
+        note2:
+            "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
+        note3: "Internship Certificate",
+        note4: "Experience Certificate upto 1 year",
+        img: "/aspire.png",
         alt: "image",
-    },
-    {
-        note: "Placement-Oriented Training with Guaranteed Interviews & Job Support",
-        img: "/reasons/image-2.png",
-        alt: "image",
-    },
-    {
-        note: "IBM Certification from an ISO & IAF Certified Company",
-        img: "/reasons/image-3.png",
-        alt: "image",
-    },
-    {
-        note: "Money-Back Guarantee if promises aren't delivered",
-        img: "/reasons/image-7.jpg",
-        alt: "image",
-    },
-    {
-        note: "Domain-Specific Curriculum tailored for real-world applications",
-        img: "/reasons/image-8.jpg",
-        alt: "image",
-    },
-    {
-        note: "1:1 Mentoring & Doubt Clearance with expert guidance",
-        img: "/reasons/image-4.png",
-        alt: "image",
-    },
-    {
-        note: "Mock Interviews & Dedicated Program Manager for personalized career support",
-        img: "/reasons/image-5.jpg",
-        alt: "image",
-    },
-    {
-        note: "AI Enabled Job Board - Once being eligible for placements you will get access to the job board where it will act as a one point contact for all your placement needs",
-        img: "/reasons/image-9.jpg",
-        alt: "image",
-    },
-    {
-        note: "Only 15 Students per Batch with 24/7 LMS Access for focused and flexible learning",
-        img: "/reasons/image-6.png",
-        alt: "image",
-    },
+    }
 ];
 
 export const DSGuidedBySection = [
@@ -862,6 +1324,11 @@ export const DSGuidedBySection = [
             "Chandra Sekhar is a Data Scientist professional with close to 9+ years of experience in Machine Learning, Statistical Modelling, Data Science, Predictive Analytics & Business Consulting.",
     },
 ];
+
+
+
+
+
 
 // terms
 

@@ -1,9 +1,8 @@
 "use client"
-import { DSAchievements } from '@/utils/Data'
 import React, { useState } from 'react'
 import Slider from 'react-slick';
 
-const AchievementsSlider = () => {
+const AchievementsSlider = ({ data }) => {
     const [isActive, setIsActive] = useState(false);
     const settings = {
         dots: false,
@@ -56,7 +55,7 @@ const AchievementsSlider = () => {
     return (
         <section className='w-full h-full slider-container overflow-hidden'>
             <Slider {...settings}>
-                {DSAchievements.map((list, idx) => (
+                {data.map((list, idx) => (
                     <div key={idx} className="py-2 my-1.5 md:my-3">
                         <h2
                             className={`transition-colors transform px-5 py-4 text-[clamp(0.55rem,1.15vw,1rem)] w-36 md:w-48 xl:w-60 text-center duration-700 ease-in-out slick-center:scale-110 via-[#1a1918] to-[#9494924b] rounded-full ${isActive === idx

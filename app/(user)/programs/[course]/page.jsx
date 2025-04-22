@@ -11,6 +11,42 @@ import SkillsSection from "@/components/layout/programs/SkillsSection";
 import SpotLight from "@/components/layout/programs/SpotLight";
 import SummaryAboutCourse from "@/components/layout/programs/SummaryAboutCourse";
 import TechSoftware from "@/components/layout/programs/TechSoftware";
+import {
+    CertificationDetails,
+    DAAchievements,
+    DAAddonSyllabus,
+    DAHero,
+    DAPlacement,
+    DAProgramCurriculum,
+    DAScienceSkillSets,
+    DASpotlight,
+    DAStats,
+    DASummaryDetails,
+    DATechSoftwares,
+    DMAchievements,
+    DMAddonSyllabus,
+    DMHero,
+    DMProgramCurriculum,
+    DMSpotlight,
+    DMStats,
+    DMSummaryDetails,
+    DSAchievements,
+    DSAddonSyllabus,
+    DSCertificationDetails,
+    DSHero,
+    DSPlacement,
+    DSProgramCurriculum,
+    DSScienceSkillSets,
+    DSSpotlight,
+    DSStats,
+    DSSummaryDetails,
+    DSTechSoftwares,
+    UIAchievements,
+    UIHero,
+    UIProgramCurriculum,
+    UISpotlight,
+    UIStats,
+} from "@/utils/Data";
 import React from "react";
 
 const Page = async ({ params }) => {
@@ -20,29 +56,155 @@ const Page = async ({ params }) => {
     );
 
     return (
-        <>
-            {val === "data science architecture program" ? (
-                <div>
-                    <ExitModalCard />
-                    <ProgramsHero title={"Money Back Guarantee Data Science Architecture Program"} para={"Gain a competitive edge in emerging technologies with our Data Science & Architecture Program and Master in-demand skills to build scalable solutions and land in you dream job else get the refund of the fees paid ! Through hands-on practice, gain proficiency in Python, SQL, Excel, Machine Learning, Tableau, Generative AI, prompt engineering, and ChatGPT. Interact live with industry leaders, enhancing your skills and staying ahead in the fast-evolving world of data science. Join us and empower your career today."} />
-                    <AchievementsSlider />
-                    <SummaryAboutCourse />
-                    <SpotLight />
-                    <ProgramCurriculum />
-                    <Addons />
-                    <SkillsSection />
-                    <TechSoftware />
-                    <GuidedBy />
-                    <IndustrialProject />
-                    <Certifications />
-                    <ProgramBreakdown />
-                </div>
-            ) : (
-                <div className="padding min-h-screen w-full flex justify-between items-center font-extrabold leading-6 tracking-wide text-[clamp(1.8rem,3vw,3rem)] text-center animate-pulse text-gradient">
-                    <h4 className="w-full">Arriving shortly !</h4>
-                </div>
+        <div>
+            <ExitModalCard />
+            <ProgramsHero
+                val={
+                    val === "data science architecture program"
+                        ? DSHero
+                        : val === "data analytics launchpad"
+                            ? DAHero
+                            : val === "digital marketing program"
+                                ? DMHero
+                                : UIHero
+                }
+            />
+            <AchievementsSlider
+                data={
+                    val === "data science architecture program"
+                        ? DSAchievements
+                        : val === "data analytics launchpad"
+                            ? DAAchievements
+                            : val === "digital marketing program"
+                                ? DMAchievements
+                                : UIAchievements
+                }
+            />
+            <SummaryAboutCourse
+                data={
+                    val === "data science architecture program"
+                        ? DSSummaryDetails
+                        : val === "data analytics launchpad"
+                            ? DASummaryDetails
+                            : DMSummaryDetails
+                }
+                stats={
+                    val === "data science architecture program"
+                        ? DSStats
+                        : val === "data analytics launchpad"
+                            ? DAStats
+                            : val === "digital marketing program"
+                                ? DMStats
+                                : UIStats
+                }
+            />
+            <SpotLight
+                data={
+                    val === "data science architecture program"
+                        ? DSSpotlight
+                        : val === "data analytics launchpad"
+                            ? DASpotlight
+                            : val === "digital marketing program"
+                                ? DMSpotlight
+                                : UISpotlight
+                }
+            />
+            <ProgramCurriculum
+                data={
+                    val === "data science architecture program"
+                        ? DSProgramCurriculum
+                        : val === "data analytics launchpad"
+                            ? DAProgramCurriculum
+                            : val === "digital marketing program"
+                                ? DMProgramCurriculum
+                                : UIProgramCurriculum
+                }
+                pdf={
+                    val === "data science architecture program"
+                        ? [
+                            "/files/Pay-After-Placement-IBM-Certified-Data-Science-Course-Brochure.pdf",
+                            "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf",
+                        ]
+                        : val === "data analytics launchpad"
+                            ? "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf"
+                            : val === "digital marketing program"
+                                ? "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf"
+                                : "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf"
+                }
+                title={
+                    val === "data science architecture program"
+                        ? [
+                            "Pay After Placement IBM Certified Data Science Course Brochure",
+                            "IBM Certified Course Data Science Architecture Program",
+                        ]
+                        : val === "data analytics launchpad"
+                            ? "IBM Certified Data Analytics Course Brochure"
+                            : val === "digital marketing program"
+                                ? "IBM Certified Data Analytics Course Brochure"
+                                : "IBM Certified Data Analytics Course Brochure"
+                }
+            />
+            {val !== "UI/UX design course" && (
+                <Addons
+                    data={
+                        val === "data science architecture program"
+                            ? DSAddonSyllabus
+                            : val === "data analytics launchpad"
+                                ? DAAddonSyllabus
+                                : DMAddonSyllabus
+                    }
+                    title={
+                        val === "data science architecture program"
+                            ? "Addon Syllabus : Skyrocketing Skills"
+                            : val === "data analytics launchpad"
+                                ? "Who should enroll?"
+                                : "Who can apply for this course?"
+                    }
+                />
             )}
-        </>
+            {(val === "data science architecture program" ||
+                val === "data analytics launchpad") && (
+                    <>
+                        <SkillsSection
+                            data={
+                                val === "data science architecture program"
+                                    ? DSScienceSkillSets
+                                    : DAScienceSkillSets
+                            }
+                        />
+                        <TechSoftware
+                            data={
+                                val === "data science architecture program"
+                                    ? DSTechSoftwares.slice(0, 10)
+                                    : DATechSoftwares
+                            }
+                            data2={
+                                val === "data science architecture program" &&
+                                DSTechSoftwares.slice(10, DSTechSoftwares.length - 1)
+                            }
+                        />
+                    </>
+                )}
+            <GuidedBy />
+            {(val === "data science architecture program" ||
+                val === "data analytics launchpad") && (
+                    <IndustrialProject
+                        data={
+                            val === "data science architecture program"
+                                ? DSPlacement
+                                : DAPlacement
+                        }
+                    />
+                )}
+            <Certifications
+                data={
+                    val === "data science architecture program"
+                        ? DSCertificationDetails
+                        : CertificationDetails
+                }
+            />
+            <ProgramBreakdown />
+        </div>
     );
 };
 

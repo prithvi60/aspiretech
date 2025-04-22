@@ -3,15 +3,16 @@ import React from "react";
 import { ProgramsModal } from "./Modal";
 import { AnimateButton } from "@/components/UI/Button";
 
-const ProgramsHero = ({ title, para, btn }) => {
+const ProgramsHero = ({ val, btn }) => {
+
     return (
         <section className="mx-auto max-w-screen-xl">
             <div className="py-8 px-4 text-center lg:py-16">
                 <h1 className="mb-4 font-extrabold tracking-tight leading-none text-gradient text-[clamp(1.8rem,3.5vw,3.8rem)] py-2 md:w-3/4 mx-auto">
-                    {title}
+                    {val.title}
                 </h1>
                 <p className="mb-8 text-[clamp(1rem,1.15vw,1.5rem)] leading-7 font-normal text-foreground sm:px-16 lg:px-48">
-                    {para}
+                    {val.desc}
                 </p>
                 <div className="flex flex-row gap-5 justify-center items-center">
                     {btn !== "about" ? (
