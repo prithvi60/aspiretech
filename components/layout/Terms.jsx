@@ -4,7 +4,7 @@ import { certificationsReq, followingActivities, referAFriend, refundPolicy, ter
 
 const Terms = () => {
     return (
-        <div className="w-full h-full space-y-10 md:space-y-20">
+        <div className="w-full h-full space-y-10 md:space-y-20 font-inter">
             <div className="w-full h-full space-y-7 md:space-y-14">
                 <SectionHeading text={"Terms"} space />
                 <ul className="space-y-4 md:space-y-6">

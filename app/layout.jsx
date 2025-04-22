@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta-sans",
+  variable: "--font-plus",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${plusJakartaSans.className} ${inter.variable} antialiased bg-background`}
+        className={`${plusJakartaSans.className} ${plusJakartaSans.variable} ${inter.variable} antialiased bg-background`}
       >
         {children}
       </body>

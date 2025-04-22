@@ -2,9 +2,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import Image from "next/image";
-import { FiArrowRight } from "react-icons/fi";
 import Loader from "@/components/UI/Loader";
-import Link from "next/link";
 import { CustomSelect } from "@/components/UI/CustomSelect";
 
 export const ProgramsModal = ({ title, pdf }) => {
@@ -47,6 +45,7 @@ export const SpringModal = ({
     thank,
     setThank,
     pdf,
+    defaultVal
 }) => {
     const initialFormData = {
         name: "",
@@ -195,11 +194,13 @@ export const SpringModal = ({
                                                 className="rounded-lg border-3 p-2 border-text focus-within:border-2 focus-within:border-text focus-within:outline-none w-full placeholder:text-sm placeholder:md:text-base"
                                             />
                                         </div>
-                                        <CustomSelect
-                                            name={"course"}
-                                            val={formData.course}
-                                            handleChange={handleChange}
-                                        />
+                                        {!defaultVal && (
+                                            <CustomSelect
+                                                name={"course"}
+                                                val={formData.course}
+                                                handleChange={handleChange}
+                                            />
+                                        )}
                                         <div className="gap-2 flex flex-col items-start">
                                             <textarea
                                                 type="text"

@@ -9,7 +9,7 @@ const Page = () => {
             <h1 className="font-extrabold tracking-tight leading-none text-gradient text-[clamp(1.8rem,3.5vw,3.8rem)] py-2 text-center">
                 Press
             </h1>
-            <div className="w-full h-full space-y-7 md:space-y-14">
+            <div className="w-full h-full space-y-7 md:space-y-14 font-inter">
                 <SectionHeading text={"Featured Articles"} space />
                 <p className="text-[clamp(1rem,1.15vw,1.5rem)] leading-7 font-normal text-foreground">
                     At Aspire Tech Academy, we've been empowering learners to fast-track

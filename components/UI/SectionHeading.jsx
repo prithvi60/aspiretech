@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export const SectionHeading = ({ text, space }) => {
+export const SectionHeading = ({ text, space, gapAdd }) => {
     return (
-        <h1 className={`font-extrabold leading-8 md:leading-10 tracking-wide text-[clamp(1.2rem,3vw,3rem)] ${space ? "text-start" : "text-center"} text-foreground`}>
+        <h1
+            className={`font-extrabold leading-8 font-plus md:leading-10 tracking-wide ${space ? "text-start" : "text-center"} text-foreground ${gapAdd ? "text-[clamp(1.1rem,2vw,2rem)]" : "text-[clamp(1.2rem,3vw,3rem)]"}`}
+        >
             {text}
         </h1>
-    )
-}
+    );
+};

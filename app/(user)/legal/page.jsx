@@ -7,7 +7,7 @@ const Page = () => {
                 Legal
             </h1>
             <p
-                className="text-[clamp(1rem,1.15vw,1.5rem)] leading-7 font-normal text-foreground"
+                className="text-[clamp(1rem,1.15vw,1.5rem)] leading-7 font-normal text-foreground font-inter"
             >
                 The Aspire Tech Academy logotype and logomark have been meticulously designed and are the exclusive property of Aspire Tech Educational OPC Private Limited. Their usage is restricted to official and authorised purposes only. Without explicit written consent from Aspire Tech Educational OPC Private Limited, it is strictly prohibited to employ this logotype and logomark in any commercial or marketing context.
             </p>
