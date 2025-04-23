@@ -15,6 +15,7 @@ import {
     CertificationDetails,
     DAAchievements,
     DAAddonSyllabus,
+    DAFaq,
     DAHero,
     DAPlacement,
     DAProgramCurriculum,
@@ -33,6 +34,7 @@ import {
     DSAchievements,
     DSAddonSyllabus,
     DSCertificationDetails,
+    DSFaq,
     DSHero,
     DSPlacement,
     DSProgramCurriculum,
@@ -67,6 +69,30 @@ const Page = async ({ params }) => {
                             : val === "digital marketing program"
                                 ? DMHero
                                 : UIHero
+                }
+                pdf={
+                    val === "data science architecture program"
+                        ? [
+                            "/files/Pay-After-Placement-IBM-Certified-Data-Science-Course-Brochure.pdf",
+                            "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf",
+                        ]
+                        : val === "data analytics launchpad"
+                            ? "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf"
+                            : val === "digital marketing program"
+                                ? "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf"
+                                : "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf"
+                }
+                title={
+                    val === "data science architecture program"
+                        ? [
+                            "Pay After Placement IBM Certified Data Science Course Brochure",
+                            "IBM Certified Course Data Science Architecture Program",
+                        ]
+                        : val === "data analytics launchpad"
+                            ? "IBM Certified Data Analytics Course Brochure"
+                            : val === "digital marketing program"
+                                ? "IBM Certified Data Analytics Course Brochure"
+                                : "IBM Certified Data Analytics Course Brochure"
                 }
             />
             <AchievementsSlider
@@ -203,7 +229,12 @@ const Page = async ({ params }) => {
                         : CertificationDetails
                 }
             />
-            <ProgramBreakdown />
+            {(val === "data science architecture program" ||
+                val === "data analytics launchpad") && (
+                    <ProgramBreakdown
+                        data={val === "data science architecture program" ? DSFaq : DAFaq}
+                    />
+                )}
         </div>
     );
 };

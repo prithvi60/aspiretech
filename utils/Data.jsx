@@ -1212,6 +1212,8 @@ export const DAPlacement = {
     desc: 'Interview preparations will begin in the 4th month, with a strong focus on training and equipping candidates for success. Since our program follows a Pay After Placement model, candidates will only pay 30% of the fees upfront.',
 }
 
+
+
 export const DSSoftwareLogo = [
     {
         img: "/netflix.png",
@@ -1235,6 +1237,8 @@ export const DSSoftwareLogo = [
     },
 ];
 
+
+
 export const DSFaq = [
     {
         ques: "What are the key learning outcomes of this Data Science course?",
@@ -1257,6 +1261,113 @@ export const DSFaq = [
         ans: "No, There are no prerequisites for taking this course ",
     },
 ];
+export const DAFaq = [
+    {
+        ques: "What key skills will you develop through this Fast Track Data Analytics course?",
+        ans: "In this Fast Track Data Analytics course, you'll gain expertise in Data Analysis, Data Segregation, Python, Statistics, SQL, and Data Wrangling."
+    },
+    {
+        ques: "What projects are included in this  Fast Track Data Analytics course?",
+        ans: "Get an opportunity to work on Real-World Datasets of various industries like healthcare, e-commerce, social media, entrepreneurship, supply chain, and more. Learn from basics like cleaning a large amount of data, organizing it, and much more."
+    },
+    {
+        ques: "Who should take this  Fast Track Data Analytics course?",
+        ans: "Anyone with a graduate degree in any field can apply and enrol in a Fast Track Data Analytics. Freshers and working professionals with any educational background are eligible for the course."
+    },
+    {
+        ques: "Are there any prerequisites for this Fast Track Data Analytics course?",
+        ans: "No, There are no prerequisites for taking this course"
+    },
+    {
+        ques: "What are the reasons to enrol in the Fast Track Data Analytics program?",
+        ans: "The demand for Data Analytics professionals is surging due to the rapid growth of data across industries and the need for data-driven decision-making. Organizations are increasingly seeking skilled analysts to interpret data and improve efficiency, leading to a wide range of job opportunities.Overall, careers in data analytics are thriving and expected to grow in the coming years."
+    },
+    {
+        ques: "Who should enrol in this program?",
+        ans: "Freshers from any stream of Graduation,People looking forward to keep their first baby steps in IT sector,Aspirants looking for career transition"
+    },
+    {
+        ques: "What if I miss attending one or more lectures?",
+        ans: "If you happen to miss any lectures, we will provide you with a recording of the session within 24 hours. Additionally, if you have any questions, you can reach out to the dedicated program manager for assistance."
+    },
+    {
+        ques: "How does the Pay After Placement work?",
+        ans: "The Pay After Placement model creates a win-win situation for both learners and Aspire Tech Academy, as students will pay the majority—70%—of the fees only after successfully securing a job."
+    },
+    {
+        ques: "Is there any minimum package post which I will have to pay the 70% fees in Data Analytics ?",
+        ans: "In Fast Track Data Analytics Course you are entitled to pay the 70% of the fees irrespective of your salary package."
+    },
+]
+// export const DMFaq = [
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+// ]
+// export const UIFaq = [
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+// ]
+
 
 export const DSCertificationDetails = [
     {

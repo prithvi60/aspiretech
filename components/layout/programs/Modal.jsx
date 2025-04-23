@@ -138,6 +138,9 @@ export const SpringModal = ({
                                     width={65}
                                     height={65}
                                     className=""
+                                    quality={100}
+                                    priority
+                                    unoptimized
                                 />
                                 <h3 className="text-base font-bold md:text-lg">
                                     You're All Set!

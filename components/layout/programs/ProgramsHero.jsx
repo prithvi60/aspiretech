@@ -3,7 +3,7 @@ import React from "react";
 import { ProgramsModal } from "./Modal";
 import { AnimateButton } from "@/components/UI/Button";
 
-const ProgramsHero = ({ val, btn }) => {
+const ProgramsHero = ({ val, btn, pdf, title }) => {
 
     return (
         <section className="mx-auto max-w-screen-xl">
@@ -19,14 +19,8 @@ const ProgramsHero = ({ val, btn }) => {
                         <>
                             <div className="w-1/2 md:w-max">
                                 <ProgramsModal
-                                    pdf={[
-                                        "/files/Pay-After-Placement-IBM-Certified-Data-Science-Course-Brochure.pdf",
-                                        "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf",
-                                    ]}
-                                    title={[
-                                        "Pay After Placement IBM Certified Data Science Course Brochure",
-                                        "IBM Certified Course Data Science Architecture Program",
-                                    ]}
+                                    pdf={pdf}
+                                    title={title}
                                 />
                             </div>
                             <button role="button" aria-label="apply now button">
