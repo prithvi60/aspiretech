@@ -18,8 +18,8 @@ export const StoriesCard = ({ data }) => {
         }
     }, [data.about]);
     return (
-        <div className="p-[2.5px] rounded-xl border-linear-gradient overflow-hidden custom-shadow max-w-lg mx-auto">
-            <div className="max-w-sm rounded-xl shadow-sm bg-gradient flex flex-col justify-between min-h-[340px] lg:min-h-[320px]">
+        <div className="p-[2.5px] rounded-xl overflow-hidden bg-secondary max-w-lg mx-auto">
+            <div className="max-w-sm rounded-xl shadow-sm flex flex-col justify-between min-h-[340px] lg:min-h-[320px]">
                 <div className="space-y-8">
                     <div className="flex items-center px-5 pt-5 gap-5 text-foreground">
                         <div className="shrink-0">
@@ -54,7 +54,7 @@ export const StoriesCard = ({ data }) => {
                         )}
                     </div>
                 </div>
-                <div className="font-inter p-6  block space-y-4 bg-gradient2 text-background">
+                <div className="font-inter p-6  block space-y-4 text-foreground bg-secondaryDark">
                     <h5 className="mb-2 font-bold tracking-tight text-[clamp(1rem,2.5vw,1.25rem)] leading-6">
                         {data.offers}
                     </h5>
@@ -69,8 +69,12 @@ export const StoriesCard = ({ data }) => {
 
 export const StatusCard = ({ data, icon, type }) => {
     return (
-        <div className={`${type ? "w-full mx-auto" : "min-w-[220px] px-8"} rounded-xl space-y-8 box-shadow-gradient2 border border-primary/80 first:col-span-2`}>
-            <div className={`${type ? "px-4 py-6" : "px-8 py-6"} flex flex-col items-center justify-center gap-2 lg:gap-3 text-foreground`}>
+        <div
+            className={`${type ? "w-full mx-auto" : "min-w-[220px] px-8"} rounded-xl space-y-8 box-shadow-gradient2 border-4 border-borderColor bg-background first:col-span-2`}
+        >
+            <div
+                className={`${type ? "px-4 py-6" : "px-8 py-6"} flex flex-col items-center justify-center gap-2 lg:gap-3 text-foreground`}
+            >
                 <h4 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold">
                     {data.count}
                 </h4>
@@ -85,7 +89,9 @@ export const StatusCard = ({ data, icon, type }) => {
                         />
                         // <RiMiniProgramFill className="shrink-0 text-primary text-base lg:text-xl" />
                     )}
-                    <p className={`${type ? "text-[clamp(0.7rem,1.15vw,1rem)]" : "text-[clamp(0.8rem,1.15vw,1.5rem)]"}`}>
+                    <p
+                        className={`${type ? "text-[clamp(0.7rem,1.15vw,1rem)]" : "text-[clamp(0.8rem,1.15vw,1.5rem)]"}`}
+                    >
                         {data.statusName}
                     </p>
                 </div>
@@ -96,7 +102,7 @@ export const StatusCard = ({ data, icon, type }) => {
 
 export const MainCoursesCard = ({ data }) => {
     return (
-        <div className="max-w-lg mx-auto rounded-xl overflow-hidden custom-shadow text-foreground hover:scale-110 transition-all duration-300 ease-in-out">
+        <div className="max-w-lg mx-auto rounded-xl overflow-hidden custom-shadow text-background hover:scale-110 transition-all duration-300 ease-in-out">
             <div className="w-full h-[145px] sm:h-52 relative overflow-hidden">
                 <Image
                     fill
@@ -105,9 +111,13 @@ export const MainCoursesCard = ({ data }) => {
                     className="object-cover object-center"
                 />
             </div>
-            <div className="pb-5 bg-gradientCard flex flex-col md:min-h-[480px] lg:min-h-[380px] justify-between shadow-[inset_0px_-80px_50px_-80px_#FBCC04] relative before:content-[''] before:absolute before:-bottom-8 before:-left-24 before:blur-md before:size-36 before:rotate-45 before:bg-secondary/50  before:shadow-[inset_0px_-80px_50px_-80px_#FBCC04]">
+            <div
+                className={`pb-5 flex flex-col md:min-h-[480px] lg:min-h-[380px] justify-between ${data.refer === "DS" ? "bg-linear-120 from-[#516A9B] via-[#516A9B] to-[#99A3BF]" : data.refer === "DA" ? "bg-linear-120 from-[#7B3B29] via-[#7B3B29] to-[#C68C73]" : data.refer === "DM" ? "bg-linear-120 from-[#1C4B53] via-[#1C4B53] to-[#6F9D9D]" : "bg-linear-120 from-[#D5A411] via-[#D5A411] to-[#F1E3A7]"}`}
+            >
                 <div className="space-y-4 ">
-                    <h5 className="bg-linear-to-l from-[#060606] px-5 via-[#0a0a0a] py-4 to-[#424242] !drop-shadow-xl text-[clamp(0.8rem,2.5vw,1.1rem)] font-extrabold tracking-wide">
+                    <h5
+                        className={`${data.refer === "DS" ? "bg-linear-to-r from-[#516A9B] via-[#516A9B] to-[#99A3BF]" : data.refer === "DA" ? "bg-linear-to-r from-[#7B3B29] via-[#7B3B29] to-[#C68C73]" : data.refer === "DM" ? "bg-linear-to-r from-[#1C4B53] via-[#1C4B53] to-[#6F9D9D]" : "bg-linear-to-r from-[#D5A411] via-[#D5A411] to-[#F1E3A7]"} text-background px-5 py-4 !drop-shadow-xl text-[clamp(0.8rem,2.5vw,1.1rem)] font-extrabold tracking-wide`}
+                    >
                         {data.enrol}
                     </h5>
                     <h5 className="text-[clamp(1rem,3vw,1.6rem)] px-5 font-extrabold tracking-wide">
@@ -126,15 +136,14 @@ export const MainCoursesCard = ({ data }) => {
     );
 };
 
-
 export const TechCompaniesCard = ({ data }) => {
     return (
-        <div className="max-w-xs rounded-xl space-y-8 bg-[#D9D9D9]/40 border border-primary/80 px-8 mx-4">
+        <div className="max-w-xs rounded-xl space-y-8 bg-secondary border border-primary/80 px-8 mx-4">
             <div className="flex flex-col items-center justify-center gap-3 px-8 py-6 text-foreground ">
-                <div className="size-24 md:size-32 relative overflow-hidden border-4 border-primary p-2 rounded-full bg-[#D9D9D9]/50">
+                <div className="size-24 md:size-32 relative overflow-hidden ring-4 ring-primary ring-offset-4 rounded-full bg-white">
                     <Image
                         fill
-                        className="object-contain object-center"
+                        className="object-contain object-center p-2"
                         src={data.logo}
                         alt={data.alt}
                     />
@@ -147,5 +156,5 @@ export const TechCompaniesCard = ({ data }) => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};

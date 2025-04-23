@@ -22,14 +22,14 @@ const ProgramCurriculum = ({ data, pdf, title }) => {
                         {modules.map((list, idx) => (
                             <li
                                 key={idx}
-                                className={`text-[clamp(1rem,1.20vw,1.75rem)] font-semibold tracking-wide min-w-fit p-3 md:p-2 cursor-pointer ${isActive === idx ? "text-foreground" : "text-[#9E9E9E]"}`}
+                                className={`text-[clamp(1rem,1.20vw,1.75rem)] font-semibold tracking-wide min-w-fit p-3 md:p-2 cursor-pointer ${isActive === idx ? "text-black font-bold" : "text-foreground/70"}`}
                                 onClick={() => setIsActive(idx)}
                             >
                                 {list}
                             </li>
                         ))}
                     </ul>
-                    <hr className="w-full h-0.5 md:w-0.5 md:h-full rounded-2xl bg-linear-to-r md:bg-linear-to-t from-[#3F3403] via-primary to-[#3F3403]" />
+                    <hr className="w-full h-0.5 md:w-0.5 md:h-full rounded-2xl bg-linear-to-r md:bg-linear-to-t from-secondary via-primary to-secondary" />
                 </div>
                 <div className="w-full md:3/5 lg:w-4/5 gap-10 flex flex-col lg:flex-row justify-between">
                     <ul className="w-full lg:w-1/2 space-y-5">
@@ -46,7 +46,7 @@ const ProgramCurriculum = ({ data, pdf, title }) => {
                         ))}
                     </ul>
                     <div className="w-full lg:w-1/2">
-                        <div className="max-w-sm rounded-xl flex flex-col justify-between min-h-[340px] lg:min-h-[320px] p-5 bg-linear-180 from-black via-black/90 to-foreground/10 custom-shadow mx-auto">
+                        <div className="max-w-sm rounded-xl flex flex-col justify-between min-h-[340px] lg:min-h-[320px] p-5 bg-white shadow-xl border-4 border-borderColor mx-auto">
                             <div className="space-y-5">
                                 <div className="space-y-5 text-foreground">
                                     <div className="shrink-0">
@@ -58,7 +58,7 @@ const ProgramCurriculum = ({ data, pdf, title }) => {
                                             alt={"avatar"}
                                         />
                                     </div>
-                                    <p className="text-[clamp(1rem,2.5vw,1.25rem)] font-extrabold text-primary">
+                                    <p className="text-[clamp(1rem,2.5vw,1.25rem)] font-extrabold ">
                                         The Roadmap to Your Success
                                     </p>
                                 </div>

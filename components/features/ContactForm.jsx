@@ -63,7 +63,7 @@ export const ContactForm = () => {
         <>
             <form
                 onSubmit={handleSubmit}
-                className="w-full space-y-6 md:space-y-10 border-2 border-primary p-6 rounded-lg max-w-6xl mx-auto"
+                className="w-full space-y-6 md:space-y-10 border-4 border-borderColor p-6 rounded-lg max-w-6xl mx-auto bg-white"
             >
                 <div className="gap-2 flex flex-col">
                     {/* <label htmlFor="name" className="capitalize font-bold tracking-wider">
@@ -128,7 +128,7 @@ export const ContactForm = () => {
                     role="button"
                     aria-label="Submit Form"
                     type="submit"
-                    className="rounded-lg w-max border-2 border-solid border-white flex justify-center items-center gap-3 bg-white px-2 py-2 md:py-3 md:px-4 font-semibold capitalize text-black text-sm md:text-base transition-all duration-300 hover:scale-110 hover:bg-primary cursor-pointer"
+                    className="rounded-lg w-max border-2 border-solid border-white flex justify-center items-center gap-3 bg-btn px-2 py-2 md:py-3 md:px-4 font-semibold capitalize text-white text-sm md:text-base transition-all duration-300 hover:scale-110 hover:bg-primary cursor-pointer"
                 >
                     {status ? <Loader /> : "Let's Shape the  Future!"}
                 </button>

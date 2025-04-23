@@ -5,7 +5,7 @@ import Image from "next/image";
 const Footer = () => {
 
     return (
-        <footer className={`relative overflow-hidden w-full text-footerText font-inter bg-footerBg`}>
+        <footer className={`relative overflow-hidden w-full text-footerText font-inter bg-secondary text-foreground border-t-4 border-t-footerBorder`}>
             <div className="space-y-6 md:space-y-10 padding">
                 <div className="size-64 md:size-[450px] z-0 absolute top-0 -left-24 block">
                     <Link href="/" title="logo" >
@@ -54,7 +54,7 @@ const Footer = () => {
                     </div>
                     <div className="flex flex-col md:items-start md:justify-between md:flex-row gap-x-0 gap-y-10 md:gap-12 w-full md:w-3/5">
                         <div className="block space-y-3">
-                            <h4 className="uppercase font-extrabold text-primary tracking-wider text-sm md:text-base">
+                            <h4 className="uppercase font-extrabold text-primary/85 tracking-wider text-sm md:text-base">
                                 PRODUCT COURSES
                             </h4>
                             <ul className="block space-y-2.5 md:space-y-4">
@@ -69,7 +69,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="block space-y-3">
-                            <h4 className="uppercase font-extrabold text-primary tracking-wider text-sm md:text-base">
+                            <h4 className="uppercase font-extrabold text-primary/85 tracking-wider text-sm md:text-base">
                                 EXPLORE
                             </h4>
                             <ul className="block space-y-2.5 md:space-y-4">
@@ -84,7 +84,7 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="block space-y-3">
-                            <h4 className="uppercase font-extrabold text-primary tracking-wider text-sm md:text-base">
+                            <h4 className="uppercase font-extrabold text-primary/85 tracking-wider text-sm md:text-base">
                                 ASPIRE
                             </h4>
                             <ul className="block space-y-2.5 md:space-y-4">

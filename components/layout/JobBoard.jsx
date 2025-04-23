@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { jobBoard } from "@/utils/Data";
 import Image from "next/image";
 import React, { useState } from "react";
@@ -10,8 +10,8 @@ const JobBoard = () => {
     const [course, setCourse] = useState("");
 
     return (
-        <section className="w-full h-full padding max-w-6xl mx-auto">
-            <h1 className="mb-4 font-extrabold tracking-tight leading-none text-gradient text-[clamp(1.8rem,3.5vw,3.8rem)] py-2">
+        <section className="w-full h-full padding max-w-6xl mx-auto space-y-10 md:space-y-20">
+            <h1 className="text-center font-extrabold tracking-tight leading-none text-black text-[clamp(1.8rem,3.5vw,3.8rem)] py-2">
                 Job Board
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 font-inter">
@@ -21,14 +21,14 @@ const JobBoard = () => {
                         onClick={() => {
                             setIsOpen(true);
                             setThank(false);
-                            setCourse(list.RID)
+                            setCourse(list.RID);
                         }}
-                        className="bg-linear-to-b from-[var(--text-gradient-left)]/30 to-[#fffefe9e] p-[1.5px] rounded-xl min-h-[350px] xl:min-h-[250px] shrink-0 relative z-40 cursor-pointer"
+                        className="bg-secondary p-[1.5px] rounded-xl min-h-[350px] xl:min-h-[250px] shrink-0 relative z-40 cursor-pointer"
                     >
-                        <div className="relative h-full space-y-8 md:space-y-14 overflow-hidden p-8 shadow-lg bg-radial from-black to-[#222222] gap-6 rounded-xl">
+                        <div className="relative h-full space-y-8 md:space-y-14 overflow-hidden p-8 shadow-lg bg-secondary gap-6 rounded-xl">
                             <div className="relative">
                                 {/* first layer */}
-                                <div className="w-full h-32 lg:h-48 xl:h-56 bg-foreground rounded-xl relative z-30 overflow-hidden ">
+                                <div className="w-full h-32 lg:h-48 xl:h-56 bg-background rounded-xl relative z-30 overflow-hidden ">
                                     <Image
                                         fill
                                         src={list.img}
@@ -37,9 +37,9 @@ const JobBoard = () => {
                                     />
                                 </div>
                                 {/* second layer */}
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-4/5 bg-primary/30 backdrop-blur-lg rounded-xl h-40 lg:h-56 xl:h-64 z-20" />
+                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-4/5 bg-black/20 backdrop-blur-lg rounded-xl h-40 lg:h-56 xl:h-64 z-20" />
                                 {/* third layer */}
-                                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-11/12 bg-primary/40 backdrop-blur-xl rounded-xl h-36 lg:h-52 xl:h-60 z-10" />
+                                <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-11/12 bg-primary/80 backdrop-blur-xl rounded-xl h-36 lg:h-52 xl:h-60 z-10" />
                             </div>
                             <div className="flex flex-col justify-between text-foreground">
                                 <div className="space-y-4 flex flex-col justify-between">
@@ -47,7 +47,7 @@ const JobBoard = () => {
                                         <h5 className="text-[clamp(1rem,3vw,1.6rem)] font-bold tracking-wide">
                                             {list.title}
                                         </h5>
-                                        <p className="text-[clamp(0.7rem,1.5vw,1rem)] font-normal">
+                                        <p className="text-[clamp(0.7rem,1.5vw,1rem)] font-normal text-foreground tracking-wider">
                                             {list.desc}
                                         </p>
                                     </div>

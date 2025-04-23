@@ -44,7 +44,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${plusJakartaSans.className} ${plusJakartaSans.variable} ${inter.variable} antialiased bg-background`}
+        className={`${plusJakartaSans.className} ${plusJakartaSans.variable} ${inter.variable} antialiased bg-[url("/bg.svg")]`}
       >
         {children}
       </body>

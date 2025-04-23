@@ -78,10 +78,10 @@ const AspireTechSets = ({ title, data, pageSection }) => {
             <div className="w-full min-h-[420px] md:min-h-[550px] py-8 slider-container">
                 <Slider {...settings} className="aspire-set">
                     {data.map((list, idx) => (
-                        <div key={idx} className={`py-2 ${pageSection !== "progress" && "my-1.5 md:my-3"}`}>
+                        <div key={idx} className={`py-2 ${pageSection !== "progress" && "my-1.5 md:my-2"}`}>
                             <h2
-                                className={`${pageSection === "progress" ? "border-2 border-[#3B3845] " : "shadow-[0px_0px_50px_-22px_var(--primary)] bg-radial-[at_50%_55%] from-[#1a1918] via-[#1a1918] to-[#9494924b]"} rounded-lg transition-colors transform px-10 py-5 text-[clamp(0.8rem,2vw,1.5rem)] text-foreground max-w-64 sm:max-w-lg lg:max-w-4xl mx-auto text-center duration-700 ease-in-out  slick-center:scale-110   ${isActive === idx
-                                    ? "scale-110 border-2 border-primary"
+                                className={`${pageSection === "progress" ? "border-2 border-borderColor " : "border-4 border-borderColor"} rounded-lg transition-colors transform px-10 py-5 text-[clamp(0.8rem,2vw,1.5rem)] text-foreground max-w-64 sm:max-w-lg lg:max-w-3xl mx-auto text-center duration-700 ease-in-out  slick-center:scale-110 bg-background  ${isActive === idx
+                                    ? "scale-110 border-4 border-primary text-primary font-bold"
                                     : "bg-background text-foreground"
                                     }`}
                             >

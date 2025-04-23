@@ -67,7 +67,7 @@ const SpotLight = ({ data }) => {
                         >
                             {data.map((list, idx) => (
                                 <p key={idx}
-                                    className={`p-4 md:p-6 ${isActive === idx ? "bg-primary/45 text-primary" : "text-[#BAB9BD] border-2 border-[#BAB9BD]/30"}  text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl`}
+                                    className={`p-4 md:p-6 ${isActive === idx ? "text-primary/80 border-4 border-borderColor" : "text-foreground border-1 border-foreground"} bg-white text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl`}
                                 >
                                     {list.note}
                                 </p>

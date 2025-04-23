@@ -2,7 +2,7 @@ import { SectionHeading } from "@/components/UI/SectionHeading";
 import Image from "next/image";
 import React from "react";
 
-const Certifications = ({data}) => {
+const Certifications = ({ data }) => {
     return (
         <section className="w-full h-full padding space-y-10 md:space-y-20 max-w-7xl mx-auto relative">
             <SectionHeading text={"Certifications"} />
@@ -15,22 +15,22 @@ const Certifications = ({data}) => {
                         <>
                             <div className="space-y-1.5 md:space-y-3">
                                 <p
-                                    className={`p-4 md:p-6 bg-primary/45 text-primary text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl`}
+                                    className={`p-4 md:p-6 bg-white text-primary/70 text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl border-4 border-borderColor`}
                                 >
                                     {list.note1}
                                 </p>
-                                <p className="p-4 md:p-6 border-2 border-[#BAB9BD]/30 text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 text-[#BAB9BD] font-bold tracking-tight rounded-xl">
+                                <p className="p-4 md:p-6 border-1 border-foreground/80 text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 text-foreground font-bold tracking-tight rounded-xl bg-white">
                                     {list.note2}
                                 </p>
                             </div>
                             {list.note3 && list.note4 && (
                                 <div key={idx} className="space-y-1.5 md:space-y-3">
                                     <p
-                                        className={`p-4 md:p-6 border border-[#BAB9BD]/30 text-[#BAB9BD] text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl`}
+                                        className={`p-4 md:p-6 border-1 border-foreground/80 text-foreground text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl bg-white`}
                                     >
                                         {list.note3}
                                     </p>
-                                    <p className="p-4 md:p-6 border-2 border-[#BAB9BD]/30 text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 text-[#BAB9BD] font-bold tracking-tight rounded-xl">
+                                    <p className="p-4 md:p-6 border-1 border-foreground/80 text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 text-foreground font-bold tracking-tight rounded-xl bg-white">
                                         {list.note4}
                                     </p>
                                 </div>

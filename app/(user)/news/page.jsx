@@ -22,7 +22,7 @@ const Page = async () => {
         <>
             <ExitModalCard />
             <section className="w-full h-full padding space-y-10 md:space-y-20">
-                <h1 className="font-extrabold tracking-tight leading-none text-gradient text-[clamp(1.8rem,3.5vw,3.8rem)] py-2 md:w-3/4 mx-auto text-center">
+                <h1 className="font-extrabold tracking-tight leading-none text-gradient text-[clamp(1.8rem,3.5vw,3.8rem)] py-2 md:w-3/4 mx-auto text-center text-black">
                     News and Articles
                 </h1>
                 <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto gap-6 md:gap-12'>

@@ -67,19 +67,19 @@ export const footerLinks3 = [
 export const socialLinks = [
     {
         icon: (
-            <FaInstagram className="text-3xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
+            <FaInstagram className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
         ),
         href: "#",
     },
     {
         icon: (
-            <FaXTwitter className="text-3xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
+            <FaXTwitter className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
         ),
         href: "#",
     },
     {
         icon: (
-            <FaFacebook className="text-3xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
+            <FaFacebook className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
         ),
         href: "#",
     },
@@ -93,6 +93,7 @@ export const IndustrialCoursesCardData = [
         title: "IBM certified Data Science Architecture Program",
         desc: "Achieve data science excellence with our IBM-backed program! Enjoy live sessions, earn while you learn, and get 100% career support with guaranteed interviews.",
         href: "/programs/data-science-architecture-program",
+        refer: "DS"
     },
     {
         img: "/Data-Analytics.png",
@@ -101,6 +102,7 @@ export const IndustrialCoursesCardData = [
         title: "Fast Track Data Analytics Launchpad Course",
         desc: "Kick-start your Data Analytics career with IBM! Get live sessions, career support, and guaranteed internships.",
         href: "/programs/data-analytics-launchpad",
+        refer: "DA"
     },
     {
         img: "/Digital-Marketing.png",
@@ -109,6 +111,7 @@ export const IndustrialCoursesCardData = [
         title: "Digital Strategic Marketing Course",
         desc: "Trust us—go beyond traditional digital marketing and learn more! Enjoy live sessions, pay after placement, and secure a guaranteed internship.",
         href: "/programs/digital-marketing-program",
+        refer: "DM"
     },
     {
         img: "/UI-UX.png",
@@ -117,6 +120,7 @@ export const IndustrialCoursesCardData = [
         title: "User-Centricity Unleashed: UI/UX Mastery Course",
         desc: "Now is the best time to start your design career with rising demand for Design Thinking! Enjoy live sessions, pay after placement, and get a guaranteed internship.",
         href: "/programs/UI-UX-design-course",
+        refer: "UI"
     },
 ];
 
@@ -213,7 +217,7 @@ export const trustedCompany = [
         company: "amazon",
     },
     {
-        logo: "/Company/American_Express.webp",
+        logo: "/Company/American_Express.png",
         alt: "American Express logo",
         company: "american express",
     },
@@ -223,9 +227,9 @@ export const trustedCompany = [
         company: "aon",
     },
     {
-        logo: "/Company/axis-bank.webp",
+        logo: "/Company/axis-bank.svg",
         alt: " logo",
-        company: "",
+        company: "axis bank",
     },
     {
         logo: "/Company/capegmini.webp",
@@ -258,7 +262,7 @@ export const trustedCompany = [
         company: "glenmark",
     },
     {
-        logo: "/Company/Goldman_Sachs.webp",
+        logo: "/Company/Goldman_Sachs.png",
         alt: "Goldman Sachs logo",
         company: "goldman sachs",
     },
@@ -524,17 +528,17 @@ export const powerProgress = [
 // programs
 
 export const DSHero = {
-    title: "Money Back Guarantee Data Science Architecture Program",
+    title: ("Money Back Guarantee <span class='text-primary'>Data Science</span> Architecture Program"),
     desc: "Gain a competitive edge in emerging technologies with our Data Science & Architecture Program and Master in-demand skills to build scalable solutions and land in you dream job else get the refund of the fees paid ! Through hands-on practice, gain proficiency in Python, SQL, Excel, Machine Learning, Tableau, Generative AI, prompt engineering, and ChatGPT. Interact live with industry leaders, enhancing your skills and staying ahead in the fast-evolving world of data science. Join us and empower your career today."
 }
 export const DAHero = {
-    title: "IBM Certified Fast Track Data Analytics Launchpad", desc: "Enroll in our Data Analyst course, developed in collaboration with IBM, to become a proficient expert in Data Analytics. This comprehensive program will equip you with the skills to utilise Upon completion effectively, you will receive a valuable Data Analyst certification, validating your expertise in this dynamic field. This internship-guaranteed course is specifically designed for freshers and recent grads and people who are looking for a career shift into this domain."
+    title: "IBM Certified Fast Track <span class='text-primary'>Data Analytics</span> Launchpad", desc: "Enroll in our Data Analyst course, developed in collaboration with IBM, to become a proficient expert in Data Analytics. This comprehensive program will equip you with the skills to utilise Upon completion effectively, you will receive a valuable Data Analyst certification, validating your expertise in this dynamic field. This internship-guaranteed course is specifically designed for freshers and recent grads and people who are looking for a career shift into this domain."
 }
 export const DMHero = {
-    title: "Pay After Placement Digital Marketing Program", desc: "As of January 2023, 5.16 billion people — 64.4% of the global population — were internet users. This number continues to grow, highlighting how the digital landscape shapes business success, scalability, and sustainability. Digital marketing leverages online platforms and technologies to promote products and services effectively."
+    title: "Pay After Placement <span class='text-primary'>Digital Marketing</span> Program", desc: "As of January 2023, 5.16 billion people — 64.4% of the global population — were internet users. This number continues to grow, highlighting how the digital landscape shapes business success, scalability, and sustainability. Digital marketing leverages online platforms and technologies to promote products and services effectively."
 }
 export const UIHero = {
-    title: "Turning Dreams into Reality UI/UX Design Course", desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design."
+    title: "Turning Dreams into Reality <span class='text-primary'>UI/UX</span> Design Course", desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design."
 }
 
 
