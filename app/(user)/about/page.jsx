@@ -4,7 +4,7 @@ import AspireTechSets from "@/components/layout/AspireTechSets";
 import IndustrialCoursesCard from "@/components/layout/IndustrialCoursesCard";
 import ProgramsHero from "@/components/layout/programs/ProgramsHero";
 import { StatusCard } from "@/components/UI/Cards";
-import { aboutStatus, aspireSets, powerProgress, } from "@/utils/Data";
+import { aboutHero, aboutStatus, aspireSets, powerProgress, } from "@/utils/Data";
 import React from "react";
 
 const Page = () => {
@@ -12,10 +12,7 @@ const Page = () => {
         <div>
             <ExitModalCard />
             <ProgramsHero
-                title={"Empowering Minds & Transforming Futures"}
-                para={
-                    "Aspire Tech Academy is a certified e-learning platform, ISO/IAF accredited, dedicated to empowering your career through skill enhancement and upskilling. Our certifications cover a range of domains like the IBM Certified Data Science Architect Program, Fast Track Data Analyst Course,  UI/UX, Digital Marketing, and Cybersecurity."
-                }
+                val={aboutHero}
                 btn={"about"}
             />
             <AspireTechSets title={"What sets Aspire Tech Academy apart from the rest?"} data={aspireSets} />

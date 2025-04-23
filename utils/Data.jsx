@@ -482,7 +482,10 @@ export const jobBoard = [
         EL: "Graduation",
     },
 ];
-
+export const aboutHero = {
+    title: "Empowering Minds & Transforming Futures",
+    desc: "Aspire Tech Academy is a certified e-learning platform, ISO/IAF accredited, dedicated to empowering your career through skill enhancement and upskilling. Our certifications cover a range of domains like the IBM Certified Data Science Architect Program, Fast Track Data Analyst Course,  UI/UX, Digital Marketing, and Cybersecurity."
+}
 
 
 
