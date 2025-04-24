@@ -15,6 +15,7 @@ import {
     CertificationDetails,
     DAAchievements,
     DAAddonSyllabus,
+    DACertificationDetails,
     DAFaq,
     DAHero,
     DAPlacement,
@@ -26,6 +27,7 @@ import {
     DATechSoftwares,
     DMAchievements,
     DMAddonSyllabus,
+    DMCertificationDetails,
     DMHero,
     DMProgramCurriculum,
     DMSpotlight,
@@ -44,6 +46,7 @@ import {
     DSSummaryDetails,
     DSTechSoftwares,
     UIAchievements,
+    UICertificationDetails,
     UIHero,
     UIProgramCurriculum,
     UISpotlight,
@@ -227,7 +230,11 @@ const Page = async ({ params }) => {
                 data={
                     val === "data science architecture program"
                         ? DSCertificationDetails
-                        : CertificationDetails
+                        : val === "data analytics launchpad"
+                            ? DACertificationDetails
+                            : val === "digital marketing program"
+                                ? DMCertificationDetails
+                                : UICertificationDetails
                 }
             />
             {(val === "data science architecture program" ||
