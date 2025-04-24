@@ -22,7 +22,7 @@ const EnquireTechExpert = () => {
             </div>
             <div className="flex flex-wrap justify-center items-center gap-5 xl:gap-y-10 max-w-7xl mx-auto">
                 {expertProgramStatus.map((item, index) => (
-                    <StatusCard key={index} data={item} />
+                    <StatusCard key={index} data={item} counter />
                 ))}
             </div>
         </section>

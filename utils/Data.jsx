@@ -183,19 +183,23 @@ export const StoriesByCustomer = [
 
 export const expertProgramStatus = [
     {
-        count: "2000+",
+        count: "2000",
+        suffix: "+",
         statusName: "Students trained",
     },
     {
-        count: "7 LPA",
+        count: "7",
+        suffix: " LPA",
         statusName: "Average Salary",
     },
     {
-        count: "100%",
+        count: "100",
+        suffix: "%",
         statusName: "Live Classes",
     },
     {
-        count: "4/5",
+        count: "4",
+        suffix: "/5",
         statusName: "Land dream job",
     },
 ];
@@ -402,19 +406,23 @@ export const aspireSets = [
 
 export const aboutStatus = [
     {
-        count: "65%",
+        count: "65",
+        suffix: "%",
         statusName: "Average Salary",
     },
     {
-        count: "7 LPA",
+        count: "7",
+        suffix: " LPA",
         statusName: "Average Salary",
     },
     {
-        count: "100%",
+        count: "100",
+        suffix: "%",
         statusName: "Live Classes",
     },
     {
-        count: "Earn",
+        count: "",
+        suffix: "Earn",
         statusName: "While learning",
     },
 ];
