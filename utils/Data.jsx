@@ -21,7 +21,7 @@ export const navLinks = [
             { menu: "UI/UX design course", link: "/programs/UI-UX-design-course" },
             {
                 menu: "digital marketing program",
-                link: "/programs/digital-marketing-program ",
+                link: "/programs/digital-marketing-program",
             },
         ],
     },
@@ -1525,3 +1525,29 @@ export const refundPolicy = [
     "Enrolment may be cancelled at any time, but no refunds will be issued once payment (in part or full) has been made. Refunds are not provided for lack of usage or dissatisfaction.",
     "If a free trial is subscribed, it will be valid for the specified period. Free trials cannot be combined with certain offers, and eligibility depends on previous subscriptions and associated email addresses.",
 ];
+
+
+// Impact Page
+
+export const placementRecords = [
+    {
+        logo: "/netflix.png",
+        alt: "netflix logo",
+    },
+    {
+        logo: "/amazon.png",
+        alt: "amazon logo",
+    },
+    {
+        logo: "/walmart.png",
+        alt: "walmart logo",
+    },
+    {
+        logo: "/zomato.png",
+        alt: "zomato logo",
+    },
+    {
+        logo: "/twitter.png",
+        alt: "twitter logo",
+    },
+]

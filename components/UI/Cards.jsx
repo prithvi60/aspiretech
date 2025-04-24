@@ -77,7 +77,7 @@ export const StatusCard = ({ data, icon, type, counter }) => {
                 {counter && data.count !== "" ? (
                     <Stat num={Number(data.count)} suffix={data.suffix} />
                 ) : (
-                    <h4 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold">
+                    <h4 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold text-black">
                         {data.suffix}
                     </h4>
                 )}

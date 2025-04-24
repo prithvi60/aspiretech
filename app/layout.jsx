@@ -18,13 +18,13 @@ export const metadata = {
   title: "Aspire Tech Academy",
   description:
     "Aspire Tech Academy - Transform your career with industry-relevant tech courses. Learn data science, AI, web development & more through hands-on projects, expert mentorship, and pay-after-placement programs. Start your journey today!",
-  canonical: "https://aspiretech.vercel.app/",
-  metadataBase: new URL("https://aspiretech.vercel.app/"),
+  canonical: "https://www.aspiretechacademy.com",
+  metadataBase: new URL("https://www.aspiretechacademy.com"),
   openGraph: {
     title: "Aspire Tech Academy",
     description:
       "Aspire Tech Academy - Transform your career with industry-relevant tech courses. Learn data science, AI, web development & more through hands-on projects, expert mentorship, and pay-after-placement programs. Start your journey today!",
-    url: "https://aspiretech.vercel.app",
+    url: "https://www.aspiretechacademy.com",
     images: [
       {
         url: "https://ik.imagekit.io/webibee/aspiire%20logo.png?updatedAt=1744800414967",
