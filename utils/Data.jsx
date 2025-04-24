@@ -1398,19 +1398,41 @@ export const DSCertificationDetails = [
         note1: "Certificate from Aspire Tech Academy",
         note2:
             "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
-        img: "/aspire.png",
+        img: "/DS-sampleCertificate.png",
         alt: "image",
     },
 ];
 
-export const CertificationDetails = [
+export const DACertificationDetails = [
     {
         note1: "Certificate from Aspire Tech Academy",
         note2:
             "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
         note3: "Internship Certificate",
         note4: "Experience Certificate upto 1 year",
-        img: "/aspire.png",
+        img: "/DA-sampleCertificate.jpg",
+        alt: "image",
+    }
+];
+export const DMCertificationDetails = [
+    {
+        note1: "Certificate from Aspire Tech Academy",
+        note2:
+            "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
+        note3: "Internship Certificate",
+        note4: "Experience Certificate upto 1 year",
+        img: "/DM-sampleCertificate.jpg",
+        alt: "image",
+    }
+];
+export const UICertificationDetails = [
+    {
+        note1: "Certificate from Aspire Tech Academy",
+        note2:
+            "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
+        note3: "Internship Certificate",
+        note4: "Experience Certificate upto 1 year",
+        img: "/UI-sampleCertificate.jpg",
         alt: "image",
     }
 ];
