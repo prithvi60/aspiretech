@@ -171,6 +171,7 @@ export const SpringModal = ({
                                                 onChange={handleChange}
                                                 placeholder="Name"
                                                 className="rounded-lg border-3 p-2 border-primary focus-within:border-2 focus-within:border-primary focus-within:outline-none w-full placeholder:text-sm placeholder:md:text-base"
+
                                             />
                                         </div>
                                         <div className="gap-2 flex flex-col  items-start">
