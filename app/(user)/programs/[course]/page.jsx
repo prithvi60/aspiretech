@@ -211,7 +211,8 @@ const Page = async ({ params }) => {
                         />
                     </>
                 )}
-            <GuidedBy />
+            {val === "data science architecture program" && <GuidedBy />}
+
             {(val === "data science architecture program" ||
                 val === "data analytics launchpad") && (
                     <IndustrialProject

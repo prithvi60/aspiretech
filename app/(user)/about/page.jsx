@@ -18,7 +18,7 @@ const Page = () => {
             <AspireTechSets title={"What sets Aspire Tech Academy apart from the rest?"} data={aspireSets} />
             <div className="flex flex-wrap justify-center items-center gap-5 xl:gap-y-10 max-w-7xl mx-auto px-6 pb-[40px] md:px-[64px] lg:px-[80px] md:pb-[70px]">
                 {aboutStatus.map((item, index) => (
-                    <StatusCard key={index} data={item} />
+                    <StatusCard key={index} data={item} counter />
                 ))}
             </div>
             <OurMission />

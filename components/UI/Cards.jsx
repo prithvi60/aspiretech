@@ -2,8 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import { AnimateButton, Button1, CTAButton } from "./Button";
-import { RiMiniProgramFill } from "react-icons/ri";
-import Link from "next/link";
+import { Stat } from "./Counter";
 
 export const StoriesCard = ({ data }) => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -67,7 +66,7 @@ export const StoriesCard = ({ data }) => {
     );
 };
 
-export const StatusCard = ({ data, icon, type }) => {
+export const StatusCard = ({ data, icon, type, counter }) => {
     return (
         <div
             className={`${type ? "w-full mx-auto" : "min-w-[220px] px-8"} rounded-xl space-y-8 box-shadow-gradient2 border-4 border-borderColor bg-background first:col-span-2`}
@@ -75,9 +74,20 @@ export const StatusCard = ({ data, icon, type }) => {
             <div
                 className={`${type ? "px-4 py-6" : "px-8 py-6"} flex flex-col items-center justify-center gap-2 lg:gap-3 text-foreground`}
             >
-                <h4 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold">
-                    {data.count}
-                </h4>
+                {counter && data.count !== "" ? (
+                    <Stat num={Number(data.count)} suffix={data.suffix} />
+                ) : (
+                    <h4 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold">
+                        {data.suffix}
+                    </h4>
+                )}
+
+                {!counter && (
+                    <h4 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold">
+                        {data.count}
+                    </h4>
+                )}
+
                 <div className="flex gap-2">
                     {icon && (
                         <Image

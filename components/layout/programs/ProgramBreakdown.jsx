@@ -5,7 +5,7 @@ import React from 'react'
 const ProgramBreakdown = ({ data }) => {
     return (
         <section className="w-full h-full padding space-y-10 md:space-y-20">
-            <SectionHeading text={"Addon Syllabus : Skyrocketing Skills"} />
+            <SectionHeading text={"Program Breakdown: Your Questions, Answered"} />
             <Accordion items={data} />
         </section>
     )
