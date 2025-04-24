@@ -17,7 +17,7 @@ export default function Home() {
     description:
       "Aspire Tech Academy - Transform your career with industry-relevant tech courses. Learn data science, AI, web development & more through hands-on projects, expert mentorship, and pay-after-placement programs. Start your journey today!",
     email: "connect@aspiretechacademy.com",
-    url: "https://aspiretech.vercel.app",
+    url: "https://www.aspiretechacademy.com",
   };
   const jsonLdLocal = {
     "@context": "https://schema.org",
@@ -25,7 +25,7 @@ export default function Home() {
     name: "Aspire Tech Academy",
     image:
       "https://ik.imagekit.io/webibee/aspiire%20logo.png?updatedAt=1744800414967",
-    url: "https://aspiretech.vercel.app",
+    url: "https://www.aspiretechacademy.com",
     telephone: "+91-9036879156",
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",

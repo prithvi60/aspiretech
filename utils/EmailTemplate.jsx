@@ -20,7 +20,7 @@ export function generateEmailTemplateForUser(mainContent, title) {
                 <p style="margin: 0;">
                     © ${new Date().getFullYear()} 
                     <span style="margin-left: 1.5px; margin-right: 1.5px;">
-                        <a style="text-decoration: none;" href="https://aspiretech.vercel.app/">Aspire Tech Academy</a>
+                        <a style="text-decoration: none;" href="https://www.aspiretechacademy.com/">Aspire Tech Academy</a>
                     </span>
                     . All rights reserved.
                 </p>

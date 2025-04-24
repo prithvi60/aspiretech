@@ -5,41 +5,59 @@ import { Readable } from "stream";
 export async function GET() {
   // Static routes
   const links = [
-    // { url: "/", changefreq: "daily", priority: 1.0 },
-    // {
-    //   url: "/",
-    //   changefreq: "weekly",
-    //   priority: 0.9,
-    // },
-    // { url: "/about", changefreq: "monthly", priority: 0.8 },
-    // { url: "/services/content-B2B", changefreq: "weekly", priority: 0.9 },
-    // { url: "/services/content-B2C", changefreq: "weekly", priority: 0.9 },
-    // { url: "/services/founders", changefreq: "weekly", priority: 0.9 },
-    // { url: "/resources/blog", changefreq: "weekly", priority: 0.9 },
-    // { url: "/resources/works", changefreq: "weekly", priority: 0.9 },
-    // { url: "/resources/media", changefreq: "weekly", priority: 0.9 },
-    // {
-    //   url: "/contact",
-    //   changefreq: "monthly",
-    //   priority: 0.9,
-    // },
+    { url: "/", changefreq: "daily", priority: 1.0 },
+    {
+      url: "/",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    { url: "/about", changefreq: "monthly", priority: 0.8 },
+    { url: "/contact", changefreq: "monthly", priority: 0.9 },
+    { url: "/impact", changefreq: "weekly", priority: 0.9 },
+    { url: "/job-board", changefreq: "weekly", priority: 0.9 },
+    { url: "/news", changefreq: "weekly", priority: 0.9 },
+    {
+      url: "/programs/data-science-architecture-program",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "/programs/data-analytics-launchpad",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "/programs/UI-UX-design-course",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "/programs/digital-marketing-program",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "/contact",
+      changefreq: "monthly",
+      priority: 0.9,
+    },
   ];
 
   try {
     // Fetch dynamic routes from Sanity CMS with error handling
-    const posts = await client.fetch(
-      `*[_type == "post"]{ "url": slug.current }`
-    );
-    posts.forEach((post) => {
-      links.push({
-        url: `/resources/blog/${post.url}`,
-        changefreq: "weekly",
-        priority: 0.9,
-        lastmod: new Date().toISOString(),
-      });
-    });
+    // const posts = await client.fetch(
+    //   `*[_type == "post"]{ "url": slug.current }`
+    // );
+    // posts.forEach((post) => {
+    //   links.push({
+    //     url: `/resources/blog/${post.url}`,
+    //     changefreq: "weekly",
+    //     priority: 0.9,
+    //     lastmod: new Date().toISOString(),
+    //   });
+    // });
 
-    const hostname = "https://webibee.com";
+    const hostname = "https://www.aspiretechacademy.com";
     if (!hostname) {
       throw new Error("Hostname is required");
     }
