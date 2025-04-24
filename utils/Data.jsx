@@ -20,7 +20,7 @@ export const navLinks = [
             },
             { menu: "UI/UX design course", link: "/programs/UI-UX-design-course" },
             {
-                menu: "digital marketing program ",
+                menu: "digital marketing program",
                 link: "/programs/digital-marketing-program ",
             },
         ],
@@ -60,26 +60,26 @@ export const footerLinks3 = [
     { menu: "Terms", href: "/terms" },
     { menu: "Privacy", href: "/privacy" },
     { menu: "Legal", href: "/legal" },
-    // { menu: "Press", href: "/press" },
+    { menu: "Press", href: "/press" },
     { menu: "Contact us", href: "/contact" },
 ];
 
 export const socialLinks = [
     {
         icon: (
-            <FaInstagram className="text-3xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
+            <FaInstagram className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
         ),
         href: "#",
     },
     {
         icon: (
-            <FaXTwitter className="text-3xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
+            <FaXTwitter className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
         ),
         href: "#",
     },
     {
         icon: (
-            <FaFacebook className="text-3xl md:text-4xl text-primary hover:text-primary/70 hover:animate-pulse rounded-full border border-primary p-2" />
+            <FaFacebook className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
         ),
         href: "#",
     },
@@ -93,6 +93,7 @@ export const IndustrialCoursesCardData = [
         title: "IBM certified Data Science Architecture Program",
         desc: "Achieve data science excellence with our IBM-backed program! Enjoy live sessions, earn while you learn, and get 100% career support with guaranteed interviews.",
         href: "/programs/data-science-architecture-program",
+        refer: "DS"
     },
     {
         img: "/Data-Analytics.png",
@@ -101,6 +102,7 @@ export const IndustrialCoursesCardData = [
         title: "Fast Track Data Analytics Launchpad Course",
         desc: "Kick-start your Data Analytics career with IBM! Get live sessions, career support, and guaranteed internships.",
         href: "/programs/data-analytics-launchpad",
+        refer: "DA"
     },
     {
         img: "/Digital-Marketing.png",
@@ -109,6 +111,7 @@ export const IndustrialCoursesCardData = [
         title: "Digital Strategic Marketing Course",
         desc: "Trust us—go beyond traditional digital marketing and learn more! Enjoy live sessions, pay after placement, and secure a guaranteed internship.",
         href: "/programs/digital-marketing-program",
+        refer: "DM"
     },
     {
         img: "/UI-UX.png",
@@ -117,6 +120,7 @@ export const IndustrialCoursesCardData = [
         title: "User-Centricity Unleashed: UI/UX Mastery Course",
         desc: "Now is the best time to start your design career with rising demand for Design Thinking! Enjoy live sessions, pay after placement, and get a guaranteed internship.",
         href: "/programs/UI-UX-design-course",
+        refer: "UI"
     },
 ];
 
@@ -213,7 +217,7 @@ export const trustedCompany = [
         company: "amazon",
     },
     {
-        logo: "/Company/American_Express.webp",
+        logo: "/Company/American_Express.png",
         alt: "American Express logo",
         company: "american express",
     },
@@ -223,9 +227,9 @@ export const trustedCompany = [
         company: "aon",
     },
     {
-        logo: "/Company/axis-bank.webp",
+        logo: "/Company/axis-bank.svg",
         alt: " logo",
-        company: "",
+        company: "axis bank",
     },
     {
         logo: "/Company/capegmini.webp",
@@ -258,7 +262,7 @@ export const trustedCompany = [
         company: "glenmark",
     },
     {
-        logo: "/Company/Goldman_Sachs.webp",
+        logo: "/Company/Goldman_Sachs.png",
         alt: "Goldman Sachs logo",
         company: "goldman sachs",
     },
@@ -386,11 +390,157 @@ export const aspireSets = [
     "Affordable Fees - Quality education at affordable pricing",
     "Domain Specific Learning - We teach things in a core domain specific way for you to land in a job soon",
     "Expert Trainers - All our trainers are working professionals with minimum 5+ years of experience.",
-    "Money Back Guarantee Program - Get placed or get the refund of the fees"
-
+    "Money Back Guarantee Program - Get placed or get the refund of the fees",
 ];
 
+
+
+
+
+
+// About Us
+
+export const aboutStatus = [
+    {
+        count: "65%",
+        statusName: "Average Salary",
+    },
+    {
+        count: "7 LPA",
+        statusName: "Average Salary",
+    },
+    {
+        count: "100%",
+        statusName: "Live Classes",
+    },
+    {
+        count: "Earn",
+        statusName: "While learning",
+    },
+];
+
+
+
+
+// job board
+
+export const jobBoard = [
+    {
+        img: "/Siemens-logo.png",
+        alt: "Siemens logo",
+        title: "Siemens Recruitment Drive",
+        desc: "Siemens is hiring candidates for the role of Process Expert – O2C (Data Analyst) for the Bangalore, Karnataka, India locations. The complete details about Siemens Recruitment Drive are as follows.",
+        JL: "Bangalore, Karnataka, India",
+        JP: "Process Expert - O2C (Data Analyst)",
+        SP: "As per Company Standards",
+        FPTime: "Full Time",
+        RID: "419540",
+        EL: "Graduation",
+    },
+    {
+        img: "/SandP_Global.jpg",
+        alt: "S&P Global logo",
+        title: "S&P Global Recruitment Drive",
+        desc: "S&P Global is hiring candidates for the role of Application Associate, Proprietary Data and Office Tools for the Ahmedabad / Hyderabad, India locations. The complete details about S&P Global Recruitment Drive are as follows.",
+        JL: "Ahmedabad / Hyderabad, India",
+        JP: "Application Associate, Proprietary Data and Office Tools",
+        SP: "As per Company Standards",
+        FPTime: "Full Time",
+        RID: "306804",
+        EL: "Graduation",
+    },
+    {
+        img: "/yash-logo.svg",
+        alt: "YASH Technologies logo",
+        title: "YASH Technologies Recruitment",
+        desc: "YASH Technologies is hiring candidates for the role of Trainee Consultant - SAP PI for the Hyderabad, TG, India locations. The complete details about YASH Technologies Recruitment are as follows.",
+        JL: " Hyderabad, TG, India",
+        JP: "Trainee Consultant - SAP PI",
+        SP: "As per Company Standards",
+        FPTime: "Full Time",
+        RID: "58307",
+        EL: "Graduation",
+    },
+    {
+        img: "/oracle.png",
+        alt: "Oracle logo",
+        title: "Oracle Recruitment Drive",
+        desc: "Oracle is hiring candidates for the role of Associate Software Engineer for the Bangalore, Karnataka, India locations. The complete details about Oracle Recruitment Drive are as follows.",
+        JL: "Bangalore, Karnataka, India",
+        JP: "Associate Software Engineer",
+        SP: "As per Company Standards",
+        FPTime: "Full Time",
+        RID: "255039",
+        EL: "Graduation",
+    },
+    {
+        img: "/swiggy-logo.jpg",
+        alt: "Swiggy logo",
+        title: "Swiggy Work From Home Opportunity",
+        desc: "Swiggy is hiring candidates for the role of Associate Software Development Engineer – Android for the Bangalore, Karnataka, India locations. The complete details about Swiggy Work From Home Opportunity are as follows.",
+        JL: "Bangalore, Karnataka, India",
+        JP: "Associate Software Development Engineer - Android",
+        SP: "As per Company Standards",
+        FPTime: "Full Time",
+        RID: "13954",
+        EL: "Graduation",
+    },
+];
+export const aboutHero = {
+    title: "Empowering Minds & Transforming Futures",
+    desc: "Aspire Tech Academy is a certified e-learning platform, ISO/IAF accredited, dedicated to empowering your career through skill enhancement and upskilling. Our certifications cover a range of domains like the IBM Certified Data Science Architect Program, Fast Track Data Analyst Course,  UI/UX, Digital Marketing, and Cybersecurity."
+}
+
+
+
+// terms
+
+export const terms = [
+    "Welcome to our website. We kindly request that you carefully review the following terms and conditions, as they establish a legally binding agreement ('Terms') between you and our company concerning your utilization of the website and/or the services we provide. These services encompass but are not confined to, website access, video content, educational materials, presentations, case studies, quizzes, assignments, data sets, and the availability of various content types through the website or any internet-connected device ('Services'). It's important to note that you affirm your status as an individual rather than a corporation. By accessing or using the website or services, you indicate that you have read, comprehended, and consented to abide by these Terms.",
+    "Moreover, you assert that you possess the legal authority, as mandated by applicable laws (including age requirements), to accept these Terms on your behalf and potentially on behalf of others you represent about your usage of the website or services. If you do not concur with these Terms, you are not permitted to use the website or services. Our company reserves the discretion to modify, amend, append, or remove sections of these Terms at its discretion. Such changes will be made public by posting the updated Terms. We encourage you to periodically review these Terms for any modifications. Your continued usage of the site or services post-change implementation signifies your binding acceptance of the revised Terms.",
+    "Furthermore, when employing specific services, you may be subject to additional guidelines, regulations, product prerequisites, or supplementary terms that are relevant to those services. These guidelines, regulations, product prerequisites, or supplementary terms are hereby incorporated by reference into these Terms.",
+    "Aspire Tech Academy Educational Pvt. Ltd. is dedicated to enhancing the lives of students and nurturing their intellectual growth through the acquisition of new skills. We believe that our marketplace model is the most effective way to deliver valuable educational content to our users. To maintain a safe and secure platform and services for you, our students, and our instructor community, we have established certain rules and guidelines. These terms and conditions apply to all your interactions with the Aspire Tech Academy Educational OPC Pvt. Ltd. website, WWW.ASPIRETECHACADEMY.COM, and mobile apps. The information, services, and materials available on these platforms are provided and operated by 'Aspire Tech Academy', which is referred to as 'we', 'us', or 'Aspire Tech Academy'.",
+    "'Aspire Tech Academy' offers specialized higher education and industry-relevant postgraduate diploma and certification courses through various platforms, including classroom sessions, online learning, and live sessions.",
+    "We kindly request you to review our Terms of Use, Privacy Policy, and other policies available on the platform (collectively referred to as the 'Terms') that govern the use of our platform and programs. Each program may have its own set of terms and conditions regarding refunds, deferrals, payments, and other aspects that govern those specific programs. For our corporate clients, separate written agreements supersede these Terms in case of any conflicts.",
+    "These Terms also apply to all 'Aspire Tech Academy' hosted mobile apps, WhatsApp groups, Facebook groups, Instagram pages, Facebook pages, email/SMS/phone communications, and other social media forums associated with 'Aspire Tech Academy.' Updated versions of the Platform Terms may be made available periodically for your reference.",
+    "Please be aware that certain parts of the 'Aspire Tech Academy' platform may be provided by third-party service providers, and by using these services, you agree to adhere to their terms and conditions. 'Aspire Tech Academy' is not responsible for any disruptions in services caused by these third-party service providers. Your use of the programs signifies your unconditional agreement to abide by these Terms.",
+    "It is your responsibility to safeguard your password and keep it secure at all times. You are solely accountable for all activities conducted under your Account, and you must promptly notify us of any security breaches or unauthorised use of your Account. You are prohibited from using another person's Account without permission, and misrepresentation of your identity is not permitted. You acknowledge that you will be responsible for any losses, damages, or expenses resulting from unauthorised use of your Account, and you may also be liable for losses incurred by us or other parties due to such unauthorised use.",
+    "We reserve the right, at our discretion, to modify or amend portions of these Terms of Service. If changes are made, we will post them on this page and specify the date of the last revision at the top of the page. We may also notify you through the Services' user interface, email notifications, or other reasonable means, as applicable law requires. Changes will take effect no earlier than fourteen (14) days after they are posted unless they pertain to new functions of the Services or are made for legal reasons, in which case they will be effective immediately. Your continued use of the Service after the effective date of any changes constitutes your acceptance of the updated Terms of Service. Additionally, when using certain Services, you may be subject to additional terms applicable to those Services, which will be posted on the Service from time to time.",
+    "Please note that 'Aspire Tech Academy' does not guarantee its operation in all geographic areas or its legal authorization to operate. Furthermore, the suitability and availability of 'Aspire Tech Academy', as well as the information, services, and products offered through the platform, may vary in different locations. Accessing 'Aspire Tech Academy' from regions where it is illegal or restricted is expressly prohibited. If you choose to access 'Aspire Tech Academy', you do so voluntarily and at your own risk, and you are solely responsible for complying with all applicable laws and regulations.",
+];
+
+export const powerProgress = [
+    "IBM Certified Data Science Architecture Program",
+    "IBM Certified Fast Track Data Analyst Launch Pad Course",
+    "Digital Marketing",
+    "User Interface & User Experience",
+    "Cyber Security",
+    "Sales Force",
+    "Devops",
+    "Full Stack Python Developer",
+    "Full Stack Java Developer",
+    "Full Stack Php Developer",
+];
+
+
+
+
 // programs
+
+export const DSHero = {
+    title: ("Money Back Guarantee <span class='text-primary'>Data Science</span> Architecture Program"),
+    desc: "Gain a competitive edge in emerging technologies with our Data Science & Architecture Program and Master in-demand skills to build scalable solutions and land in you dream job else get the refund of the fees paid ! Through hands-on practice, gain proficiency in Python, SQL, Excel, Machine Learning, Tableau, Generative AI, prompt engineering, and ChatGPT. Interact live with industry leaders, enhancing your skills and staying ahead in the fast-evolving world of data science. Join us and empower your career today."
+}
+export const DAHero = {
+    title: "IBM Certified Fast Track <span class='text-primary'>Data Analytics</span> Launchpad", desc: "Enroll in our Data Analyst course, developed in collaboration with IBM, to become a proficient expert in Data Analytics. This comprehensive program will equip you with the skills to utilise Upon completion effectively, you will receive a valuable Data Analyst certification, validating your expertise in this dynamic field. This internship-guaranteed course is specifically designed for freshers and recent grads and people who are looking for a career shift into this domain."
+}
+export const DMHero = {
+    title: "Pay After Placement <span class='text-primary'>Digital Marketing</span> Program", desc: "As of January 2023, 5.16 billion people — 64.4% of the global population — were internet users. This number continues to grow, highlighting how the digital landscape shapes business success, scalability, and sustainability. Digital marketing leverages online platforms and technologies to promote products and services effectively."
+}
+export const UIHero = {
+    title: "Turning Dreams into Reality <span class='text-primary'>UI/UX</span> Design Course", desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design."
+}
+
 
 export const DSAchievements = [
     "15 seats Batch size ",
@@ -404,8 +554,58 @@ export const DSAchievements = [
     "IBM Certification",
     "ISO & IAF Certified",
 ];
+export const DAAchievements = [
+    "10 seats Batch size",
+    "200+ Hiring Partners",
+    "40% Average Hike",
+    "3 months",
+    "Average 6 LPA",
+    "ISO & IAF Certified Company",
+    "1:1 Mentoring",
+    "Paid internship for 2 months",
+    "24/7 LMS access",
+];
+export const DMAchievements = [
+    "25 seats Batch size",
+    "ISO & IAF certification",
+    "200+ Hiring Partners",
+    "40% Average Hike",
+    "ISO & IAF Certified Company",
+    "1:1 Mentoring",
+    "24/7 LMS access",
+]
+export const UIAchievements = [
+    "25 seats Batch size",
+    "ISO & IAF certification",
+    "200+ Hiring Partners",
+    "40% Average Hike",
+    "1-on-1 Mentorship",
+    "ISO & IAF certification",
+    "Lifetime Support",
+]
 
-export const dataScienceStatus = [
+export const DSSummaryDetails = {
+    title: 'Fee is refunded if not placed',
+    desc: 'Gain a competitive edge in emerging technologies with our Data Science & Architecture Program.Master in-demand skills to build scalable solutions and lead in a tech-driven world.',
+    month: "IN 8 Months"
+}
+export const DASummaryDetails = {
+    title: 'Just 20% Upfront fee',
+    desc: 'Achieve a Competitive Advantage in Emerging Technologies with Our Pay After Placement Data Analytics Course',
+    month: "IN 3 Months"
+}
+export const DMSummaryDetails = {
+    title: 'Gear up with Futuristic career',
+    desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design.",
+    month: "IN 18 Weeks"
+}
+// export const UISummaryDetails = {
+//     title: '',
+//     desc: '',
+//     month: ""
+// }
+
+export const DSStats = [
     {
         count: "31 March",
         statusName: "ENROLMENT ENDS",
@@ -422,8 +622,470 @@ export const dataScienceStatus = [
         img: "/hiring-partner.svg",
     },
 ];
+export const DAStats = [
+    {
+        count: "31 March",
+        statusName: "ENROLMENT ENDS",
+        img: "/enrollment.svg",
+    },
+    {
+        count: "6LPA+",
+        statusName: "Avg Salary Package",
+        img: "/salary.svg",
+    },
+    {
+        count: "200+",
+        statusName: "Hiring Partners",
+        img: "/hiring-partner.svg",
+    },
+];
+export const DMStats = [
+    {
+        count: "31 March",
+        statusName: "ENROLMENT ENDS",
+        img: "/enrollment.svg",
+    },
+    {
+        count: "Modules",
+        statusName: "15",
+        img: "/modules.svg",
+    },
+    {
+        count: "200+",
+        statusName: "Hiring Partners",
+        img: "/hiring-partner.svg",
+    },
+];
+export const UIStats = [
+    {
+        count: "31 March",
+        statusName: "ENROLMENT ENDS",
+        img: "/enrollment.svg",
+    },
+    {
+        count: "Modules",
+        statusName: "15",
+        img: "/modules.svg",
+    },
+    {
+        count: "200+",
+        statusName: "Hiring Partners",
+        img: "/hiring-partner.svg",
+    },
+];
 
-export const dataScienceSkillSets = [
+
+export const DSSpotlight = [
+    {
+        note: "Learn from Industry Experts who have achieved the success you aim for",
+        img: "/reasons/image-1.png",
+        alt: "image",
+    },
+    {
+        note: "Placement-Oriented Training with Guaranteed Interviews & Job Support",
+        img: "/reasons/image-2.png",
+        alt: "image",
+    },
+    {
+        note: "IBM Certification from an ISO & IAF Certified Company",
+        img: "/reasons/image-3.png",
+        alt: "image",
+    },
+    {
+        note: "Money-Back Guarantee if promises aren't delivered",
+        img: "/reasons/image-7.jpg",
+        alt: "image",
+    },
+    {
+        note: "Domain-Specific Curriculum tailored for real-world applications",
+        img: "/reasons/image-8.jpg",
+        alt: "image",
+    },
+    {
+        note: "1:1 Mentoring & Doubt Clearance with expert guidance",
+        img: "/reasons/image-4.png",
+        alt: "image",
+    },
+    {
+        note: "Mock Interviews & Dedicated Program Manager for personalized career support",
+        img: "/reasons/image-5.jpg",
+        alt: "image",
+    },
+    {
+        note: "AI Enabled Job Board - Once being eligible for placements you will get access to the job board where it will act as a one point contact for all your placement needs",
+        img: "/reasons/image-9.jpg",
+        alt: "image",
+    },
+    {
+        note: "Only 15 Students per Batch with 24/7 LMS Access for focused and flexible learning",
+        img: "/reasons/image-6.png",
+        alt: "image",
+    },
+];
+export const DASpotlight = [
+    {
+        note: "Lifetime Support with the LMS content",
+        img: "/reasons/image-1.png",
+        alt: "image",
+    },
+    {
+        note: "Develop practical skills through hands-on projects and real-world applications",
+        img: "/reasons/image-2.png",
+        alt: "image",
+    },
+    {
+        note: "Paid internship for 2 months",
+        img: "/reasons/image-9.png",
+        alt: "image",
+    },
+    {
+        note: "Build a strong foundation for a successful career in data analytics",
+        img: "/reasons/image-7.jpg",
+        alt: "image",
+    },
+    {
+        note: "Access to exclusive features and resources to enhance your learning experience",
+        img: "/reasons/image-8.jpg",
+        alt: "image",
+    },
+    {
+        note: "1:1 mentoring session",
+        img: "/reasons/image-4.png",
+        alt: "image",
+    },
+    {
+        note: "Gain a comprehensive understanding of data analytics concepts, techniques, and tools",
+        img: "/reasons/image-5.jpg",
+        alt: "image",
+    },
+    {
+        note: "100% Placement Assistance",
+        img: "/reasons/image-9.jpg",
+        alt: "image",
+    }
+];
+export const DMSpotlight = [
+    {
+        note: "Lifetime Support with the LMS content",
+        img: "/reasons/image-1.png",
+        alt: "image",
+    },
+    {
+        note: "Develop practical skills through hands-on projects and real-world applications",
+        img: "/reasons/image-2.png",
+        alt: "image",
+    },
+    {
+        note: "Pay 15,000 initially and the rest after you land in the job",
+        img: "/reasons/image-3.png",
+        alt: "image",
+    },
+    {
+        note: "Internship Guarantee",
+        img: "/reasons/image-7.jpg",
+        alt: "image",
+    },
+    {
+        note: "Access to exclusive features and resources to enhance your learning experience",
+        img: "/reasons/image-8.jpg",
+        alt: "image",
+    },
+    {
+        note: "1:1 mentoring session",
+        img: "/reasons/image-4.png",
+        alt: "image",
+    },
+    {
+        note: "Pay After Placement",
+        img: "/reasons/image-5.jpg",
+        alt: "image",
+    },
+    {
+        note: "100% Placement Assistance",
+        img: "/reasons/image-9.jpg",
+        alt: "image",
+    }
+];
+export const UISpotlight = [
+    {
+        note: "Hands-on UX/UI Design Experience from Scratch",
+        img: "/reasons/image-1.png",
+        alt: "image",
+    },
+    {
+        note: "Earn a Globally Recognized Design Certification",
+        img: "/reasons/image-2.png",
+        alt: "image",
+    },
+    {
+        note: "Personalized 1-on-1 Mentorship from Experts",
+        img: "/reasons/image-3.png",
+        alt: "image",
+    },
+    {
+        note: "Step-by-Step Guidance to Launch Your Career",
+        img: "/reasons/image-7.jpg",
+        alt: "image",
+    },
+    {
+        note: "Lifetime Support from Industry Professionals",
+        img: "/reasons/image-8.jpg",
+        alt: "image",
+    },
+    {
+        note: "Join a Thriving, Passionate Design Community",
+        img: "/reasons/image-4.png",
+        alt: "image",
+    },
+    {
+        note: "Master Design Skills in 18 Weeks",
+        img: "/reasons/image-5.jpg",
+        alt: "image",
+    },
+    {
+        note: "Learn Directly from Industry-Leading Designers",
+        img: "/reasons/image-9.jpg",
+        alt: "image",
+    }
+];
+
+
+export const DSProgramCurriculum = [
+    {
+        module: "Module 1-5",
+        content: [
+            "Statistics topics",
+            "Probability topics",
+            "Introduction to Mathematics for Data Science",
+            "Linear Algebra topics",
+            "Calculus topics",
+        ],
+    },
+    {
+        module: "Module 6-10",
+        content: [
+            "Introduction to Python",
+            "Deep Dive - Functions, OOPS, Modules, Errors and Exceptions",
+            "Data Manipulation",
+            "Introduction to Machine Learning with Python",
+            "Supervised Learning - I",
+        ],
+    },
+    {
+        module: "Module 11-15",
+        content: [
+            "Dimensionality Reduction",
+            "Supervised Learning - II",
+            "Unsupervised Learning",
+            "Association Rules Mining and Recommendation Systems",
+            "Reinforcement Learning",
+        ],
+    },
+    {
+        module: "Module 16-20",
+        content: [
+            "Data Clustering",
+            "Time Series Analysis",
+            "Model Selection and Boosting",
+            "Sequences and File Operations",
+            "Introduction to NumPy, Pandas, and Matplotlib",
+        ],
+    },
+    {
+        module: "Module 21-25",
+        content: [
+            "Natural Language Processing with Deep Learning in Python N",
+            "Natural Language Processing in TensorFlow",
+            "Introduction to Natural Language Processing",
+            "A Refresher to Python",
+            "Learn to use Regular Expressions",
+        ],
+    },
+    {
+        module: "Module 26-30",
+        content: [
+            "First Step of NLP - Text Processing",
+            "Extracting Named Entities from Text",
+            "Feature Engineering for Text",
+            "Mastering the Art of Text Cleaning",
+            "Interpreting Patterns from Text - Topic Modelling",
+            "Machine Learning Algorithms",
+        ],
+    },
+    {
+        module: "Module 31-36",
+        content: [
+            "Understanding Text Classification",
+            "Introduction to Deep Learning (Optional)",
+            "Deep Learning for NLP",
+            "Recurrent Neural Networks",
+            "Introduction to Language Modelling in NLP",
+            "Sequence-to-Sequence Modelling",
+        ],
+    },
+];
+export const DAProgramCurriculum = [
+    {
+        module: "Module 1-2",
+        content: [
+            "Introduction to Data Analytics",
+            "Introduction to Python programming",
+        ],
+    },
+    {
+        module: "Module 3-4",
+        content: [
+            "Python - Basics",
+            "Python Data Types & Utilities",
+        ],
+    },
+    {
+        module: "Module 5-6",
+        content: [
+            "Python Essential Packages",
+            "SQL and Database",
+        ],
+    },
+    {
+        module: "Module 7-8",
+        content: [
+            "Visualisation using Power BI",
+            "Visualisation using Tableau",
+        ],
+    },
+    {
+        module: "Module 9-10",
+        content: [
+            "Excel Basic",
+            "Excel Advanced",
+        ],
+    },
+]
+export const DMProgramCurriculum = [
+    {
+        module: "Module 1-5",
+        content: [
+            "Introduction to Digital Marketing Topics",
+            "Search Engine Optimization",
+            "Keyword Research",
+            "On-Page SEO",
+            "Content Writing & Marketing",
+        ],
+    },
+    {
+        module: "Module 6-10",
+        content: [
+            "Technical SEO",
+            "Off-Page SEO",
+            "Analytics - Google Search Console",
+            "Search Engine Marketing",
+            "Social Media Marketing",
+        ],
+    },
+    {
+        module: "Module 11-15",
+        content: [
+            "Facebook Marketing",
+            "Facebook Paid Advertisement",
+            "Facebook Campaign Creation",
+            "Instagram Marketing",
+            "YouTube Marketing",
+        ],
+    },
+    {
+        module: "Module 16-20",
+        content: [
+            "Website Structure",
+            "YouTube Studio",
+            "Excel Essentials",
+            "Formulae",
+            "Logical and Lookup Functions",
+        ],
+    },
+    {
+        module: "Module 21-24",
+        content: [
+            "Email & Affiliate Marketing",
+            "Affiliate Marketing",
+            "Blogging",
+            "Email Marketing",
+        ],
+    }
+];
+export const UIProgramCurriculum = [
+    {
+        module: "Week 1-3",
+        content: [
+            "Embracing the Design Philosophy",
+            "Embarking on the Design Quest",
+            "Equipping with Tools and Building Teams",
+        ],
+    },
+    {
+        module: "Week 4-6",
+        content: [
+            "Unearthing the 'Why' Behind Design",
+            "Charting the Course",
+            "Getting Hands-On with Wireframing",
+        ],
+    },
+    {
+        module: "Week 7-9",
+        content: [
+            "Mastering the Rules of Interface Design",
+            "The Art of Captivating Design",
+            "Bringing Designs to Life",
+        ],
+    },
+    {
+        module: "Week 10-12",
+        content: [
+            "Exploring the World of Android",
+            "Web Design and Review",
+            "Delivering Professional Designs",
+        ],
+    },
+    {
+        module: "Week 13-14",
+        content: [
+            "Elevating the Game",
+            "Preparing for Battle",
+        ],
+    },
+    {
+        module: "Week 15-18",
+        content: [
+            "Ready for the Spotlight",
+        ],
+    }
+];
+
+
+export const DSAddonSyllabus = [
+    "Bigdata, Sparck & Kafka, MongoDB",
+    "Chat GPT",
+    "Deep Learning and NPL",
+    "Data WareHousing & ETL",
+    "Gen AI",
+    "Cloud Computing (AWS, AZURE, CGP)",
+    "Deployment of Machine Learning Models to Cloud",
+    "Data Science Project Management",
+];
+export const DAAddonSyllabus = [
+    "Aspiring data analysts, business analysts",
+    "Professionals seeking to enhance their analytical skills and advance their careers",
+    "Anyone interested in exploring the dynamic field of data analytics and its applications",
+    "College students who are looking for internships and projects",
+];
+export const DMAddonSyllabus = [
+    "Students who are in the final year of graduation or post-graduation",
+    "Recent Graduates who want to pursue a career in the field of Digital Marketing",
+    "Professionals Who are looking at building a career in Digital Marketing",
+];
+
+
+
+export const DSScienceSkillSets = [
     "Data Science",
     "Data Analytics",
     "Data Visualization",
@@ -434,17 +1096,16 @@ export const dataScienceSkillSets = [
     "Data wrangling",
     "NLP",
 ];
-
-export const dSAddonSyllabus = [
-    "Bigdata, Sparck & Kafka, MongoDB",
-    "Chat GPT",
-    "Deep Learning and NPL",
-    "Data WareHousing & ETL",
-    "Gen AI",
-    "Cloud Computing (AWS, AZURE, CGP)",
-    "Deployment of Machine Learning Models to Cloud",
-    "Data Science Project Management",
+export const DAScienceSkillSets = [
+    "Data Analytics",
+    "Data Cleaning & Preparation",
+    "Creation of Data Visuals",
+    "Creating Dashboards",
+    "Statistical Knowledge",
+    "Data Visualisation",
 ];
+
+
 
 export const DSTechSoftwares = [
     {
@@ -524,6 +1185,41 @@ export const DSTechSoftwares = [
         alt: "time series logo",
     },
 ];
+export const DATechSoftwares = [
+    {
+        img: "/tools/excel.webp",
+        alt: "excel logo",
+    },
+    {
+        img: "/tools/tableau.png",
+        alt: "tableau logo",
+    },
+    {
+        img: "/tools/powerbi.png",
+        alt: "powerbi logo",
+    },
+    {
+        img: "/tools/mysql.png",
+        alt: "mysql logo",
+    },
+    {
+        img: "/tools/python.webp",
+        alt: "python logo",
+    },
+
+];
+
+
+export const DSPlacement = {
+    title: 'Industry Projects',
+    desc: "In this certificate program, you'll gain hands-on experience through industry projects, guided by seasoned professionals. These projects will be integrated into your Certification in Data Science Architecture Program to deepen your expertise. You'll work with real-world datasets, receiving mentorship from world-class industry experts throughout the process.",
+}
+export const DAPlacement = {
+    title: 'Placements',
+    desc: 'Interview preparations will begin in the 4th month, with a strong focus on training and equipping candidates for success. Since our program follows a Pay After Placement model, candidates will only pay 30% of the fees upfront.',
+}
+
+
 
 export const DSSoftwareLogo = [
     {
@@ -548,6 +1244,8 @@ export const DSSoftwareLogo = [
     },
 ];
 
+
+
 export const DSFaq = [
     {
         ques: "What are the key learning outcomes of this Data Science course?",
@@ -570,6 +1268,113 @@ export const DSFaq = [
         ans: "No, There are no prerequisites for taking this course ",
     },
 ];
+export const DAFaq = [
+    {
+        ques: "What key skills will you develop through this Fast Track Data Analytics course?",
+        ans: "In this Fast Track Data Analytics course, you'll gain expertise in Data Analysis, Data Segregation, Python, Statistics, SQL, and Data Wrangling."
+    },
+    {
+        ques: "What projects are included in this  Fast Track Data Analytics course?",
+        ans: "Get an opportunity to work on Real-World Datasets of various industries like healthcare, e-commerce, social media, entrepreneurship, supply chain, and more. Learn from basics like cleaning a large amount of data, organizing it, and much more."
+    },
+    {
+        ques: "Who should take this  Fast Track Data Analytics course?",
+        ans: "Anyone with a graduate degree in any field can apply and enrol in a Fast Track Data Analytics. Freshers and working professionals with any educational background are eligible for the course."
+    },
+    {
+        ques: "Are there any prerequisites for this Fast Track Data Analytics course?",
+        ans: "No, There are no prerequisites for taking this course"
+    },
+    {
+        ques: "What are the reasons to enrol in the Fast Track Data Analytics program?",
+        ans: "The demand for Data Analytics professionals is surging due to the rapid growth of data across industries and the need for data-driven decision-making. Organizations are increasingly seeking skilled analysts to interpret data and improve efficiency, leading to a wide range of job opportunities.Overall, careers in data analytics are thriving and expected to grow in the coming years."
+    },
+    {
+        ques: "Who should enrol in this program?",
+        ans: "Freshers from any stream of Graduation,People looking forward to keep their first baby steps in IT sector,Aspirants looking for career transition"
+    },
+    {
+        ques: "What if I miss attending one or more lectures?",
+        ans: "If you happen to miss any lectures, we will provide you with a recording of the session within 24 hours. Additionally, if you have any questions, you can reach out to the dedicated program manager for assistance."
+    },
+    {
+        ques: "How does the Pay After Placement work?",
+        ans: "The Pay After Placement model creates a win-win situation for both learners and Aspire Tech Academy, as students will pay the majority—70%—of the fees only after successfully securing a job."
+    },
+    {
+        ques: "Is there any minimum package post which I will have to pay the 70% fees in Data Analytics ?",
+        ans: "In Fast Track Data Analytics Course you are entitled to pay the 70% of the fees irrespective of your salary package."
+    },
+]
+// export const DMFaq = [
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+// ]
+// export const UIFaq = [
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+//     {
+//         ques: "",
+//         ans: ""
+//     },
+// ]
+
 
 export const DSCertificationDetails = [
     {
@@ -590,127 +1395,16 @@ export const DSCertificationDetails = [
     },
 ];
 
-export const DSProgramCurriculum = [
+export const CertificationDetails = [
     {
-        module: "Module 1-5",
-        content: [
-            "Statistics topics",
-            "Probability topics",
-            "Introduction to Mathematics for Data Science",
-            "Linear Algebra topics",
-            "Calculus topics",
-        ],
-    },
-    {
-        module: "Module 6-10",
-        content: [
-            "Introduction to Python",
-            "Deep Dive - Functions, OOPS, Modules, Errors and Exceptions",
-            "Data Manipulation",
-            "Introduction to Machine Learning with Python",
-            "Supervised Learning - I",
-        ],
-    },
-    {
-        module: "Module 11-15",
-        content: [
-            "Dimensionality Reduction",
-            "Supervised Learning - II",
-            "Unsupervised Learning",
-            "Association Rules Mining and Recommendation Systems",
-            "Reinforcement Learning",
-        ],
-    },
-    {
-        module: "Module 16-20",
-        content: [
-            "Data Clustering",
-            "Time Series Analysis",
-            "Model Selection and Boosting",
-            "Sequences and File Operations",
-            "Introduction to NumPy, Pandas, and Matplotlib",
-        ],
-    },
-    {
-        module: "Module 21-25",
-        content: [
-            "Natural Language Processing with Deep Learning in Python N",
-            "Natural Language Processing in TensorFlow",
-            "Introduction to Natural Language Processing",
-            "A Refresher to Python",
-            "Learn to use Regular Expressions",
-        ],
-    },
-    {
-        module: "Module 26-30",
-        content: [
-            "First Step of NLP - Text Processing",
-            "Extracting Named Entities from Text",
-            "Feature Engineering for Text",
-            "Mastering the Art of Text Cleaning",
-            "Interpreting Patterns from Text - Topic Modelling",
-            "Machine Learning Algorithms",
-        ],
-    },
-    {
-        module: "Module 31-36",
-        content: [
-            "Understanding Text Classification",
-            "Introduction to Deep Learning (Optional)",
-            "Deep Learning for NLP",
-            "Recurrent Neural Networks",
-            "Introduction to Language Modelling in NLP",
-            "Sequence-to-Sequence Modelling",
-        ],
-    },
-];
-
-export const DSSpotlight = [
-    {
-        note: "Learn from Industry Experts who have achieved the success you aim for",
-        img: "/reasons/image-1.png",
+        note1: "Certificate from Aspire Tech Academy",
+        note2:
+            "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
+        note3: "Internship Certificate",
+        note4: "Experience Certificate upto 1 year",
+        img: "/aspire.png",
         alt: "image",
-    },
-    {
-        note: "Placement-Oriented Training with Guaranteed Interviews & Job Support",
-        img: "/reasons/image-2.png",
-        alt: "image",
-    },
-    {
-        note: "IBM Certification from an ISO & IAF Certified Company",
-        img: "/reasons/image-3.png",
-        alt: "image",
-    },
-    {
-        note: "Money-Back Guarantee if promises aren't delivered",
-        img: "/reasons/image-7.jpg",
-        alt: "image",
-    },
-    {
-        note: "Domain-Specific Curriculum tailored for real-world applications",
-        img: "/reasons/image-8.jpg",
-        alt: "image",
-    },
-    {
-        note: "1:1 Mentoring & Doubt Clearance with expert guidance",
-        img: "/reasons/image-4.png",
-        alt: "image",
-    },
-    {
-        note: "Mock Interviews & Dedicated Program Manager for personalized career support",
-        img: "/reasons/image-5.jpg",
-        alt: "image",
-    },
-    {
-        note: "AI Enabled Job Board - Once being eligible for placements you will get access to the job board where it will act as a one point contact for all your placement needs",
-        img: "/reasons/image-9.jpg",
-        alt: "image",
-    },
-    {
-        note: "Only 15 Students per Batch with 24/7 LMS Access for focused and flexible learning",
-        img: "/reasons/image-6.png",
-        alt: "image",
-    },
+    }
 ];
 
 export const DSGuidedBySection = [
@@ -747,4 +1441,57 @@ export const DSGuidedBySection = [
         aboutCourse:
             "Chandra Sekhar is a Data Scientist professional with close to 9+ years of experience in Machine Learning, Statistical Modelling, Data Science, Predictive Analytics & Business Consulting.",
     },
+];
+
+
+
+
+
+
+// terms
+
+export const followingActivities = [
+    "Sending phishing, pharming, or whaling messages designed to obtain passwords, account information, personal data, confidential information, or private information from any user of the 'Aspire Tech Academy' or any third party.",
+    "Posting content that infringes upon intellectual property rights or other proprietary rights, violates laws or contractual relationships, contains malicious software, or poses privacy or security risks.",
+    "Engaging in unsolicited or unauthorised advertising, promotional materials, commercial activities, 'spam', or any other form of solicitation.",
+    "Posting unlawful, harmful, threatening, abusive, harassing, defamatory, vulgar, obscene, pornographic, libellous, invasive, hateful, or otherwise objectionable content.",
+    " Interfering with or disrupting the Service, its servers, or connected networks, or disobeying network-related requirements, procedures, policies, or regulations.",
+    "Violating any applicable local, state, national, or international laws or regulations or impersonating any person or entity.",
+    "Harvesting or collecting user email addresses or contact information for unsolicited communications.",
+    "Advertising, selling, or buying goods or services for unauthorised business purposes.",
+    "Attempting to access materials or information not intentionally provided through the Service.",
+];
+
+export const certificationsReq = [
+    "The successful completion of graded assignments with a minimum passing score/grade.",
+    "The satisfactory completion of a project and viva as determined by the Subject Matter   Expert (SME) or Mentor.",
+    "Meeting the minimum attendance requirements specified for the program.",
+    "If all criteria are met, Aspire Tech Academy or the University will commence the certification process.",
+    "Graded assignments, distinct from practice or non-graded assignments, are clearly outlined in the Learning Management System (LMS). Additionally, Aspire Tech Academy includes one end-of-course certification exam in the course fee.",
+    "Some courses do not allow multiple attempts for certification exams, and in cases where a student requires a repeat exam, an additional fee may apply.",
+];
+
+export const referAFriend = [
+    "Referrers must submit leads online or contact a counsellor, providing at least the lead's name and telephone number.",
+    "Referral bonuses, up to 5 to 10% of the course selling price net of discounts, apply to the first program enrolled by the new referee.",
+    "Selling price calculations exclude GST and discounts/scholarships.",
+    "Friends must enrol within 45 calendar days from the date of referral to qualify.",
+    "In cases where multiple referrers submit the same lead, the referral fee is awarded to the first referrer based on the CRM entry date.",
+    "Existing students are not eligible for referrals.",
+    "Referral amounts can be claimed once the friend has purchased the course and met payment norms.",
+    "Referral rewards are provided as Amazon vouchers and cannot be used for instalment payments, discounts, or other courses or a reduction in the fees",
+    "Referral vouchers are non-transferable and cannot be converted into cash or other forms of credit.",
+    "The referral program is one-way; friends referred cannot subsequently refer to the referrer.",
+    "In case of disputes, management retains the final decision-making authority.",
+    "Applicable TDS and taxes will be deducted from referral rewards.",
+    "Referrals do not apply to blood relations, spouses, siblings, or cousins unless the referrer is an existing student.",
+];
+
+export const refundPolicy = [
+    "Unless explicitly agreed in writing by Aspire Tech Academy, full payment for program participation is due at registration. For programs offering a trial period, access to the trial is provided after full payment. During the trial, a refund of program fees, subject to applicable charges, may be considered upon request and approval by Aspire Tech Academy. After the trial period, no refunds will be granted for any reason.",
+    "It is the responsibility of the user enrolling in a program to verify the program's accuracy, suitability, and relevance. Enrolment in a program is non-transferable.",
+    "To make payments for programs or purchases through Aspire Tech Academy, users must have internet access and a valid accepted payment method. Aspire Tech Academy does not store credit card information and uses third-party payment providers. Users agree to the terms of these providers and are responsible for any losses incurred due to their use. Failure to pay may result in program access withdrawal.",
+    "Depending on the transaction location and payment method, foreign exchange fees or rates may apply. Aspire Tech Academy does not support all payment methods, currencies, or locations. Taxes are based on billing information provided during enrollment or purchase.",
+    "Enrolment may be cancelled at any time, but no refunds will be issued once payment (in part or full) has been made. Refunds are not provided for lack of usage or dissatisfaction.",
+    "If a free trial is subscribed, it will be valid for the specified period. Free trials cannot be combined with certain offers, and eligibility depends on previous subscriptions and associated email addresses.",
 ];

@@ -1,11 +1,10 @@
 "use client"
 import { SectionHeading } from '@/components/UI/SectionHeading'
-import { DSSpotlight } from '@/utils/Data'
 import Image from 'next/image'
 import { useEffect, useRef, useState } from 'react'
 import Slider from 'react-slick'
 
-const SpotLight = () => {
+const SpotLight = ({ data }) => {
     const [isActive, setIsActive] = useState(0);
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
@@ -55,7 +54,6 @@ const SpotLight = () => {
             <SectionHeading text={"The Reasons you will be under spotlight"} />
             <div
                 className="flex flex-col-reverse lg:flex-row justify-between gap-8 md:gap-4 font-inter h-full max-w-[1660px] mx-auto"
-            // key={idx}
             >
                 <div className="w-full lg:w-2/5 space-y-6 md:space-y-10">
                     <div className="space-y-1.5 md:space-y-3 slider-container">
@@ -67,9 +65,9 @@ const SpotLight = () => {
                             {...settings}
                             className='spotlight'
                         >
-                            {DSSpotlight.map((list, idx) => (
+                            {data.map((list, idx) => (
                                 <p key={idx}
-                                    className={`p-4 md:p-6 ${isActive === idx ? "bg-primary/45 text-primary" : "text-[#BAB9BD] border-2 border-[#BAB9BD]/30"}  text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl`}
+                                    className={`p-4 md:p-6 ${isActive === idx ? "text-primary/80 border-4 border-borderColor" : "text-foreground border-1 border-foreground"} bg-white text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl`}
                                 >
                                     {list.note}
                                 </p>
@@ -88,7 +86,7 @@ const SpotLight = () => {
                         autoplaySpeed={2000}
                         ref={(slider) => (sliderRef1 = slider)}
                     >
-                        {DSSpotlight.map((item, id) => (
+                        {data.map((item, id) => (
                             <div className="relative overflow-hidden rounded-xl w-full h-72 lg:w-full lg:h-[490px]" key={id}>
                                 <Image
                                     src={item.img}

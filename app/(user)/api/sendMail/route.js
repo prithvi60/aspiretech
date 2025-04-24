@@ -98,41 +98,7 @@ export async function POST(req) {
       return [];
     }
   };
-  // const getPdfAttachment = async () => {
-  //   if (pdf && title !== "contact") {
-  //     try {
-  //       // Clean the pdf path
-  //       const cleanPdfPath = pdf.replace(/^\/?files\//, "");
-
-  //       // Construct absolute path to the file
-  //       const pdfPath = path.join(
-  //         process.cwd(),
-  //         "public",
-  //         "files",
-  //         cleanPdfPath
-  //       );
-
-  //       // Read the file directly
-  //       const pdfBuffer = await fs.promises.readFile(pdfPath);
-  //       const pdfBase64 = pdfBuffer.toString("base64");
-
-  //       const fileName = `${title}.pdf`;
-  //       return [
-  //         {
-  //           filename: fileName,
-  //           content: pdfBase64,
-  //           encoding: "base64",
-  //           contentType: "application/pdf",
-  //         },
-  //       ];
-  //     } catch (error) {
-  //       console.error("Error reading PDF file:", error);
-  //       return [];
-  //     }
-  //   }
-  //   return [];
-  // };
-
+  
   // !clientEmail
   if (!email && !process.env.EMAIL_ID) {
     return NextResponse.json(

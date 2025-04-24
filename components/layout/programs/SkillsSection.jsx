@@ -1,8 +1,7 @@
-import { dataScienceSkillSets} from "@/utils/Data";
 import React from "react";
 import { RiMiniProgramFill } from "react-icons/ri";
 
-const SkillsSection = () => {
+const SkillsSection = ({ data }) => {
     return (
         <div className="w-full relative padding text-foreground">
             <div className="rounded-lg w-full h-full flex flex-col gap-10 md:gap-0 md:flex-row justify-between text-foreground">
@@ -21,13 +20,13 @@ const SkillsSection = () => {
                     </p>
                 </div>
                 <div className="w-full md:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-3 py-4">
-                    {dataScienceSkillSets.map((item, idx) => (
+                    {data.map((item, idx) => (
                         <div
                             key={idx}
-                            className="bg-linear-to-b from-[var(--text-gradient-left)]/50 via-[var(--primary)]/60 to-[#FFFEFE] p-0.5 rounded-md min-h-24 max-w-xs md:w-auto last:col-span-2 md:last:col-span-1"
+                            className="bg-secondary p-0.5 rounded-md min-h-24 max-w-xs md:w-auto last:col-span-2 md:last:col-span-1"
                         >
-                            <div className="block space-y-3 min-h-24 px-2.5 py-4 bg-linear-333 from-[#141414] via-[#181818] to-[#2f2f2f] custom-shadow rounded-md">
-                                <RiMiniProgramFill className="shrink-0 text-primary text-base lg:text-xl" />
+                            <div className="block space-y-3 min-h-24 px-2.5 py-4 bg-secondary rounded-md">
+                                <RiMiniProgramFill className="shrink-0 text-btn text-base lg:text-xl" />
                                 <p className={`text-[clamp(0.7rem,1.15vw,1rem)]`}>{item}</p>
                             </div>
                         </div>

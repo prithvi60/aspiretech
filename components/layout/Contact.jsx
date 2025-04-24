@@ -10,7 +10,7 @@ const Contact = () => {
         <section className="w-full relative padding text-foreground space-y-12 md:space-y-24">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-0">
                 <div className="space-y-3 w-full md:w-4/5">
-                    <h1 className="text-[clamp(1.1rem,1.15vw,1.5rem)]">Reach Out</h1>
+                    <h1 className="text-[clamp(1.1rem,1.15vw,1.5rem)] text-primary font-semibold">Reach Out</h1>
                     <h2 className="font-bold text-3xl md:text-6xl xl:text-[90px] text-gradient">
                         We're Here for You - Every Step of the Way
                     </h2>
@@ -26,7 +26,7 @@ const Contact = () => {
                 </ul>
             </div>
             <ContactForm />
-            <div className="rounded-lg w-full h-full flex flex-col gap-10 md:gap-0 md:flex-row justify-between font-inter text-foreground px-14 py-20 border-2 border-[var(--gradient-top)] box-shadow-gradient mt-32 md:mt-44">
+            <div className="rounded-2xl w-full h-full flex flex-col gap-10 md:gap-0 md:flex-row justify-between font-inter text-foreground px-14 py-20 border-4 md:border-6 border-borderColor mt-32 md:mt-44 bg-white">
                 <div className="w-full md:w-2/5 lg:w-1/2 space-y-3 md:space-y-5">
                     <h3 className="text-[clamp(1rem,1.15vw,1.5rem)]">Contact Info</h3>
                     <h4 className="text-[clamp(1.3rem,2.5vw,3.3rem)] leading-6 md:leading-10 tracking-wide font-bold w-full md:w-4/5">

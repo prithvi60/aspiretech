@@ -5,6 +5,7 @@ import Hero from "@/components/layout/Hero";
 import IndustrialCoursesCard from "@/components/layout/IndustrialCoursesCard";
 import Stories from "@/components/layout/Stories";
 import TrustByCompanies from "@/components/layout/TrustByCompanies";
+import { aspireSets } from "@/utils/Data";
 
 export default function Home() {
   const jsonLd = {
@@ -56,7 +57,10 @@ export default function Home() {
       <EnquireTechExpert />
       <Stories />
       <TrustByCompanies />
-      <AspireTechSets />
+      <AspireTechSets
+        title={"What sets Aspire Tech Academy apart from the rest?"}
+        data={aspireSets}
+      />
     </main>
   );
 }

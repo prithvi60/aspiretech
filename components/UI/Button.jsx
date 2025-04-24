@@ -39,7 +39,7 @@ export const AnimateButton = ({ text, href, icon }) => {
             <Link
                 title={`${text} page`}
                 href={href || "#"}
-                className={`bg-white flex justify-between items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-black font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg`}
+                className={`bg-btn flex justify-between items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-background font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg`}
             >
                 {text}
                 {icon && (
@@ -72,14 +72,14 @@ export const CTAButton = ({ type, text, href }) => {
     return (
         <Link
             href={href}
-            className={`w-max bg-green-light rounded-lg cursor-pointer`}
+            className={`w-max bg-primary rounded-lg cursor-pointer`}
         >
             <motion.button
                 ref={ref}
                 style={{
                     transform,
                 }}
-                className={`group gap-5 font-extrabold capitalize bg-foreground text-background flex h-full w-full items-center justify-between transition-all duration-300 rounded-lg border-2 border-solid border-white cursor-pointer text-[clamp(0.6rem,1.15vw,1.1rem)] hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_var(--primary)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-xl px-3 py-1.5 md:py-2.5 md:px-5`}
+                className={`group gap-5 font-extrabold capitalize bg-btn text-background flex h-full w-full items-center justify-between transition-all duration-300 rounded-lg cursor-pointer text-[clamp(0.6rem,1.15vw,1.1rem)] hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_var(--primary)] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none shadow-xl px-3 py-1.5 md:py-2.5 md:px-5`}
             >
                 <Copy>{text}</Copy>
                 <Arrow />

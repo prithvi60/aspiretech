@@ -5,7 +5,7 @@ export const CustomSelect = ({ name, val, handleChange }) => {
             required
             name={name}
             id="course"
-            className="rounded-lg border-3 p-3 font-semibold border-text focus-within:border-2 focus-within:border-text text-sm md:text-base focus-within:outline-none w-full text-gray-200 bg-transparent"
+            className="rounded-lg border-3 p-3 font-semibold border-primary focus-within:border-2 focus-within:border-primary text-sm md:text-base focus-within:outline-none w-full text-foreground/80 bg-transparent"
             onChange={handleChange}
         >
             <option value="" disabled className="text-gray-500 font-bold text-sm md:text-base">

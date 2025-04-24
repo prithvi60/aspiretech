@@ -36,11 +36,11 @@ const GuidedBy = () => {
           <Image
             width={20}
             height={20}
-            className="w-10 h-10 md:w-14 md:h-14"
+            className="w-12 h-12 md:w-16 md:h-16"
             src={"/trained.svg"}
             alt={"logo"}
           />
-          <h2 className="font-extrabold text-foreground leading-7 md:leading-10  text-[clamp(1.4rem,2.50vw,2.6rem)] w-full md:w-3/5 lg:w-1/2">
+          <h2 className="font-extrabold text-foreground leading-7 md:leading-10 text-[clamp(1.4rem,2.50vw,2.6rem)] w-full md:w-3/5 lg:w-1/2">
             Trained and Guided by the only best
           </h2>
           <div className="flex gap-2">
@@ -87,9 +87,9 @@ const Feature = ({
         ease: "easeInOut",
         duration: 0.35,
       }}
-      className="bg-linear-to-b from-[var(--text-gradient-left)]/30 to-[#fffefe9e] p-[1.5px] rounded-xl min-h-[350px] xl:min-h-[250px] w-10/12 shrink-0 md:w-3/5 relative z-40"
+      className="bg-secondary p-[1.5px] rounded-xl min-h-[350px] xl:min-h-[250px] w-10/12 shrink-0 md:w-3/5 relative z-40"
     >
-      <div className="relative flex h-full flex-col justify-between overflow-hidden p-8 shadow-lg bg-radial from-black to-[#222222] font-inter gap-6 rounded-xl">
+      <div className="relative flex h-full flex-col justify-between overflow-hidden p-8 shadow-lg bg-secondary font-inter gap-6 rounded-xl">
         <div className="relative">
           {/* first layer */}
           <div className="w-full h-56 bg-zinc-400 rounded-xl relative z-30 overflow-hidden">
@@ -101,9 +101,9 @@ const Feature = ({
             />
           </div>
           {/* second layer */}
-          <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-4/5 bg-primary/30 backdrop-blur-lg rounded-xl h-64 z-20" />
+          <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-4/5 bg-black/20 backdrop-blur-lg rounded-xl h-64 z-20" />
           {/* third layer */}
-          <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-11/12 bg-primary/40 backdrop-blur-xl rounded-xl h-60 z-10" />
+          <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-11/12 bg-primary/80 backdrop-blur-xl rounded-xl h-60 z-10" />
         </div>
         <div className="flex flex-col justify-between text-foreground">
           <div className="space-y-4 ">

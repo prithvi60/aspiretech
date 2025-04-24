@@ -3,25 +3,27 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --primary: #fbcc04; /* drop shadow */
-  --secondary: #fbcc05; /* gradient bottom */
-  --gradient-top: #f3dd7d; /* gradient top */
-  --footer-link: #949492; /* footer link */
-  --footer-bg: #1a1918; /* footer link */
-  --text-gradient-left: #ffc800; /* text gradient left */
-  --text-gradient-right: #fffefe; /* text gradient right */
+  --background: #ffffff;
+  --foreground: #3e3e3e;
+  --primary: #fbcc04; /* text highlighter */
+  --secondary: #fff2bd; /* background color navbar & cards */
+  --secondary-dark: #ffe58c; /* background color navbar & cards */
+  --border: #ffec9f; /* border color */
+  --btn-bg: #2b2b2d; /* button background color */
+  --footer-border: #edd15b; /* footer border and title color */
 }
 
 @theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-inter: var(--font-inter);
+  --font-plus: var(--font-plus);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  --color-footerText: var(--footer-link);
-  --color-footerBg: var(--footer-bg);
+  --color-secondaryDark: var(--secondary-dark);
+  --color-footerBorder: var(--footer-border);
+  --color-btn: var(--btn-bg);
+  --color-borderColor: var(--border);
 }
 
 @layer base {
@@ -38,16 +40,16 @@
   }
 
   /* text bg gradient */
-  .text-gradient {
+  /* .text-gradient {
     @apply bg-linear-to-r from-[var(--text-gradient-left)]/80 via-[var(--secondary)]/70 to-[var(--text-gradient-right)] bg-clip-text text-transparent;
-  }
+  } */
 
   /* card bg gradient */
-  .bg-gradient {
+  /* .bg-gradient {
     @apply bg-linear-to-b from-[#141414] via-[#181818] to-[#1e1e1e];
-  }
+  } */
 
-  .bg-gradientCard {
+  /* .bg-gradientCard {
     @apply bg-linear-to-l from-[#141414] via-[#181818] to-[#2f2f2f];
   }
 
@@ -73,7 +75,7 @@
 
   .custom-shadow {
     @apply shadow-[0px_0px_60px_-18px_var(--primary)];
-  }
+  } */
 }
 
 .no_scrollbar::-webkit-scrollbar {
