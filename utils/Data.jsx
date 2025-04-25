@@ -64,6 +64,35 @@ export const footerLinks3 = [
     { menu: "Contact us", href: "/contact" },
 ];
 
+export const heroMarqueeData = [
+    {
+        img: "/stock-1.jpg",
+        alt: "stock image",
+        name: "Advaith R P",
+    },
+    {
+        img: "/stock-2.jpg",
+        alt: "stock image",
+        name: "Thejasvi T V",
+    },
+    {
+        img: "/stock-1.jpg",
+        alt: "stock image",
+        name: "Udayan Goswami",
+    },
+    {
+        img: "/stock-1.jpg",
+        alt: "stock image",
+        name: "Chandra Shekar Gogula",
+    },
+    {
+        img: "/stock-2.jpg",
+        alt: "stock image",
+        name: "Thejasvi T V",
+    },
+
+]
+
 export const socialLinks = [
     {
         icon: (

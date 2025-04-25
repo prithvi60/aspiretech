@@ -45,7 +45,7 @@ export const StoriesCard = ({ data }) => {
                         </p>
                         {hasOverflow && (
                             <button
-                                className="absolute right-5 -bottom-5 font-semibold text-primary hover:underline focus:outline-none text-xs md:text-sm cursor-pointer"
+                                className="absolute right-5 -bottom-5 font-semibold text-black tracking-wider hover:underline focus:outline-none text-xs md:text-sm cursor-pointer"
                                 onClick={() => setIsExpanded(!isExpanded)}
                             >
                                 {isExpanded ? "Show Less" : "Read More"}

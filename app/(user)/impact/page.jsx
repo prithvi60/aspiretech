@@ -1,3 +1,4 @@
+import ExitModalCard from "@/components/features/ExitModalCard";
 import FutureChecks from "@/components/layout/impact/FutureChecks";
 import ImpactHero from "@/components/layout/impact/ImpactHero";
 import IndustryRoleTrends from "@/components/layout/impact/IndustryRoleTrends";
@@ -9,6 +10,7 @@ import React from "react";
 const Page = () => {
     return (
         <div>
+            <ExitModalCard />
             <ImpactHero />
             <PlacementSection
                 title={"Placement Landscape by Sector"}

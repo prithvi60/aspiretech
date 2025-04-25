@@ -15,7 +15,7 @@ const Certifications = ({ data }) => {
                         <>
                             <div className="space-y-1.5 md:space-y-3">
                                 <p
-                                    className={`p-4 md:p-6 bg-white text-primary/70 text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl border-4 border-borderColor`}
+                                    className={`p-4 md:p-6 bg-white text-black text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl border-4 border-primary`}
                                 >
                                     {list.note1}
                                 </p>
