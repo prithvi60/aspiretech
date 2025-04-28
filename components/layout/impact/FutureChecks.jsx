@@ -54,7 +54,7 @@ const data = [
     },
     {
         title: "Data Scientist",
-        num: 800000,
+        num: 1200000,
         suffix: "₹",
         percentage: 30,
     }
