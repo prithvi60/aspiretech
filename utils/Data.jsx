@@ -1,8 +1,10 @@
 import {
     FaFacebook,
     FaInstagram,
+    FaLinkedin,
     FaLinkedinIn,
     FaXTwitter,
+    FaYoutube,
 } from "react-icons/fa6";
 
 export const navLinks = [
@@ -96,21 +98,27 @@ export const heroMarqueeData = [
 export const socialLinks = [
     {
         icon: (
-            <FaInstagram className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
+            <FaYoutube className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
         ),
-        href: "#",
+        href: "https://www.youtube.com/@AspireTechAcademy",
     },
     {
         icon: (
-            <FaXTwitter className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
+            <FaLinkedin className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
         ),
-        href: "#",
+        href: "https://www.linkedin.com/company/aspire-tech-academy",
     },
     {
         icon: (
             <FaFacebook className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
         ),
-        href: "#",
+        href: "https://www.facebook.com/aspiretehacademy",
+    },
+    {
+        icon: (
+            <FaInstagram className="text-3xl md:text-4xl text-background hover:text-background/70 hover:animate-pulse rounded-full border border-primary p-2 bg-primary" />
+        ),
+        href: "https://www.instagram.com/theaspiretechacademy",
     },
 ];
 
