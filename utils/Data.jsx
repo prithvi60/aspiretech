@@ -29,7 +29,7 @@ export const navLinks = [
     },
     { menu: "News", link: "/news" },
     { menu: "Impact", link: "/impact" },
-    { menu: "Corporate training", link: "/corporate-training" },
+    { menu: "Corporate training", link: "/corporate-training-solution" },
     { menu: "Job board", link: "/job-board" },
 ];
 
@@ -1588,3 +1588,90 @@ export const placementRecords = [
         alt: "twitter logo",
     },
 ]
+
+
+// corporate page
+export const corporateData = [
+    {
+        title: "Quick Turn-Around Time",
+        desc: "Receive shortlisted profiles within 24 hours",
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+    {
+        title: "Zero Cost Hiring",
+        desc: "Hire the right talents at zero cost!",
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+    {
+        title: "Year-Round Availability",
+        desc: "Hire job-ready candidates throughout the year",
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+    {
+        title: "High Acceptance Rate",
+        desc: "Above 98% of OdinGrads accept job offers",
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+]
+export const corporateTrainingList = [
+    {
+        title: "Customization",
+        lists: ["Understanding your requirement and expected outcomes", "Customizing the training program to align with your business goals"],
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+    {
+        title: "Delivery",
+        lists: ["Instructor-led interactive classes by industry experts", "High engagement through assignments, tests, and Capstone projects"],
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+    {
+        title: "Evaluation",
+        lists: ["Assignments, tests, and assessments", "Reports on employee progress"],
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+    {
+        title: "Support",
+        lists: ["Dedicated SME support", "Dedicated technical support"],
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+]
+
+export const corporateTrainingData = {
+    title: "Empower Your Team to Achieve More",
+    desc: "Aspire Tech Academy is a certified e-learning platform, ISO/IAF accredited, dedicated to empowering your career through skill enhancement and upskilling. Our certifications cover a range of domains like the IBM Certified Data Science Architect Program, Fast Track Data Analyst Course,  UI/UX, Digital Marketing, and Cybersecurity."
+}
+export const roleBasedTrainingList = [
+    {
+        title: "Data Engineer",
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+    {
+        title: "Data Analyst",
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+    {
+        title: "Data Visualization",
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+    {
+        title: "ML Engineer",
+        img: "/aspire-logo-2.svg",
+        alt: "image",
+    },
+]
+
+export const corporateTalentData = {
+    title: "One Platform. Infinite Talent.",
+    desc: "From fresh graduates to experienced professionals, tap into a wide-ranging talent pool that brings varied perspectives and real-world skills to your team.Build a workforce that's as dynamic and adaptable as your business."
+}

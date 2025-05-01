@@ -25,7 +25,7 @@ const Contact = () => {
                     ))}
                 </ul>
             </div>
-            <ContactForm />
+            <ContactForm title={"contact"} />
             <div className="rounded-2xl w-full h-full flex flex-col gap-10 md:gap-0 md:flex-row justify-between font-inter text-foreground px-14 py-20 border-4 md:border-6 border-borderColor mt-32 md:mt-44 bg-white">
                 <div className="w-full md:w-2/5 lg:w-1/2 space-y-3 md:space-y-5">
                     <h3 className="text-[clamp(1rem,1.15vw,1.5rem)]">Contact Info</h3>

@@ -8,7 +8,7 @@ const initialFormData = {
     message: "",
     phoneNo: ""
 };
-export const ContactForm = () => {
+export const ContactForm = ({ title }) => {
     const [formData, setFormData] = useState(initialFormData);
     const [status, setStatus] = useState(false);
 
@@ -35,7 +35,7 @@ export const ContactForm = () => {
                     email: formData.email,
                     message: formData.message,
                     phoneNo: formData.phoneNo,
-                    title: "contact"
+                    title
                 }),
             });
 
