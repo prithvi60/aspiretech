@@ -14,7 +14,7 @@ export default function DesktopMenu({ menu }) {
 
   return (
     <motion.li
-      className={`group/link ${menu.menu === "Programs" && "relative"} font-medium tracking-wide`}
+      className={`group/link ${(menu.menu === "Programs" || menu.menu === "Enterprise") && "relative"} font-medium tracking-wide`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       key={menu.menu}
@@ -49,7 +49,7 @@ export default function DesktopMenu({ menu }) {
             transition={{ duration: 0.3, ease: "easeOut" }}
             className={`absolute z-50 mt-2 top-12 bg-secondaryDark text-black shadow-xl rounded-lg overflow-hidden w-max -left-0 xl:left-0 border-4 border-footerBorder backdrop-blur-xs`}
           >
-            {menu.menu === "programs" ? (
+            {menu.menu === "programs" && menu.menu === "enterprise" ? (
               // Card-based layout
               <div className="px-3.5 py-4 w-full">
                 <div className="relative space-y-2">

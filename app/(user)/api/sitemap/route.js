@@ -32,7 +32,12 @@ export async function GET() {
       priority: 0.9,
     },
     {
-      url: "/programs/digital-marketing-program",
+      url: "/enterprise/training-solution",
+      changefreq: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "/enterprise/talent-solution",
       changefreq: "weekly",
       priority: 0.9,
     },

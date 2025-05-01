@@ -29,7 +29,19 @@ export const navLinks = [
     },
     { menu: "News", link: "/news" },
     { menu: "Impact", link: "/impact" },
-    { menu: "Corporate training", link: "/corporate-training-solution" },
+    {
+        menu: "Enterprise",
+        subMenus: [
+            {
+                menu: "training solution",
+                link: "/enterprise/training-solution",
+            },
+            {
+                menu: "talent solution",
+                link: "/enterprise/talent-solution",
+            },
+        ],
+    },
     { menu: "Job board", link: "/job-board" },
 ];
 
