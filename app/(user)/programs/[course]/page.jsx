@@ -1,4 +1,3 @@
-import ExitModalCard from "@/components/features/ExitModalCard";
 import AchievementsSlider from "@/components/layout/programs/AchievementsSlider";
 import Addons from "@/components/layout/programs/Addons";
 import Certifications from "@/components/layout/programs/Certifications";
@@ -62,7 +61,6 @@ const Page = async ({ params }) => {
 
     return (
         <div>
-            <ExitModalCard />
             <ProgramsHero
                 val={
                     val === "data science architecture program"

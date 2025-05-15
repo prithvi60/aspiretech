@@ -1,4 +1,3 @@
-import ExitModalCard from "@/components/features/ExitModalCard";
 import HeroMarqueeComponent from "@/components/HeroMarqueeComponent";
 import AspireTechSets from "@/components/layout/AspireTechSets";
 import EnquireTechExpert from "@/components/layout/EnquireTechExpert";
@@ -53,7 +52,6 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocal) }}
       />
-      <ExitModalCard />
       <Hero />
       <HeroMarqueeComponent />
       <IndustrialCoursesCard />

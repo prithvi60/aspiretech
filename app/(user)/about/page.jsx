@@ -1,4 +1,3 @@
-import ExitModalCard from "@/components/features/ExitModalCard";
 import OurMission from "@/components/layout/about/OurMission";
 import AspireTechSets from "@/components/layout/AspireTechSets";
 import IndustrialCoursesCard from "@/components/layout/IndustrialCoursesCard";
@@ -10,7 +9,6 @@ import React from "react";
 const Page = () => {
     return (
         <div>
-            <ExitModalCard />
             <ProgramsHero
                 val={aboutHero}
                 btn={"about"}
