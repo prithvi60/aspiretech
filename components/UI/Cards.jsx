@@ -23,9 +23,9 @@ export const StoriesCard = ({ data }) => {
                     <div className="flex items-center px-5 pt-5 gap-5 text-foreground">
                         <div className="shrink-0">
                             <Image
-                                width={20}
-                                height={20}
-                                className="w-8 h-8 rounded-full"
+                                width={60}
+                                height={60}
+                                className="w-10 h-12 rounded-full p-0.5 bg-white"
                                 src={data.img}
                                 alt={data.alt}
                             />

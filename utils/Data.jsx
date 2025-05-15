@@ -175,7 +175,7 @@ export const IndustrialCoursesCardData = [
 
 export const StoriesByCustomer = [
     {
-        img: "/avatar.jpg",
+        img: "/Shashi.jpg",
         alt: "customer image",
         customerName: "Shashi Kiran",
         about:
@@ -184,7 +184,7 @@ export const StoriesByCustomer = [
         position: "Data Scientist at Tata Consultancy Services",
     },
     {
-        img: "/avatar.jpg",
+        img: "/Jay.png",
         alt: "customer image",
         customerName: "Jay Prakash",
         about:
@@ -193,7 +193,7 @@ export const StoriesByCustomer = [
         position: "Assistant Manager at Flipkart",
     },
     {
-        img: "/avatar.jpg",
+        img: "/Shameer.jpg",
         alt: "customer image",
         customerName: "Shameer Khan",
         about:
@@ -202,7 +202,7 @@ export const StoriesByCustomer = [
         position: "Professional 1 Product Delivery at DXC Technology",
     },
     {
-        img: "/avatar-2.png",
+        img: "/Sindhu.png",
         alt: "customer image",
         customerName: "Sindhu",
         about:
@@ -211,7 +211,7 @@ export const StoriesByCustomer = [
         position: "Digital Marketer at Flipkart",
     },
     {
-        img: "/avatar-2.png",
+        img: "/Suba.jpg",
         alt: "customer image",
         customerName: "Suba",
         about:
@@ -220,7 +220,7 @@ export const StoriesByCustomer = [
         position: "Content Marketer at Big Basket",
     },
     {
-        img: "/avatar-2.png",
+        img: "/Priya.jpg",
         alt: "customer image",
         customerName: "Priya",
         about:
