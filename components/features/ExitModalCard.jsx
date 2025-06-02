@@ -20,7 +20,9 @@ const ExitModalCard = () => {
                 setIsOpen={setIsOpen}
                 thank={thank}
                 setThank={setThank}
-                title={"exclusively from a pop-up"}
+                title={"Aspire Project Brochure"}
+                pdf={"/files/Aspire-Project-Brochure.pdf"}
+                defaultVal
             />
         </section>
     );

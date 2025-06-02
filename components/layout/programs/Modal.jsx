@@ -8,7 +8,6 @@ import { CustomSelect } from "@/components/UI/CustomSelect";
 export const ProgramsModal = ({ title, pdf }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [thank, setThank] = useState(false);
-
     return (
         <>
             <button
@@ -47,6 +46,8 @@ export const SpringModal = ({
     pdf,
     defaultVal
 }) => {
+
+
     const initialFormData = {
         name: "",
         email: "",

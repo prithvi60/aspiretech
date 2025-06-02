@@ -51,7 +51,6 @@ export async function POST(req) {
   const messageForUser = `
   <p style="font-size: 16px; color: #555;">Dear <strong>${name}</strong>,</p>
   `;
-
   // Function to fetch the PDF file from the public/files directory and convert it to Base64
   const getPdfAttachment = async () => {
     const pdfArray = Array.isArray(pdf) ? pdf : [pdf];
@@ -63,7 +62,6 @@ export async function POST(req) {
     ) {
       return [];
     }
-
     try {
       const attachments = await Promise.all(
         pdfArray.map(async (pdf, index) => {
@@ -98,7 +96,7 @@ export async function POST(req) {
       return [];
     }
   };
-  
+
   // !clientEmail
   if (!email && !process.env.EMAIL_ID) {
     return NextResponse.json(

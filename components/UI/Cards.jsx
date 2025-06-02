@@ -173,7 +173,7 @@ export const EnquireCard = ({ data }) => {
     return (
         <div className="min-w-60 rounded-xl space-y-8 bg-secondary border border-primary/80 mx-4 font-inter">
             <div className="flex flex-col items-center justify-center gap-3 px-5 py-7 text-foreground">
-                <div className="size-14 md:size-24 relative overflow-hidden rounded-xl bg-white">
+                <div className="size-14 md:size-28 relative overflow-hidden rounded-xl bg-white">
                     <Image
                         fill
                         className="object-contain object-center p-2"

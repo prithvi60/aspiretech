@@ -80,8 +80,10 @@ const Page = async ({ params }) => {
                         : val === "data analytics launchpad"
                             ? "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf"
                             : val === "digital marketing program"
-                                ? "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf"
-                                : "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf"
+                                ? "/files/Aspire-Project-Brochure.pdf" :
+                                val === "full stack development"
+                                    ? "/files/Aspire-Full-stack-development.pdf"
+                                    : "/files/Aspire-Project-Brochure.pdf"
                 }
                 title={
                     val === "data science architecture program"

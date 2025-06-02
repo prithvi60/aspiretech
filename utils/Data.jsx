@@ -7,6 +7,21 @@ import {
     FaYoutube,
 } from "react-icons/fa6";
 
+function getNextSunday() {
+    const today = new Date();
+    const dayOfWeek = today.getDay();
+    const daysUntilSunday = dayOfWeek === 0 ? 0 : 7 - dayOfWeek;
+    const nextSunday = new Date(today);
+    nextSunday.setDate(today.getDate() + daysUntilSunday);
+
+    // Format as "d MMMM"
+    const day = nextSunday.getDate();
+    const month = nextSunday.toLocaleDateString('en-US', { month: 'long' });
+
+    // Return as "d MMMM"
+    return `${day} ${month}`;
+}
+
 export const navLinks = [
     { menu: "About us", link: "/about" },
     {
@@ -597,7 +612,9 @@ export const DMHero = {
 export const UIHero = {
     title: "Turning Dreams into Reality <span class='text-primary'>UI/UX</span> Design Course", desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design."
 }
-
+export const FullStackHero = {
+    title: "Building Digital Worlds: <span class='text-primary'>Full Stack</span> Developer", desc: " To initiate your journey, the first step is to register for our Full Stack Development Program—an inclusive opportunity open to all individuals aspiring to become industry-ready. This program offers hands-on training through specialized projects, providing participants with a comprehensive learning experience."
+}
 
 export const DSAchievements = [
     "15 seats Batch size ",
@@ -664,7 +681,7 @@ export const DMSummaryDetails = {
 
 export const DSStats = [
     {
-        count: "31 March",
+        count: getNextSunday(),
         statusName: "ENROLMENT ENDS",
         img: "/enrollment.svg",
     },
@@ -681,7 +698,7 @@ export const DSStats = [
 ];
 export const DAStats = [
     {
-        count: "31 March",
+        count: getNextSunday(),
         statusName: "ENROLMENT ENDS",
         img: "/enrollment.svg",
     },
@@ -698,7 +715,7 @@ export const DAStats = [
 ];
 export const DMStats = [
     {
-        count: "31 March",
+        count: getNextSunday(),
         statusName: "ENROLMENT ENDS",
         img: "/enrollment.svg",
     },
@@ -715,7 +732,7 @@ export const DMStats = [
 ];
 export const UIStats = [
     {
-        count: "31 March",
+        count: getNextSunday(),
         statusName: "ENROLMENT ENDS",
         img: "/enrollment.svg",
     },
@@ -735,12 +752,12 @@ export const UIStats = [
 export const DSSpotlight = [
     {
         note: "Learn from Industry Experts who have achieved the success you aim for",
-        img: "/reasons/image-1.png",
+        img: "/reasons/reason-1.png",
         alt: "image",
     },
     {
         note: "Placement-Oriented Training with Guaranteed Interviews & Job Support",
-        img: "/reasons/image-2.png",
+        img: "/reasons/reason-2.png",
         alt: "image",
     },
     {
@@ -750,32 +767,32 @@ export const DSSpotlight = [
     },
     {
         note: "Money-Back Guarantee if promises aren't delivered",
-        img: "/reasons/image-7.jpg",
+        img: "/reasons/reason-4.png",
         alt: "image",
     },
     {
         note: "Domain-Specific Curriculum tailored for real-world applications",
-        img: "/reasons/image-8.jpg",
+        img: "/reasons/reason-5.png",
         alt: "image",
     },
     {
         note: "1:1 Mentoring & Doubt Clearance with expert guidance",
-        img: "/reasons/image-4.png",
+        img: "/reasons/reason-6.png",
         alt: "image",
     },
     {
         note: "Mock Interviews & Dedicated Program Manager for personalized career support",
-        img: "/reasons/image-5.jpg",
+        img: "/reasons/reason-7.png",
         alt: "image",
     },
     {
         note: "AI Enabled Job Board - Once being eligible for placements you will get access to the job board where it will act as a one point contact for all your placement needs",
-        img: "/reasons/image-9.jpg",
+        img: "/reasons/reason-8.png",
         alt: "image",
     },
     {
         note: "Only 15 Students per Batch with 24/7 LMS Access for focused and flexible learning",
-        img: "/reasons/image-6.png",
+        img: "/reasons/reason-9.png",
         alt: "image",
     },
 ];
@@ -824,84 +841,84 @@ export const DASpotlight = [
 export const DMSpotlight = [
     {
         note: "Lifetime Support with the LMS content",
-        img: "/reasons/image-1.png",
+        img: "/reasons/reason-8.png",
         alt: "image",
     },
     {
         note: "Develop practical skills through hands-on projects and real-world applications",
-        img: "/reasons/image-2.png",
+        img: "/reasons/reason-2.png",
         alt: "image",
     },
     {
         note: "Pay 15,000 initially and the rest after you land in the job",
-        img: "/reasons/image-3.png",
+        img: "/reasons/reason-1.png",
         alt: "image",
     },
     {
         note: "Internship Guarantee",
-        img: "/reasons/image-7.jpg",
+        img: "/reasons/reason-6.png",
         alt: "image",
     },
     {
         note: "Access to exclusive features and resources to enhance your learning experience",
-        img: "/reasons/image-8.jpg",
+        img: "/reasons/reason-7.png",
         alt: "image",
     },
     {
         note: "1:1 mentoring session",
-        img: "/reasons/image-4.png",
+        img: "/reasons/reason-5.png",
         alt: "image",
     },
     {
         note: "Pay After Placement",
-        img: "/reasons/image-5.jpg",
+        img: "/reasons/reason-9.png",
         alt: "image",
     },
     {
         note: "100% Placement Assistance",
-        img: "/reasons/image-9.jpg",
+        img: "/reasons/reason-2.png",
         alt: "image",
     }
 ];
 export const UISpotlight = [
     {
         note: "Hands-on UX/UI Design Experience from Scratch",
-        img: "/reasons/image-1.png",
+        img: "/reasons/UI.jpg",
         alt: "image",
     },
     {
         note: "Earn a Globally Recognized Design Certification",
-        img: "/reasons/image-2.png",
+        img: "/reasons/reason-9.png",
         alt: "image",
     },
     {
         note: "Personalized 1-on-1 Mentorship from Experts",
-        img: "/reasons/image-3.png",
+        img: "/reasons/reason-5.png",
         alt: "image",
     },
     {
         note: "Step-by-Step Guidance to Launch Your Career",
-        img: "/reasons/image-7.jpg",
+        img: "/reasons/reason-4.png",
         alt: "image",
     },
     {
         note: "Lifetime Support from Industry Professionals",
-        img: "/reasons/image-8.jpg",
+        img: "/reasons/reason-6.png",
         alt: "image",
     },
     {
         note: "Join a Thriving, Passionate Design Community",
-        img: "/reasons/image-4.png",
+        img: "/reasons/reason-7.png",
         alt: "image",
     },
     {
         note: "Master Design Skills in 18 Weeks",
-        img: "/reasons/image-5.jpg",
+        img: "/reasons/reason-8.png",
         alt: "image",
     },
     {
         note: "Learn Directly from Industry-Leading Designers",
-        img: "/reasons/image-9.jpg",
+        img: "/reasons/reason-1.png",
         alt: "image",
     }
 ];
@@ -1607,25 +1624,25 @@ export const corporateData = [
     {
         title: "Quick Turn-Around Time",
         desc: "Receive shortlisted profiles within 24 hours",
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/talent-1.svg",
         alt: "image",
     },
     {
         title: "Zero Cost Hiring",
         desc: "Hire the right talents at zero cost!",
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/talent-2.svg",
         alt: "image",
     },
     {
         title: "Year-Round Availability",
         desc: "Hire job-ready candidates throughout the year",
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/talent-3.svg",
         alt: "image",
     },
     {
         title: "High Acceptance Rate",
         desc: "Above 98% of OdinGrads accept job offers",
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/talent-4.svg",
         alt: "image",
     },
 ]
@@ -1633,25 +1650,25 @@ export const corporateTrainingList = [
     {
         title: "Customization",
         lists: ["Understanding your requirement and expected outcomes", "Customizing the training program to align with your business goals"],
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/1.svg",
         alt: "image",
     },
     {
         title: "Delivery",
         lists: ["Instructor-led interactive classes by industry experts", "High engagement through assignments, tests, and Capstone projects"],
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/2.svg",
         alt: "image",
     },
     {
         title: "Evaluation",
         lists: ["Assignments, tests, and assessments", "Reports on employee progress"],
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/3.svg",
         alt: "image",
     },
     {
         title: "Support",
         lists: ["Dedicated SME support", "Dedicated technical support"],
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/4.svg",
         alt: "image",
     },
 ]
@@ -1663,22 +1680,22 @@ export const corporateTrainingData = {
 export const roleBasedTrainingList = [
     {
         title: "Data Engineer",
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/engineer.svg",
         alt: "image",
     },
     {
         title: "Data Analyst",
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/analyst.svg",
         alt: "image",
     },
     {
         title: "Data Visualization",
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/visualization.svg",
         alt: "image",
     },
     {
         title: "ML Engineer",
-        img: "/aspire-logo-2.svg",
+        img: "/SVGIcons/ml.svg",
         alt: "image",
     },
 ]
