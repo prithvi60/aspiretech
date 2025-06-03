@@ -33,7 +33,7 @@ const Footer = () => {
                         <ul className="flex items-center gap-5">
                             {socialLinks.map((list, idx) => (
                                 <li key={idx} className="flex-shrink-0">
-                                    <Link title="footer social icons" href={list.href}>{list.icon}</Link>
+                                    <Link target="_blank" title="footer social icons" href={list.href}>{list.icon}</Link>
                                 </li>
                             ))}
                         </ul>

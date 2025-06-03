@@ -14,6 +14,9 @@ const transporter = nodemailer.createTransport({
     user: process.env.EMAIL_ID,
     pass: process.env.EMAIL_PASSWORD,
   },
+  connectionTimeout: 8000,
+  greetingTimeout: 8000,
+  socketTimeout: 15000,
 });
 
 export async function POST(req) {
@@ -114,7 +117,7 @@ export async function POST(req) {
   };
 
   const userMailOptions = {
-    from: `Aspire Tech Academy - "${process.env.EMAIL_ID}" <support@webibee.com>`,
+    from: `Aspire Tech Academy - <support@webibee.com>`,
     to: email,
     subject: "Acknowledgment: We received your Submission",
     html: generateEmailTemplateForUser(messageForUser, title),

@@ -21,24 +21,22 @@ const IndustrialProject = ({ data }) => {
                             {data.desc}
                         </p>
                     </div>
-                    {data.title === "Industry Projects" && (
-                        <div className='w-full flex justify-center items-center mt-10'>
-                            <Link
-                                href={"/files/Aspire-Project-Brochure.pdf"}
-                                title={`Download Brochure`}
-                                className="w-max transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
-                                download={"Aspire Project Brochure.pdf"}
-                                aria-label="Download Brochure"
-                                rel="noopener noreferrer"
+                    <div className='w-full flex justify-center items-center mt-10'>
+                        <Link
+                            href={data.title === "Industry Projects" ? "/files/Aspire-Project-Brochure.pdf" : "/files/Aspire-Placement-Report.pdf"}
+                            title={`Download Brochure`}
+                            className="w-max transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
+                            download={"Aspire Project Brochure.pdf"}
+                            aria-label="Download Brochure"
+                            rel="noopener noreferrer"
+                        >
+                            <div
+                                className={`bg-btn flex justify-center items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-background font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg`}
                             >
-                                <div
-                                    className={`bg-btn flex justify-center items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-background font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg`}
-                                >
-                                    Download Brochure
-                                </div>
-                            </Link>
-                        </div>
-                    )}
+                                Download Brochure
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

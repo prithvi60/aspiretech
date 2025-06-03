@@ -40,6 +40,10 @@ export const navLinks = [
                 menu: "digital marketing program",
                 link: "/programs/digital-marketing-program",
             },
+            {
+                menu: "full stack development",
+                link: "/programs/full-stack-development",
+            },
         ],
     },
     { menu: "News", link: "/news" },
@@ -73,6 +77,10 @@ export const footerLinks1 = [
     {
         menu: "Digital Marketing Program ",
         href: "/programs/digital-marketing-program",
+    },
+    {
+        menu: "Full Stack Development",
+        href: "/programs/full-stack-development",
     },
 ];
 
@@ -613,7 +621,7 @@ export const UIHero = {
     title: "Turning Dreams into Reality <span class='text-primary'>UI/UX</span> Design Course", desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design."
 }
 export const FullStackHero = {
-    title: "Building Digital Worlds: <span class='text-primary'>Full Stack</span> Developer", desc: " To initiate your journey, the first step is to register for our Full Stack Development Program—an inclusive opportunity open to all individuals aspiring to become industry-ready. This program offers hands-on training through specialized projects, providing participants with a comprehensive learning experience."
+    title: "Building Digital Worlds - <span class='text-primary'>Full Stack</span> Developer", desc: " To initiate your journey, the first step is to register for our Full Stack Development Program—an inclusive opportunity open to all individuals aspiring to become industry-ready. This program offers hands-on training through specialized projects, providing participants with a comprehensive learning experience."
 }
 
 export const DSAchievements = [
@@ -667,6 +675,11 @@ export const DASummaryDetails = {
     title: 'Just 20% Upfront fee',
     desc: 'Achieve a Competitive Advantage in Emerging Technologies with Our Pay After Placement Data Analytics Course',
     month: "IN 3 Months"
+}
+export const FSDSummaryDetails = {
+    title: 'Get Up to 30% Scholarship',
+    desc: ' Unlock your future in one of the most versatile and high-demand tech fields—Full Stack Development! Whether you come from a technical or non-technical background, this course is crafted to guide you from the fundamentals to advanced development skills through hands-on projects and real-world applications. Learn from industry professionals, master both front-end and back-end technologies, and build a strong portfolio of full-featured web applications. With personalized mentorship, career support, and a job-ready curriculum, this is the perfect time to start your journey toward a rewarding career in Full Stack Development. Enroll now and turn your passion for coding into a profession!',
+    month: "IN 6 months"
 }
 export const DMSummaryDetails = {
     title: 'Gear up with Futuristic career',
@@ -747,7 +760,23 @@ export const UIStats = [
         img: "/hiring-partner.svg",
     },
 ];
-
+export const FSDStats = [
+    {
+        count: getNextSunday(),
+        statusName: "ENROLMENT ENDS",
+        img: "/enrollment.svg",
+    },
+    {
+        count: "Modules",
+        statusName: "6",
+        img: "/modules.svg",
+    },
+    {
+        count: "30%",
+        statusName: "Scholarship",
+        img: "/hiring-partner.svg",
+    },
+];
 
 export const DSSpotlight = [
     {
@@ -799,42 +828,42 @@ export const DSSpotlight = [
 export const DASpotlight = [
     {
         note: "Lifetime Support with the LMS content",
-        img: "/reasons/image-1.png",
+        img: "/reasons/reason-7.png",
         alt: "image",
     },
     {
         note: "Develop practical skills through hands-on projects and real-world applications",
-        img: "/reasons/image-2.png",
+        img: "/reasons/reason-2.png",
         alt: "image",
     },
     {
         note: "Paid internship for 2 months",
-        img: "/reasons/image-9.png",
+        img: "/reasons/reason-6.png",
         alt: "image",
     },
     {
         note: "Build a strong foundation for a successful career in data analytics",
-        img: "/reasons/image-7.jpg",
+        img: "/reasons/reason-9.png",
         alt: "image",
     },
     {
         note: "Access to exclusive features and resources to enhance your learning experience",
-        img: "/reasons/image-8.jpg",
+        img: "/reasons/reason-8.png",
         alt: "image",
     },
     {
         note: "1:1 mentoring session",
-        img: "/reasons/image-4.png",
+        img: "/reasons/reason-6.png",
         alt: "image",
     },
     {
         note: "Gain a comprehensive understanding of data analytics concepts, techniques, and tools",
-        img: "/reasons/image-5.jpg",
+        img: "/reasons/reason-1.png",
         alt: "image",
     },
     {
         note: "100% Placement Assistance",
-        img: "/reasons/image-9.jpg",
+        img: "/reasons/reason-2.png",
         alt: "image",
     }
 ];
@@ -922,7 +951,62 @@ export const UISpotlight = [
         alt: "image",
     }
 ];
-
+export const FSDEnrollment = [
+    {
+        title: "",
+        desc: "Live Classes on Weekdays(Mon-Sat) by Industry Experts",
+        img: "/fsd-icons/fsd-1.svg",
+        alt: "image",
+    },
+    {
+        title: "",
+        desc: "Beginner Friendly Curriculum Everything will be Taught from Scratch",
+        img: "/fsd-icons/fsd-2.svg",
+        alt: "image",
+    },
+    {
+        title: "",
+        desc: "Recordings of live classes can access through LMS for lifetime",
+        img: "/fsd-icons/fsd-3.svg",
+        alt: "image",
+    },
+    {
+        title: "",
+        desc: "Guaranteed Certification Learner will get post Completion",
+        img: "/fsd-icons/fsd-4.svg",
+        alt: "image",
+    },
+    {
+        title: "",
+        desc: "Dedicated Mentorship To Boost up of your Confidence",
+        img: "/fsd-icons/fsd-5.svg",
+        alt: "image",
+    },
+    {
+        title: "",
+        desc: "24*7 Learner Support from Teaching assistance & Peer Groups",
+        img: "/fsd-icons/fsd-6.svg",
+        alt: "image",
+    },
+    {
+        title: "",
+        desc: "Easy Doubt Resolution Through Teachers/Peer Groups",
+        img: "/fsd-icons/fsd-7.svg",
+        alt: "image",
+    },
+    {
+        title: "",
+        desc: "Job Ready Projects Based on real-world scenarios",
+        img: "/fsd-icons/fsd-8.svg",
+        alt: "image",
+    },
+    {
+        title: "",
+        desc: "Crack Interviews with ease With our 50+Mock Sessions",
+        img: "/fsd-icons/fsd-9.svg",
+        alt: "image",
+    },
+]
 
 export const DSProgramCurriculum = [
     {
@@ -1133,7 +1217,66 @@ export const UIProgramCurriculum = [
         ],
     }
 ];
-
+export const FSDProgramCurriculum = [
+    {
+        module: "Module 1",
+        content: [
+            "Introduction to web technologies",
+            " Understanding the client-server architecture",
+            "HTML markup and structure",
+            "CSS styling and layout",
+            "FInstalling and configuring code editors (e.g., Visual Studio Code, Sublime Text)",
+            "Setting up a local development server (e.g., Node.js, XAMPP)",
+        ],
+    },
+    {
+        module: "Module 2",
+        content: [
+            "Semantic HTML5 elements",
+            " Responsive web design with CSS JavaScript Variables, data types, and operators",
+            "Control flow and functions",
+            "Overview of popular front-end frameworks (any one e.g.,React, Angular, Vue)",
+            "Interacting with the Document Object Model(DOM",
+            "Handling user events with JavaScript",
+            "Basics of a chosen framework",
+            "Introduction to CSS Preprocessors SASS or LESS",
+            "Advanced styling techniques"
+        ],
+    },
+    {
+        module: "Module 3",
+        content: [
+            "Overview of server-side programming",
+            "Basics of a back-end language (e.g., Node.js, Python, Ruby)",
+            "Server-Side Frameworks (e.g., Express, Django), Building server-side applications",
+            "Introduction to databases (SQL and NoSQL",
+            "CRUD operations and database design",
+            "RESTful APIs",
+            "Authentication and Authorization",
+            "Testing and Debugging",
+        ],
+    },
+    {
+        module: "Module 4",
+        content: [
+            "Version Control with Git, basics and branching",
+            "Collaborative development with GitHub",
+            "Deployment and Hosting (Heroku, Netlify)",
+            "Web Security",
+            "Techniques for optimizing web performance",
+            "Page load speed and rendering optimization",
+        ],
+    },
+    {
+        module: "Module 6",
+        content: [
+            "Web Foundations & React Basics",
+            "Advanced React & APIs",
+            "Back end development",
+            "Full stack Integration"
+        ],
+    }
+];
 
 export const DSAddonSyllabus = [
     "Bigdata, Sparck & Kafka, MongoDB",
@@ -1156,7 +1299,12 @@ export const DMAddonSyllabus = [
     "Recent Graduates who want to pursue a career in the field of Digital Marketing",
     "Professionals Who are looking at building a career in Digital Marketing",
 ];
-
+export const FSDAddonSyllabus = [
+    "Lifetime LMS Access",
+    "Corporate Communication Training",
+    "24*7 Dedicated Learner Support",
+    "Job Ready in 20 Weeks"
+];
 
 
 export const DSScienceSkillSets = [
@@ -1499,6 +1647,17 @@ export const UICertificationDetails = [
         note3: "Internship Certificate",
         note4: "Experience Certificate upto 1 year",
         img: "/UI-sampleCertificate.jpg",
+        alt: "image",
+    }
+];
+export const FSDCertificationDetails = [
+    {
+        note1: "Certificate from Aspire Tech Academy",
+        note2:
+            "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
+        note3: "Internship Certificate",
+        note4: "Experience Certificate upto 1 year",
+        img: "/certificate-full-stack.png",
         alt: "image",
     }
 ];

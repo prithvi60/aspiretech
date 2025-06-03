@@ -1,3 +1,4 @@
+import GradsOfATA from "@/components/layout/CTS/GradsOfATA";
 import AchievementsSlider from "@/components/layout/programs/AchievementsSlider";
 import Addons from "@/components/layout/programs/Addons";
 import Certifications from "@/components/layout/programs/Certifications";
@@ -12,6 +13,7 @@ import SummaryAboutCourse from "@/components/layout/programs/SummaryAboutCourse"
 import TechSoftware from "@/components/layout/programs/TechSoftware";
 import {
     CertificationDetails,
+    corporateData,
     DAAchievements,
     DAAddonSyllabus,
     DACertificationDetails,
@@ -44,6 +46,13 @@ import {
     DSStats,
     DSSummaryDetails,
     DSTechSoftwares,
+    FSDAddonSyllabus,
+    FSDCertificationDetails,
+    FSDEnrollment,
+    FSDProgramCurriculum,
+    FSDStats,
+    FSDSummaryDetails,
+    FullStackHero,
     UIAchievements,
     UICertificationDetails,
     UIHero,
@@ -69,7 +78,9 @@ const Page = async ({ params }) => {
                             ? DAHero
                             : val === "digital marketing program"
                                 ? DMHero
-                                : UIHero
+                                : val === "full stack development"
+                                    ? FullStackHero
+                                    : UIHero
                 }
                 pdf={
                     val === "data science architecture program"
@@ -80,8 +91,8 @@ const Page = async ({ params }) => {
                         : val === "data analytics launchpad"
                             ? "/files/IBM-Certified-Data-Analytics-Course-Brochure.pdf"
                             : val === "digital marketing program"
-                                ? "/files/Aspire-Project-Brochure.pdf" :
-                                val === "full stack development"
+                                ? "/files/Aspire-Project-Brochure.pdf"
+                                : val === "full stack development"
                                     ? "/files/Aspire-Full-stack-development.pdf"
                                     : "/files/Aspire-Project-Brochure.pdf"
                 }
@@ -93,9 +104,11 @@ const Page = async ({ params }) => {
                         ]
                         : val === "data analytics launchpad"
                             ? "IBM Certified Data Analytics Course Brochure"
-                            : val === "digital marketing program"
-                                ? "IBM Certified Data Analytics Course Brochure"
-                                : "IBM Certified Data Analytics Course Brochure"
+                            : val === "full stack development"
+                                ? "Aspire Full Stack Development Brochure"
+                                : val === "digital marketing program"
+                                    ? "Aspire Project Brochure"
+                                    : "Aspire Project Brochure"
                 }
             />
             <AchievementsSlider
@@ -115,7 +128,9 @@ const Page = async ({ params }) => {
                         ? DSSummaryDetails
                         : val === "data analytics launchpad"
                             ? DASummaryDetails
-                            : DMSummaryDetails
+                            : val === "full stack development"
+                                ? FSDSummaryDetails
+                                : DMSummaryDetails
                 }
                 stats={
                     val === "data science architecture program"
@@ -124,20 +139,27 @@ const Page = async ({ params }) => {
                             ? DAStats
                             : val === "digital marketing program"
                                 ? DMStats
-                                : UIStats
+                                : val === "full stack development"
+                                    ? FSDStats
+                                    : UIStats
                 }
             />
-            <SpotLight
-                data={
-                    val === "data science architecture program"
-                        ? DSSpotlight
-                        : val === "data analytics launchpad"
-                            ? DASpotlight
-                            : val === "digital marketing program"
-                                ? DMSpotlight
-                                : UISpotlight
-                }
-            />
+            {val !== "full stack development" && (
+                <SpotLight
+                    data={
+                        val === "data science architecture program"
+                            ? DSSpotlight
+                            : val === "data analytics launchpad"
+                                ? DASpotlight
+                                : val === "digital marketing program"
+                                    ? DMSpotlight
+                                    : UISpotlight
+                    }
+                />
+            )}
+            {val === "full stack development" && (
+                <GradsOfATA FSDTitle={true} corporateData={FSDEnrollment} />
+            )}
             <ProgramCurriculum
                 data={
                     val === "data science architecture program"
@@ -146,7 +168,9 @@ const Page = async ({ params }) => {
                             ? DAProgramCurriculum
                             : val === "digital marketing program"
                                 ? DMProgramCurriculum
-                                : UIProgramCurriculum
+                                : val === "full stack development"
+                                    ? FSDProgramCurriculum
+                                    : UIProgramCurriculum
                 }
                 pdf={
                     val === "data science architecture program"
@@ -180,14 +204,18 @@ const Page = async ({ params }) => {
                             ? DSAddonSyllabus
                             : val === "data analytics launchpad"
                                 ? DAAddonSyllabus
-                                : DMAddonSyllabus
+                                : val === "full stack development"
+                                    ? FSDAddonSyllabus
+                                    : DMAddonSyllabus
                     }
                     title={
                         val === "data science architecture program"
                             ? "Addon Syllabus : Skyrocketing Skills"
                             : val === "data analytics launchpad"
                                 ? "Who should enroll?"
-                                : "Who can apply for this course?"
+                                : val === "full stack development"
+                                    ? "Exclusive Full Stack Development (FSD) Add-Ons"
+                                    : "Who can apply for this course?"
                     }
                 />
             )}
@@ -217,7 +245,8 @@ const Page = async ({ params }) => {
             {val === "data science architecture program" && <GuidedBy />}
 
             {(val === "data science architecture program" ||
-                val === "data analytics launchpad") && (
+                val === "data analytics launchpad" ||
+                val === "full stack development") && (
                     <IndustrialProject
                         data={
                             val === "data science architecture program"
@@ -234,7 +263,9 @@ const Page = async ({ params }) => {
                             ? DACertificationDetails
                             : val === "digital marketing program"
                                 ? DMCertificationDetails
-                                : UICertificationDetails
+                                : val === "full stack development"
+                                    ? FSDCertificationDetails
+                                    : UICertificationDetails
                 }
             />
             {(val === "data science architecture program" ||

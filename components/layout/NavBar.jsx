@@ -38,7 +38,7 @@ const NavBar = () => {
         </div>
         {/* navbar menu lists */}
         <div className="flex items-center gap-0.5 sm:gap-x-0 xl:gap-x-5">
-          <ul className="gap-x-1 xl:!flex items-center hidden ">
+          <ul className="gap-x-0 xl:!flex items-center hidden ">
             {navLinks.map((menu, idx) => (
               <DesktopMenu key={idx} menu={menu} />
             ))}

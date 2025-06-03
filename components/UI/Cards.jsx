@@ -169,11 +169,11 @@ export const TechCompaniesCard = ({ data }) => {
     );
 };
 
-export const EnquireCard = ({ data }) => {
+export const EnquireCard = ({ data, FSDTitle }) => {
     return (
         <div className="min-w-60 rounded-xl space-y-8 bg-secondary border border-primary/80 mx-4 font-inter">
             <div className="flex flex-col items-center justify-center gap-3 px-5 py-7 text-foreground">
-                <div className="size-14 md:size-28 relative overflow-hidden rounded-xl bg-white">
+                <div className={`size-20 md:size-28 shadow-xl relative overflow-hidden rounded-xl bg-white`}>
                     <Image
                         fill
                         className="object-contain object-center p-2"
@@ -182,16 +182,18 @@ export const EnquireCard = ({ data }) => {
                     />
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
-                    <h2 className="text-[clamp(1.1rem,1.5vw,1.5rem)] capitalize font-bold tracking-wide">
-                        {data.title}
-                    </h2>
+                    {!FSDTitle && (
+                        <h2 className="text-[clamp(1.1rem,1.5vw,1.5rem)] capitalize font-bold tracking-wide">
+                            {data.title}
+                        </h2>
+                    )}
                     {data.desc ? (
                         <p className="font-medium text-[clamp(0.9rem,1.15vw,1rem)] leading-5 md:leading-7 text-center">
                             {data.desc}
                         </p>
                     ) : (
                         <ul className="text-[clamp(0.9rem,1.15vw,1rem)] leading-5 md:leading-7 list-disc pl-2.5 font-medium space-y-1">
-                            {data.lists.map((item, index) => (
+                            {data?.lists.map((item, index) => (
                                 <li key={index} className="">
                                     {item}
                                 </li>
