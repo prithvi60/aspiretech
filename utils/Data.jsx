@@ -16,7 +16,7 @@ function getNextSunday() {
 
     // Format as "d MMMM"
     const day = nextSunday.getDate();
-    const month = nextSunday.toLocaleDateString('en-US', { month: 'long' });
+    const month = nextSunday.toLocaleDateString("en-US", { month: "long" });
 
     // Return as "d MMMM"
     return `${day} ${month}`;
@@ -127,8 +127,7 @@ export const heroMarqueeData = [
         alt: "stock image",
         name: "Thejasvi T V",
     },
-
-]
+];
 
 export const socialLinks = [
     {
@@ -165,7 +164,7 @@ export const IndustrialCoursesCardData = [
         title: "IBM certified Data Science Architecture Program",
         desc: "Achieve data science excellence with our IBM-backed program! Enjoy live sessions, earn while you learn, and get 100% career support with guaranteed interviews.",
         href: "/programs/data-science-architecture-program",
-        refer: "DS"
+        refer: "DS",
     },
     {
         img: "/Data-Analytics.png",
@@ -174,7 +173,7 @@ export const IndustrialCoursesCardData = [
         title: "Fast Track Data Analytics Launchpad Course",
         desc: "Kick-start your Data Analytics career with IBM! Get live sessions, career support, and guaranteed internships.",
         href: "/programs/data-analytics-launchpad",
-        refer: "DA"
+        refer: "DA",
     },
     {
         img: "/Digital-Marketing.png",
@@ -183,7 +182,7 @@ export const IndustrialCoursesCardData = [
         title: "Digital Strategic Marketing Course",
         desc: "Trust us—go beyond traditional digital marketing and learn more! Enjoy live sessions, pay after placement, and secure a guaranteed internship.",
         href: "/programs/digital-marketing-program",
-        refer: "DM"
+        refer: "DM",
     },
     {
         img: "/UI-UX.png",
@@ -192,7 +191,7 @@ export const IndustrialCoursesCardData = [
         title: "User-Centricity Unleashed: UI/UX Mastery Course",
         desc: "Now is the best time to start your design career with rising demand for Design Thinking! Enjoy live sessions, pay after placement, and get a guaranteed internship.",
         href: "/programs/UI-UX-design-course",
-        refer: "UI"
+        refer: "UI",
     },
 ];
 
@@ -469,11 +468,6 @@ export const aspireSets = [
     "Money Back Guarantee Program - Get placed or get the refund of the fees",
 ];
 
-
-
-
-
-
 // About Us
 
 export const aboutStatus = [
@@ -498,9 +492,6 @@ export const aboutStatus = [
         statusName: "While learning",
     },
 ];
-
-
-
 
 // job board
 
@@ -568,10 +559,8 @@ export const jobBoard = [
 ];
 export const aboutHero = {
     title: "Empowering Minds & Transforming Futures",
-    desc: "Aspire Tech Academy is a certified e-learning platform, ISO/IAF accredited, dedicated to empowering your career through skill enhancement and upskilling. Our certifications cover a range of domains like the IBM Certified Data Science Architect Program, Fast Track Data Analyst Course,  UI/UX, Digital Marketing, and Cybersecurity."
-}
-
-
+    desc: "Aspire Tech Academy is a certified e-learning platform, ISO/IAF accredited, dedicated to empowering your career through skill enhancement and upskilling. Our certifications cover a range of domains like the IBM Certified Data Science Architect Program, Fast Track Data Analyst Course,  UI/UX, Digital Marketing, and Cybersecurity.",
+};
 
 // terms
 
@@ -602,27 +591,33 @@ export const powerProgress = [
     "Full Stack Php Developer",
 ];
 
-
-
-
 // programs
 
 export const DSHero = {
-    title: ("Money Back Guarantee <span class='text-primary'>IBM Certified Data Science</span> Architecture Program"),
-    desc: "Gain a competitive edge in emerging technologies with our Data Science & Architecture Program and Master in-demand skills to build scalable solutions and land in you dream job else get the refund of the fees paid ! Through hands-on practice, gain proficiency in Python, SQL, Excel, Machine Learning, Tableau, Generative AI, prompt engineering, and ChatGPT. Interact live with industry leaders, enhancing your skills and staying ahead in the fast-evolving world of data science. Join us and empower your career today."
-}
+    title:
+        "Money Back Guarantee <span class='text-primary'>IBM Certified Data Science</span> Architecture Program",
+    desc: "Gain a competitive edge in emerging technologies with our Data Science & Architecture Program and Master in-demand skills to build scalable solutions and land in you dream job else get the refund of the fees paid ! Through hands-on practice, gain proficiency in Python, SQL, Excel, Machine Learning, Tableau, Generative AI, prompt engineering, and ChatGPT. Interact live with industry leaders, enhancing your skills and staying ahead in the fast-evolving world of data science. Join us and empower your career today.",
+};
 export const DAHero = {
-    title: "IBM Certified Fast Track <span class='text-primary'>Data Analytics</span> Launchpad", desc: "Enroll in our Data Analyst course, developed in collaboration with IBM, to become a proficient expert in Data Analytics. This comprehensive program will equip you with the skills to utilise Upon completion effectively, you will receive a valuable Data Analyst certification, validating your expertise in this dynamic field. This internship-guaranteed course is specifically designed for freshers and recent grads and people who are looking for a career shift into this domain."
-}
+    title:
+        "IBM Certified Fast Track <span class='text-primary'>Data Analytics</span> Launchpad",
+    desc: "Enroll in our Data Analyst course, developed in collaboration with IBM, to become a proficient expert in Data Analytics. This comprehensive program will equip you with the skills to utilise Upon completion effectively, you will receive a valuable Data Analyst certification, validating your expertise in this dynamic field. This internship-guaranteed course is specifically designed for freshers and recent grads and people who are looking for a career shift into this domain.",
+};
 export const DMHero = {
-    title: "Pay After Placement <span class='text-primary'>Digital Marketing</span> Program", desc: "As of January 2023, 5.16 billion people — 64.4% of the global population — were internet users. This number continues to grow, highlighting how the digital landscape shapes business success, scalability, and sustainability. Digital marketing leverages online platforms and technologies to promote products and services effectively."
-}
+    title:
+        "Pay After Placement <span class='text-primary'>Digital Marketing</span> Program",
+    desc: "As of January 2023, 5.16 billion people — 64.4% of the global population — were internet users. This number continues to grow, highlighting how the digital landscape shapes business success, scalability, and sustainability. Digital marketing leverages online platforms and technologies to promote products and services effectively.",
+};
 export const UIHero = {
-    title: "Turning Dreams into Reality <span class='text-primary'>UI/UX</span> Design Course", desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design."
-}
+    title:
+        "Turning Dreams into Reality <span class='text-primary'>UI/UX</span> Design Course",
+    desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design.",
+};
 export const FullStackHero = {
-    title: "Building Digital Worlds - <span class='text-primary'>Full Stack</span> Developer", desc: " To initiate your journey, the first step is to register for our Full Stack Development Program—an inclusive opportunity open to all individuals aspiring to become industry-ready. This program offers hands-on training through specialized projects, providing participants with a comprehensive learning experience."
-}
+    title:
+        "Building Digital Worlds - <span class='text-primary'>Full Stack</span> Developer",
+    desc: " To initiate your journey, the first step is to register for our Full Stack Development Program—an inclusive opportunity open to all individuals aspiring to become industry-ready. This program offers hands-on training through specialized projects, providing participants with a comprehensive learning experience.",
+};
 
 export const DSAchievements = [
     "15 seats Batch size ",
@@ -655,7 +650,7 @@ export const DMAchievements = [
     "ISO & IAF Certified Company",
     "1:1 Mentoring",
     "24/7 LMS access",
-]
+];
 export const UIAchievements = [
     "25 seats Batch size",
     "ISO & IAF certification",
@@ -664,28 +659,28 @@ export const UIAchievements = [
     "1-on-1 Mentorship",
     "ISO & IAF certification",
     "Lifetime Support",
-]
+];
 
 export const DSSummaryDetails = {
-    title: 'Fee is refunded if not placed',
-    desc: 'Gain a competitive edge in emerging technologies with our Data Science & Architecture Program.Master in-demand skills to build scalable solutions and lead in a tech-driven world.',
-    month: "IN 8 Months"
-}
+    title: "Fee is refunded if not placed",
+    desc: "Gain a competitive edge in emerging technologies with our Data Science & Architecture Program.Master in-demand skills to build scalable solutions and lead in a tech-driven world.",
+    month: "IN 8 Months",
+};
 export const DASummaryDetails = {
-    title: 'Just 20% Upfront fee',
-    desc: 'Achieve a Competitive Advantage in Emerging Technologies with Our Pay After Placement Data Analytics Course',
-    month: "IN 3 Months"
-}
+    title: "Just 20% Upfront fee",
+    desc: "Achieve a Competitive Advantage in Emerging Technologies with Our Pay After Placement Data Analytics Course",
+    month: "IN 3 Months",
+};
 export const FSDSummaryDetails = {
-    title: 'Get Up to 30% Scholarship',
-    desc: ' Unlock your future in one of the most versatile and high-demand tech fields—Full Stack Development! Whether you come from a technical or non-technical background, this course is crafted to guide you from the fundamentals to advanced development skills through hands-on projects and real-world applications. Learn from industry professionals, master both front-end and back-end technologies, and build a strong portfolio of full-featured web applications. With personalized mentorship, career support, and a job-ready curriculum, this is the perfect time to start your journey toward a rewarding career in Full Stack Development. Enroll now and turn your passion for coding into a profession!',
-    month: "IN 6 months"
-}
+    title: "Get Up to 30% Scholarship",
+    desc: " Unlock your future in one of the most versatile and high-demand tech fields—Full Stack Development! Whether you come from a technical or non-technical background, this course is crafted to guide you from the fundamentals to advanced development skills through hands-on projects and real-world applications. Learn from industry professionals, master both front-end and back-end technologies, and build a strong portfolio of full-featured web applications. With personalized mentorship, career support, and a job-ready curriculum, this is the perfect time to start your journey toward a rewarding career in Full Stack Development. Enroll now and turn your passion for coding into a profession!",
+    month: "IN 6 months",
+};
 export const DMSummaryDetails = {
-    title: 'Gear up with Futuristic career',
+    title: "Gear up with Futuristic career",
     desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design.",
-    month: "IN 18 Weeks"
-}
+    month: "IN 18 Weeks",
+};
 // export const UISummaryDetails = {
 //     title: '',
 //     desc: '',
@@ -865,7 +860,7 @@ export const DASpotlight = [
         note: "100% Placement Assistance",
         img: "/reasons/reason-2.png",
         alt: "image",
-    }
+    },
 ];
 export const DMSpotlight = [
     {
@@ -907,7 +902,7 @@ export const DMSpotlight = [
         note: "100% Placement Assistance",
         img: "/reasons/reason-2.png",
         alt: "image",
-    }
+    },
 ];
 export const UISpotlight = [
     {
@@ -949,7 +944,7 @@ export const UISpotlight = [
         note: "Learn Directly from Industry-Leading Designers",
         img: "/reasons/reason-1.png",
         alt: "image",
-    }
+    },
 ];
 export const FSDEnrollment = [
     {
@@ -1006,7 +1001,7 @@ export const FSDEnrollment = [
         img: "/fsd-icons/fsd-9.svg",
         alt: "image",
     },
-]
+];
 
 export const DSProgramCurriculum = [
     {
@@ -1092,33 +1087,21 @@ export const DAProgramCurriculum = [
     },
     {
         module: "Module 3-4",
-        content: [
-            "Python - Basics",
-            "Python Data Types & Utilities",
-        ],
+        content: ["Python - Basics", "Python Data Types & Utilities"],
     },
     {
         module: "Module 5-6",
-        content: [
-            "Python Essential Packages",
-            "SQL and Database",
-        ],
+        content: ["Python Essential Packages", "SQL and Database"],
     },
     {
         module: "Module 7-8",
-        content: [
-            "Visualisation using Power BI",
-            "Visualisation using Tableau",
-        ],
+        content: ["Visualisation using Power BI", "Visualisation using Tableau"],
     },
     {
         module: "Module 9-10",
-        content: [
-            "Excel Basic",
-            "Excel Advanced",
-        ],
+        content: ["Excel Basic", "Excel Advanced"],
     },
-]
+];
 export const DMProgramCurriculum = [
     {
         module: "Module 1-5",
@@ -1168,7 +1151,7 @@ export const DMProgramCurriculum = [
             "Blogging",
             "Email Marketing",
         ],
-    }
+    },
 ];
 export const UIProgramCurriculum = [
     {
@@ -1205,17 +1188,12 @@ export const UIProgramCurriculum = [
     },
     {
         module: "Week 13-14",
-        content: [
-            "Elevating the Game",
-            "Preparing for Battle",
-        ],
+        content: ["Elevating the Game", "Preparing for Battle"],
     },
     {
         module: "Week 15-18",
-        content: [
-            "Ready for the Spotlight",
-        ],
-    }
+        content: ["Ready for the Spotlight"],
+    },
 ];
 export const FSDProgramCurriculum = [
     {
@@ -1240,7 +1218,7 @@ export const FSDProgramCurriculum = [
             "Handling user events with JavaScript",
             "Basics of a chosen framework",
             "Introduction to CSS Preprocessors SASS or LESS",
-            "Advanced styling techniques"
+            "Advanced styling techniques",
         ],
     },
     {
@@ -1273,9 +1251,9 @@ export const FSDProgramCurriculum = [
             "Web Foundations & React Basics",
             "Advanced React & APIs",
             "Back end development",
-            "Full stack Integration"
+            "Full stack Integration",
         ],
-    }
+    },
 ];
 
 export const DSAddonSyllabus = [
@@ -1303,9 +1281,8 @@ export const FSDAddonSyllabus = [
     "Lifetime LMS Access",
     "Corporate Communication Training",
     "24*7 Dedicated Learner Support",
-    "Job Ready in 20 Weeks"
+    "Job Ready in 20 Weeks",
 ];
-
 
 export const DSScienceSkillSets = [
     "Data Science",
@@ -1326,8 +1303,6 @@ export const DAScienceSkillSets = [
     "Statistical Knowledge",
     "Data Visualisation",
 ];
-
-
 
 export const DSTechSoftwares = [
     {
@@ -1428,20 +1403,16 @@ export const DATechSoftwares = [
         img: "/tools/python.webp",
         alt: "python logo",
     },
-
 ];
 
-
 export const DSPlacement = {
-    title: 'Industry Projects',
+    title: "Industry Projects",
     desc: "In this certificate program, you'll gain hands-on experience through industry projects, guided by seasoned professionals. These projects will be integrated into your Certification in Data Science Architecture Program to deepen your expertise. You'll work with real-world datasets, receiving mentorship from world-class industry experts throughout the process.",
-}
+};
 export const DAPlacement = {
-    title: 'Placements',
-    desc: 'Interview preparations will begin in the 4th month, with a strong focus on training and equipping candidates for success. Since our program follows a Pay After Placement model, candidates will only pay 30% of the fees upfront.',
-}
-
-
+    title: "Placements",
+    desc: "Interview preparations will begin in the 4th month, with a strong focus on training and equipping candidates for success. Since our program follows a Pay After Placement model, candidates will only pay 30% of the fees upfront.",
+};
 
 export const DSSoftwareLogo = [
     {
@@ -1465,8 +1436,6 @@ export const DSSoftwareLogo = [
         alt: "twitter logo",
     },
 ];
-
-
 
 export const DSFaq = [
     {
@@ -1493,110 +1462,41 @@ export const DSFaq = [
 export const DAFaq = [
     {
         ques: "What key skills will you develop through this Fast Track Data Analytics course?",
-        ans: "In this Fast Track Data Analytics course, you'll gain expertise in Data Analysis, Data Segregation, Python, Statistics, SQL, and Data Wrangling."
+        ans: "In this Fast Track Data Analytics course, you'll gain expertise in Data Analysis, Data Segregation, Python, Statistics, SQL, and Data Wrangling.",
     },
     {
         ques: "What projects are included in this  Fast Track Data Analytics course?",
-        ans: "Get an opportunity to work on Real-World Datasets of various industries like healthcare, e-commerce, social media, entrepreneurship, supply chain, and more. Learn from basics like cleaning a large amount of data, organizing it, and much more."
+        ans: "Get an opportunity to work on Real-World Datasets of various industries like healthcare, e-commerce, social media, entrepreneurship, supply chain, and more. Learn from basics like cleaning a large amount of data, organizing it, and much more.",
     },
     {
         ques: "Who should take this  Fast Track Data Analytics course?",
-        ans: "Anyone with a graduate degree in any field can apply and enrol in a Fast Track Data Analytics. Freshers and working professionals with any educational background are eligible for the course."
+        ans: "Anyone with a graduate degree in any field can apply and enrol in a Fast Track Data Analytics. Freshers and working professionals with any educational background are eligible for the course.",
     },
     {
         ques: "Are there any prerequisites for this Fast Track Data Analytics course?",
-        ans: "No, There are no prerequisites for taking this course"
+        ans: "No, There are no prerequisites for taking this course",
     },
     {
         ques: "What are the reasons to enrol in the Fast Track Data Analytics program?",
-        ans: "The demand for Data Analytics professionals is surging due to the rapid growth of data across industries and the need for data-driven decision-making. Organizations are increasingly seeking skilled analysts to interpret data and improve efficiency, leading to a wide range of job opportunities.Overall, careers in data analytics are thriving and expected to grow in the coming years."
+        ans: "The demand for Data Analytics professionals is surging due to the rapid growth of data across industries and the need for data-driven decision-making. Organizations are increasingly seeking skilled analysts to interpret data and improve efficiency, leading to a wide range of job opportunities.Overall, careers in data analytics are thriving and expected to grow in the coming years.",
     },
     {
         ques: "Who should enrol in this program?",
-        ans: "Freshers from any stream of Graduation,People looking forward to keep their first baby steps in IT sector,Aspirants looking for career transition"
+        ans: "Freshers from any stream of Graduation,People looking forward to keep their first baby steps in IT sector,Aspirants looking for career transition",
     },
     {
         ques: "What if I miss attending one or more lectures?",
-        ans: "If you happen to miss any lectures, we will provide you with a recording of the session within 24 hours. Additionally, if you have any questions, you can reach out to the dedicated program manager for assistance."
+        ans: "If you happen to miss any lectures, we will provide you with a recording of the session within 24 hours. Additionally, if you have any questions, you can reach out to the dedicated program manager for assistance.",
     },
     {
         ques: "How does the Pay After Placement work?",
-        ans: "The Pay After Placement model creates a win-win situation for both learners and Aspire Tech Academy, as students will pay the majority—70%—of the fees only after successfully securing a job."
+        ans: "The Pay After Placement model creates a win-win situation for both learners and Aspire Tech Academy, as students will pay the majority—70%—of the fees only after successfully securing a job.",
     },
     {
         ques: "Is there any minimum package post which I will have to pay the 70% fees in Data Analytics ?",
-        ans: "In Fast Track Data Analytics Course you are entitled to pay the 70% of the fees irrespective of your salary package."
+        ans: "In Fast Track Data Analytics Course you are entitled to pay the 70% of the fees irrespective of your salary package.",
     },
-]
-// export const DMFaq = [
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-// ]
-// export const UIFaq = [
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-//     {
-//         ques: "",
-//         ans: ""
-//     },
-// ]
-
+];
 
 export const DSCertificationDetails = [
     {
@@ -1626,7 +1526,7 @@ export const DACertificationDetails = [
         note4: "Experience Certificate upto 1 year",
         img: "/DA-sampleCertificate.jpg",
         alt: "image",
-    }
+    },
 ];
 export const DMCertificationDetails = [
     {
@@ -1637,7 +1537,7 @@ export const DMCertificationDetails = [
         note4: "Experience Certificate upto 1 year",
         img: "/DM-sampleCertificate.jpg",
         alt: "image",
-    }
+    },
 ];
 export const UICertificationDetails = [
     {
@@ -1648,7 +1548,7 @@ export const UICertificationDetails = [
         note4: "Experience Certificate upto 1 year",
         img: "/UI-sampleCertificate.jpg",
         alt: "image",
-    }
+    },
 ];
 export const FSDCertificationDetails = [
     {
@@ -1659,7 +1559,7 @@ export const FSDCertificationDetails = [
         note4: "Experience Certificate upto 1 year",
         img: "/certificate-full-stack.png",
         alt: "image",
-    }
+    },
 ];
 
 export const DSGuidedBySection = [
@@ -1698,10 +1598,13 @@ export const DSGuidedBySection = [
     },
 ];
 
-
-
-
-
+export const careerSupport = [
+    "Create tailored resumes, cover letters, and profiles that help you stand out in today’s job market.",
+    "Access everything you need—from interview prep and job boards to real-time dashboards and expert guidance.",
+    "Enjoy a smooth, intuitive design focused on making your career-building journey simple and effective.",
+    "Whether you're starting out or making a shift, the tools are built to support professionals and students alike.",
+    "Built with innovation, accessibility, and empowerment at its core to help you achieve your career goals faster.",
+];
 
 // terms
 
@@ -1751,7 +1654,6 @@ export const refundPolicy = [
     "If a free trial is subscribed, it will be valid for the specified period. Free trials cannot be combined with certain offers, and eligibility depends on previous subscriptions and associated email addresses.",
 ];
 
-
 // Impact Page
 
 export const placementRecords = [
@@ -1775,8 +1677,7 @@ export const placementRecords = [
         logo: "/twitter.png",
         alt: "twitter logo",
     },
-]
-
+];
 
 // corporate page
 export const corporateData = [
@@ -1804,23 +1705,32 @@ export const corporateData = [
         img: "/SVGIcons/talent-4.svg",
         alt: "image",
     },
-]
+];
 export const corporateTrainingList = [
     {
         title: "Customization",
-        lists: ["Understanding your requirement and expected outcomes", "Customizing the training program to align with your business goals"],
+        lists: [
+            "Understanding your requirement and expected outcomes",
+            "Customizing the training program to align with your business goals",
+        ],
         img: "/SVGIcons/1.svg",
         alt: "image",
     },
     {
         title: "Delivery",
-        lists: ["Instructor-led interactive classes by industry experts", "High engagement through assignments, tests, and Capstone projects"],
+        lists: [
+            "Instructor-led interactive classes by industry experts",
+            "High engagement through assignments, tests, and Capstone projects",
+        ],
         img: "/SVGIcons/2.svg",
         alt: "image",
     },
     {
         title: "Evaluation",
-        lists: ["Assignments, tests, and assessments", "Reports on employee progress"],
+        lists: [
+            "Assignments, tests, and assessments",
+            "Reports on employee progress",
+        ],
         img: "/SVGIcons/3.svg",
         alt: "image",
     },
@@ -1830,12 +1740,12 @@ export const corporateTrainingList = [
         img: "/SVGIcons/4.svg",
         alt: "image",
     },
-]
+];
 
 export const corporateTrainingData = {
     title: "Empower Your Team to Achieve More",
-    desc: "Aspire Tech Academy is a certified e-learning platform, ISO/IAF accredited, dedicated to empowering your career through skill enhancement and upskilling. Our certifications cover a range of domains like the IBM Certified Data Science Architect Program, Fast Track Data Analyst Course,  UI/UX, Digital Marketing, and Cybersecurity."
-}
+    desc: "Aspire Tech Academy is a certified e-learning platform, ISO/IAF accredited, dedicated to empowering your career through skill enhancement and upskilling. Our certifications cover a range of domains like the IBM Certified Data Science Architect Program, Fast Track Data Analyst Course,  UI/UX, Digital Marketing, and Cybersecurity.",
+};
 export const roleBasedTrainingList = [
     {
         title: "Data Engineer",
@@ -1857,9 +1767,9 @@ export const roleBasedTrainingList = [
         img: "/SVGIcons/ml.svg",
         alt: "image",
     },
-]
+];
 
 export const corporateTalentData = {
     title: "One Platform. Infinite Talent.",
-    desc: "From fresh graduates to experienced professionals, tap into a wide-ranging talent pool that brings varied perspectives and real-world skills to your team.Build a workforce that's as dynamic and adaptable as your business."
-}
+    desc: "From fresh graduates to experienced professionals, tap into a wide-ranging talent pool that brings varied perspectives and real-world skills to your team.Build a workforce that's as dynamic and adaptable as your business.",
+};

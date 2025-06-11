@@ -5,10 +5,7 @@ import { SectionHeading } from "../UI/SectionHeading";
 import { aspireSets } from "@/utils/Data";
 
 const AspireTechSets = ({ title, data, pageSection }) => {
-    // const [isInView, setIsInView] = useState(false);
     const [isActive, setIsActive] = useState(false);
-    // const containerRef = useRef(null);
-    // const sliderRef = useRef(null);
 
     // Slick slider settings
     const settings = {
@@ -38,39 +35,6 @@ const AspireTechSets = ({ title, data, pageSection }) => {
             }
         ],
     };
-
-    // // Detect if component is in viewport
-    // useEffect(() => {
-    //     const observer = new IntersectionObserver(
-    //         ([entry]) => {
-    //             setIsInView(entry.isIntersecting);
-    //         },
-    //         { threshold: 0.5 } // Adjust threshold as needed
-    //     );
-
-    //     const currentRef = containerRef.current;
-    //     if (currentRef) {
-    //         observer.observe(currentRef);
-    //     }
-
-    //     return () => {
-    //         if (currentRef) {
-    //             observer.unobserve(currentRef);
-    //         }
-    //         observer.disconnect();
-    //     };
-    // }, []);
-
-    // // Control slider autoplay based on visibility
-    // useEffect(() => {
-    //     if (sliderRef.current) {
-    //         if (isInView) {
-    //             sliderRef.current.slickPlay();
-    //         } else {
-    //             sliderRef.current.slickPause();
-    //         }
-    //     }
-    // }, [isInView]);
     return (
         <section className="w-full h-full padding space-y-10 md:space-y-20">
             <SectionHeading text={title} />

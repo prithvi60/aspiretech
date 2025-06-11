@@ -1,6 +1,7 @@
 import GradsOfATA from "@/components/layout/CTS/GradsOfATA";
 import AchievementsSlider from "@/components/layout/programs/AchievementsSlider";
 import Addons from "@/components/layout/programs/Addons";
+import CareerSupport from "@/components/layout/programs/CareerSupport";
 import Certifications from "@/components/layout/programs/Certifications";
 import GuidedBy from "@/components/layout/programs/GuidedBy";
 import IndustrialProject from "@/components/layout/programs/IndustrialProject";
@@ -144,6 +145,7 @@ const Page = async ({ params }) => {
                                     : UIStats
                 }
             />
+            <CareerSupport />
             {val !== "full stack development" && (
                 <SpotLight
                     data={
