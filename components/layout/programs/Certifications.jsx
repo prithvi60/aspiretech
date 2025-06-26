@@ -22,7 +22,7 @@ const Certifications = ({ data }) => {
                             />
                             <div className="space-y-2.5 md:space-y-5">
                                 <p
-                                    className={`bg-white text-black text-[clamp(1.5rem,1.15vw,2rem)] leading-5 md:leading-7 font-bold tracking-wide`}
+                                    className={`bg-white text-black text-[clamp(1.5rem,1.15vw,2rem)] leading-8 font-bold tracking-wide`}
                                 >
                                     {list.note1}
                                 </p>
