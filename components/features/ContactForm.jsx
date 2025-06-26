@@ -6,9 +6,9 @@ const initialFormData = {
     name: "",
     email: "",
     message: "",
-    phoneNo: ""
+    phoneNo: "",
 };
-export const ContactForm = ({ title }) => {
+export const ContactForm = ({ title, hero }) => {
     const [formData, setFormData] = useState(initialFormData);
     const [status, setStatus] = useState(false);
 
@@ -35,7 +35,7 @@ export const ContactForm = ({ title }) => {
                     email: formData.email,
                     message: formData.message,
                     phoneNo: formData.phoneNo,
-                    title
+                    title,
                 }),
             });
 
@@ -63,7 +63,7 @@ export const ContactForm = ({ title }) => {
         <>
             <form
                 onSubmit={handleSubmit}
-                className="w-full space-y-6 md:space-y-10 border-4 border-borderColor p-6 rounded-lg max-w-6xl mx-auto bg-white"
+                className={`${hero ? "shadow-lg shadow-foreground border-t border-gray-600" : "border-4 border-borderColor"} w-full space-y-6 md:space-y-10 p-6 rounded-lg max-w-6xl mx-auto bg-white`}
             >
                 <div className="gap-2 flex flex-col">
                     {/* <label htmlFor="name" className="capitalize font-bold tracking-wider">

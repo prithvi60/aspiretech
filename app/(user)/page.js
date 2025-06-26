@@ -6,6 +6,7 @@ import IndustrialCoursesCard from "@/components/layout/IndustrialCoursesCard";
 
 import Stories from "@/components/layout/Stories";
 import TrustByCompanies from "@/components/layout/TrustByCompanies";
+import WhatMakesUsDiff from "@/components/layout/WhatMakesUsDiff";
 import { aspireSets } from "@/utils/Data";
 
 export default function Home() {
@@ -53,15 +54,11 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdLocal) }}
       />
       <Hero />
-      <HeroMarqueeComponent />
       <IndustrialCoursesCard />
       <EnquireTechExpert />
       <Stories />
       <TrustByCompanies />
-      <AspireTechSets
-        title={"What sets Aspire Tech Academy apart from the rest?"}
-        data={aspireSets}
-      />
+      <WhatMakesUsDiff />
     </main>
   );
 }

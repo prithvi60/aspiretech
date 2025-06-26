@@ -15,12 +15,6 @@ const ProgramsHero = ({ val, btn, pdf, title }) => {
                 <div className="flex flex-row gap-5 justify-center items-center">
                     {btn !== "about" ? (
                         <>
-                            <div className="w-1/2 md:w-max">
-                                <ProgramsModal
-                                    pdf={pdf}
-                                    title={title}
-                                />
-                            </div>
                             <button role="button" aria-label="apply now button">
                                 <Link
                                     href="/contact"
@@ -29,6 +23,12 @@ const ProgramsHero = ({ val, btn, pdf, title }) => {
                                     Apply now
                                 </Link>
                             </button>
+                            <div className="w-1/2 md:w-max">
+                                <ProgramsModal
+                                    pdf={pdf}
+                                    title={title}
+                                />
+                            </div>
                         </>
                     ) : (
                         <AnimateButton href={"/contact"} text={"Get Started!"} />

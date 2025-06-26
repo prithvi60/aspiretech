@@ -23,6 +23,9 @@ export const StoriesCard = ({ data }) => {
                     <div className="flex items-center px-5 pt-5 gap-5 text-foreground">
                         <div className="shrink-0">
                             <Image
+                                priority={false}
+                                loading="lazy"
+                                quality={100}
                                 width={60}
                                 height={60}
                                 className="w-10 h-12 rounded-full p-0.5 bg-white"
@@ -45,6 +48,9 @@ export const StoriesCard = ({ data }) => {
                         </p>
                         {hasOverflow && (
                             <button
+                                role="button"
+                                type="button"
+                                aria-label="read more button"
                                 className="absolute right-5 -bottom-5 font-semibold text-black tracking-wider hover:underline focus:outline-none text-xs md:text-sm cursor-pointer"
                                 onClick={() => setIsExpanded(!isExpanded)}
                             >
@@ -54,9 +60,9 @@ export const StoriesCard = ({ data }) => {
                     </div>
                 </div>
                 <div className="font-inter p-6  block space-y-4 text-foreground bg-secondaryDark">
-                    <h5 className="mb-2 font-bold tracking-tight text-[clamp(1rem,2.5vw,1.25rem)] leading-6">
+                    <h1 className="mb-2 font-bold tracking-tight text-[clamp(1rem,2.5vw,1.25rem)] leading-6">
                         {data.offers}
-                    </h5>
+                    </h1>
                     <p className="text-[clamp(0.7rem,1.15vw,0.85rem)] font-semibold leading-6">
                         {data.position}
                     </p>
@@ -69,23 +75,33 @@ export const StoriesCard = ({ data }) => {
 export const StatusCard = ({ data, icon, type, counter }) => {
     return (
         <div
-            className={`${type ? "w-full mx-auto" : "min-w-[220px] px-8"} rounded-xl space-y-8 box-shadow-gradient2 border-4 border-borderColor bg-background first:col-span-2`}
+            className={`${type ? "w-full mx-auto" : "min-w-[200px]"} rounded-xl space-y-8 box-shadow-gradient2 border-4 border-borderColor bg-background first:col-span-2`}
         >
             <div
-                className={`${type ? "px-4 py-6" : "px-8 py-6"} flex flex-col items-center justify-center gap-2 lg:gap-3 text-foreground`}
+                className={`${type ? "px-4 py-6 gap-2 lg:gap-3" : "px-8 py-6"} flex flex-col items-center justify-center text-foreground`}
             >
+                <Image
+                    priority={false}
+                    loading="lazy"
+                    quality={80}
+                    width={60}
+                    height={60}
+                    src={data.img}
+                    alt={"icon"}
+                    className="object-contain object-center shrink-0 size-8 sm:size-10 lg:size-12 mb-2"
+                />
                 {counter && data.count !== "" ? (
                     <Stat num={Number(data.count)} suffix={data.suffix} />
                 ) : (
-                    <h4 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold text-black">
+                    <h1 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold text-black">
                         {data.suffix}
-                    </h4>
+                    </h1>
                 )}
 
                 {!counter && (
-                    <h4 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold">
+                    <h2 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold">
                         {data.count}
-                    </h4>
+                    </h2>
                 )}
 
                 <div className="flex gap-2">
@@ -97,10 +113,9 @@ export const StatusCard = ({ data, icon, type, counter }) => {
                             alt={"icon"}
                             className="object-contain object-center shrink-0"
                         />
-                        // <RiMiniProgramFill className="shrink-0 text-primary text-base lg:text-xl" />
                     )}
                     <p
-                        className={`${type ? "text-[clamp(0.7rem,1.15vw,1rem)]" : "text-[clamp(0.8rem,1.15vw,1.5rem)]"}`}
+                        className={`${type ? "text-[clamp(0.7rem,1.15vw,1rem)]" : "text-[clamp(0.9rem,1.5vw,1.5rem)]"}`}
                     >
                         {data.statusName}
                     </p>
@@ -113,32 +128,35 @@ export const StatusCard = ({ data, icon, type, counter }) => {
 export const MainCoursesCard = ({ data }) => {
     return (
         <div className="max-w-lg mx-auto rounded-xl overflow-hidden custom-shadow text-background hover:scale-110 transition-all duration-300 ease-in-out">
-            <div className="w-full h-[145px] sm:h-52 relative overflow-hidden">
-                <Image
-                    fill
-                    src={data.img}
-                    alt={data.alt}
-                    className="object-cover object-center"
-                />
-            </div>
+            <Image
+                width={800}
+                height={650}
+                src={data.img}
+                alt={data.alt}
+                priority={false}
+                loading="lazy"
+                quality={100}
+                className="w-full h-auto"
+                sizes="(min-width: 1260px) 512px, (min-width: 780px) 42.61vw, (min-width: 600px) 512px, calc(92.86vw - 27px)"
+            />
             <div
-                className={`pb-5 flex flex-col md:min-h-[480px] lg:min-h-[380px] justify-between ${data.refer === "DS" ? "bg-linear-120 from-[#516A9B] via-[#516A9B] to-[#99A3BF]" : data.refer === "DA" ? "bg-linear-120 from-[#7B3B29] via-[#7B3B29] to-[#C68C73]" : data.refer === "DM" ? "bg-linear-120 from-[#1C4B53] via-[#1C4B53] to-[#6F9D9D]" : "bg-linear-120 from-[#D5A411] via-[#D5A411] to-[#F1E3A7]"}`}
+                className={`pb-5 flex flex-col md:min-h-[480px] lg:min-h-[380px] justify-between ${data.refer === "DS" ? "bg-linear-120 from-[#516A9B] via-[#516A9B] to-[#99A3BF]" : data.refer === "DA" ? "bg-linear-120 from-[#7B3B29] via-[#7B3B29] to-[#C68C73]" : data.refer === "DM" ? "bg-linear-120 from-[#1C4B53] via-[#1C4B53] to-[#6F9D9D]" : data.refer === "FS" ? "bg-linear-120 from-[#531C4F] via-[#642c46] to-[#9D6F84]" : data.refer === "DO" ? "bg-linear-120 from-[#385e25] via-[#42712c] to-[#6aa26e]" : "bg-linear-120 from-[#D5A411] via-[#D5A411] to-[#F1E3A7]"}`}
             >
                 <div className="space-y-4 ">
-                    <h5
-                        className={`${data.refer === "DS" ? "bg-linear-to-r from-[#516A9B] via-[#516A9B] to-[#99A3BF]" : data.refer === "DA" ? "bg-linear-to-r from-[#7B3B29] via-[#7B3B29] to-[#C68C73]" : data.refer === "DM" ? "bg-linear-to-r from-[#1C4B53] via-[#1C4B53] to-[#6F9D9D]" : "bg-linear-to-r from-[#D5A411] via-[#D5A411] to-[#F1E3A7]"} text-background px-5 py-4 !drop-shadow-xl text-[clamp(0.8rem,2.5vw,1.1rem)] font-extrabold tracking-wide`}
+                    <h2
+                        className={`${data.refer === "DS" ? "bg-linear-to-r from-[#516A9B] via-[#516A9B] to-[#99A3BF]" : data.refer === "DA" ? "bg-linear-to-r from-[#7B3B29] via-[#7B3B29] to-[#C68C73]" : data.refer === "DM" ? "bg-linear-to-r from-[#1C4B53] via-[#1C4B53] to-[#6F9D9D]" : data.refer === "FS" ? "bg-linear-to-r from-[#501B4F] via-[#642c46] to-[#9F718E]" : data.refer === "DO" ? "bg-linear-to-r from-[#385e25] via-[#42712c] to-[#6aa26e]" : "bg-linear-to-r from-[#D5A411] via-[#D5A411] to-[#F1E3A7]"} text-background px-5 py-4 !drop-shadow-xl text-[clamp(0.8rem,2.5vw,1.1rem)] font-extrabold tracking-wide`}
                     >
                         {data.enrol}
-                    </h5>
-                    <h5 className="text-[clamp(1rem,3vw,1.6rem)] px-5 font-extrabold tracking-wide">
+                    </h2>
+                    <h3 className="text-[clamp(1rem,3vw,1.6rem)] px-5 font-extrabold tracking-wide">
                         {data.title}
-                    </h5>
+                    </h3>
                     <p className="font-normal px-5 text-[clamp(0.8rem,3vw,1rem)] leading-6 font-inter">
                         {data.desc}
                     </p>
                 </div>
                 <div className="px-5 mt-5 md:mt-2 relative z-10">
-                    <AnimateButton href={data.href} text={"Know More"} />
+                    <AnimateButton href={data.href} text={"Know More"} clip />
                     {/* <CTAButton text={"Download Brochure"} href={"#"} /> */}
                 </div>
             </div>
@@ -152,6 +170,9 @@ export const TechCompaniesCard = ({ data }) => {
             <div className="flex flex-col items-center justify-center gap-3 px-8 py-6 text-foreground ">
                 <div className="size-24 md:size-32 relative overflow-hidden ring-4 ring-primary ring-offset-4 rounded-full bg-white">
                     <Image
+                        priority={false}
+                        loading="lazy"
+                        quality={80}
                         fill
                         className="object-contain object-center p-2"
                         src={data.logo}
@@ -173,7 +194,9 @@ export const EnquireCard = ({ data, FSDTitle }) => {
     return (
         <div className="min-w-60 rounded-xl space-y-8 bg-secondary border border-primary/80 mx-4 font-inter">
             <div className="flex flex-col items-center justify-center gap-3 px-5 py-7 text-foreground">
-                <div className={`size-20 md:size-28 shadow-xl relative overflow-hidden rounded-xl bg-white`}>
+                <div
+                    className={`size-20 md:size-28 shadow-xl relative overflow-hidden rounded-xl bg-white`}
+                >
                     <Image
                         fill
                         className="object-contain object-center p-2"
@@ -205,7 +228,6 @@ export const EnquireCard = ({ data, FSDTitle }) => {
         </div>
     );
 };
-
 
 export const RoleBasedTrainingCard = ({ data }) => {
     return (

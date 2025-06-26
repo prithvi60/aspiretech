@@ -12,7 +12,7 @@ const NavBar = () => {
   const path = usePathname()
 
   return (
-    <header className={`px-5 md:px-14 lg:px-20 py-4 md:pt-4 text-lg ${path.startsWith("/programs") ? "static" : "z-50 sticky inset-0"} flex items-center text-black bg-white shadow-lg`}>
+    <header className={`px-5 md:px-9 py-4 md:pt-4 text-lg ${path.startsWith("/programs") ? "static" : "z-50 sticky inset-0"} flex items-center text-black bg-white shadow-lg`}>
       <nav className="flex justify-between items-center w-full">
         <div className="w-72 relative h-20 hidden md:block">
           <Link href="/" title="logo" >
@@ -44,7 +44,7 @@ const NavBar = () => {
             ))}
           </ul>
           <div className="block xl:hidden">
-            <CTAButton text={"contact us"} href={"/contact"} />
+            <CTAButton text={"Sign In"} href={"#"} />
           </div>
           <div className="md:ml-4 flex items-center">
             <div className="xl:!hidden ml-2">
@@ -52,7 +52,7 @@ const NavBar = () => {
             </div>
           </div>
           <div className="hidden xl:!block">
-            <CTAButton text={"contact us"} href={"/contact"} />
+            <CTAButton text={"Sign In"} href={"#"} />
           </div>
         </div>
       </nav>

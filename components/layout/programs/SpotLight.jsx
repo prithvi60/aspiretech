@@ -51,7 +51,7 @@ const SpotLight = ({ data }) => {
 
     return (
         <section className="w-full h-full padding space-y-10 md:space-y-20 relative">
-            <SectionHeading text={"The Reasons you will be under spotlight"} />
+            <SectionHeading text={"What Makes This Program Different From Others"} />
             <div
                 className="flex flex-col-reverse lg:flex-row justify-between gap-8 md:gap-4 font-inter h-full max-w-[1660px] mx-auto"
             >

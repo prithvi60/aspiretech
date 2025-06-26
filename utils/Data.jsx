@@ -46,7 +46,7 @@ export const navLinks = [
             },
         ],
     },
-    { menu: "News", link: "/news" },
+    { menu: "Blog", link: "/blog" },
     { menu: "Impact", link: "/impact" },
     {
         menu: "Enterprise",
@@ -62,6 +62,7 @@ export const navLinks = [
         ],
     },
     { menu: "Job board", link: "/job-board" },
+    { menu: "Contact us", link: "/contact" },
 ];
 
 export const footerLinks1 = [
@@ -87,7 +88,7 @@ export const footerLinks1 = [
 export const footerLinks2 = [
     { menu: "Webinar", href: "/webinar" },
     { menu: "Blog", href: "/blog" },
-    { menu: "Partner with us", href: "/partner-with-us" },
+    { menu: "Partner with us", href: "/contact" },
     { menu: "Career", href: "/career" },
     { menu: "FAQ", href: "/faq" },
 ];
@@ -159,7 +160,7 @@ export const socialLinks = [
 export const IndustrialCoursesCardData = [
     {
         img: "/Data-Science.png",
-        alt: "course image",
+        alt: "Data Science course",
         enrol: "6 Months | Online",
         title: "IBM certified Data Science Architecture Program",
         desc: "Achieve data science excellence with our IBM-backed program! Enjoy live sessions, earn while you learn, and get 100% career support with guaranteed interviews.",
@@ -168,7 +169,7 @@ export const IndustrialCoursesCardData = [
     },
     {
         img: "/Data-Analytics.png",
-        alt: "course image",
+        alt: "Data Analytics course",
         enrol: "3 Months | Online",
         title: "Fast Track Data Analytics Launchpad Course",
         desc: "Kick-start your Data Analytics career with IBM! Get live sessions, career support, and guaranteed internships.",
@@ -177,7 +178,7 @@ export const IndustrialCoursesCardData = [
     },
     {
         img: "/Digital-Marketing.png",
-        alt: "course image",
+        alt: "Digital Marketing course",
         enrol: "3 Months | Online",
         title: "Digital Strategic Marketing Course",
         desc: "Trust us—go beyond traditional digital marketing and learn more! Enjoy live sessions, pay after placement, and secure a guaranteed internship.",
@@ -186,12 +187,30 @@ export const IndustrialCoursesCardData = [
     },
     {
         img: "/UI-UX.png",
-        alt: "course image",
+        alt: "UI-UX course",
         enrol: "5 Months | Online",
         title: "User-Centricity Unleashed: UI/UX Mastery Course",
         desc: "Now is the best time to start your design career with rising demand for Design Thinking! Enjoy live sessions, pay after placement, and get a guaranteed internship.",
         href: "/programs/UI-UX-design-course",
         refer: "UI",
+    },
+    {
+        img: "/full-stack.png",
+        alt: "full-stack course",
+        enrol: "6 Months | Online",
+        title: "Building Digital Worlds Full Stack Developer",
+        desc: "To initiate your journey, the first step is to register for our Full Stack Development Program—an inclusive opportunity open to all individuals aspiring to become industry-ready.",
+        href: "/programs/full-stack-development",
+        refer: "FS",
+    },
+    {
+        img: "/devops.png",
+        alt: "Devops course",
+        enrol: "Coming Soon...",
+        title: "Mastering DevOps: From Code to Cloud",
+        desc: "Launch your DevOps career with our intensive program covering CI/CD pipelines, cloud infrastructure, containerization, and automation tools. Gain hands-on experience to deploy and manage scalable systems efficiently.",
+        href: "/programs/devops",
+        refer: "DO",
     },
 ];
 
@@ -257,21 +276,25 @@ export const expertProgramStatus = [
         count: "2000",
         suffix: "+",
         statusName: "Students trained",
+        img: "/expertise/trained.svg"
     },
     {
         count: "7",
         suffix: " LPA",
         statusName: "Average Salary",
+        img: "/expertise/package.svg"
     },
     {
         count: "100",
         suffix: "%",
         statusName: "Live Classes",
+        img: "/expertise/classes.svg"
     },
     {
         count: "4",
         suffix: "/5",
         statusName: "Land dream job",
+        img: "/expertise/job.svg"
     },
 ];
 
@@ -457,15 +480,17 @@ export const techCompanyData2 = [
 ];
 
 export const aspireSets = [
-    "IBM Certified Courses - We provide you a certification from IBM",
-    "Pay After Placement - You will be paying major chunk of the fee after landing in job",
-    "ISO & IAF Certified Firm - Aspire Tech Academy is ISO & IAF certified",
-    "Partner with 150+ hiring partners - Get hired after completing the course",
-    "Guaranteed Interview Opportunities - We train you in such a way that you clear the interviews",
-    "Affordable Fees - Quality education at affordable pricing",
-    "Domain Specific Learning - We teach things in a core domain specific way for you to land in a job soon",
-    "Expert Trainers - All our trainers are working professionals with minimum 5+ years of experience.",
-    "Money Back Guarantee Program - Get placed or get the refund of the fees",
+    {
+        title: "AI-Enabled Job Board & Guaranteed Interviews",
+        img: "/WMUD/Ai.svg",
+    },
+    { title: "100% Money-Back Guarantee", img: "/WMUD/Money.svg" },
+    { title: "₹7 LPA+ Average Package", img: "/WMUD/package.svg" },
+    {
+        title: "IBM Certified Programs with Mentorship",
+        img: "/WMUD/Certificate.svg",
+    },
+    { title: "Personalized Career Coaching", img: "/WMUD/coaching.svg" },
 ];
 
 // About Us
@@ -475,21 +500,25 @@ export const aboutStatus = [
         count: "65",
         suffix: "%",
         statusName: "Average Salary",
+        img: "/expertise/package.svg"
     },
     {
         count: "7",
         suffix: " LPA",
         statusName: "Average Salary",
+        img: "/expertise/package.svg"
     },
     {
         count: "100",
         suffix: "%",
         statusName: "Live Classes",
+        img: "/expertise/classes.svg"
     },
     {
         count: "",
         suffix: "Earn",
         statusName: "While learning",
+        img: "/expertise/job.svg"
     },
 ];
 
@@ -595,8 +624,8 @@ export const powerProgress = [
 
 export const DSHero = {
     title:
-        "Money Back Guarantee <span class='text-primary'>IBM Certified Data Science</span> Architecture Program",
-    desc: "Gain a competitive edge in emerging technologies with our Data Science & Architecture Program and Master in-demand skills to build scalable solutions and land in you dream job else get the refund of the fees paid ! Through hands-on practice, gain proficiency in Python, SQL, Excel, Machine Learning, Tableau, Generative AI, prompt engineering, and ChatGPT. Interact live with industry leaders, enhancing your skills and staying ahead in the fast-evolving world of data science. Join us and empower your career today.",
+        "IBM-Certified <span class='text-primary'>Data Science & Architecture Program</span> with Money Back Guarantee!",
+    desc: "Master Python, ML, Generative AI, and Cloud Deployment with IBM Certification. Join 200+ hiring partners and unlock 7+ LPA careers with 100% job support.",
 };
 export const DAHero = {
     title:
@@ -662,9 +691,15 @@ export const UIAchievements = [
 ];
 
 export const DSSummaryDetails = {
-    title: "Fee is refunded if not placed",
-    desc: "Gain a competitive edge in emerging technologies with our Data Science & Architecture Program.Master in-demand skills to build scalable solutions and lead in a tech-driven world.",
-    month: "IN 8 Months",
+    title: "Master the Most In-Demand Data Science Skills",
+    desc: "",
+    lists: [
+        "IBM-Certified Data Science & Architecture Program",
+        "Build real-world projects with Python, ML, GenAI, Cloud & more",
+        "Learn directly from industry experts & top mentors",
+        "Money Back Guarantee",
+    ],
+    month: "Get Job-Ready in Just 8 Months",
 };
 export const DASummaryDetails = {
     title: "Just 20% Upfront fee",
@@ -681,27 +716,22 @@ export const DMSummaryDetails = {
     desc: "In today's professional landscape, cultivating design thinking and creative skills is more critical than ever, regardless of your current workplace or job title. That's why we've paved the path for your transition into the world of design.",
     month: "IN 18 Weeks",
 };
-// export const UISummaryDetails = {
-//     title: '',
-//     desc: '',
-//     month: ""
-// }
 
 export const DSStats = [
     {
-        count: getNextSunday(),
+        count: "11 Seats Only",
         statusName: "ENROLMENT ENDS",
-        img: "/enrollment.svg",
+        img: "/DSAIcon/seats.svg",
     },
     {
         count: "7LPA+",
         statusName: "Avg Salary Package",
-        img: "/salary.svg",
+        img: "/DSAIcon/salary.svg",
     },
     {
         count: "200+",
         statusName: "Hiring Partners",
-        img: "/hiring-partner.svg",
+        img: "/DSAIcon/partner.svg",
     },
 ];
 export const DAStats = [
@@ -1006,6 +1036,7 @@ export const FSDEnrollment = [
 export const DSProgramCurriculum = [
     {
         module: "Module 1-5",
+        phase: "📍 Phase 1: Foundations (Modules 1-5)",
         content: [
             "Statistics topics",
             "Probability topics",
@@ -1015,18 +1046,14 @@ export const DSProgramCurriculum = [
         ],
     },
     {
-        module: "Module 6-10",
+        module: "Module 6-15",
+        phase: "⚙️ Phase 2: Data Science Core (Modules 6-15)",
         content: [
             "Introduction to Python",
             "Deep Dive - Functions, OOPS, Modules, Errors and Exceptions",
             "Data Manipulation",
             "Introduction to Machine Learning with Python",
             "Supervised Learning - I",
-        ],
-    },
-    {
-        module: "Module 11-15",
-        content: [
             "Dimensionality Reduction",
             "Supervised Learning - II",
             "Unsupervised Learning",
@@ -1036,6 +1063,7 @@ export const DSProgramCurriculum = [
     },
     {
         module: "Module 16-20",
+        phase: "📊 Phase 3: Data Analytics & Visualization (Modules 16–20)",
         content: [
             "Data Clustering",
             "Time Series Analysis",
@@ -1045,18 +1073,14 @@ export const DSProgramCurriculum = [
         ],
     },
     {
-        module: "Module 21-25",
+        module: "Module 21-30",
+        phase: "💬 Phase 4: NLP & Text Mining (Modules 21–30)",
         content: [
             "Natural Language Processing with Deep Learning in Python N",
             "Natural Language Processing in TensorFlow",
             "Introduction to Natural Language Processing",
             "A Refresher to Python",
             "Learn to use Regular Expressions",
-        ],
-    },
-    {
-        module: "Module 26-30",
-        content: [
             "First Step of NLP - Text Processing",
             "Extracting Named Entities from Text",
             "Feature Engineering for Text",
@@ -1067,6 +1091,7 @@ export const DSProgramCurriculum = [
     },
     {
         module: "Module 31-36",
+        phase: "Phase 5: GenAI & Cloud Deployment (Modules 31-36)",
         content: [
             "Understanding Text Classification",
             "Introduction to Deep Learning (Optional)",
@@ -1600,7 +1625,7 @@ export const DSGuidedBySection = [
 
 export const careerSupport = [
     "Create tailored resumes, cover letters, and profiles that help you stand out in today’s job market.",
-    "Access everything you need—from interview prep and job boards to real-time dashboards and expert guidance.",
+    "Access everything you need — from interview prep and job boards to real-time dashboards and expert guidance.",
     "Enjoy a smooth, intuitive design focused on making your career-building journey simple and effective.",
     "Whether you're starting out or making a shift, the tools are built to support professionals and students alike.",
     "Built with innovation, accessibility, and empowerment at its core to help you achieve your career goals faster.",
@@ -1773,3 +1798,32 @@ export const corporateTalentData = {
     title: "One Platform. Infinite Talent.",
     desc: "From fresh graduates to experienced professionals, tap into a wide-ranging talent pool that brings varied perspectives and real-world skills to your team.Build a workforce that's as dynamic and adaptable as your business.",
 };
+
+
+export const metaData = [
+    {
+        title: "data science architecture program",
+        metaTitle: "Best Data Science Architecture Program in India | IBM-Certified",
+        metaDescription: "Master AI, ChatGPT, Python, and Cloud in 8 months with Aspire Tech Academy’s IBM-Certified Best Data Science Architecture Program In India. Get hands‑on training, 200+ hiring partners, and a 100% money  back guarantee."
+    },
+    {
+        title: "data analytics launchpad",
+        metaTitle: "",
+        metaDescription: ""
+    },
+    {
+        title: "digital marketing program",
+        metaTitle: "",
+        metaDescription: ""
+    },
+    {
+        title: "UI/UX design course",
+        metaTitle: "",
+        metaDescription: ""
+    },
+    {
+        title: "full stack development",
+        metaTitle: "",
+        metaDescription: ""
+    },
+]

@@ -7,20 +7,29 @@ import { expertProgramStatus } from '@/utils/Data'
 const EnquireTechExpert = () => {
     return (
         <section className='max-w-7xl mx-auto padding relative overflow-hidden space-y-10 md:space-y-16'>
-            <div className='w-full h-[35vh] md:h-[50vh] overflow-hidden relative bg-secondary'>
-                {/* <Image fill src={"/card-bg.png"} priority quality={100} alt='background image' className='object-cover object-center rounded-lg shadow-lg' /> */}
-                <div className='absolute top-0 left-0 py-5 md:py-10 px-6 md:px-20 w-full h-full flex flex-col md:flex-row md:items-center justify-between font-inter'>
+            <div className='w-full h-fit rounded-lg overflow-hidden relative bg-secondary'>
+                <div className='py-5 md:py-5 px-6 md:px-14 w-full h-fit flex flex-col-reverse md:flex-row md:items-center justify-between font-inter gap-8'>
                     <div className='w-full md:w-3/5 space-y-2.5 md:space-y-5 text-foreground'>
-                        <h1 className='py-1 text-center md:text-start font-extrabold text-[clamp(1.1rem,2.5vw,2rem)] leading-6 md:leading-8'>Future-Proof Your Career with Aspire Tech's Expert Programs!</h1>
-                        <h2 className='h-auto text-center md:text-start font-medium text-[clamp(0.8rem,2.5vw,1.2rem)] leading-6 md:leading-8'>Master Tech Skills Easily - Kickstart Your Journey with Aspire Tech!
+                        <h1 className='py-1 font-extrabold text-[clamp(1.1rem,2.5vw,2rem)] leading-6 md:leading-8'>Future-Proof Your Career with Aspire Tech's Expert Programs!</h1>
+                        <h2 className='h-auto font-medium text-[clamp(0.8rem,2.5vw,1.2rem)] leading-6 md:leading-8'>Master Tech Skills Easily - Kickstart Your Journey with Aspire Tech!
                         </h2>
-                    </div>
-                    <div className='w-full md:w-1/5 text-center'>
                         <AnimateButton href={"/contact"} text={"Enquire now"} icon />
+                    </div>
+                    <div className='w-full md:w-2/5 xl:w-1/5 text-center'>
+                        <Image
+                            priority={false}
+                            loading='lazy'
+                            quality={80}
+                            width={100}
+                            height={100}
+                            src={"/expertise/expertise-img.png"}
+                            alt={"icon"}
+                            className="object-contain object-center w-full shrink-0 h-44 md:h-52 xl:h-60"
+                        />
                     </div>
                 </div>
             </div>
-            <div className="flex flex-wrap justify-center items-center gap-5 xl:gap-y-10 max-w-7xl mx-auto">
+            <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-2 xl:gap-y-10 xl:gap-x-10 max-w-[1560px] mx-auto">
                 {expertProgramStatus.map((item, index) => (
                     <StatusCard key={index} data={item} counter />
                 ))}

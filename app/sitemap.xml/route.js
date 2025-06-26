@@ -1,4 +1,3 @@
-import { client } from "@/sanity/lib/client";
 import { SitemapStream, streamToPromise } from "sitemap";
 import { Readable } from "stream";
 
@@ -49,58 +48,32 @@ export async function GET() {
   ];
 
   try {
-    // Fetch dynamic routes from Sanity CMS with error handling
-    // const posts = await client.fetch(
-    //   `*[_type == "post"]{ "url": slug.current }`
-    // );
-    // posts.forEach((post) => {
-    //   links.push({
-    //     url: `/resources/blog/${post.url}`,
-    //     changefreq: "weekly",
-    //     priority: 0.9,
-    //     lastmod: new Date().toISOString(),
-    //   });
-    // });
-
     const hostname = "https://www.aspiretechacademy.com";
-    if (!hostname) {
-      throw new Error("Hostname is required");
-    }
+    const stream = new SitemapStream({ hostname });
 
-    // Generate sitemap with proper error handling
-    const stream = new SitemapStream({
-      hostname: hostname,
-      xmlns: {
-        news: false,
-        xhtml: true,
-        image: false,
-        video: false,
-      },
-    });
+    const xml = await streamToPromise(Readable.from(links).pipe(stream)).then(
+      (data) => data.toString()
+    );
 
-    const xmlString = await streamToPromise(
-      Readable.from(links).pipe(stream)
-    ).then((data) => data.toString());
-
-    // Return with proper headers and cache control
-    return new Response(xmlString, {
+    return new Response(xml, {
       headers: {
         "Content-Type": "application/xml",
-        "Cache-Control":
-          "public, max-age=3600, s-maxage=3600, stale-while-revalidate=86400",
-        "X-Content-Type-Options": "nosniff",
+        "Content-Disposition": 'inline; filename="sitemap.xml"',
       },
     });
-  } catch (error) {
-    console.error("Error generating sitemap:", error);
+  } catch (e) {
     return new Response(
-      `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>`,
+      `
+      <?xml version="1.0" encoding="UTF-8"?>
+      <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+        <sitemap>
+          <loc>https://www.aspiretechacademy.com/sitemap-fallback.xml</loc>
+        </sitemap>
+      </sitemapindex>
+    `,
       {
         status: 500,
-        headers: {
-          "Content-Type": "application/xml",
-          "Cache-Control": "no-cache",
-        },
+        headers: { "Content-Type": "application/xml" },
       }
     );
   }

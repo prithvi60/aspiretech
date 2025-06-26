@@ -29,17 +29,20 @@ export const Button1 = ({ text, href, type }) => {
     );
 };
 
-export const AnimateButton = ({ text, href, icon }) => {
+export const AnimateButton = ({ text, href, icon, clip }) => {
     return (
         <button
             title={`${text} page`}
             role="button"
+            type="button"
+            aria-label={`${text} button`}
             className="w-max transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none"
         >
             <Link
                 title={`${text} page`}
                 href={href || "#"}
-                className={`bg-btn flex justify-between items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-background font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg`}
+                aria-label={`${text}`}
+                className={`${clip ? "bg-background text-foreground" : "bg-btn text-background"} flex justify-between items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg`}
             >
                 {text}
                 {icon && (

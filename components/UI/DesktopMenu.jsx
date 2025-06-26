@@ -20,7 +20,7 @@ export default function DesktopMenu({ menu }) {
       key={menu.menu}
     >
       <div
-        className={`flex items-center gap-1 text-sm xl:text-[18px] cursor-pointer px-2 2xl:px-4 py-1.5 xl:py-2 rounded-lg font-medium`}
+        className={`flex items-center gap-1 text-sm xl:text-base 2xl:text-[18px] cursor-pointer px-2 2xl:px-4 py-1.5 xl:py-2 rounded-lg font-medium`}
       >
         {hasSubMenu ? (
           <>
