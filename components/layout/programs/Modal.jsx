@@ -5,7 +5,7 @@ import Image from "next/image";
 import Loader from "@/components/UI/Loader";
 import { CustomSelect } from "@/components/UI/CustomSelect";
 
-export const ProgramsModal = ({ title, pdf }) => {
+export const ProgramsModal = ({ title, pdf, program }) => {
     const [isOpen, setIsOpen] = useState(false);
     const [thank, setThank] = useState(false);
     return (
@@ -20,7 +20,7 @@ export const ProgramsModal = ({ title, pdf }) => {
                 }}
             >
                 <div
-                    className={`bg-btn flex justify-center items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-background font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg`}
+                    className={`${program ? "py-2.5 md:py-3 px-5 sm:ms-4 text-[clamp(0.7rem,1.15vw,1.2rem)] font-bold text-black focus:outline-none rounded-lg border-2 hover:text-background transition-all duration-500 ease-in-out border-foreground/50 hover:bg-btn/90 hover:opacity-80 focus:z-10 focus:ring-4 focus:ring-btn/50 cursor-pointer" : "bg-btn flex justify-center items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-background font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg"}`}
                 >
                     Download Brochure
                 </div>
@@ -44,10 +44,8 @@ export const SpringModal = ({
     thank,
     setThank,
     pdf,
-    defaultVal
+    defaultVal,
 }) => {
-
-
     const initialFormData = {
         name: "",
         email: "",
@@ -175,7 +173,6 @@ export const SpringModal = ({
                                                 onChange={handleChange}
                                                 placeholder="Name"
                                                 className="rounded-lg border-3 p-2 border-primary focus-within:border-2 focus-within:border-primary focus-within:outline-none w-full placeholder:text-sm placeholder:md:text-base"
-
                                             />
                                         </div>
                                         <div className="gap-2 flex flex-col  items-start">

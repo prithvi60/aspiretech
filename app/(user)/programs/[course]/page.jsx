@@ -1,10 +1,14 @@
+import HeroMarqueeComponent from "@/components/HeroMarqueeComponent";
 import GradsOfATA from "@/components/layout/CTS/GradsOfATA";
+import EnquireTechExpert from "@/components/layout/EnquireTechExpert";
 import AchievementsSlider from "@/components/layout/programs/AchievementsSlider";
 import Addons from "@/components/layout/programs/Addons";
+import BuildTrust from "@/components/layout/programs/BuildTrust";
 import CareerSupport from "@/components/layout/programs/CareerSupport";
 import Certifications from "@/components/layout/programs/Certifications";
 import GuidedBy from "@/components/layout/programs/GuidedBy";
 import IndustrialProject from "@/components/layout/programs/IndustrialProject";
+import MasterSkills from "@/components/layout/programs/MasterSkills";
 import ProgramBreakdown from "@/components/layout/programs/ProgramBreakdown";
 import ProgramCurriculum from "@/components/layout/programs/ProgramCurriculum";
 import ProgramsHero from "@/components/layout/programs/ProgramsHero";
@@ -12,6 +16,8 @@ import SkillsSection from "@/components/layout/programs/SkillsSection";
 import SpotLight from "@/components/layout/programs/SpotLight";
 import SummaryAboutCourse from "@/components/layout/programs/SummaryAboutCourse";
 import TechSoftware from "@/components/layout/programs/TechSoftware";
+import WhyChooseAT from "@/components/layout/programs/WhyChooseAT";
+import TrustByCompanies from "@/components/layout/TrustByCompanies";
 import {
     CertificationDetails,
     corporateData,
@@ -145,6 +151,7 @@ const Page = async ({ params }) => {
                                     : UIStats
                 }
             />
+            <BuildTrust />
             <CareerSupport />
             {val !== "full stack development" && (
                 <SpotLight
@@ -199,31 +206,34 @@ const Page = async ({ params }) => {
                                 : "IBM Certified Data Analytics Course Brochure"
                 }
             />
-            {val !== "UI/UX design course" && (
-                <Addons
-                    data={
-                        val === "data science architecture program"
-                            ? DSAddonSyllabus
-                            : val === "data analytics launchpad"
-                                ? DAAddonSyllabus
-                                : val === "full stack development"
-                                    ? FSDAddonSyllabus
-                                    : DMAddonSyllabus
-                    }
-                    title={
-                        val === "data science architecture program"
-                            ? "Addon Syllabus : Skyrocketing Skills"
-                            : val === "data analytics launchpad"
-                                ? "Who should enroll?"
-                                : val === "full stack development"
-                                    ? "Exclusive Full Stack Development (FSD) Add-Ons"
-                                    : "Who can apply for this course?"
-                    }
-                />
-            )}
+            {(val === "full stack development" ||
+                val === "digital marketing program") && (
+                    <Addons
+                        data={
+                            val === "full stack development"
+                                ? FSDAddonSyllabus
+                                : DMAddonSyllabus
+                        }
+                        // val === "data science architecture program"
+                        //         ? DSAddonSyllabus
+                        //         : val === "data analytics launchpad"
+                        //             ? DAAddonSyllabus
+                        //             :
+                        title={
+                            val === "data science architecture program"
+                                ? "Addon Syllabus : Skyrocketing Skills"
+                                : val === "data analytics launchpad"
+                                    ? "Who should enroll?"
+                                    : val === "full stack development"
+                                        ? "Exclusive Full Stack Development (FSD) Add-Ons"
+                                        : "Who can apply for this course?"
+                        }
+                    />
+                )}
             {(val === "data science architecture program" ||
                 val === "data analytics launchpad") && (
                     <>
+                        <MasterSkills />
                         <SkillsSection
                             data={
                                 val === "data science architecture program"
@@ -231,7 +241,8 @@ const Page = async ({ params }) => {
                                     : DAScienceSkillSets
                             }
                         />
-                        <TechSoftware
+                        <TrustByCompanies title={"Our Students Work At"} />
+                        {/* <TechSoftware
                             data={
                                 val === "data science architecture program"
                                     ? DSTechSoftwares.slice(0, 10)
@@ -241,10 +252,10 @@ const Page = async ({ params }) => {
                                 val === "data science architecture program" &&
                                 DSTechSoftwares.slice(10, DSTechSoftwares.length - 1)
                             }
-                        />
+                        /> */}
                     </>
                 )}
-            {val === "data science architecture program" && <GuidedBy />}
+            {/* {val === "data science architecture program" && <GuidedBy />} */}
 
             {(val === "data science architecture program" ||
                 val === "data analytics launchpad" ||
@@ -271,11 +282,15 @@ const Page = async ({ params }) => {
                 }
             />
             {(val === "data science architecture program" ||
+                val === "data analytics launchpad") && <HeroMarqueeComponent />}
+            {(val === "data science architecture program" ||
                 val === "data analytics launchpad") && (
                     <ProgramBreakdown
                         data={val === "data science architecture program" ? DSFaq : DAFaq}
                     />
                 )}
+            <WhyChooseAT />
+            <EnquireTechExpert />
         </div>
     );
 };

@@ -18,7 +18,7 @@ const ProgramsHero = ({ val, btn, pdf, title }) => {
                             <button role="button" aria-label="apply now button">
                                 <Link
                                     href="/contact"
-                                    className="py-2.5 md:py-3 px-5 sm:ms-4 text-[clamp(0.7rem,1.15vw,1.2rem)] font-bold text-black focus:outline-none rounded-lg border-2 hover:text-background transition-all duration-500 ease-in-out border-foreground/50 hover:bg-btn/90 hover:opacity-80 focus:z-10 focus:ring-4 focus:ring-btn/50"
+                                    className="bg-btn flex justify-center items-center gap-2 md:gap-4 hover:shadow-[4px_4px_0px_var(--primary)] text-center text-background font-bold w-full cursor-pointer px-4 py-2 md:py-3 md:px-8 capitalize text-[clamp(0.7rem,1.15vw,1.1rem)] rounded-lg"
                                 >
                                     Apply now
                                 </Link>
@@ -27,6 +27,7 @@ const ProgramsHero = ({ val, btn, pdf, title }) => {
                                 <ProgramsModal
                                     pdf={pdf}
                                     title={title}
+                                    program
                                 />
                             </div>
                         </>

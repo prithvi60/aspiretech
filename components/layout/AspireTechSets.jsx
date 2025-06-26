@@ -43,14 +43,14 @@ const AspireTechSets = ({ title, data, pageSection }) => {
                 <Slider {...settings} className="aspire-set">
                     {data.map((list, idx) => (
                         <div key={idx} className={`py-2 ${pageSection !== "progress" && "my-1.5 md:my-2"}`}>
-                            <h2
+                            <h1
                                 className={`${pageSection === "progress" ? "border-2 border-borderColor " : "border-4 border-borderColor"} rounded-lg transition-colors transform px-10 py-5 text-[clamp(0.8rem,2vw,1.5rem)] text-foreground max-w-64 sm:max-w-lg lg:max-w-3xl mx-auto text-center duration-700 ease-in-out  slick-center:scale-110 bg-background  ${isActive === idx
                                     ? "scale-110 border-4 border-primary text-foreground font-bold"
                                     : "bg-background text-foreground"
                                     }`}
                             >
                                 {list}
-                            </h2>
+                            </h1>
                         </div>
                     ))}
                 </Slider>

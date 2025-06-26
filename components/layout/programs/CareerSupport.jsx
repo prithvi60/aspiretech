@@ -15,14 +15,14 @@ const CareerSupport = () => {
                         <Image
                             width={60}
                             height={60}
-                            src={"/resume.svg"}
+                            src={list.img}
                             alt={"icon"}
                             className="object-contain object-center shrink-0 size-10 sm:size-14 lg:size-16"
                         />
                         <p
                             className={`text-[clamp(0.8rem,1.5vw,1.25rem)] text-black font-medium`}
                         >
-                            {list}
+                            {list.title}
                         </p>
                     </div>
                     // </div>

@@ -216,7 +216,7 @@ export const IndustrialCoursesCardData = [
 
 export const StoriesByCustomer = [
     {
-        img: "/Shashi.jpg",
+        img: "/Shashi.png",
         alt: "customer image",
         customerName: "Shashi Kiran",
         about:
@@ -234,7 +234,7 @@ export const StoriesByCustomer = [
         position: "Assistant Manager at Flipkart",
     },
     {
-        img: "/Shameer.jpg",
+        img: "/Shameer.png",
         alt: "customer image",
         customerName: "Shameer Khan",
         about:
@@ -252,7 +252,7 @@ export const StoriesByCustomer = [
         position: "Digital Marketer at Flipkart",
     },
     {
-        img: "/Suba.jpg",
+        img: "/Suba.png",
         alt: "customer image",
         customerName: "Suba",
         about:
@@ -261,7 +261,7 @@ export const StoriesByCustomer = [
         position: "Content Marketer at Big Basket",
     },
     {
-        img: "/Priya.jpg",
+        img: "/Priya.png",
         alt: "customer image",
         customerName: "Priya",
         about:
@@ -719,7 +719,7 @@ export const DMSummaryDetails = {
 
 export const DSStats = [
     {
-        count: "11 Seats Only",
+        count: getNextSunday(),
         statusName: "ENROLMENT ENDS",
         img: "/DSAIcon/seats.svg",
     },
@@ -805,48 +805,48 @@ export const FSDStats = [
 
 export const DSSpotlight = [
     {
-        note: "Learn from Industry Experts who have achieved the success you aim for",
+        note: "Learn from proven industry experts",
         img: "/reasons/reason-1.png",
         alt: "image",
     },
     {
-        note: "Placement-Oriented Training with Guaranteed Interviews & Job Support",
+        note: "Job-focused training with guaranteed interviews",
         img: "/reasons/reason-2.png",
         alt: "image",
     },
     {
-        note: "IBM Certification from an ISO & IAF Certified Company",
+        note: "IBM Certification from ISO & IAF certified firm",
         img: "/reasons/image-3.png",
         alt: "image",
     },
     {
-        note: "Money-Back Guarantee if promises aren't delivered",
+        note: "1:1 mentorship & doubt clearing",
         img: "/reasons/reason-4.png",
         alt: "image",
     },
     {
-        note: "Domain-Specific Curriculum tailored for real-world applications",
+        note: "Domain-specific, real-world curriculum",
         img: "/reasons/reason-5.png",
         alt: "image",
     },
     {
-        note: "1:1 Mentoring & Doubt Clearance with expert guidance",
-        img: "/reasons/reason-6.png",
-        alt: "image",
-    },
-    {
-        note: "Mock Interviews & Dedicated Program Manager for personalized career support",
+        note: "Mock interviews & personal career support",
         img: "/reasons/reason-7.png",
         alt: "image",
     },
     {
-        note: "AI Enabled Job Board - Once being eligible for placements you will get access to the job board where it will act as a one point contact for all your placement needs",
+        note: "AI-powered job board for placements",
         img: "/reasons/reason-8.png",
         alt: "image",
     },
     {
-        note: "Only 15 Students per Batch with 24/7 LMS Access for focused and flexible learning",
+        note: "Max 15 students per batch",
         img: "/reasons/reason-9.png",
+        alt: "image",
+    },
+    {
+        note: "Money-back guarantee if promises aren’t met",
+        img: "/reasons/reason-4.png",
         alt: "image",
     },
 ];
@@ -1091,7 +1091,7 @@ export const DSProgramCurriculum = [
     },
     {
         module: "Module 31-36",
-        phase: "Phase 5: GenAI & Cloud Deployment (Modules 31-36)",
+        phase: "☁️ Phase 5: GenAI & Cloud Deployment (Modules 31-36)",
         content: [
             "Understanding Text Classification",
             "Introduction to Deep Learning (Optional)",
@@ -1530,6 +1530,7 @@ export const DSCertificationDetails = [
             "Post completing the IBM Certified Data Science Algorithm Course, you'll be eligible for official certification from IBM which will help you in boosting your credentials and career in Data Science.",
         note3: "Internship Certificate",
         note4: "Experience Certificate upto 1 year",
+        icon: "/ibm.svg",
         img: "/ibm-certificate.png",
         alt: "image",
     },
@@ -1537,6 +1538,7 @@ export const DSCertificationDetails = [
         note1: "Certificate from Aspire Tech Academy",
         note2:
             "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
+        icon: "/aspireLogo.svg",
         img: "/DS-sampleCertificate.png",
         alt: "image",
     },
@@ -1549,6 +1551,7 @@ export const DACertificationDetails = [
             "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
         note3: "Internship Certificate",
         note4: "Experience Certificate upto 1 year",
+        icon: "/aspireLogo.svg",
         img: "/DA-sampleCertificate.jpg",
         alt: "image",
     },
@@ -1560,6 +1563,7 @@ export const DMCertificationDetails = [
             "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
         note3: "Internship Certificate",
         note4: "Experience Certificate upto 1 year",
+        icon: "/aspireLogo.svg",
         img: "/DM-sampleCertificate.jpg",
         alt: "image",
     },
@@ -1571,6 +1575,7 @@ export const UICertificationDetails = [
             "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
         note3: "Internship Certificate",
         note4: "Experience Certificate upto 1 year",
+        icon: "/aspireLogo.svg",
         img: "/UI-sampleCertificate.jpg",
         alt: "image",
     },
@@ -1582,6 +1587,7 @@ export const FSDCertificationDetails = [
             "Upon successfully completing your program, you will receive an official certificate from Aspire Tech Academy. This certification will serve as a valuable credential to showcase your skills and knowledge as you advance in your career.",
         note3: "Internship Certificate",
         note4: "Experience Certificate upto 1 year",
+        icon: "/aspireLogo.svg",
         img: "/certificate-full-stack.png",
         alt: "image",
     },
@@ -1624,11 +1630,11 @@ export const DSGuidedBySection = [
 ];
 
 export const careerSupport = [
-    "Create tailored resumes, cover letters, and profiles that help you stand out in today’s job market.",
-    "Access everything you need — from interview prep and job boards to real-time dashboards and expert guidance.",
-    "Enjoy a smooth, intuitive design focused on making your career-building journey simple and effective.",
-    "Whether you're starting out or making a shift, the tools are built to support professionals and students alike.",
-    "Built with innovation, accessibility, and empowerment at its core to help you achieve your career goals faster.",
+    { title: "Create tailored resumes, cover letters, and profiles that help you stand out in today’s job market.", img: "/careerSupport/icon-1.svg" },
+    { title: "Access everything you need — from interview prep and job boards to real-time dashboards and expert guidance.", img: "/careerSupport/icon-2.svg" },
+    { title: "Enjoy a smooth, intuitive design focused on making your career-building journey simple and effective.", img: "/careerSupport/icon-3.svg" },
+    { title: "Whether you're starting out or making a shift, the tools are built to support professionals and students alike.", img: "/careerSupport/icon-4.svg" },
+    { title: "Built with innovation, accessibility, and empowerment at its core to help you achieve your career goals faster.", img: "/careerSupport/icon-5.svg" },
 ];
 
 // terms

@@ -7,12 +7,12 @@ const SummaryAboutCourse = ({ data, stats }) => {
         <div className="w-full relative padding text-foreground">
             <div className="rounded-lg w-full h-full flex flex-col gap-10 md:gap-0 md:flex-row justify-between text-foreground">
                 <div className="w-full md:w-[65%] space-y-3 md:space-y-6">
-                    <h3 className="text-[clamp(1rem,1.15vw,1.5rem)] text-primary font-inter">
+                    <h1 className="text-[clamp(1rem,1.15vw,1.5rem)] text-primary font-inter">
                         {data.month}
-                    </h3>
-                    <h4 className="text-[clamp(1.3rem,2.5vw,3.05rem)] leading-6 md:leading-10 tracking-wide font-bold w-full md:w-4/5">
+                    </h1>
+                    <h2 className="text-[clamp(1.3rem,2.5vw,3.05rem)] leading-6 md:leading-10 tracking-wide font-bold w-full md:w-4/5">
                         {data.title}
-                    </h4>
+                    </h2>
                     {data.lists && (
                         <ul className="list-disc pl-5 text-[clamp(0.7rem,1.15vw,1.15rem)] leading-6 font-inter">
                             {data.lists.map((item, idx) => (

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { StatusCard } from '../UI/Cards'
 import { expertProgramStatus } from '@/utils/Data'
 
-const EnquireTechExpert = () => {
+const EnquireTechExpert = ({ home }) => {
     return (
         <section className='max-w-7xl mx-auto padding relative overflow-hidden space-y-10 md:space-y-16'>
             <div className='w-full h-fit rounded-lg overflow-hidden relative bg-secondary'>
@@ -29,11 +29,13 @@ const EnquireTechExpert = () => {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-2 xl:gap-y-10 xl:gap-x-10 max-w-[1560px] mx-auto">
-                {expertProgramStatus.map((item, index) => (
-                    <StatusCard key={index} data={item} counter />
-                ))}
-            </div>
+            {home && (
+                <div className="flex flex-wrap lg:flex-nowrap justify-center items-center gap-2 xl:gap-y-10 xl:gap-x-10 max-w-[1560px] mx-auto">
+                    {expertProgramStatus.map((item, index) => (
+                        <StatusCard key={index} data={item} counter />
+                    ))}
+                </div>
+            )}
         </section>
     )
 }

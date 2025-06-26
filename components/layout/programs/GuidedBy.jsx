@@ -40,9 +40,9 @@ const GuidedBy = () => {
             src={"/trained.svg"}
             alt={"logo"}
           />
-          <h2 className="font-extrabold text-foreground leading-7 md:leading-10 text-[clamp(1.4rem,2.50vw,2.6rem)] w-full md:w-3/5 lg:w-1/2">
+          <h1 className="font-extrabold text-foreground leading-7 md:leading-10 text-[clamp(1.4rem,2.50vw,2.6rem)] w-full md:w-3/5 lg:w-1/2">
             Trained and Guided by the only best
-          </h2>
+          </h1>
           <div className="flex gap-2">
             <button
               className="h-fit bg-primary/50 p-2.5 md:p-4 text-xl md:text-2xl text-white transition-colors hover:bg-primary/90 cursor-pointer rounded-full"
@@ -108,9 +108,9 @@ const Feature = ({
         <div className="flex flex-col justify-between text-foreground">
           <div className="space-y-4 ">
             <div className="">
-              <h5 className="text-[clamp(1rem,3vw,1.6rem)] font-bold tracking-wide">
+              <h1 className="text-[clamp(1rem,3vw,1.6rem)] font-bold tracking-wide">
                 {customer}
-              </h5>
+              </h1>
               <p className="text-[clamp(0.7rem,1.15vw,0.9rem)] font-semibold">
                 {positionDetail}
               </p>

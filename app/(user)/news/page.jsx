@@ -14,7 +14,6 @@ const Page = async () => {
             },
         }
     );
-    // console.log(newsPosts);
 
     return (
         <>

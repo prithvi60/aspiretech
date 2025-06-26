@@ -60,7 +60,7 @@ export default function MobMenu({ Menus }) {
                         setOpenMenuIndex(isMenuOpen ? null : i);
                       }}
                     >
-                      <h4>{menu.menu}</h4>
+                      <h1>{menu.menu}</h1>
                       <IoIosArrowDown
                         className={`ml-auto text-black ${isMenuOpen && "rotate-180"} `}
                       />

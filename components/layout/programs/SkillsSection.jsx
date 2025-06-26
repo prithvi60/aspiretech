@@ -1,36 +1,35 @@
+import Image from "next/image";
 import React from "react";
-import { RiMiniProgramFill } from "react-icons/ri";
 
 const SkillsSection = ({ data }) => {
     return (
         <div className="w-full relative padding text-foreground">
-            <div className="rounded-lg w-full h-full flex flex-col gap-10 md:gap-0 md:flex-row justify-between text-foreground">
-                <div className="w-full md:w-1/2 space-y-3 md:space-y-6">
-                    <h3 className="text-[clamp(1rem,1.15vw,1.5rem)] text-primary">
+            <div className="rounded-lg w-full h-full flex flex-col gap-0 md:gap-5 md:flex-row justify-between text-foreground">
+                <div className="w-full md:w-1/2">
+                    <h1 className="text-[clamp(1rem,1.5vw,1.5rem)] text-primary">
                         Skills
-                    </h3>
-                    <h4 className="text-[clamp(1.3rem,2.5vw,3.05rem)] leading-6 md:leading-10 tracking-wide font-bold w-full md:w-4/5">
-                        Master Industry-Relevant Skills
-                    </h4>
+                    </h1>
+                    <h2 className="text-[clamp(1.3rem,3.5vw,3.2rem)] leading-6 md:leading-10 tracking-wide font-bold w-full md:w-4/5">
+                        Build Job-Ready Skills
+                    </h2>
                     <p
-                        className={`mb-3 font-semibold text-foreground text-[clamp(0.7rem,1.15vw,1.15rem)] leading-6 w-full md:w-4/5`}
+                        className={`mb-3 font-semibold text-foreground text-[clamp(0.85rem,1.15vw,1.15rem)] leading-6 w-full md:w-4/5 pt-4`}
                     >
-                        Every module is designed to equip you with the tools, techniques,
-                        and thinking needed to thrive in today’s tech-driven roles.
+                        Master practical tools, frameworks, and industry techniques that go beyond the classroom. Each module is carefully curated to help you think like a tech professional and solve real-world challenges with confidence.Stay career-ready in a fast-evolving digital world.
                     </p>
                 </div>
-                <div className="w-full md:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-3 py-4">
-                    {data.map((item, idx) => (
-                        <div
-                            key={idx}
-                            className="bg-secondary p-0.5 rounded-md min-h-24 max-w-xs md:w-auto last:col-span-2 md:last:col-span-1"
-                        >
-                            <div className="block space-y-3 min-h-24 px-2.5 py-4 bg-secondary rounded-md">
-                                <RiMiniProgramFill className="shrink-0 text-btn text-base lg:text-xl" />
-                                <p className={`text-[clamp(0.7rem,1.15vw,1rem)]`}>{item}</p>
-                            </div>
-                        </div>
-                    ))}
+                <div className="w-full md:w-1/2">
+                    <Image
+                        width={850}
+                        height={650}
+                        src={"/toolWeCovered.png"}
+                        alt={"skills"}
+                        priority={false}
+                        loading="lazy"
+                        quality={100}
+                        className="w-full h-auto"
+                        sizes="(min-width: 1260px) 512px, (min-width: 780px) 42.61vw, (min-width: 600px) 512px, calc(92.86vw - 27px)"
+                    />
                 </div>
             </div>
         </div>

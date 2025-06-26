@@ -27,11 +27,11 @@ const MarqueeCTSCard = ({ data, speed, direction }) => {
         <Marquee autoFill direction={direction} pauseOnHover speed={speed}>
             {data.map((list, idx) => (
                 <div key={idx} className="py-2 mx-4">
-                    <h2
+                    <h1
                         className={`px-5 py-4 text-[clamp(0.55rem,1.15vw,1rem)] w-36 md:w-48 xl:w-60 text-center ease-in-out slick-center:scale-110 rounded-full bg-background text-foreground border-2 border-[#BAB9BD]/30 hover:scale-110 hover:border-[3px] md:border-4 hover:text-foreground hover:font-extrabold hover:border-primary hover:bg-white transition-all duration-300`}
                     >
                         {list}
-                    </h2>
+                    </h1>
                 </div>
             ))}
         </Marquee>

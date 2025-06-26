@@ -24,7 +24,7 @@ export default function DesktopMenu({ menu }) {
       >
         {hasSubMenu ? (
           <>
-            <h4 className="capitalize">{menu.menu}</h4>
+            <h1 className="capitalize">{menu.menu}</h1>
             <IoIosArrowDown
               className={`mt-[0.6px] group-hover/link:rotate-180 group-hover/link:text-primary duration-200 text-black`}
             />

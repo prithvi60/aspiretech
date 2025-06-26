@@ -26,9 +26,9 @@ const NewsArticlesCard = ({ data }) => {
                 <div className="flex flex-col justify-between text-foreground">
                     <div className="space-y-4 ">
                         <div className="">
-                            <h5 className="text-[clamp(1rem,3vw,1.6rem)] font-bold tracking-wide">
+                            <h1 className="text-[clamp(1rem,3vw,1.6rem)] font-bold tracking-wide">
                                 {data.title}
-                            </h5>
+                            </h1>
                         </div>
                     </div>
                 </div>

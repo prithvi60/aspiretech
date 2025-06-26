@@ -13,40 +13,37 @@ const Certifications = ({ data }) => {
                 >
                     <div className="w-full md:w-2/5 space-y-6 md:space-y-10">
                         <>
-                            <div className="space-y-1.5 md:space-y-3">
+                            <Image
+                                width={60}
+                                height={60}
+                                src={list.icon}
+                                alt={"icon"}
+                                className="object-contain object-center shrink-0 size-10 sm:size-14 lg:size-16"
+                            />
+                            <div className="space-y-2.5 md:space-y-5">
                                 <p
-                                    className={`p-4 md:p-6 bg-white text-black text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl border-4 border-primary`}
+                                    className={`bg-white text-black text-[clamp(1.5rem,1.15vw,2rem)] leading-5 md:leading-7 font-bold tracking-wide`}
                                 >
                                     {list.note1}
                                 </p>
-                                <p className="p-4 md:p-6 border-1 border-foreground/80 text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 text-foreground font-bold tracking-tight rounded-xl bg-white">
+                                <p className="text-[clamp(1rem,1.15vw,1.25rem)] leading-5 md:leading-7 text-foreground bg-white">
                                     {list.note2}
                                 </p>
                             </div>
-                            {list.note3 && list.note4 && (
-                                <div key={idx} className="space-y-1.5 md:space-y-3">
-                                    <p
-                                        className={`p-4 md:p-6 border-1 border-foreground/80 text-foreground text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 font-bold tracking-tight rounded-xl bg-white`}
-                                    >
-                                        {list.note3}
-                                    </p>
-                                    <p className="p-4 md:p-6 border-1 border-foreground/80 text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 text-foreground font-bold tracking-tight rounded-xl bg-white">
-                                        {list.note4}
-                                    </p>
-                                </div>
-                            )}
                         </>
                     </div>
-                    {/* border border-zinc-600 bg-[#D9D9D9] */}
                     <div className="w-full md:w-3/5 space-y-6 md:space-y-10">
-                        <div className="relative overflow-hidden rounded-xl size-72 md:size-[450px] mx-auto">
-                            <Image
-                                src={list.img}
-                                fill
-                                alt={list.alt}
-                                className="object-contain object-center"
-                            />
-                        </div>
+                        <Image
+                            width={850}
+                            height={650}
+                            src={list.img}
+                            alt={list.alt}
+                            priority={false}
+                            loading="lazy"
+                            quality={100}
+                            className="w-3/4 h-auto mx-auto"
+                            sizes="(min-width: 1260px) 512px, (min-width: 780px) 42.61vw, (min-width: 600px) 512px, calc(92.86vw - 27px)"
+                        />
                     </div>
                 </div>
             ))}

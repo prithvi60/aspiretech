@@ -1,5 +1,4 @@
 import HeroMarqueeComponent from "@/components/HeroMarqueeComponent";
-import AspireTechSets from "@/components/layout/AspireTechSets";
 import EnquireTechExpert from "@/components/layout/EnquireTechExpert";
 import Hero from "@/components/layout/Hero";
 import IndustrialCoursesCard from "@/components/layout/IndustrialCoursesCard";
@@ -7,7 +6,6 @@ import IndustrialCoursesCard from "@/components/layout/IndustrialCoursesCard";
 import Stories from "@/components/layout/Stories";
 import TrustByCompanies from "@/components/layout/TrustByCompanies";
 import WhatMakesUsDiff from "@/components/layout/WhatMakesUsDiff";
-import { aspireSets } from "@/utils/Data";
 
 export default function Home() {
   const jsonLd = {
@@ -55,9 +53,9 @@ export default function Home() {
       />
       <Hero />
       <IndustrialCoursesCard />
-      <EnquireTechExpert />
+      <EnquireTechExpert home />
       <Stories />
-      <TrustByCompanies />
+      <TrustByCompanies title={"Trusted by Leading Tech Companies"} />
       <WhatMakesUsDiff />
     </main>
   );

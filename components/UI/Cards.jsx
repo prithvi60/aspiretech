@@ -206,9 +206,9 @@ export const EnquireCard = ({ data, FSDTitle }) => {
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
                     {!FSDTitle && (
-                        <h2 className="text-[clamp(1.1rem,1.5vw,1.5rem)] capitalize font-bold tracking-wide">
+                        <h1 className="text-[clamp(1.1rem,1.5vw,1.5rem)] capitalize font-bold tracking-wide">
                             {data.title}
-                        </h2>
+                        </h1>
                     )}
                     {data.desc ? (
                         <p className="font-medium text-[clamp(0.9rem,1.15vw,1rem)] leading-5 md:leading-7 text-center">
@@ -242,9 +242,9 @@ export const RoleBasedTrainingCard = ({ data }) => {
                     />
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
-                    <h2 className="text-[clamp(1.1rem,1.3vw,1.5rem)] capitalize font-bold tracking-wide">
+                    <h1 className="text-[clamp(1.1rem,1.3vw,1.5rem)] capitalize font-bold tracking-wide">
                         {data.title}
-                    </h2>
+                    </h1>
                 </div>
             </div>
         </div>

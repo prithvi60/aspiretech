@@ -15,17 +15,17 @@ const ImpactHero = () => {
             <div className="flex flex-col lg:flex-row lg:justify-between w-full">
                 <div className="w-full lg:w-3/5 space-y-3">
                     <div className="rounded-3xl p-3 md:p-5 border-6 border-borderColor bg-white space-y-3 md:space-y-5">
-                        <h4 className="text-[clamp(1rem,1.5vw,1.4rem)] leading-6 md:leading-10 tracking-wide font-bold w-full font-inter">
+                        <h2 className="text-[clamp(1rem,1.5vw,1.4rem)] leading-6 md:leading-10 tracking-wide font-bold w-full font-inter">
                             200+ Hiring partners
-                        </h4>
+                        </h2>
                         <div className="w-full py-4 space-y-6 md:space-y-10">
                             <ImpactMarquee data={trustedCompany} />
                         </div>
                     </div>
                     <div className="rounded-3xl p-3 md:p-5 border-6 border-borderColor bg-white space-y-3 md:space-y-5">
-                        <h4 className="text-[clamp(1rem,1.5vw,1.4rem)] leading-6 md:leading-10 tracking-wide font-bold w-full font-inter">
+                        <h2 className="text-[clamp(1rem,1.5vw,1.4rem)] leading-6 md:leading-10 tracking-wide font-bold w-full font-inter">
                             95% Placement Records
-                        </h4>
+                        </h2>
                         <div className="w-full py-4 space-y-6 md:space-y-10">
                             <ImpactMarquee data={placementRecords} right />
                         </div>

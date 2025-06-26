@@ -44,36 +44,36 @@ const JobBoard = () => {
                             <div className="flex flex-col justify-between text-foreground">
                                 <div className="space-y-4 flex flex-col justify-between">
                                     <div className="space-y-2">
-                                        <h5 className="text-[clamp(1rem,3vw,1.6rem)] font-bold tracking-wide">
+                                        <h2 className="text-[clamp(1rem,3vw,1.6rem)] font-bold tracking-wide">
                                             {list.title}
-                                        </h5>
+                                        </h2>
                                         <p className="text-[clamp(0.7rem,1.5vw,1rem)] font-normal text-foreground tracking-wider">
                                             {list.desc}
                                         </p>
                                     </div>
                                     <ul className="">
                                         <li className="flex md:gap-1 font-semibold text-[clamp(0.65rem,1.5vw,0.85rem)] ">
-                                            <h5 className="shrink-0">Job Position :</h5>
+                                            <h3 className="shrink-0">Job Position :</h3>
                                             <p>{list.JP}</p>
                                         </li>
                                         <li className="flex md:gap-1 font-semibold text-[clamp(0.65rem,1.5vw,0.85rem)] ">
-                                            <h5 className="shrink-0">Job Location :</h5>
+                                            <h3 className="shrink-0">Job Location :</h3>
                                             {list.JL}
                                         </li>
                                         <li className="flex md:gap-1 font-semibold text-[clamp(0.65rem,1.5vw,0.85rem)] ">
-                                            <h5 className="shrink-0">Salary Package :</h5>
+                                            <h3 className="shrink-0">Salary Package :</h3>
                                             {list.SP}
                                         </li>
                                         <li className="flex md:gap-1 font-semibold text-[clamp(0.65rem,1.5vw,0.85rem)] ">
-                                            <h5 className="shrink-0">Full/Part Time :</h5>
+                                            <h3 className="shrink-0">Full/Part Time :</h3>
                                             {list.FPTime}
                                         </li>
                                         <li className="flex md:gap-1 font-semibold text-[clamp(0.65rem,1.5vw,0.85rem)] ">
-                                            <h5 className="shrink-0">Req ID :</h5>
+                                            <h3 className="shrink-0">Req ID :</h3>
                                             {list.RID}
                                         </li>
                                         <li className="flex md:gap-1 font-semibold text-[clamp(0.65rem,1.5vw,0.85rem)] ">
-                                            <h5 className="shrink-0">Education Level :</h5>
+                                            <h3 className="shrink-0">Education Level :</h3>
                                             {list.EL}
                                         </li>
                                     </ul>
