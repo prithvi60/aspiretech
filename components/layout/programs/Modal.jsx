@@ -141,9 +141,9 @@ export const SpringModal = ({
                                     priority
                                     unoptimized
                                 />
-                                <h1 className="text-base font-bold md:text-lg">
+                                <h2 className="text-base font-bold md:text-lg">
                                     You're All Set!
-                                </h1>
+                                </h2>
                                 <p className="text-base md:text-lg font-inter">
                                     Check your inbox for access to our curated brochure.
                                 </p>
@@ -151,12 +151,15 @@ export const SpringModal = ({
                         ) : (
                             <div className="relative z-10">
                                 <div className="w-full">
-                                    <h1 className="font-extrabold text-[clamp(1.02rem,1.65vw,1.5rem)] leading-6 md:leading-10 text-center text-black">
-                                        Book a free counseling call
-                                    </h1>
-                                    <h2 className="font-semibold text-[clamp(0.9rem,1.35vw,1.3rem)] text-center text-black">
-                                        Enquire Now
-                                    </h2>
+                                    {defaultVal ? (
+                                        <h2 className="font-extrabold text-[clamp(1.02rem,1.65vw,1.5rem)] leading-6 md:leading-10 text-center text-black">
+                                            Book a free counseling call
+                                        </h2>
+                                    ) : (
+                                        <h2 className="font-extrabold text-[clamp(1.02rem,1.65vw,1.5rem)] leading-6 md:leading-10 text-center text-black">
+                                            Enquire Now
+                                        </h2>
+                                    )}
                                 </div>
                                 <div className="relative w-full max-w-md mx-auto">
                                     <form
@@ -224,7 +227,17 @@ export const SpringModal = ({
                                             type="submit"
                                             className="rounded-lg w-full border-2 border-solid border-white flex justify-center items-center gap-3 bg-btn px-2 py-2 md:py-3 md:px-4 font-semibold capitalize text-background text-sm md:text-base transition-all duration-300 hover:scale-105 hover:bg-primary cursor-pointer"
                                         >
-                                            {status ? <Loader /> : "Download Brochure"}
+                                            {defaultVal ? (
+                                                status ? (
+                                                    <Loader />
+                                                ) : (
+                                                    "Enquire Now"
+                                                )
+                                            ) : status ? (
+                                                <Loader />
+                                            ) : (
+                                                "Download Brochure"
+                                            )}
                                         </button>
                                     </form>
                                 </div>

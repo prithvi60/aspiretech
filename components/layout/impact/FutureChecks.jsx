@@ -12,9 +12,9 @@ const FutureChecks = () => {
                     <div key={index}
                         className={`p-3 flex flex-col gap-2 lg:gap-3 text-foreground bg-secondary rounded-xl min-w-72 `}
                     >
-                        <h5 className="text-[clamp(0.8rem,1.15vw,1.5rem)] font-medium tracking-wider">
+                        <h3 className="text-[clamp(0.8rem,1.15vw,1.5rem)] font-medium tracking-wider">
                             {item.title}
-                        </h5>
+                        </h3>
                         <Stat num={item.num} suffix={item.suffix} type />
                         <hr className="w-3/4 h-0.5 bg-black" />
                         <p className={`text-[clamp(1rem,1.15vw,1.5rem)] flex items-center gap-1 bg-primary/30 w-max p-2 rounded-full my-3`}>

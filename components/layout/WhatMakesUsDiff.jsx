@@ -30,7 +30,7 @@ const WhatMakesUsDiff = () => {
                             alt={"icon"}
                             className="object-contain object-center shrink-0 size-9 sm:size-12 lg:size-14"
                         />
-                        <h1>{list.title}</h1>
+                        <h3>{list.title}</h3>
                     </div>
                 ))}
             </div>

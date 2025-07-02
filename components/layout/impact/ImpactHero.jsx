@@ -23,9 +23,9 @@ const ImpactHero = () => {
                         </div>
                     </div>
                     <div className="rounded-3xl p-3 md:p-5 border-6 border-borderColor bg-white space-y-3 md:space-y-5">
-                        <h2 className="text-[clamp(1rem,1.5vw,1.4rem)] leading-6 md:leading-10 tracking-wide font-bold w-full font-inter">
+                        <h3 className="text-[clamp(1rem,1.5vw,1.4rem)] leading-6 md:leading-10 tracking-wide font-bold w-full font-inter">
                             95% Placement Records
-                        </h2>
+                        </h3>
                         <div className="w-full py-4 space-y-6 md:space-y-10">
                             <ImpactMarquee data={placementRecords} right />
                         </div>

@@ -10,8 +10,10 @@ const CareerSupport = () => {
 
             <div className="w-full h-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 max-w-7xl mx-auto">
                 {careerSupport.map((list, idx) => (
-                    // <div key={idx} className="min-w-[200px]">
-                    <div key={idx} className={`px-5 md:px-10 py-5 space-y-1.5 rounded-xl border border-btn/20 shadow-md shadow-btn/45 flex flex-col gap-5`}>
+                    <div
+                        key={idx}
+                        className={`px-5 md:px-10 py-5 space-y-1.5 rounded-xl border border-btn/20 shadow-md shadow-btn/45 flex flex-col gap-5`}
+                    >
                         <Image
                             width={60}
                             height={60}
@@ -25,7 +27,6 @@ const CareerSupport = () => {
                             {list.title}
                         </p>
                     </div>
-                    // </div>
                 ))}
             </div>
         </section>

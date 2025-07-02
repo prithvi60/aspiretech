@@ -8,9 +8,9 @@ const PlacementSection = ({ title, desc, img, alt }) => {
         <section className='w-full h-full padding'>
             <div className="flex flex-col lg:flex-row lg:justify-between w-full">
                 <div className={`w-full lg:w-3/5 space-y-3 ${title === "Setting new Reach and achievements" && "lg:py-16"} `}>
-                    <h1 className="mb-4 font-extrabold leading-8 md:leading-4 text-[clamp(1.85rem,2vw,2.75rem)] py-2 tracking-wider" >
+                    <h3 className="mb-4 font-extrabold leading-8 md:leading-4 text-[clamp(1.85rem,2vw,2.75rem)] py-2 tracking-wider" >
                         {title}
-                    </h1>
+                    </h3>
                     <p className="mb-8 text-[clamp(1rem,1.15vw,1.5rem)] leading-7 font-normal text-foreground w-full lg:w-4/5">
                         {desc}
                     </p>

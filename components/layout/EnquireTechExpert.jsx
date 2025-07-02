@@ -10,9 +10,9 @@ const EnquireTechExpert = ({ home }) => {
             <div className='w-full h-fit rounded-lg overflow-hidden relative bg-secondary'>
                 <div className='py-5 md:py-5 px-6 md:px-14 w-full h-fit flex flex-col-reverse md:flex-row md:items-center justify-between font-inter gap-8'>
                     <div className='w-full md:w-3/5 space-y-2.5 md:space-y-5 text-foreground'>
-                        <h1 className='py-1 font-extrabold text-[clamp(1.1rem,2.5vw,2rem)] leading-6 md:leading-8'>Future-Proof Your Career with Aspire Tech's Expert Programs!</h1>
-                        <h2 className='h-auto font-medium text-[clamp(0.8rem,2.5vw,1.2rem)] leading-6 md:leading-8'>Master Tech Skills Easily - Kickstart Your Journey with Aspire Tech!
-                        </h2>
+                        <h3 className='py-1 font-extrabold text-[clamp(1.1rem,2.5vw,2rem)] leading-6 md:leading-8'>Future-Proof Your Career with Aspire Tech's Expert Programs!</h3>
+                        <h4 className='h-auto font-medium text-[clamp(0.8rem,2.5vw,1.2rem)] leading-6 md:leading-8'>Master Tech Skills Easily - Kickstart Your Journey with Aspire Tech!
+                        </h4>
                         <AnimateButton href={"/contact"} text={"Enquire now"} icon />
                     </div>
                     <div className='w-full md:w-2/5 xl:w-1/5 text-center'>

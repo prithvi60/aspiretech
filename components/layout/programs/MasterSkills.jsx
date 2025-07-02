@@ -4,12 +4,12 @@ const MasterSkills = () => {
     return (
         <div className="w-full relative padding text-foreground space-y-10 md:space-y-20">
             <div className="w-full space-y-1">
-                <h1 className="text-[clamp(1rem,1.15vw,1.5rem)] text-primary">
+                <h2 className="text-[clamp(1rem,1.15vw,1.5rem)] text-primary">
                     Hands - on Training
-                </h1>
-                <h2 className="text-[clamp(1.3rem,2.5vw,3.05rem)] leading-6 md:leading-10 tracking-wide font-bold w-full md:w-4/5">
-                    Master essential Tools and skills
                 </h2>
+                <h3 className="text-[clamp(1.3rem,2.5vw,3.05rem)] leading-6 md:leading-10 tracking-wide font-bold w-full md:w-4/5">
+                    Master essential Tools and skills
+                </h3>
             </div>
             <div className="rounded-lg w-full h-full flex flex-col gap-10 md:gap-6 lg:gap-10 md:flex-row justify-between text-foreground">
                 <div className="w-full md:w-1/2 space-y-3 md:space-y-6">

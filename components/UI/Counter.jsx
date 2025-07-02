@@ -32,7 +32,7 @@ export const Stat = ({ num, suffix, decimals = 0, space, type }) => {
     return (
         <>
             {!type ? (
-                <h1
+                <h3
                     className={`${space ? "text-[clamp(1.8rem,3vw,5.1rem)]" : type ? "text-[clamp(1.8rem,3vw,3.74rem)]" : "text-[clamp(1.8rem,2.5vw,3.15rem)]"} tracking-wide font-extrabold text-black`}
                 >
                     <span
@@ -42,9 +42,9 @@ export const Stat = ({ num, suffix, decimals = 0, space, type }) => {
                         {num}
                     </span>
                     {suffix}
-                </h1>
+                </h3>
             ) : (
-                <h1
+                <h3
                     className={`text-[clamp(1.8rem,3vw,3.74rem)] tracking-wide font-extrabold text-black`}
                 >
                     {suffix}
@@ -54,7 +54,7 @@ export const Stat = ({ num, suffix, decimals = 0, space, type }) => {
                     >
                         {formatIndianNumber(num)}
                     </span>
-                </h1>
+                </h3>
             )}
         </>
     );

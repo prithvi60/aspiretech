@@ -121,7 +121,8 @@ export async function POST(req) {
     to: email,
     subject: "Acknowledgment: We received your Submission",
     html: generateEmailTemplateForUser(messageForUser, title),
-    attachments: await getPdfAttachment(),
+    attachments:
+      title !== "Aspire Project Brochure" && (await getPdfAttachment()),
   };
 
   try {

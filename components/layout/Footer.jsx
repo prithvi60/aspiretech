@@ -76,9 +76,9 @@ const Footer = () => {
                     </div>
                     <div className="flex flex-col md:items-start md:justify-between md:flex-row gap-x-0 gap-y-10 md:gap-12 w-full md:w-3/5">
                         <div className="block space-y-3">
-                            <h1 className="uppercase font-extrabold text-primary/85 tracking-wider text-sm md:text-base">
+                            <h2 className="uppercase font-extrabold text-primary/85 tracking-wider text-sm md:text-base">
                                 PRODUCT COURSES
-                            </h1>
+                            </h2>
                             <ul className="block space-y-2.5 md:space-y-4">
                                 {footerLinks1.map((list, idx) => (
                                     <li
@@ -93,9 +93,9 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="block space-y-3">
-                            <h1 className="uppercase font-extrabold text-primary/85 tracking-wider text-sm md:text-base">
+                            <h2 className="uppercase font-extrabold text-primary/85 tracking-wider text-sm md:text-base">
                                 EXPLORE
-                            </h1>
+                            </h2>
                             <ul className="block space-y-2.5 md:space-y-4">
                                 {footerLinks2.map((list, idx) => (
                                     <li
@@ -110,9 +110,9 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="block space-y-3">
-                            <h1 className="uppercase font-extrabold text-primary/85 tracking-wider text-sm md:text-base">
+                            <h2 className="uppercase font-extrabold text-primary/85 tracking-wider text-sm md:text-base">
                                 ASPIRE
-                            </h1>
+                            </h2>
                             <ul className="block space-y-2.5 md:space-y-4">
                                 {footerLinks3.map((list, idx) => (
                                     <li

@@ -60,9 +60,9 @@ export const StoriesCard = ({ data }) => {
                     </div>
                 </div>
                 <div className="font-inter p-6  block space-y-4 text-foreground bg-secondaryDark">
-                    <h1 className="mb-2 font-bold tracking-tight text-[clamp(1rem,2.5vw,1.25rem)] leading-6">
+                    <h3 className="mb-2 font-bold tracking-tight text-[clamp(1rem,2.5vw,1.25rem)] leading-6">
                         {data.offers}
-                    </h1>
+                    </h3>
                     <p className="text-[clamp(0.7rem,1.15vw,0.85rem)] font-semibold leading-6">
                         {data.position}
                     </p>
@@ -93,15 +93,15 @@ export const StatusCard = ({ data, icon, type, counter }) => {
                 {counter && data.count !== "" ? (
                     <Stat num={Number(data.count)} suffix={data.suffix} />
                 ) : (
-                    <h1 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold text-black">
+                    <h2 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold text-black">
                         {data.suffix}
-                    </h1>
+                    </h2>
                 )}
 
                 {!counter && (
-                    <h2 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold">
+                    <h3 className="text-[clamp(1.8rem,2.5vw,3.15rem)] tracking-wide font-extrabold">
                         {data.count}
-                    </h2>
+                    </h3>
                 )}
 
                 <div className="flex gap-2">
@@ -143,14 +143,14 @@ export const MainCoursesCard = ({ data }) => {
                 className={`pb-5 flex flex-col md:min-h-[480px] lg:min-h-[380px] justify-between ${data.refer === "DS" ? "bg-linear-120 from-[#516A9B] via-[#516A9B] to-[#99A3BF]" : data.refer === "DA" ? "bg-linear-120 from-[#7B3B29] via-[#7B3B29] to-[#C68C73]" : data.refer === "DM" ? "bg-linear-120 from-[#1C4B53] via-[#1C4B53] to-[#6F9D9D]" : data.refer === "FS" ? "bg-linear-120 from-[#531C4F] via-[#642c46] to-[#9D6F84]" : data.refer === "DO" ? "bg-linear-120 from-[#385e25] via-[#42712c] to-[#6aa26e]" : "bg-linear-120 from-[#D5A411] via-[#D5A411] to-[#F1E3A7]"}`}
             >
                 <div className="space-y-4 ">
-                    <h2
+                    <h3
                         className={`${data.refer === "DS" ? "bg-linear-to-r from-[#516A9B] via-[#516A9B] to-[#99A3BF]" : data.refer === "DA" ? "bg-linear-to-r from-[#7B3B29] via-[#7B3B29] to-[#C68C73]" : data.refer === "DM" ? "bg-linear-to-r from-[#1C4B53] via-[#1C4B53] to-[#6F9D9D]" : data.refer === "FS" ? "bg-linear-to-r from-[#501B4F] via-[#642c46] to-[#9F718E]" : data.refer === "DO" ? "bg-linear-to-r from-[#385e25] via-[#42712c] to-[#6aa26e]" : "bg-linear-to-r from-[#D5A411] via-[#D5A411] to-[#F1E3A7]"} text-background px-5 py-4 !drop-shadow-xl text-[clamp(0.8rem,2.5vw,1.1rem)] font-extrabold tracking-wide`}
                     >
                         {data.enrol}
-                    </h2>
-                    <h3 className="text-[clamp(1rem,3vw,1.6rem)] px-5 font-extrabold tracking-wide">
-                        {data.title}
                     </h3>
+                    <h4 className="text-[clamp(1rem,3vw,1.6rem)] px-5 font-extrabold tracking-wide">
+                        {data.title}
+                    </h4>
                     <p className="font-normal px-5 text-[clamp(0.8rem,3vw,1rem)] leading-6 font-inter">
                         {data.desc}
                     </p>
@@ -206,9 +206,9 @@ export const EnquireCard = ({ data, FSDTitle }) => {
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
                     {!FSDTitle && (
-                        <h1 className="text-[clamp(1.1rem,1.5vw,1.5rem)] capitalize font-bold tracking-wide">
+                        <h3 className="text-[clamp(1.1rem,1.5vw,1.5rem)] capitalize font-bold tracking-wide">
                             {data.title}
-                        </h1>
+                        </h3>
                     )}
                     {data.desc ? (
                         <p className="font-medium text-[clamp(0.9rem,1.15vw,1rem)] leading-5 md:leading-7 text-center">
@@ -242,9 +242,9 @@ export const RoleBasedTrainingCard = ({ data }) => {
                     />
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2">
-                    <h1 className="text-[clamp(1.1rem,1.3vw,1.5rem)] capitalize font-bold tracking-wide">
+                    <h3 className="text-[clamp(1.1rem,1.3vw,1.5rem)] capitalize font-bold tracking-wide">
                         {data.title}
-                    </h1>
+                    </h3>
                 </div>
             </div>
         </div>

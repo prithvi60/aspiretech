@@ -6,12 +6,12 @@ const SkillsSection = ({ data }) => {
         <div className="w-full relative padding text-foreground">
             <div className="rounded-lg w-full h-full flex flex-col gap-0 md:gap-5 md:flex-row justify-between text-foreground">
                 <div className="w-full md:w-1/2">
-                    <h1 className="text-[clamp(1rem,1.5vw,1.5rem)] text-primary">
+                    <h2 className="text-[clamp(1rem,1.5vw,1.5rem)] text-primary">
                         Skills
-                    </h1>
-                    <h2 className="text-[clamp(1.3rem,3.5vw,3.2rem)] leading-6 md:leading-10 tracking-wide font-bold w-full md:w-4/5">
-                        Build Job-Ready Skills
                     </h2>
+                    <h3 className="text-[clamp(1.3rem,3.5vw,3.2rem)] leading-6 md:leading-10 tracking-wide font-bold w-full md:w-4/5">
+                        Build Job-Ready Skills
+                    </h3>
                     <p
                         className={`mb-3 font-semibold text-foreground text-[clamp(0.85rem,1.15vw,1.15rem)] leading-6 w-full md:w-4/5 pt-4`}
                     >

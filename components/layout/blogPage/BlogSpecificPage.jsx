@@ -39,21 +39,21 @@ export const BlogSpecificPage = ({ post }) => {
       />
       <section className="padding w-full space-y-14 relative">
         <div className="space-y-5 relative max-w-7xl mx-auto">
-          <h1 className="text-3xl font-semibold md:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-semibold md:text-4xl lg:text-5xl">
             {post.title}
-          </h1>
+          </h2>
           <div className="flex flex-col md:flex-row gap-5 md:gap-0 md:justify-between md:items-center">
             <div className="space-y-2">
               <p className="text-base tracking-wide font-medium">
                 By AspireTech Team
               </p>
               <div className="flex flex-col sm:flex-row gap-2 md:items-center">
-                <h2 className="flex items-center gap-2 text-base md:text-lg capitalize">
+                <h3 className="flex items-center gap-2 text-base md:text-lg capitalize">
                   {readingTime} min{readingTime > 1 ? "s" : ""} Read
-                </h2>
-                <h3 className="text-base font-medium tracking-wider md:text-lg">
-                  {formattedDate}
                 </h3>
+                <h4 className="text-base font-medium tracking-wider md:text-lg">
+                  {formattedDate}
+                </h4>
               </div>
             </div>
             <ul className="flex items-center gap-5">
