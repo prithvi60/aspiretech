@@ -37,15 +37,15 @@ const Hero = () => {
                         height={80}
                         src={"/target.svg"}
                         alt={"icon"}
-                        className="object-contain object-center shrink-0 size-12 sm:size-14 lg:size-16 mt-2"
+                        className="object-contain object-center shrink-0 size-12 sm:size-14 lg:size-16"
                     />
                     <div className="block">
-                        <p className={`text-[clamp(0.9rem,1.5vw,1.35rem)] w-4/5`}>
+                        <p className={`text-[clamp(1rem,1.5vw,1.35rem)] w-4/5`}>
                             2K+ Students Already Enrolled!
                         </p>
                     </div>
                 </div>
-                <div className={`gap-5 flex text-foreground`}>
+                <div className={`gap-5 flex items-center text-foreground`}>
                     <Image
                         priority
                         loading="eager"
@@ -54,11 +54,11 @@ const Hero = () => {
                         height={80}
                         src={"/award.svg"}
                         alt={"icon"}
-                        className="object-contain object-center shrink-0 size-12 sm:size-14 lg:size-16 mt-2"
+                        className="object-contain object-center shrink-0 size-12 sm:size-14 lg:size-16 "
                     />
-                    <div className="block">
+                    <div className="flex items-center gap-2.5 md:gap-5">
                         <Stat num={Number("4")} suffix={"/5"} />
-                        <p className={`text-[clamp(0.9rem,1.5vw,1.35rem)]`}>
+                        <p className={`text-[clamp(1rem,1.5vw,1.35rem)]`}>
                             Land dream job
                         </p>
                     </div>
