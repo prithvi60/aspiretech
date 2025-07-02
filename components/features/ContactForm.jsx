@@ -8,7 +8,7 @@ const initialFormData = {
     message: "",
     phoneNo: "",
 };
-export const ContactForm = ({ title, hero }) => {
+export const ContactForm = ({ title, hero, blogContent }) => {
     const [formData, setFormData] = useState(initialFormData);
     const [status, setStatus] = useState(false);
 
@@ -60,10 +60,13 @@ export const ContactForm = ({ title, hero }) => {
         }
     };
     return (
-        <>
+        <div className={`${hero ? "shadow-xl border border-foreground" : "border-4 border-borderColor"} w-full rounded-lg max-w-6xl mx-auto bg-white overflow-hidden`}>
+            {blogContent && (
+                <h3 className="capitalize text-base md:text-lg tracking-wider font-mono text-center bg-black text-background font-semibold p-2">Get in Touch for details</h3>
+            )}
             <form
                 onSubmit={handleSubmit}
-                className={`${hero ? "shadow-lg shadow-foreground border-t border-gray-600" : "border-4 border-borderColor"} w-full space-y-6 md:space-y-10 p-6 rounded-lg max-w-6xl mx-auto bg-white`}
+                className={`p-6 space-y-6 md:space-y-10`}
             >
                 <div className="gap-2 flex flex-col">
                     {/* <label htmlFor="name" className="capitalize font-bold tracking-wider">
@@ -133,6 +136,6 @@ export const ContactForm = ({ title, hero }) => {
                     {status ? <Loader /> : "Let's Shape the  Future!"}
                 </button>
             </form>
-        </>
+        </div>
     );
 };
