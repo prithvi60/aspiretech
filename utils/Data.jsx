@@ -6,8 +6,14 @@ import {
     FaXTwitter,
     FaYoutube,
 } from "react-icons/fa6";
+import { GiDuration } from "react-icons/gi";
+import { RiLiveFill } from "react-icons/ri";
+import { SiCodementor } from "react-icons/si";
+import { FaTools } from "react-icons/fa";
+import { PiCertificateFill } from "react-icons/pi";
+import { BiSupport } from "react-icons/bi";
 
-function getNextSunday() {
+export function getNextSunday() {
     const today = new Date();
     const dayOfWeek = today.getDay();
     const daysUntilSunday = dayOfWeek === 0 ? 0 : 7 - dayOfWeek;
@@ -100,6 +106,17 @@ export const footerLinks3 = [
     { menu: "Legal", href: "/legal" },
     { menu: "Press", href: "/press" },
     { menu: "Contact us", href: "/contact" },
+];
+
+export const footerLinks4 = [
+    { menu: "bangalore", href: "/best-data-science-course-in-bangalore" },
+    { menu: "hyderabad", href: "/best-data-science-course-in-hyderabad" },
+    { menu: "mumbai", href: "/best-data-science-course-in-mumbai" },
+    { menu: "chennai", href: "/best-data-science-course-in-chennai" },
+    { menu: "delhi", href: "/best-data-science-course-in-delhi" },
+    { menu: "pune", href: "/best-data-science-course-in-pune" },
+    { menu: "ahmedabad", href: "/best-data-science-course-in-ahmedabad" },
+    { menu: "kolkata", href: "/best-data-science-course-in-kolkata" },
 ];
 
 export const heroMarqueeData = [
@@ -276,25 +293,25 @@ export const expertProgramStatus = [
         count: "2000",
         suffix: "+",
         statusName: "Students trained",
-        img: "/expertise/trained.svg"
+        img: "/expertise/trained.svg",
     },
     {
         count: "7",
         suffix: " LPA",
         statusName: "Average Salary",
-        img: "/expertise/package.svg"
+        img: "/expertise/package.svg",
     },
     {
         count: "100",
         suffix: "%",
         statusName: "Live Classes",
-        img: "/expertise/classes.svg"
+        img: "/expertise/classes.svg",
     },
     {
         count: "4",
         suffix: "/5",
         statusName: "Land dream job",
-        img: "/expertise/job.svg"
+        img: "/expertise/job.svg",
     },
 ];
 
@@ -500,25 +517,25 @@ export const aboutStatus = [
         count: "65",
         suffix: "%",
         statusName: "Average Salary",
-        img: "/expertise/package.svg"
+        img: "/expertise/package.svg",
     },
     {
         count: "7",
         suffix: " LPA",
         statusName: "Average Salary",
-        img: "/expertise/package.svg"
+        img: "/expertise/package.svg",
     },
     {
         count: "100",
         suffix: "%",
         statusName: "Live Classes",
-        img: "/expertise/classes.svg"
+        img: "/expertise/classes.svg",
     },
     {
         count: "",
         suffix: "Earn",
         statusName: "While learning",
-        img: "/expertise/job.svg"
+        img: "/expertise/job.svg",
     },
 ];
 
@@ -1630,11 +1647,31 @@ export const DSGuidedBySection = [
 ];
 
 export const careerSupport = [
-    { title: "Create tailored resumes, cover letters, and profiles that help you stand out in today’s job market.", img: "/careerSupport/icon-1.svg" },
-    { title: "Access everything you need — from interview prep and job boards to real-time dashboards and expert guidance.", img: "/careerSupport/icon-2.svg" },
-    { title: "Enjoy a smooth, intuitive design focused on making your career-building journey simple and effective.", img: "/careerSupport/icon-3.svg" },
-    { title: "Whether you're starting out or making a shift, the tools are built to support professionals and students alike.", img: "/careerSupport/icon-4.svg" },
-    { title: "Built with innovation, accessibility, and empowerment at its core to help you achieve your career goals faster.", img: "/careerSupport/icon-5.svg" },
+    {
+        title:
+            "Create tailored resumes, cover letters, and profiles that help you stand out in today’s job market.",
+        img: "/careerSupport/icon-1.svg",
+    },
+    {
+        title:
+            "Access everything you need — from interview prep and job boards to real-time dashboards and expert guidance.",
+        img: "/careerSupport/icon-2.svg",
+    },
+    {
+        title:
+            "Enjoy a smooth, intuitive design focused on making your career-building journey simple and effective.",
+        img: "/careerSupport/icon-3.svg",
+    },
+    {
+        title:
+            "Whether you're starting out or making a shift, the tools are built to support professionals and students alike.",
+        img: "/careerSupport/icon-4.svg",
+    },
+    {
+        title:
+            "Built with innovation, accessibility, and empowerment at its core to help you achieve your career goals faster.",
+        img: "/careerSupport/icon-5.svg",
+    },
 ];
 
 // terms
@@ -1805,31 +1842,139 @@ export const corporateTalentData = {
     desc: "From fresh graduates to experienced professionals, tap into a wide-ranging talent pool that brings varied perspectives and real-world skills to your team.Build a workforce that's as dynamic and adaptable as your business.",
 };
 
-
 export const metaData = [
     {
         title: "data science architecture program",
-        metaTitle: "Best Data Science Architecture Program in India | IBM-Certified",
-        metaDescription: "Master AI, ChatGPT, Python, and Cloud in 8 months with Aspire Tech Academy’s IBM-Certified Best Data Science Architecture Program In India. Get hands‑on training, 200+ hiring partners, and a 100% money  back guarantee."
+        metaTitle:
+            "Best Data Science Architecture Program in India | IBM-Certified",
+        metaDescription:
+            "Master AI, ChatGPT, Python, and Cloud in 8 months with Aspire Tech Academy’s IBM-Certified Best Data Science Architecture Program In India. Get hands‑on training, 200+ hiring partners, and a 100% money  back guarantee.",
     },
     {
         title: "data analytics launchpad",
         metaTitle: "",
-        metaDescription: ""
+        metaDescription: "",
     },
     {
         title: "digital marketing program",
         metaTitle: "",
-        metaDescription: ""
+        metaDescription: "",
     },
     {
         title: "UI/UX design course",
         metaTitle: "",
-        metaDescription: ""
+        metaDescription: "",
     },
     {
         title: "full stack development",
         metaTitle: "",
-        metaDescription: ""
+        metaDescription: "",
     },
-]
+];
+
+// Valid cities array
+export const VALID_CITIES = [
+    "bangalore",
+    "hyderabad",
+    "mumbai",
+    "chennai",
+    "delhi",
+    "pune",
+    "ahmedabad",
+    "kolkata",
+];
+
+// City display names mapping
+export const CITY_DISPLAY_NAMES = {
+    bangalore: "Bangalore",
+    hyderabad: "Hyderabad",
+    mumbai: "Mumbai",
+    chennai: "Chennai",
+    delhi: "Delhi",
+    pune: "Pune",
+    ahmedabad: "Ahmedabad",
+    kolkata: "Kolkata",
+};
+
+export const careerSupportCities = [
+    {
+        title: "100% Live 1:1 Classes",
+        note: "Personalized doubt-solving and mentorship",
+        img: "/repo/repo-1.svg",
+    },
+    {
+        title: "Industry-Aligned Curriculum",
+        note: "Python, ML, SQL, Power BI, and more",
+        img: "/repo/repo-2.svg",
+    },
+    {
+        title: "Live Projects & Case Studies",
+        note: "Real-world applications from Day 1",
+        img: "/repo/repo-3.svg",
+    },
+    {
+        title: "Placement Guarantee",
+        note: "Dedicated career support till you get placed",
+        img: "/repo/repo-4.svg",
+    },
+    {
+        title: "Flexible Timings",
+        note: "Weekend & Evening Batches available",
+        img: "/repo/repo-5.svg",
+    },
+    {
+        title: "Certifications",
+        note: "Industry-recognized certificates",
+        img: "/repo/repo-6.svg",
+    },
+];
+
+export const courseHighlightsList = [
+    {
+        title: "Duration - 6 Months (Flexible)",
+        icon: <GiDuration className="text-2xl md:text-3xl text-primary" />,
+    },
+    {
+        title: "Mode - Online (Live Classes)",
+        icon: <RiLiveFill className="text-2xl md:text-3xl text-primary" />,
+    },
+    {
+        title: "Mentorship - 1:1 Career Mentors",
+        icon: <SiCodementor className="text-2xl md:text-3xl text-primary" />,
+    },
+    {
+        title: "Tools - Python, Pandas, SQL, Power BI, ML, Tableau",
+        icon: <FaTools className="text-2xl md:text-3xl text-primary" />,
+    },
+    {
+        title: "Certification - Yes",
+        icon: <PiCertificateFill className="text-2xl md:text-3xl text-primary" />,
+    },
+    {
+        title: "Job Support - Resume, Mock Interviews, Placement Drive",
+        icon: <BiSupport className="text-2xl md:text-3xl text-primary" />,
+    },
+];
+
+export const trustedReview = [
+    {
+        count: "1500",
+        suffix: "+",
+        statusName: "Students Trained",
+    },
+    {
+        count: "100",
+        suffix: "+",
+        statusName: "Hiring Partners",
+    },
+    {
+        count: "90",
+        suffix: "%",
+        statusName: "Placement rate",
+    },
+    {
+        count: "4",
+        suffix: ".9⭐",
+        statusName: "Google Reviews",
+    },
+];

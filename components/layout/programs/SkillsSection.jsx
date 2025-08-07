@@ -5,7 +5,7 @@ const SkillsSection = ({ data }) => {
     return (
         <div className="w-full relative padding text-foreground">
             <div className="rounded-lg w-full h-full flex flex-col gap-0 md:gap-5 md:flex-row justify-between text-foreground">
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-1/2 space-y-5">
                     <h2 className="text-[clamp(1rem,1.5vw,1.5rem)] text-primary">
                         Skills
                     </h2>

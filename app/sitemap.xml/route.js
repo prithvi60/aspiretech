@@ -1,9 +1,10 @@
+import { VALID_CITIES } from "@/utils/Data";
 import { SitemapStream, streamToPromise } from "sitemap";
 import { Readable } from "stream";
 
 export async function GET() {
   // Static routes
-  const links = [
+  const staticLinks = [
     { url: "/", changefreq: "daily", priority: 1.0 },
     {
       url: "/",
@@ -46,6 +47,16 @@ export async function GET() {
       priority: 0.9,
     },
   ];
+
+  // Generate city-specific links
+  const cityLinks = VALID_CITIES.map((city) => ({
+    url: `/best-data-science-course-in-${city}`,
+    changefreq: "weekly",
+    priority: 0.9,
+  }));
+
+  // Combine all links
+  const links = [...staticLinks, ...cityLinks];
 
   try {
     const hostname = "https://www.aspiretechacademy.com";

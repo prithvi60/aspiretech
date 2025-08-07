@@ -19,6 +19,7 @@ import TechSoftware from "@/components/layout/programs/TechSoftware";
 import WhyChooseAT from "@/components/layout/programs/WhyChooseAT";
 import TrustByCompanies from "@/components/layout/TrustByCompanies";
 import {
+    careerSupport,
     CertificationDetails,
     corporateData,
     DAAchievements,
@@ -152,7 +153,7 @@ const Page = async ({ params }) => {
                 }
             />
             <BuildTrust />
-            <CareerSupport />
+            <CareerSupport data={careerSupport} />
             {val !== "full stack development" && (
                 <SpotLight
                     data={

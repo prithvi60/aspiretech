@@ -3,6 +3,7 @@ import {
     footerLinks1,
     footerLinks2,
     footerLinks3,
+    footerLinks4,
     socialLinks,
 } from "@/utils/Data";
 import Image from "next/image";
@@ -24,8 +25,8 @@ const Footer = () => {
                         />
                     </Link>
                 </div>
-                <div className="flex flex-col md:justify-center md:items-center lg:items-start lg:flex-row lg:justify-between gap-6 lg:gap-8 w-full relative z-10">
-                    <div className="flex flex-col gap-y-6 w-full md:w-2/5">
+                <div className="flex flex-col md:justify-center md:items-center xl:items-start xl:flex-row xl:justify-between gap-6 lg:gap-8 w-full relative z-10">
+                    <div className="flex flex-col gap-y-6 w-full xl:w-2/5">
                         <Link title="logo" href={"/"} className="flex items-center gap-2">
                             <Image
                                 title={"logo"}
@@ -74,8 +75,8 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex flex-col md:items-start md:justify-between md:flex-row gap-x-0 gap-y-10 md:gap-12 w-full md:w-3/5">
-                        <div className="block space-y-3">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 md:gap-12 lg:gap-8 w-full xl:w-3/5">
+                        <div className="block space-y-3 col-span-2 sm:col-span-1">
                             <h2 className="uppercase font-extrabold text-primary/85 tracking-wider text-sm md:text-base">
                                 PRODUCT COURSES
                             </h2>
@@ -115,6 +116,23 @@ const Footer = () => {
                             </h2>
                             <ul className="block space-y-2.5 md:space-y-4">
                                 {footerLinks3.map((list, idx) => (
+                                    <li
+                                        key={idx}
+                                        className={`text-base capitalize hover:underline hover:underline-offset-4 decoration-primary md:text-lg tracking-wide font-bold`}
+                                    >
+                                        <Link title={list.menu} href={list.href}>
+                                            {list.menu}
+                                        </Link>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                        <div className="block space-y-3 w-full md:w-4/5 xl:w-full col-span-2 sm:col-span-1 md:col-span-3 lg:col-span-1">
+                            <h2 className="uppercase font-extrabold text-primary/85 tracking-wider text-sm md:text-base">
+                                Location Offered
+                            </h2>
+                            <ul className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:block lg:space-y-4 ">
+                                {footerLinks4.map((list, idx) => (
                                     <li
                                         key={idx}
                                         className={`text-base capitalize hover:underline hover:underline-offset-4 decoration-primary md:text-lg tracking-wide font-bold`}

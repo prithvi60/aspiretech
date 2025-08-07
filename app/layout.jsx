@@ -16,13 +16,18 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Aspire Tech Academy | IBM-Certified Programs in AI, Data Science, UX/UI & Digital Marketing",
+  title:
+    "Aspire Tech Academy | IBM-Certified Programs in AI, Data Science, UX/UI & Digital Marketing",
   description:
     "Master AI, Data Science, UX/UI & Digital Marketing online with Aspire Tech Academy. Get IBM certification, hands-on training & a 100% money back guarantee.",
+  alternates: {
+    canonical: `https://www.aspiretechacademy.com`,
+  },
   canonical: "https://www.aspiretechacademy.com",
   metadataBase: new URL("https://www.aspiretechacademy.com"),
   openGraph: {
-    title: "Aspire Tech Academy | IBM-Certified Programs in AI, Data Science, UX/UI & Digital Marketing",
+    title:
+      "Aspire Tech Academy | IBM-Certified Programs in AI, Data Science, UX/UI & Digital Marketing",
     description:
       "Master AI, Data Science, UX/UI & Digital Marketing online with Aspire Tech Academy. Get IBM certification, hands-on training & a 100% money back guarantee.",
     url: "https://www.aspiretechacademy.com",

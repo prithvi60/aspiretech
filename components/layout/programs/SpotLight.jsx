@@ -1,10 +1,10 @@
-"use client"
-import { SectionHeading } from '@/components/UI/SectionHeading'
-import Image from 'next/image'
-import { useEffect, useRef, useState } from 'react'
-import Slider from 'react-slick'
+"use client";
+import { SectionHeading } from "@/components/UI/SectionHeading";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
+import Slider from "react-slick";
 
-const SpotLight = ({ data }) => {
+const SpotLight = ({ data, city }) => {
     const [isActive, setIsActive] = useState(0);
     const [nav1, setNav1] = useState(null);
     const [nav2, setNav2] = useState(null);
@@ -31,30 +31,34 @@ const SpotLight = ({ data }) => {
         pauseOnHover: false,
         arrows: false,
         beforeChange: (current, next) => {
-            setIsActive(current)
+            setIsActive(current);
         },
         responsive: [
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 3
-                }
+                    slidesToShow: 3,
+                },
             },
             {
                 breakpoint: 640,
                 settings: {
-                    slidesToShow: 3
-                }
+                    slidesToShow: 3,
+                },
             },
         ],
     };
 
     return (
         <section className="w-full h-full padding space-y-10 md:space-y-20 relative">
-            <SectionHeading text={"What Makes This Program Different From Others"} />
-            <div
-                className="flex flex-col-reverse lg:flex-row justify-between gap-8 md:gap-4 font-inter h-full max-w-[1660px] mx-auto"
-            >
+            <SectionHeading
+                text={
+                    city
+                        ? "Who Should Join?"
+                        : "What Makes This Program Different From Others"
+                }
+            />
+            <div className="flex flex-col-reverse lg:flex-row justify-between gap-8 md:gap-4 font-inter h-full max-w-[1660px] mx-auto">
                 <div className="w-full lg:w-2/5 space-y-6 md:space-y-10">
                     <div className="space-y-1.5 md:space-y-3 slider-container">
                         <Slider
@@ -63,10 +67,11 @@ const SpotLight = ({ data }) => {
                             ref={(slider) => (sliderRef2 = slider)}
                             waitForAnimate={false}
                             {...settings}
-                            className='spotlight'
+                            className="spotlight"
                         >
                             {data.map((list, idx) => (
-                                <p key={idx}
+                                <p
+                                    key={idx}
                                     className={`p-4 md:p-6 ${isActive === idx ? "text-foreground border-4 border-primary font-bold" : "text-foreground border-1 border-foreground"} bg-white text-[clamp(1rem,1.15vw,1.45rem)] leading-5 md:leading-7 tracking-tight rounded-xl`}
                                 >
                                     {list.note}
@@ -87,7 +92,10 @@ const SpotLight = ({ data }) => {
                         ref={(slider) => (sliderRef1 = slider)}
                     >
                         {data.map((item, id) => (
-                            <div className="relative overflow-hidden rounded-xl w-full h-72 lg:w-full lg:h-[490px]" key={id}>
+                            <div
+                                className="relative overflow-hidden rounded-xl w-full h-72 lg:w-full lg:h-[490px]"
+                                key={id}
+                            >
                                 <Image
                                     src={item.img}
                                     fill
@@ -100,7 +108,7 @@ const SpotLight = ({ data }) => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default SpotLight
+export default SpotLight;
