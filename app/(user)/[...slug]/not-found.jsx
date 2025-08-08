@@ -4,7 +4,7 @@ export default function NotFound() {
     return (
         <div className="min-h-[75dvh] flex items-center justify-center">
             <div className="text-center">
-                <h1 className="text-4xl font-bold text-[#3E3E3E] mb-4">City Not Found</h1>
+                <h1 className="text-4xl font-bold text-[#3E3E3E] mb-4">Not Found</h1>
                 <p className="text-xl text-gray-600 mb-8">
                     We don't currently offer courses in this location.
                 </p>

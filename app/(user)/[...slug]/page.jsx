@@ -107,17 +107,19 @@ function DataScienceCoursePage({ city }) {
                 city
             />
             <CourseHighlights />
-            <WhyAspireTechTrusted />
-            <Bonuses
-                data={{
-                    title: "Bonuses (Only for Bangalore Students)",
-                    lists: [
-                        "FREE Resume Building Session",
-                        "Exclusive Access to Bangalore-Based Job Boards",
-                        "Offline Meetups & Interview Support (Bangalore Only)",
-                    ],
-                }}
-            />
+            <WhyAspireTechTrusted name={cityDisplayName}/>
+            {city === "bangalore" && (
+                <Bonuses
+                    data={{
+                        title: "Bonuses",
+                        lists: [
+                            "FREE Resume Building Session",
+                            "Exclusive Access to Bangalore-Based Job Boards",
+                            "Offline Meetups & Interview Support",
+                        ],
+                    }}
+                />
+            )}
             <EnquireTechExpert city />
             <ProgramBreakdown
                 data={[

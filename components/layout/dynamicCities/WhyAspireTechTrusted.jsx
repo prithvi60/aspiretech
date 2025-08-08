@@ -3,12 +3,12 @@ import { SectionHeading } from "@/components/UI/SectionHeading";
 import { trustedReview } from "@/utils/Data";
 import React from "react";
 
-const WhyAspireTechTrusted = () => {
+const WhyAspireTechTrusted = ({ name }) => {
     return (
         <section className="padding max-w-7xl mx-auto w-full font-inter text-foreground space-y-7 lg:space-y-14">
             <div className="w-full space-y-6 lg:space-y-8">
                 <SectionHeading
-                    text={"Why Aspire Tech Academy is Trusted in Bangalore ?"}
+                    text={`Why Aspire Tech Academy is Trusted in ${name} ?`}
                 />
                 <p className="font-inter font-medium italic text-[#454444] text-sm md:text-lg text-center">
                     “The best decision I made for my career! Got placed in a top analytics

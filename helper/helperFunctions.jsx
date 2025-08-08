@@ -10,12 +10,12 @@ export function parseDataScienceRoute(path) {
         const city = match[1].toLowerCase();
 
         // Validate if the city is in our allowed list
-        if (VALID_CITIES.includes(city)) {
-            return {
-                type: 'data-science-course',
-                city: city
-            };
-        }
+        // if (VALID_CITIES.includes(city)) {
+        return {
+            type: 'data-science-course',
+            city: city
+        };
+        // }
     }
 
     return null;
