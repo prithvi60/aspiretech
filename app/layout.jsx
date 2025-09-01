@@ -33,7 +33,7 @@ export const metadata = {
     url: "https://www.aspiretechacademy.com",
     images: [
       {
-        url: "https://ik.imagekit.io/webibee/aspiire%20logo.png?updatedAt=1744800414967",
+        url: "https://ik.imagekit.io/a7ag28udt/aspire-logo",
         width: 1200,
         height: 630,
         alt: "Aspire Tech Academy logo",

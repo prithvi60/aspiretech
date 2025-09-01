@@ -12,8 +12,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Aspire Tech Academy",
-    image:
-      "https://ik.imagekit.io/webibee/aspiire%20logo.png?updatedAt=1744800414967",
+    image: "https://ik.imagekit.io/a7ag28udt/aspire-logo",
     description:
       "Aspire Tech Academy - Transform your career with industry-relevant tech courses. Learn data science, AI, web development & more through hands-on projects, expert mentorship, and pay-after-placement programs. Start your journey today!",
     email: "connect@aspiretechacademy.com",
@@ -23,8 +22,7 @@ export default function Home() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "Aspire Tech Academy",
-    image:
-      "https://ik.imagekit.io/webibee/aspiire%20logo.png?updatedAt=1744800414967",
+    image: "https://ik.imagekit.io/a7ag28udt/aspire-logo",
     url: "https://www.aspiretechacademy.com",
     telephone: "+91-9036879156",
     openingHoursSpecification: {
