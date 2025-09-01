@@ -8,7 +8,6 @@ export default function NotFound() {
                 <p className="text-xl text-gray-600 mb-8">
                     We don't currently offer any Category work in this location.
                 </p>
-                <DotExpandButton
                 <Link
                     href="/"
                     className="px-6 py-3 rounded-lg transition-colors"
